@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pool Game</title>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+    <style>
+	body {background-color:#CCC;
+	}
+	#game {
+	background-color:#fa4;
+	top:35px;
+	width:311px;
+	height: 700px;
+		}
+	#g8_games {
+		position:absolute;
+	left: 100px;
+	}
+	 .button_audio {
+  width: 20x;
+    height: 20px;
+    padding: 0px;
+    padding-left: 0px;
+	padding-top: 1px;
+  margin: 5px auto;
+  background-color: #448844;
+  border: 1px solid #fa4;
+}
+#music {
+	position: absolute;
+    top: 7px;
+    left: 300px;
+}
+
+	</style>
+</head>
+
+<body>
+ <div id="g8_games"><a href="http://www.g8-games.com" target="_blank"><img src="logo_game.png" border="0" width="150" height="25"></a></div>
+   <audio autoplay loop id="demo" src="audio/music_back2.mp3"></audio>
+<div id="music">
+  <button class="mg__button button_audio" onclick="document.getElementById('demo').play()">&#9836;</button>
+  <button class="mg__button button_audio" onclick="document.getElementById('demo').pause()">&#10073;&#10073;</button>
+</div>
+	<script src="game.js" type="text/javascript"></script>
+	<canvas id="game" style="border: 1px solid black; margin: auto; left: 0; right: 0; position: absolute;"></canvas>
+	<script>
+		game = new Game(267, 513);
+	</script>
+</body>

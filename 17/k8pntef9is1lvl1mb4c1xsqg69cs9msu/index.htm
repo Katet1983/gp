@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bus Rush</title>
+<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit" />
+<meta name="force-rendering" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="full-screen" content="yes" />
+<meta name="x5-fullscreen" content="true" />
+<meta name="360-fullscreen" content="true" />
+<meta name="screen-orientation" content="portrait" />
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-page-mode" content="app">
+<link rel="stylesheet" type="text/css" href="style-mobile.f3671.css" />
+<script src="./PlatformAPI_browserify.js"></script>
+<script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+<script src="jquery-1.10.2.min.js"></script>
+<script src="afg3.js"></script>
+
+<script type = "text/javascript" >
+   window.SDK_OPTIONS = {
+      gameId: "k8pntef9is1lvl1mb4c1xsqg69cs9msu",
+      onEvent: function (a) {
+         switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               // pause game logic / mute audio
+               break;
+            case "SDK_GAME_START":
+               // advertisement done, resume game logic and unmute audio
+               break;
+            case "SDK_READY":
+               // when sdk is ready
+               break;
+            case "SDK_ERROR":
+               // when sdk get error
+               break;
+         }
+      }
+   };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.distributegames.com/sdk.js", d.parentNode.insertBefore(a, d))
+})(document, "script", "distributegames-sdk"); 
+</script>
+
+</head>
+<body>
+<canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+<script>
+    // new VConsole();
+    window.onload = function(){
+      PlatformAPI.init(26)
+        window['FBInstant'].initializeAsync().then(function () {
+          let i = 0
+          window.fakeloadingInterval = setInterval(() => {
+          if (i < 96 && Math.random() < 0.05){
+            i++;
+            FBInstant.setLoadingProgress(i);
+          }
+              },50);
+          }).catch(function (t) {
+              console.error(t);
+        });
+        console.log('start game async done');
+        var script = document.createElement("script");
+        script.async = false;
+        script.src = './game.181c0952.js';
+        document.body.appendChild(script);
+    }
+
+    window.loadSrc = (src)=>{
+      var loadNode = document.createElement('script');
+      loadNode.async = false;
+      loadNode.src = src
+      document.body.appendChild(loadNode);
+    }
+  </script>
+</body>
+</html>

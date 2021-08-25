@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head><title>Elite Sniper Game Files - Crazy Games</title><link href="https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js" rel="preload" as="script" /><link href="https://www.crazygames.com/game/elite-sniper" rel="canonical" /><meta charset="UTF-8" /><meta name="robots" content="noindex, follow" /><meta name="description" content="The game files for Elite Sniper, a free browser game on CrazyGames.com" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Accept-CH" content="DPR" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" /><style id="pacman-styles">/* purple background */
+body {
+  background-image: linear-gradient(290deg, #3b2b73 55%, #6f2f93, #6f2f93);
+  background-position: center;
+  text-align: center;
+}
+/* for positioning of pacman loader */
+body, html { height: 100%; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate_preloadpacman_half_up {
+  0% {
+    transform: rotate(270deg); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(270deg); }
+}
+
+@keyframes rotate_preloadpacman_half_down {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes preloadpacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-100px, -6.25px);
+  }
+}
+
+.preloadpacman {
+  position: relative;
+}
+.preloadpacman > div:nth-child(2) {
+  animation: preloadpacman-balls 1s -0.99s infinite linear;
+}
+.preloadpacman > div:nth-child(3) {
+  animation: preloadpacman-balls 1s -0.66s infinite linear;
+}
+.preloadpacman > div:nth-child(4) {
+  animation: preloadpacman-balls 1s -0.33s infinite linear;
+}
+.preloadpacman > div:nth-child(5) {
+  animation: preloadpacman-balls 1s 0s infinite linear;
+}
+.preloadpacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(3),
+.preloadpacman > div:nth-child(4),
+.preloadpacman > div:nth-child(5),
+.preloadpacman > div:nth-child(6) {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 70px;
+}
+</style></head><body><div class="preloadpacman" id="pacman"><div></div><div></div><div></div><div></div><div></div></div><script type="text/javascript">function loadScript(url, async, callback) {
+  var head = document.head;
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = url;
+  if(async) {
+    script.async = true;
+  }
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+}
+var options = {"loader":"iframe","loaderOptions":{"sandbox":false,"url":"https://files.crazygames.com/elite-sniper/2/index.html"},"author":"FrankChamber","thumbnail":"https://images.crazygames.com/games/elite-sniper/thumb-1562312331309.png?auto=format,compress&q=75&cs=strip&w=360","gameName":"Elite Sniper","gameHttps":true,"gameSlug":"elite-sniper","gameStatus":"published","showAdOnExternal":"ALWAYS","showAdOnInternal":"DEFAULT","appStoreLink":null,"playStoreLink":null,"steamStoreLink":null,"disableEmbedding":false,"dollarRate":0.8506012474917894,"upvotes":6129,"downvotes":1154,"releaseDate":"2019-07-04","locale":"en_US","controls":{"text":"<h3>Controls</h3>\n<ul>\n  <li>Use the mouse to move and aim</li>\n  <li>Press space bar to open the scope</li>\n  <li>Click the left mouse button to shoot</li>\n</ul>"},"videoThumbnail":"https://videos.crazygames.com/elite-sniper/3/elite-sniper-180x111.mp4","video":{"original":"https://videos.crazygames.com/elite-sniper/3/elite-sniper.mp4","sizes":[{"width":180,"height":111,"location":"https://videos.crazygames.com/elite-sniper/3/elite-sniper-180x111.mp4"},{"width":360,"height":222,"location":"https://videos.crazygames.com/elite-sniper/3/elite-sniper-360x222.mp4"},{"width":540,"height":333,"location":"https://videos.crazygames.com/elite-sniper/3/elite-sniper-540x333.mp4"},{"width":720,"height":444,"location":"https://videos.crazygames.com/elite-sniper/3/elite-sniper-720x444.mp4"}]},"totalSize":"3 MB","minTimeBetweenMidrollAdsInMs":180000,"minTimeBetweenRewardedAdsInMs":5000,"noMidrollAdInFirstMinutes":3,"noRewardedAdInFirstMinutes":0,"categoryEnSlug":"shooting","tagsEnSlugs":["sniper","1-player","mouse","stick","html5","mission"],"fullscreen":"ADDS_VALUE","orientation":"LANDSCAPE","category":"Sniper","categoryLink":"https://www.crazygames.com/t/sniper","gameLink":"https://www.crazygames.com/game/elite-sniper","alternativeGames":[{"category":"Shooting","gameSlug":"tactical-assassin-3","gameName":"Tactical Assassin 3","rating":8.9,"thumbnail":"https://images.crazygames.com/games/tactical-assassin-3/cover-1615228313294.JPG?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/tactical-assassin-3/1/tactical-assassin-3-180x111.webm","gameLink":"https://www.crazygames.com/game/tactical-assassin-3","loader":"ruffle"},{"category":"Shooting","gameSlug":"sniper-code-one","gameName":"Sniper Code One","rating":8,"thumbnail":"https://images.crazygames.com/sniper-code-one/20200721105705/sniper-code-one-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/sniper-code-one/1/sniper-code-one-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/sniper-code-one","loader":"iframe"},{"category":"Action","gameSlug":"tactical-assassin","gameName":"Tactical Assassin","rating":8.7,"thumbnail":"https://images.crazygames.com/games/tactical-assassin/cover-1614351912817.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/tactical-assassin/1/tactical-assassin-thumbnail.webm","gameLink":"https://www.crazygames.com/game/tactical-assassin","loader":"ruffle"},{"category":"Shooting","gameSlug":"sniper","gameName":"SNIPER","rating":7.3,"thumbnail":"https://images.crazygames.com/games/sniper/cover-1599894619823.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/sniper/1/sniper-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/sniper","loader":"5.6.x"},{"category":"Puzzle","gameSlug":"needle-elimination","gameName":"Needle Elimination","rating":7.5,"thumbnail":"https://images.crazygames.com/games/needle-elimination/thumb-1563561434938.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/needle-elimination/2/needle-elimination-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/needle-elimination","loader":"iframe"},{"category":"Shooting","gameSlug":"ghost-sniper","gameName":"Ghost Sniper","rating":8.7,"thumbnail":"https://images.crazygames.com/ghostsniper.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/ghost-sniper/2/ghost-sniper-180x111.mp4","gameLink":"https://www.crazygames.com/game/ghost-sniper","loader":"5.4.x"},{"category":"Shooting","gameSlug":"lethal-sniper-3d-army-soldier","gameName":"Lethal Sniper 3D: Army Soldier","rating":8.9,"thumbnail":"https://images.crazygames.com/games/lethal-sniper-3d-army-soldier/thumb-1567011062406.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/lethal-sniper-3d-army-soldier/2/lethal-sniper-3d-army-soldier-180x111.mp4","gameLink":"https://www.crazygames.com/game/lethal-sniper-3d-army-soldier","loader":"5.6.x"},{"category":"Shooting","gameSlug":"sift-heads-world-ultimatum","gameName":"Sift Heads World Ultimatum","rating":9.3,"thumbnail":"https://images.crazygames.com/games/sift-heads-world-ultimatum/cover-1617025499416.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/sift-heads-world-ultimatum-trimmed.mp4","gameLink":"http://www.crazygames.com/game/sift-heads-world-ultimatum","loader":"ruffle"},{"category":"Puzzle","gameSlug":"mergest-kingdom","gameName":"Mergest Kingdom","rating":8.7,"thumbnail":"https://images.crazygames.com/games/mergest-kingdom/cover-1622218497700.jpeg?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/mergest-kingdom/1/mergest-kingdom-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/mergest-kingdom","loader":"iframe"},{"category":"Action","gameSlug":"stickman-wingsuit","gameName":"Stickman Wingsuit","rating":9.1,"thumbnail":"https://images.crazygames.com/stickman-wingsuit-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/stickman-wingsuit/1/stickman-wingsuit-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/stickman-wingsuit","loader":"5.6.x"}],"country":"US","domainHasNoCMP":false};
+var SDK_READY = false;
+var GF_READY = false;
+var GF_LOAD_CALLED = false;
+loadScript("https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js", true, function() {
+    Crazygames.load(options).then(function() {
+      var pacmanWrapper = document.getElementById('pacman');
+      var pacmanStyles = document.getElementById('pacman-styles');
+
+      if (pacmanWrapper && pacmanStyles) {
+        pacmanWrapper.remove();
+        pacmanStyles.remove();
+      }
+    });
+});</script></body></html>

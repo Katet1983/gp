@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head><title>Out of Mind Game Files - Crazy Games</title><link href="https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js" rel="preload" as="script" /><link href="https://www.crazygames.com/game/out-of-mind-reloaded" rel="canonical" /><meta charset="UTF-8" /><meta name="robots" content="noindex, follow" /><meta name="description" content="The game files for Out of Mind, a free browser game on CrazyGames.com" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Accept-CH" content="DPR" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" /><style id="pacman-styles">/* purple background */
+body {
+  background-image: linear-gradient(290deg, #3b2b73 55%, #6f2f93, #6f2f93);
+  background-position: center;
+  text-align: center;
+}
+/* for positioning of pacman loader */
+body, html { height: 100%; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate_preloadpacman_half_up {
+  0% {
+    transform: rotate(270deg); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(270deg); }
+}
+
+@keyframes rotate_preloadpacman_half_down {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes preloadpacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-100px, -6.25px);
+  }
+}
+
+.preloadpacman {
+  position: relative;
+}
+.preloadpacman > div:nth-child(2) {
+  animation: preloadpacman-balls 1s -0.99s infinite linear;
+}
+.preloadpacman > div:nth-child(3) {
+  animation: preloadpacman-balls 1s -0.66s infinite linear;
+}
+.preloadpacman > div:nth-child(4) {
+  animation: preloadpacman-balls 1s -0.33s infinite linear;
+}
+.preloadpacman > div:nth-child(5) {
+  animation: preloadpacman-balls 1s 0s infinite linear;
+}
+.preloadpacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(3),
+.preloadpacman > div:nth-child(4),
+.preloadpacman > div:nth-child(5),
+.preloadpacman > div:nth-child(6) {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 70px;
+}
+</style></head><body><div class="preloadpacman" id="pacman"><div></div><div></div><div></div><div></div><div></div></div><script type="text/javascript">function loadScript(url, async, callback) {
+  var head = document.head;
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = url;
+  if(async) {
+    script.async = true;
+  }
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+}
+var options = {"loader":"iframe","loaderOptions":{"sandbox":false,"url":"https://files.crazygames.com/out-of-mind-reloaded/3/index.html"},"author":"Youdevice!","thumbnail":"https://images.crazygames.com/games/out-of-mind-reloaded/thumb-1559212027139.png?auto=format,compress&q=75&cs=strip&w=360","gameName":"Out of Mind","gameHttps":true,"gameSlug":"out-of-mind-reloaded","gameStatus":"published","showAdOnExternal":"ALWAYS","showAdOnInternal":"DEFAULT","appStoreLink":null,"playStoreLink":null,"steamStoreLink":null,"disableEmbedding":false,"dollarRate":0.8506012474917894,"upvotes":107,"downvotes":17,"releaseDate":"2019-05-28","locale":"en_US","controls":{"text":"<h3>Controls</h3>\n<ul>\n  <li>Press up or down arrow to change lane</li>\n  <li>Press space bar to attack</li>\n</ul>"},"videoThumbnail":"https://videos.crazygames.com/out-of-mind-reloaded/1/out-of-mind-reloaded-180x111.mp4","video":{"original":"https://videos.crazygames.com/out-of-mind-reloaded/1/out-of-mind-reloaded.mp4","sizes":[{"width":180,"height":111,"location":"https://videos.crazygames.com/out-of-mind-reloaded/1/out-of-mind-reloaded-180x111.mp4"},{"width":360,"height":222,"location":"https://videos.crazygames.com/out-of-mind-reloaded/1/out-of-mind-reloaded-360x222.mp4"},{"width":540,"height":333,"location":"https://videos.crazygames.com/out-of-mind-reloaded/1/out-of-mind-reloaded-540x333.mp4"},{"width":720,"height":444,"location":"https://videos.crazygames.com/out-of-mind-reloaded/1/out-of-mind-reloaded-720x444.mp4"}]},"totalSize":"9 MB","minTimeBetweenMidrollAdsInMs":180000,"minTimeBetweenRewardedAdsInMs":5000,"noMidrollAdInFirstMinutes":3,"noRewardedAdInFirstMinutes":0,"categoryEnSlug":"arcade","tagsEnSlugs":["avoid","wtf","2d","collect","bloody","killing"],"fullscreen":"SUPPORTED","orientation":null,"category":"Brutal","categoryLink":"https://www.crazygames.com/t/brutal","gameLink":"https://www.crazygames.com/game/out-of-mind-reloaded","alternativeGames":[{"category":"Arcade","gameSlug":"isometric-cube","gameName":"Isometric Cube","rating":7.5,"thumbnail":"https://images.crazygames.com/isometric-cube?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/isometric-cube/1/isometric-cube-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/isometric-cube","loader":"iframe"},{"category":"Arcade","gameSlug":"thebossgame-32","gameName":"TheBossGame 32","rating":7.8,"thumbnail":"https://images.crazygames.com/thebossgame-32?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/thebossgame-32-1546596617109.mp4","gameLink":"https://www.crazygames.com/game/thebossgame-32","loader":"iframe"},{"category":"Puzzle","gameSlug":"block-puzzle-plus","gameName":"Block Puzzle Plus","rating":8.6,"thumbnail":"https://images.crazygames.com/games/block-puzzle-plus/thumb-1546854031890.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/block-puzzle-plus-1546852506063.mp4","gameLink":"https://www.crazygames.com/game/block-puzzle-plus","loader":"5.6.x"},{"category":"Sports","gameSlug":"tapbasketball","gameName":"TapBasket","rating":7.2,"thumbnail":"https://images.crazygames.com/tapbasketball-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/tapbasketball/1/tapbasketball-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/tapbasketball","loader":"iframe"},{"category":"Adventure","gameSlug":"fingerball","gameName":"FingerBall","rating":7.9,"thumbnail":"https://images.crazygames.com/games/fingerball/thumb-1563525005785.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/fingerball/1/fingerball-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/fingerball","loader":"iframe"},{"category":"Action","gameSlug":"short-life-2","gameName":"Short Life 2","rating":9.1,"thumbnail":"https://images.crazygames.com/games/short-life-2/cover-1586448274147.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/short-life-2/1/short-life-2-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/short-life-2","loader":"5.6.x"},{"category":"Action","gameSlug":"short-life","gameName":"Short Life","rating":9.1,"thumbnail":"https://images.crazygames.com/games/short-life/cover-1586425531708.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/short-life/1/short-life-180x111.mp4","gameLink":"https://www.crazygames.com/game/short-life","loader":"5.6.x"},{"category":"Arcade","gameSlug":"handless-millionaire","gameName":"Handless Millionaire","rating":8.8,"thumbnail":"https://images.crazygames.com/games/handless-millionaire/thumb-1556712488609.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/handless-millionaire/1/handless-millionaire-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/handless-millionaire","loader":"iframe"},{"category":"Action","gameSlug":"whack-your-ex","gameName":"Whack Your Ex","rating":9,"thumbnail":"https://images.crazygames.com/whackyourex.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/whack-your-ex-trimmed.mp4","gameLink":"https://www.crazygames.com/game/whack-your-ex","loader":"ruffle"},{"category":"Action","gameSlug":"lucky-life","gameName":"Lucky Life","rating":8.6,"thumbnail":"https://images.crazygames.com/games/lucky-life/cover-1586425520503.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/lucky-life/1/lucky-life-180x111.mp4","gameLink":"https://www.crazygames.com/game/lucky-life","loader":"5.6.x"}],"country":"TR","domainHasNoCMP":false};
+var SDK_READY = false;
+var GF_READY = false;
+var GF_LOAD_CALLED = false;
+loadScript("https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js", true, function() {
+    Crazygames.load(options).then(function() {
+      var pacmanWrapper = document.getElementById('pacman');
+      var pacmanStyles = document.getElementById('pacman-styles');
+
+      if (pacmanWrapper && pacmanStyles) {
+        pacmanWrapper.remove();
+        pacmanStyles.remove();
+      }
+    });
+});</script></body></html>

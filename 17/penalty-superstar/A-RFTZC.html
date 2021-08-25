@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="index,follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,width=device-width,minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="HandheldFriendly" content="true">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+        		<meta property="og:url" 		content="https://play.famobi.com/penalty-superstar/A-RFTZC">
+		<meta property="og:type"		content="website">
+		<meta property="og:title"		content="Penalty Superstar">
+		<meta property="og:description"	content="Play Penalty Superstar">
+		<meta property="og:image" 		content="https://img.cdn.famobi.com/portal/html5games/images/tmp/PenaltySuperstarTeaser.jpg">
+		
+		<title>Penalty Superstar</title>
+		<style>
+		html, body {
+			background: #000;
+			color: #ff7;
+			font: 14px/1.2 Arial, "Helvetica Neue", sans-serif;
+			height: 100%;
+		}
+
+		.fg-preroll-trigger {
+			cursor: pointer;
+		}
+		</style>
+		<link rel="stylesheet" type="text/css" href="/assets/0.2-5c8d27b2/css/play.css">
+				<link rel="canonical" href="https://play.famobi.com/penalty-superstar">
+				<script src="/assets/0.2-5c8d27b2/js/helper.js"></script>
+		<script>
+			famobi_dataLayer = window.famobi_dataLayer || window.dataLayer || [];
+		</script>
+	</head>
+	<body>
+		<article itemscope itemtype="http://schema.org/CreativeWork">
+	<meta itemprop="name" content="Penalty Superstar">
+	<meta itemprop="headline" content="Play &ldquo;Penalty Superstar&rdquo; HTML5 Game directly in your browser">
+	<meta itemprop="image" content="https://img.cdn.famobi.com/portal/html5games/images/tmp/PenaltySuperstarTeaser.jpg">
+	<meta itemprop="thumbnailUrl" content="https://img.cdn.famobi.com/portal/html5games/images/tmp/96/PenaltySuperstarTeaser.jpg">
+</article>
+<script>
+(function(){
+	var body = document.getElementsByTagName('body')[0],
+		gameId = "a0ff48dd-95a5-4266-a268-09068a3d2611",
+		affiliateId = "A-RFTZC",
+		portalId = "f1883ccd-8f7e-4115-85de-6745ff13bf5a",
+		packageId = "penalty-superstar",
+		redirectUrl = "https://games.cdn.famobi.com/html5games/p/penalty-superstar/v110/?fg_domain=play.famobi.com&fg_aid=A-RFTZC&fg_uid=a0ff48dd-95a5-4266-a268-09068a3d2611&fg_pid=f1883ccd-8f7e-4115-85de-6745ff13bf5a&fg_beat=504",
+		gameTeaser = "https://img.cdn.famobi.com/portal/html5games/images/tmp/PenaltySuperstarTeaser.jpg",
+		gameHeader = "https://img.cdn.famobi.com/portal/html5games/images/tmp/PenaltySuperstarHeader.jpg",
+		gameTitle = "Penalty Superstar",
+		portalParams = {"ad_ingame":true,"domains":{"primary":"4j.com"},"more_games_url":"http:\/\/www.4j.com","cms":{"active":false,"categories":[{"id":"girls","name":"Girls"},{"id":"make-up","name":"Make-up"},{"id":"dress-up","name":"Dress-up"},{"id":"cooking","name":"Cooking"},{"id":"racing","name":"Racing"},{"id":"cars","name":"Cars"},{"id":"match-3","name":"Match 3"},{"id":"quiz","name":"Quiz"},{"id":"jump-and-run","name":"Jump & Run"},{"id":"puzzle","name":"Puzzle"},{"id":"skill","name":"Skill"},{"id":"sports","name":"Sports"},{"id":"action","name":"Action"},{"id":"arcade","name":"Arcade"},{"id":"bubble-shooter","name":"Bubble Shooter"},{"id":"cards","name":"Card"}],"identifier":"4jcom-mobile-games","colors":{"primary":"#e1e1e1","headline":"#333333","accent":"#333333","secondary":"#eb4f00"}},"logo":"\/portal\/f1883ccd-8f7e-4115-85de-6745ff13bf5a\/icon\/260x40.png?573ae3da825ea","cache-buster":"573ae3dc4a614","more_games_image":"\/portal\/f1883ccd-8f7e-4115-85de-6745ff13bf5a\/more-games-button\/600x253\/573ae14066fd3.png","dfp_available":true},
+		adProvider = "dfp",
+		preventIFrame = "0",
+		redirectTimer = null,
+		isInsideFrame = (function() {
+			try {
+				return window.top !== window.self;
+			} catch(e) {
+				return true;
+			}
+		})(),
+		showWebmasterNotification = false,
+		isRestricted = "",
+		redirectToBlank = isInsideFrame && adProvider === "dfp" && portalParams.ad_ingame && !portalParams.dfp_available,
+		getUrlParams = function(a, b, c) {
+			a = /[?&]?([^=]+)=([^&]*)/g, b = document.location && document.location.search ? document.location.search.split("+").join(" ") : "";
+			for (var d = {}; c = a.exec(b);) d[decodeURIComponent(c[1])] = decodeURIComponent(c[2]);
+			return d;
+		},
+		getGameLink = function() {
+			return 'https://play.famobi.com/' + packageId + '/' + affiliateId;
+		},
+		getLinkToGame = function() {
+			var originalRef = '';
+			var params = getUrlParams();
+			if (params.original_ref) {
+				originalRef = params.original_ref;
+			} else {
+				originalRef = document.referrer;
+			}
+			// trim original_ref to prevent endless appending when gameapi redirects to a fresh beat
+			if (originalRef.indexOf('&original_ref') > -1) {
+				originalRef = originalRef.substr(0, originalRef.indexOf('&original_ref'));
+			}
+			redirectUrl = redirectUrl + (redirectUrl.indexOf('?') > -1 ? '&' : '?') + 'original_ref=' + encodeURIComponent(originalRef);
+			return redirectUrl + (document.location.hash ? document.location.hash : '');
+		},
+		getHTML = function () {
+			var game = {},
+				type = '',
+				linksLiNode = null,
+				linksANode = null,
+				linkClassName = '',
+				linkText = '';
+
+			var bodyNode = document.getElementsByTagName('body')[0];
+			bodyNode.style.margin = 0;
+
+			var fgAppsNode = document.createElement('div');
+			fgAppsNode.id = 'fg-apps';
+
+			var gameHeaderNode = document.createElement('div');
+			gameHeaderNode.className = 'background';
+			gameHeaderNode.style.backgroundImage = 'url(' + gameHeader + ')';
+			fgAppsNode.appendChild(gameHeaderNode);
+
+			var articleNode = document.createElement('article');
+			var h1Node = document.createElement('h1');
+			var titleNode = document.createElement('span');
+			titleNode.innerHTML = gameTitle;
+
+			var gameTeaserNode = document.createElement('img');
+			gameTeaserNode.src = gameTeaser;
+			gameTeaserNode.alt = '';
+
+			h1Node.appendChild(gameTeaserNode);
+			h1Node.appendChild(titleNode);
+
+			target = redirectToBlank ? '_blank' : '_self';
+
+			buttonContainerNode = document.createElement('div');
+			buttonContainerNode.className = 'buttonContainer';
+
+			buttonNode = document.createElement('a');
+			buttonNode.className = 'cta';
+			var cancelRedirectTimeout = function () {
+				clearTimeout(redirectTimer);
+			}
+			// do both, doesn't harm
+			buttonNode.addEventListener('touchend', cancelRedirectTimeout);
+			buttonNode.addEventListener('click', cancelRedirectTimeout);
+
+			buttonNode.setAttribute('href', getGameLink());
+			buttonNode.setAttribute('target', target);
+			buttonNode.innerHTML = 'Play';
+			buttonContainerNode.appendChild(buttonNode);
+
+			articleNode.appendChild(h1Node);
+			articleNode.appendChild(buttonContainerNode);
+
+			if (showWebmasterNotification) {
+				infoNode = document.createElement('p');
+				infoNode.className = 'info';
+				infoNode.innerHTML = '<strong>@Webmasters:</strong> Please see the <a href="https://help.famobi.com/#use-games-in-an-iframe" target="_blank">Help section (&quot;I would like to use games in an iFrame - &hellip;&quot;).</a>';
+				articleNode.appendChild(infoNode);
+
+				if (affiliateId !== "A1000-1") {
+					infoNode = document.createElement('p');
+					infoNode.className = 'info';
+					infoNode.innerHTML = 'Please make sure that our information is present in your <span style="font-weight: bold">/ads.txt</span> file, <a href="https://help.famobi.com/#\'ads.txt\'-What-is-it-and-why-do-i-need-it?" target="_blank">see more details in this help section (&quot;\'ads.txt\' What is it and why do i need it?&quot;).</a> You will be forwarded in a few seconds&hellip;';
+					articleNode.appendChild(infoNode);
+				}
+			}
+
+			fgAppsNode.appendChild(articleNode);
+			bodyNode.appendChild(fgAppsNode);
+		}
+	;
+
+	// Use dataLayer variables
+	famobi_dataLayer.push({
+		'packageId': packageId,
+		'affiliateId': affiliateId,
+		'section': 'pregame'
+	});
+
+
+
+	function initRedirect(url) {
+
+		// @TODO  make a business case with google for adx for games inside webview
+		if (["A-TDOHN", "A-DOT38"].indexOf(affiliateId) > -1) {
+			// CTR policy violation
+			redirectToBlank = true;
+			showWebmasterNotification = true;
+			affiliateId = "A1000-11";
+		}
+
+		if (document.referrer.indexOf("game01.ru") !== -1) {
+			// Violating content
+			redirectToBlank = true;
+			showWebmasterNotification = true;
+			affiliateId = "A1000-11";
+		}
+
+		if (isInsideFrame && JSON.parse(preventIFrame)) {
+			redirectToBlank = true;
+		}
+
+		// redirect poki/gamesys traffic to default affiliate (until case solved)
+		if (["A-GAMESYS"].indexOf(affiliateId) > -1) {
+			affiliateId = "A1000-11";
+			window.location.replace(getGameLink());
+			return;
+		}
+
+		// redirect part of traffic to afg beta versions
+		if ((["solitaire-classic", "table-tennis-world-tour", "perfect-piano"].indexOf(packageId) > -1)
+				&& (["A-AFGBETA",
+					"A-DENDAAPP",
+					"A-TOS21",
+					"A-GAME8-AFG",
+					"A-HUAWEIAPP",
+					"A-HUAWEI-QUICKAPPS",
+					"A-HUAWEI-BROWSER",
+					"A-HUAWEI-QUICKAPP-OMNOM",
+					"A-HUAWEI-BROWSER-OMNOM",
+					"A-GOLLERCEPTE",
+					"A-SPORX",
+					"A-KBCBANK",
+					"A-MINESKIGAMES",
+					"A-MINESKIGAMES-DEV",
+					"A-CK67R"].indexOf(affiliateId) < 0)
+		        && portalParams.ad_ingame
+		        && Math.random() < 0.2) {
+			affiliateId = "A-AFGBETA";
+			window.location.replace(getGameLink());
+			return;
+		}
+
+		if (redirectToBlank) {
+			if (affiliateId === "A1000-1" && !JSON.parse(preventIFrame)) {
+				affiliateId = "A1000-11";
+			}
+			getHTML();
+			redirectTimer = setTimeout(function() {
+				window.top.location = getGameLink();
+			}, 15E3);
+		} else {
+			incrHit(function(){
+				window.location.replace(url);
+			});
+		}
+	}
+
+	function incrHit(callback) {
+		var newImg = document.createElement('img');
+		newImg.src = '/play/hit/' + gameId + '/' + affiliateId;
+		newImg.setAttribute('width', "1");
+		newImg.setAttribute('height', "1");
+
+		function trackWithGoogleAndContinue() {
+			setTimeout(callback, 250);
+		}
+
+		if (typeof callback == "function"){
+			newImg.onload = trackWithGoogleAndContinue;
+			newImg.onerror = trackWithGoogleAndContinue;
+		}
+		body.appendChild(newImg);
+	}
+
+	initRedirect(getLinkToGame());
+})();
+</script>
+<noscript>
+	<h2>Redirecting to &ldquo;Penalty Superstar&rdquo;&hellip;</h2>
+	<p>
+		<a href="https://games.cdn.famobi.com/html5games/p/penalty-superstar/v110/?fg_domain=play.famobi.com&fg_aid=A-RFTZC&fg_uid=a0ff48dd-95a5-4266-a268-09068a3d2611&fg_pid=f1883ccd-8f7e-4115-85de-6745ff13bf5a&fg_beat=504" style="color:#fff">Play this HTML5 Game</a>
+		<a href="https://famobi.com/privacy" style="color:#fff">About Privacy at Famobi</a>
+	</p>
+</noscript>
+
+	</body>
+</html>

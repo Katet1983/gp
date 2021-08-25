@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Nickelodeon: Soccer Stars 2</title>
+<script type="text/javascript" src="jsembed.js"></script>
+<script type="text/javascript">var loadedTimer = null;var maxAttempts = 120;var attempts = 0;function init() {jsembed.embed("flambe.js","embedtarget","960","560",{"scaletype":"fit","autoscale":true,"width":960,"height":560,"jsembed_override":"/games/html5/nick-soccer-stars-2/jsembed.js","api":"flambe","base":"/games/html5/nick-soccer-stars-2/"},{});bindHandler();}function bindHandler() {attempts++;if (window.nick_sdk && window.nick_sdk.setGameEventHandler) {window.nick_sdk.setGameEventHandler(sendEvent);} else if (attempts < maxAttempts) {loadedTimer = setTimeout(bindHandler, 100);} else {console.log('Failed to include ExposeSDK');}}function sendEvent(data) {if (window.parent) {window.parent.postMessage({gameEvent: true,data: data}, '*');}}window.onload = init;</script>
+</head>
+<body style="padding: 0; margin: 0; overflow: hidden;">
+<div id="embedtarget"></div>
+</body>
+</html>

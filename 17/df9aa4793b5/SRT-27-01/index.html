@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Spilgames</title>
+   <!-- Include the HTML5 API files -->
+  
+ <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    
+    <link rel="stylesheet" href="TemplateData/style.css">
+     
+        
+      <script type="text/javascript" src="http://cdn.gameplayer.io/api/js/game.js"></script>
+    <script type="text/javascript" src="http://cdn.gameplayer.io/api/js/developer.js"></script>
+	    <script src="TemplateData/Progress.js"></script>
+         
+       
+      
+  </head>
+  <body class="template">
+ <!-- The placeholder -->
+                
+  
+      
+   <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"  ></canvas>
+    
+   	<div id="loadingBox">
+           <div  id="InnerChildLogo"><img alt="InnerChildLogo" src="TemplateData/logo_negro_520.png"  />
+       
+               <div class="meter">
+                         <p id="loadingInfo">Loading...</p> 
+  <span id="progressBar" style="width: 25%">       	</span>
+              
+          
+</div> 	 
+		
+		</div>
+        	</div>
+      
+       
+          <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 536870912,   CachedXMLHttpRequestLoader: true,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: function(err, url, line) {},
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/web.data",
+    codeUrl: "Release/web.js",
+    asmUrl: "Release/web.asm.js",
+    memUrl: "Release/web.mem",
+  };
+</script>
+<script src="Release/Loader.js"></script>
+
+
+   <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+       
+  <script type="text/javascript">
+    var SpilData = {
+        id: '576742227280302809' // Replace with the APP ID value you receive from Spil Games
+    };
+     
+    <!-- Initialise the Spil HTML5 API -->
+    GameAPI.loadAPI(function (apiInstance) {
+
+        // Other functions you can use of the Spil Game API have been removed in this code example
+    
+        // adds a more games button to the screen
+        var buttonProperties = apiInstance.Branding.getLink('more_games');
+        
+        // Creates a link element
+        var link = document.createElement('a');
+        
+        // assign the outgoing click     
+        link.href = "javascript:void(0);";
+        link.onclick = buttonProperties.action;
+        link.ontouchend = buttonProperties.action;
+        link.setAttribute("id", "spilgames-more-games-btn");
+        link.innerHTML = "More Games";
+        
+        // Adds the element to the document
+        document.body.appendChild(link);
+    }, SpilData);
+    </script>
+     
+   
+  </body>
+    
+     
+       
+</html>

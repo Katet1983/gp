@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang=en><head><link rel=canonical><script>var _iub = _iub || [];
+            _iub.csConfiguration = {
+                "consentOnContinuedBrowsing": false,
+                "ccpaAcknowledgeOnDisplay": true,
+                "googleAdditionalConsentMode":true,
+                "newConsentAtVendorListUpdate":0,
+                "askConsentAtCookiePolicyUpdate":true,
+                "whitelabel": false,
+                "lang": "en",
+                "siteId": 1944774,
+                "enableCcpa": true,
+                "countryDetection": true,
+                "enableCMP": true,
+                "tcfVersion": 2,
+                // "preferenceCookie": {
+                //     "expireAfter": 1
+                // },
+                "cookiePolicyId": 64038034,
+                // "isTCFConsentGlobal": false,
+                "banner": {
+                    "position": "float-bottom-center",
+                    // "acceptButtonDisplay": true,
+                    // "customizeButtonDisplay": true,
+                    // "closeButtonDisplay": false
+                    "acceptButtonDisplay": true,
+                    "customizeButtonDisplay": true,
+                    "closeButtonDisplay": false,
+                    "applyStyles": false
+                }
+            };
+            window['gtag_enable_tcf_support'] = true;
+            function gpxGetCookieKeys () {
+                if (!document.cookie) return [];
+                var _keys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, '').split(/\s*(?:\=[^;]*)?;\s*/);
+                for (var _index = 0; _index < _keys.length; _index++) {
+                    _keys[_index] = decodeURIComponent(_keys[_index]);
+                }
+                return _keys;
+            }
+            function gpxGetCookie (cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return null;
+            }
+            function gpxSetCookie (name, value, expirationDays = 10000, path="/", domain = location.host) {
+                var expirationDate = new Date();
+                expirationDate.setTime(expirationDate.getTime() + (expirationDays*24*60*60*1000));
+                document.cookie = name+"="+value+";path="+path+"; expires="+expirationDate.toUTCString()+";SameSite=None;Secure;domain="+domain;
+            }
+            function gpxDeleteCookie (name, path="/", domain = location.host) { document.cookie = name+"=;path="+path+";expires=Thu, 01 Jan 1970 00:00:01 GMT;SameSite=None;Secure;domain="+domain};
+
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            let patchedIubenda = gpxGetCookie('ptc_iub');
+            if(!patchedIubenda){
+                let cookiesKeys = gpxGetCookieKeys();
+                gpxDeleteCookie('ptcdIub', '/', 'gamepix.com');
+                for(let c of cookiesKeys){
+                    if(c.indexOf("euconsent-v2") > -1 || c.indexOf("_iub") > -1){
+                        gpxDeleteCookie(c, '/', 'gamepix.com');
+                        gpxDeleteCookie(c, '/', 'play.gamepix.com');
+                    }
+                }
+                //set Iubenda patched cookie for 1 week
+                gpxSetCookie("ptc_iub","true", 1, '/', "gamepix.com");
+            }
+
+            var ref = (document.referrer && document.referrer.match(/:\/\/(.[^/]+)/)[1]) || 'direct';
+            var namespace = location.pathname && location.pathname.split('/').length > 1 ? location.pathname.split('/')[1] : null;
+            if(namespace) {
+                var link = !!document.querySelector("link[rel='canonical']") ? document.querySelector("link[rel='canonical']") : document.createElement('link');
+                link.setAttribute('rel', 'canonical');
+                link.setAttribute('href', 'https://www.gamepix.com/play/' + namespace + '/');
+                document.head.appendChild(link);
+            }
+
+            var iubendaTcfStubStubScript = document.querySelector("script[src='//cdn.iubenda.com/cs/tcf/stub-v2.js']") ? document.querySelector("script[src='//cdn.iubenda.com/cs/tcf/stub-v2.js']") : document.createElement('script');
+            iubendaTcfStubStubScript.setAttribute('src', '//cdn.iubenda.com/cs/tcf/stub-v2.js');
+            iubendaTcfStubStubScript.setAttribute('type', 'text/javascript');
+            document.head.appendChild(iubendaTcfStubStubScript);
+
+            var iubendaSafeTcfScript = document.querySelector("script[src='//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js']") ? document.querySelector("script[src='//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js']") : document.createElement('script');
+            iubendaSafeTcfScript.setAttribute('src', '//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js');
+            iubendaSafeTcfScript.setAttribute('type', 'text/javascript');
+            document.head.appendChild(iubendaSafeTcfScript);
+
+            var iubendaCcpaStubScript = document.querySelector("script[src='//cdn.iubenda.com/cs/ccpa/stub.js']") ? document.querySelector("script[src='//cdn.iubenda.com/cs/ccpa/stub.js']") : document.createElement('script');
+            iubendaCcpaStubScript.setAttribute('src', '//cdn.iubenda.com/cs/ccpa/stub.js');
+            iubendaCcpaStubScript.setAttribute('type', 'text/javascript');
+            document.head.appendChild(iubendaCcpaStubScript);
+
+            var iubendaCsSript = document.querySelector("script[src='//cdn.iubenda.com/cs/iubenda_cs.js']") ? document.querySelector("script[src='//cdn.iubenda.com/cs/iubenda_cs.js']") : document.createElement('script');
+            iubendaCsSript.setAttribute('src', '//cdn.iubenda.com/cs/iubenda_cs.js');
+            iubendaCsSript.setAttribute('charset', 'UTF-8');
+            iubendaCsSript.setAttribute('type', 'text/javascript');
+            iubendaCsSript.setAttribute('async', 'async');
+            document.head.appendChild(iubendaCsSript);
+
+            var mainColor = "#0e385b";
+            if(getParameterByName('mainColor')){
+                mainColor = "#" + getParameterByName('mainColor');
+                if(mainColor == "#fff" || mainColor == "#ffffff"){
+                    mainColor = "#000000"
+                }
+            };
+
+                //append loader color and html page color
+            var colorStyle = document.createElement("style");
+            colorStyle.innerHTML = ".gpx-loader { color:"+mainColor+" !important; }";
+            document.getElementsByTagName("head")[0].appendChild(colorStyle);</script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta http-equiv=Content-Type content="text/html; charset=UTF-8"><meta name=robots content="noindex, follow"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover"><meta name=mobile-web-app-capable content=yes><title>GamePix Play</title><script type=text/plain class=_iub_cs_activate src="/player/ads/2.0.0/smart-ads.min.js?t=1"></script><link rel=icon href=/player/favicon.ico><link rel=stylesheet href=/player/assets/css/style.css><link rel=stylesheet href=/player/assets/UI/style.css><link href="https://fonts.googleapis.com/css?family=Nunito:400,700&amp;display=swap" rel=stylesheet><link href=/player/assets/css/app.css rel=preload as=style><link href=/player/assets/js/app.js rel=preload as=script><link href=/player/assets/css/app.css rel=stylesheet></head><body><noscript><strong>We're sorry but this player doesn't work without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app class=gpx-loader></div><a href=# id=custom-iub-pref class=iubenda-advertising-preferences-link style="color:white;position: absolute;bottom: 0;right: 10px;font-size:12px;cursor: default;text-decoration:none;z-index:1">Cookie Settings</a><script src=/player/assets/js/app.js></script></body></html>

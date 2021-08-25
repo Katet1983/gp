@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    <link rel='canonical' href='https://www.bestgames.com/Rope-Slash'/></head>
+    <body>
+	<script type="text/javascript">
+	var ua = navigator.userAgent.toLowerCase();
+if(ua.indexOf("like mac os x") > 0){
+	var reg = /os [\d._]*/gi ;
+	var verinfo = ua.match(reg) ;
+	var version = (verinfo+"").replace(/[^0-9|_.]/ig,"").replace(/_/ig,".");
+	var arr=version.split(".");
+	if(arr[0]==13&&(arr[1] == 0 || arr[1] == 1))
+	{
+			window.location.href="Build-ios13/index.html";
+		
+	}
+	else
+	{
+	window.location.href="Build/index.html";
+	}
+}
+else
+{
+window.location.href="Build/index.html";
+}
+	</script>
+	</body>
+</html>

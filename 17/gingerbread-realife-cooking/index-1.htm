@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8"></meta>
+    <meta name="mobile-web-app-capable" content="yes"></meta>
+
+    <meta property="og:image" content="https://cdn.sisigames.com/gingerbread-realife-cooking/img/gingerbread-realife-cooking-wg.jpg" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.sisigames.com/cdn/ads.js"></script>
+
+    
+    <script type="text/javascript" async> !function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search); </script>
+
+    <script src="lib/phaser.min.js"></script>
+    <script src="lib/FileSaver.js"></script>
+    <script src="lib/canvas-to-blob.js"></script>
+
+    <!--<script src="scripts/config.js"></script>
+    <script src="scripts/boot.js"></script>
+    <script src="scripts/preload.js"></script>
+    <script src="scripts/chooselevel.js"></script>
+    <script src="scripts/titlescreen.js"></script>
+    <script src="scripts/prelevel.js"></script>
+    <script src="scripts/stage1.js"></script>
+    <script src="scripts/stage2.js"></script>-->
+
+    <script src="scripts/game.min.js"></script>
+
+    <style>
+        body {
+            margin: 0px;
+            background-color: #B6172E
+        }
+
+    </style>
+
+    <script>
+        window["GD_OPTIONS"] = {
+            "gameId": "71910cf8d329404aae4c036250dbe333",
+            "userId": "3E8530BC-589B-4120-9E4F-386E6E4D91A2-s1",
+            "prefix": "gingerbread-realife-cooking__", // Set your own prefix in case you get id conflicts.
+            "onEvent": function(event) {
+                switch (event.name) {
+                    case "SDK_GAME_START":
+                        // advertisement done, resume game logic and unmute audio
+                        resumeGame();
+                        break;
+                    case "SDK_GAME_PAUSE":
+                        // pause game logic / mute audio
+                        pauseGame();
+                        break;
+                }
+            },
+
+            "advertisementSettings": {
+                "debug": false, // Enable IMA SDK debugging.
+                "autoplay": false, // Don't use this because of browser video autoplay restrictions.
+                "locale": "en", // Locale used in IMA SDK, this will localise the "Skip ad after x seconds" phrases.
+            },
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://html5.api.gamedistribution.com/main.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'gamedistribution-jssdk'));
+
+
+        function resumeGame() {
+            game.paused = false;
+
+            if (!MuteBool)
+                game.sound.mute = false;
+        }
+
+        function pauseGame() {
+            game.paused = true;
+            game.sound.mute = true;
+        }
+
+    </script>
+
+    <script>
+        var game;
+        (function() {
+            game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
+            game.preserveDrawingBuffer = true;
+            //add states
+            game.state.add("Boot", boot);
+            game.state.add("Preload", preload);
+
+            game.state.add("ChooseLevel", chooselevel);
+            game.state.add("TitleScreen", titleScreen);
+            game.state.add("Prelevel", prelevel);
+            game.state.add("Stage1", stage1);
+            game.state.add("Stage2", stage2);
+
+            //start boot state
+            game.state.start("Boot");
+
+        })();
+
+    </script>
+
+</head>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Copyright Zygomatic.nl -->
+	<!-- Programming: Webgear.nl -->
+	<meta charset="utf-8">
+	<title>Car Parking 2</title>
+	<meta name="date" content="2015-11-13">
+	<meta name="gameCats" content="Mind">
+	<meta property="og:type" content="game">
+	<meta property="og:url" content="https://cdn.htmlgames.com/CarParking2/">
+	<meta property="og:title" content="Car Parking 2">
+	<meta property="og:image" content="https://cdn.htmlgames.com/CarParking2/img/icon/image-300x200.jpg">
+	<meta property="og:description" content="Puzzle game where you need to park cars at marked locations in a parking garage.">
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,width=device-width,viewport-fit=cover">
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="theme-color" content="#000">
+	<link rel="manifest" href="manifest.json">
+	<link rel="shortcut icon" sizes="196x196" href="img/icon/icon-196x196.png">
+	<link rel="apple-touch-icon" href="img/icon/icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/icon/icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/icon/icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/icon/icon-152x152.png">
+
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+
+	<script src="js/ThirdParty.js"></script>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/words.en.js"></script>
+	<script src="js/game.js"></script>
+</head>
+<body>
+<div class="desc">
+	<h1>Car Parking 2</h1>
+	<p>Puzzle game where you need to park cars at marked locations in a parking garage.</p>
+</div>
+
+<div id="gameContainer">
+
+	<div id="loading"></div>
+
+	<div id="menuDiv">
+		<img id="menuImg" src="img/title.png" alt="Car Parking 2" width="682" height="207" style="margin:100px 0 0 40px">
+
+		<div id="playerScore">
+			<div></div>
+			<button type="button" class="awesome" onclick="ThirdParty.submitScore(Game.totalScore)" lang="word(17)"><!--Submit score--></button>
+		</div>
+
+		<div class="menuButs">
+			<button type="button" class="large awesome" onclick="Game.startGame(0)" lang="word(4)"><!--Play--></button>
+			<button type="button" class="large awesome" onclick="Game.showHelp()" lang="word(7)"><!--Help--></button>
+			<button type="button" class="large awesome _hiscore_" onclick="ThirdParty.showLeaderboard()" lang="word(16)"><!-- Hiscores --></button>
+			<button type="button" class="large awesome" onclick="GameLib.moreGames()" lang="word(18)"><!--More games--></button>
+		</div><!--/.menuButs-->
+
+		<table id="langSelect">
+		<tbody>
+		<tr>
+			<td data-lang="en"><div class="flag" style="background-position:-180px 0"></div>English</td>
+			<td data-lang="nl"><div class="flag" style="background-position:0 0"></div>Nederlands</td>
+		</tr><tr>
+			<td data-lang="es"><div class="flag" style="background-position:-60px 0"></div>Español</td>
+			<td data-lang="pt"><div class="flag" style="background-position:-140px 0"></div>Português</td>
+		</tr><tr>    
+			<td data-lang="fr"><div class="flag" style="background-position:-80px 0"></div>Français</td>
+			<td data-lang="it"><div class="flag" style="background-position:-120px 0"></div>Italiano</td>
+		</tr><tr>    
+			<td data-lang="de"><div class="flag" style="background-position:-40px 0"></div>Deutsch</td>
+			<td data-lang="ru"><div class="flag" style="background-position:-160px 0"></div>Русский</td>
+		</tr><tr>    
+			<td data-lang="in"><div class="flag" style="background-position:-100px 0"></div>Hinglish</td>
+			<td data-lang="pl"><div class="flag" style="background-position:-200px 0"></div>Polski</td>
+		</tr><tr>    
+			<td data-lang="tr"><div class="flag" style="background-position:-220px 0"></div>Türkçe</td>
+		</tr>
+		</tbody>
+		<tfoot>
+		<tr>
+			<td colspan="2"><div class="flag" style="background-position:-20px 0"></div>English</td>
+		</tr>
+		</tfoot>
+		</table>
+		
+	</div><!--/.menuDiv-->
+
+	<div id="gameDiv">
+
+		<div id="gameBoard"></div>
+
+		<div id="gameMenu">
+
+		<img src="img/title.png" alt="Car Parking 2" width="160" height="49" style="position:absolute;left:15px;top:25px">
+
+		<div id="data" class="fancy">
+			<a id="levelPrev" href="#" onclick="Game.gotoLevel(-1);return false" class="disabled">&laquo;</a> 
+			<span lang="word(100)"><!--level--></span>
+			<a id="levelNext" href="#" onclick="Game.gotoLevel(1);return false">&raquo;</a>
+			<br>
+
+
+			<span lang="word(9)"><!--Level--></span>: <strong id="level">1</strong>
+			<br>
+
+			<span lang="word(13)"><!--Par--></span>: <strong id="par"></strong>
+			<hr>
+
+			<span lang="word(101)"><!--Moves--></span>: <strong id="moves">0</strong>
+			<br>
+
+			<span lang="word(8)"><!--Score--></span>: <strong id="score">0</strong>
+
+			<div style="margin-top:15px">
+			<button id="undoBut" type="button" class="awesome" onclick="Game.undo()" lang="word(114)"><!--Undo--></button>
+			<br>
+			<button type="button" class="awesome" onclick="Game.restart()" lang="word(103)"><!--Restart level--></button>
+			<br>
+			<button type="button" class="awesome" onclick="Game.pause()" lang="word(5)"><!--Pause--></button>
+			</div>
+
+			<div class="audio" style="margin:15px -25px 0 -40px">
+				<div class="music on" lang="title:word(11)" onclick="Game.toggleMusic()"></div>
+				<div class="sound on" lang="title:word(12)" onclick="Game.toggleSound()"></div>
+			</div>
+
+		</div><!--/#data-->
+
+		</div><!--/#gameMenu-->
+
+		<div id="banner" class="fancy"></div>
+
+	</div><!--/#gameDiv-->
+
+</div>
+
+<div id="rotateHint">
+   <b lang="word(14)"><!--Please rotate your device--></b>
+   <img class="rotate" src="img/rotate.png" lang="alt:word(14)">
+	<img id="rotateClose" src="img/close.png" alt="X">
+</div>
+
+<script> 
+	var gameName = document.title;
+	GameLib.init(gameName, 800,480); 
+</script>
+</body>
+</html>

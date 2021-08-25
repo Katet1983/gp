@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head><title>Bump.io Game Files - Crazy Games</title><link href="https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js" rel="preload" as="script" /><link href="https://www.crazygames.com/game/bump-io" rel="canonical" /><meta charset="UTF-8" /><meta name="robots" content="noindex, follow" /><meta name="description" content="The game files for Bump.io, a free browser game on CrazyGames.com" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Accept-CH" content="DPR" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" /><style id="pacman-styles">/* purple background */
+body {
+  background-image: linear-gradient(290deg, #3b2b73 55%, #6f2f93, #6f2f93);
+  background-position: center;
+  text-align: center;
+}
+/* for positioning of pacman loader */
+body, html { height: 100%; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate_preloadpacman_half_up {
+  0% {
+    transform: rotate(270deg); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(270deg); }
+}
+
+@keyframes rotate_preloadpacman_half_down {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes preloadpacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-100px, -6.25px);
+  }
+}
+
+.preloadpacman {
+  position: relative;
+}
+.preloadpacman > div:nth-child(2) {
+  animation: preloadpacman-balls 1s -0.99s infinite linear;
+}
+.preloadpacman > div:nth-child(3) {
+  animation: preloadpacman-balls 1s -0.66s infinite linear;
+}
+.preloadpacman > div:nth-child(4) {
+  animation: preloadpacman-balls 1s -0.33s infinite linear;
+}
+.preloadpacman > div:nth-child(5) {
+  animation: preloadpacman-balls 1s 0s infinite linear;
+}
+.preloadpacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(3),
+.preloadpacman > div:nth-child(4),
+.preloadpacman > div:nth-child(5),
+.preloadpacman > div:nth-child(6) {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 70px;
+}
+</style></head><body><div class="preloadpacman" id="pacman"><div></div><div></div><div></div><div></div><div></div></div><script type="text/javascript">function loadScript(url, async, callback) {
+  var head = document.head;
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = url;
+  if(async) {
+    script.async = true;
+  }
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+}
+var options = {"loader":"iframe","loaderOptions":{"sandbox":true,"url":"https://files.crazygames.com/bump-io/1/index.html"},"author":"BPTop","thumbnail":"https://images.crazygames.com/games/bump-io/thumb-1570533394420.png?auto=format,compress&q=75&cs=strip&w=360","gameName":"Bump.io","gameHttps":true,"gameSlug":"bump-io","gameStatus":"published","showAdOnExternal":"ALWAYS","showAdOnInternal":"DEFAULT","appStoreLink":null,"playStoreLink":null,"steamStoreLink":null,"disableEmbedding":false,"dollarRate":0.8506012474917894,"upvotes":1350,"downvotes":216,"releaseDate":"2019-10-08","locale":"en_US","controls":{"text":"<h3>Controls</h3>\nDrag left mouse button to control the car."},"videoThumbnail":"https://videos.crazygames.com/bump-io/1/bump-io-thumbnail.mp4","video":{"original":"https://videos.crazygames.com/bump-io/1/bump-io.mp4","sizes":[{"width":180,"height":111,"location":"https://videos.crazygames.com/bump-io/1/bump-io-180x111.mp4"},{"width":360,"height":222,"location":"https://videos.crazygames.com/bump-io/1/bump-io-360x222.mp4"},{"width":540,"height":333,"location":"https://videos.crazygames.com/bump-io/1/bump-io-540x333.mp4"},{"width":720,"height":444,"location":"https://videos.crazygames.com/bump-io/1/bump-io-720x444.mp4"}]},"totalSize":"3 MB","minTimeBetweenMidrollAdsInMs":180000,"minTimeBetweenRewardedAdsInMs":5000,"noMidrollAdInFirstMinutes":3,"noRewardedAdInFirstMinutes":0,"categoryEnSlug":"io","tagsEnSlugs":["battle","destroy","car","2d","html5"],"fullscreen":"ADDS_VALUE","orientation":"BOTH","category":"Car","categoryLink":"https://www.crazygames.com/t/car","gameLink":"https://www.crazygames.com/game/bump-io","alternativeGames":[{"category":".io","gameSlug":"sword-io","gameName":"Sword.io","rating":9.1,"thumbnail":"https://images.crazygames.com/games/sword-io/thumb-1559566041575.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/sword-io/1/sword-io-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/sword-io","loader":"iframe"},{"category":".io","gameSlug":"carhit-io","gameName":"CarHit.io","rating":9.1,"thumbnail":"https://images.crazygames.com/carhit-io/20210215160311/carhit-io-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/carhit-io/1/carhit-io-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/carhit-io","loader":"5.6.x"},{"category":".io","gameSlug":"smash-karts","gameName":"Smash Karts","rating":9,"thumbnail":"https://images.crazygames.com/smash-karts/20201119155032/smash-karts-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/smash-karts/3/smash-karts-180x111.mp4","gameLink":"https://www.crazygames.com/game/smash-karts","loader":"iframe"},{"category":".io","gameSlug":"evowarsio","gameName":"EvoWars.io","rating":8.5,"thumbnail":"https://images.crazygames.com/games/evowarsio/cover-1586449813403.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/evowarsio/1/evowarsio-180x111.mp4","gameLink":"https://www.crazygames.com/game/evowarsio","loader":"iframe"},{"category":".io","gameSlug":"battledudes-io","gameName":"BattleDudes.io","rating":8.6,"thumbnail":"https://images.crazygames.com/battledudes-io/20201103145035/battledudes-io-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/battledudes-io/1/battledudes-io-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/battledudes-io","loader":"iframe"},{"category":".io","gameSlug":"minigiants-io","gameName":"MiniGiants.io","rating":8.9,"thumbnail":"https://images.crazygames.com/games/minigiants-io/cover-1584553354815.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/minigiants-io/1/minigiants-io-180x111.mp4","gameLink":"https://www.crazygames.com/game/minigiants-io","loader":"iframe"},{"category":".io","gameSlug":"stabfish-io","gameName":"Stabfish.io","rating":8.6,"thumbnail":"https://images.crazygames.com/stabfish-io/20210113074741/stabfish-io-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/stabfish-io/2/stabfish-io-180x111.mp4","gameLink":"https://www.crazygames.com/game/stabfish-io","loader":"iframe"},{"category":".io","gameSlug":"shellshockersio","gameName":"Shell Shockers","rating":9.2,"thumbnail":"https://images.crazygames.com/shellshockersio/20200825110135/shellshockersio-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/shellshockersio/2/shellshockersio-180x111.mp4","gameLink":"https://www.crazygames.com/game/shellshockersio","loader":"iframe"},{"category":".io","gameSlug":"world-of-karts","gameName":"World of Karts","rating":8.7,"thumbnail":"https://images.crazygames.com/world-of-karts/20200813093954/world-of-karts-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/world-of-karts/1/world-of-karts-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/world-of-karts","loader":"iframe"},{"category":".io","gameSlug":"warcall-io","gameName":"WarCall.io","rating":8.9,"thumbnail":"https://images.crazygames.com/games/warcall-io/cover-1604914734657.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/warcall-io/1/warcall-io-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/warcall-io","loader":"iframe"}],"country":"IN","domainHasNoCMP":false};
+var SDK_READY = false;
+var GF_READY = false;
+var GF_LOAD_CALLED = false;
+loadScript("https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js", true, function() {
+    Crazygames.load(options).then(function() {
+      var pacmanWrapper = document.getElementById('pacman');
+      var pacmanStyles = document.getElementById('pacman-styles');
+
+      if (pacmanWrapper && pacmanStyles) {
+        pacmanWrapper.remove();
+        pacmanStyles.remove();
+      }
+    });
+});</script></body></html>

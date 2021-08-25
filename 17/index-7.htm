@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PaPeR.io 3 Live Online Multiplayer - With Premium Skins Free</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#252525"/>
+<meta name="description" content="PaPeR.io 3 Live online With Premium Skins Free and Paper.io 2 World Ranking, play, save your scores, and learn your world-wide ranking, Get high score and represent your country worldwide"/>
+<meta property="og:url" content="https://paperio3.live">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PaPeR.io 3 Live Online Multiplayer - With Premium Skins Free">
+<meta property="og:description" content="PaPeR.io 3 Live online With Premium Skins Free and Paper.io 2 World Ranking, play, save your scores, and learn your world-wide ranking, Get high score and represent your country worldwide">
+<meta property="og:image" content="https://paperio3.live/img/og.png?v2">
+<link rel="shortcut icon" href="https://paperio3.live/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://paperio3.live/favicon.ico" type="image/x-icon">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://paperio3.live/css/stil.css?1629893153" rel="stylesheet">
+<link href="https://paperio3.live/css/animate.css" rel="stylesheet">
+<script>
+ //coo
+ !function(e){var n=!1;if("function"==typeof define&&define.amd&&(define(e),n=!0),"object"==typeof exports&&(module.exports=e(),n=!0),!n){var o=window.Cookies,t=window.Cookies=e();t.noConflict=function(){return window.Cookies=o,t}}}(function(){function g(){for(var e=0,n={};e<arguments.length;e++){var o=arguments[e];for(var t in o)n[t]=o[t]}return n}return function e(l){function C(e,n,o){var t;if("undefined"!=typeof document){if(1<arguments.length){if("number"==typeof(o=g({path:"/"},C.defaults,o)).expires){var r=new Date;r.setMilliseconds(r.getMilliseconds()+864e5*o.expires),o.expires=r}o.expires=o.expires?o.expires.toUTCString():"";try{t=JSON.stringify(n),/^[\{\[]/.test(t)&&(n=t)}catch(e){}n=l.write?l.write(n,e):encodeURIComponent(String(n)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),e=(e=(e=encodeURIComponent(String(e))).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent)).replace(/[\(\)]/g,escape);var i="";for(var c in o)o[c]&&(i+="; "+c,!0!==o[c]&&(i+="="+o[c]));return document.cookie=e+"="+n+i}e||(t={});for(var a=document.cookie?document.cookie.split("; "):[],f=/(%[0-9A-Z]{2})+/g,s=0;s<a.length;s++){var p=a[s].split("="),d=p.slice(1).join("=");'"'===d.charAt(0)&&(d=d.slice(1,-1));try{var u=p[0].replace(f,decodeURIComponent);if(d=l.read?l.read(d,u):l(d,u)||d.replace(f,decodeURIComponent),this.json)try{d=JSON.parse(d)}catch(e){}if(e===u){t=d;break}e||(t[u]=d)}catch(e){}}return t}}return(C.set=C).get=function(e){return C.call(C,e)},C.getJSON=function(){return C.apply({json:!0},[].slice.call(arguments))},C.defaults={},C.remove=function(e,n){C(e,"",g(n,{expires:-1}))},C.withConverter=e,C}(function(){})});
+ </script>
+</head>
+<body>
+
+<style>
+h1{
+    color: #a4d267;
+    font-size: 28px;
+}
+h2{
+    color: #4baf73;
+    font-size: 19px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    line-height: 24px;
+}
+h3{}
+	p{
+    line-height: 23px;
+}
+.mpr{
+	width:100%;
+}
+.seffaf{
+	background: rgb(255 255 255 / 38%);
+}
+.naseffaf{
+	background: rgb(255 255 255 / 75%);
+	
+}
+.hacik {
+    left: 0px !important;
+    transition: all .5s; 
+} 
+.hkapali {
+    left: -380px !important;
+    transition: all .5s;
+}
+.filtre {
+    position: fixed;
+    margin: 0;
+    bottom: 5px;
+    left: 0;
+    display: grid;
+    color: #fff;
+    width: 360px;
+    padding: 10px;
+    z-index: 505 !important;
+    list-style: none;
+    height: 25px;
+    background: rgb(232 22 22 / 92%);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    opacity: 1 !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ul.hareketler { 
+    position: fixed;
+    margin: 0;
+    bottom: 5px;
+    left: 5px;
+    width: 360px;
+    padding: 10px;
+    z-index: 500 !important;
+    border-radius: 3px;
+    list-style: none;
+}
+ul.hareketler li{
+    font-size: 13px;
+}
+
+ul.hareketler span:hover {
+    cursor: pointer;
+    color: #ffec6e;
+    background: #4e4820;
+}
+ul.hareketler span {
+    float: left;
+    margin-right: 5px;
+    position: absolute;
+    font-weight: 700;
+    top: -23px;
+    color: #222;
+    right: -140px;
+    background: #ffd43e;
+    padding: 0 5px;
+    border-radius: 2px;
+    box-shadow: 0px -1px 4px 0px #00000061;
+}
+ul.hareketler div{
+    float: left;
+    margin-right: 5px;
+}
+ul.hareketler {
+    z-index: 99999999999999999;
+}
+	
+	.ackapat{
+		 
+	}
+.actik {
+    right: -6px !important;
+    top: -25px !important;
+    bottom: unset !important;
+}
+.kapattik {
+    right: -140px !important;
+    top: unset !important;
+    bottom: 0px !important;
+}
+</style>
+ 
+
+<div id="preroll"></div>
+ 
+	<script>
+ function ackapat(){
+		
+		
+		 if( adBlockEnabled == true ){
+			$(".filtre").show();
+		} 
+		  
+		if($("ul.hareketler").hasClass("hacik")){
+			$("ul.hareketler").removeClass("hacik").addClass("hkapali");
+			$(".ackapat").removeClass("actik").addClass("kapattik");
+			$(".ackapat").text("Open Live Stats");
+			$(".ackapat").animate({right:-140});
+			$(".filtre").hide();
+		} else {
+			//$(".filtre").show();
+			$("ul.hareketler").removeClass("hkapali").addClass("hacik");
+			$(".ackapat").text("Close Live Stats");
+			$(".ackapat").removeClass("kapattik").addClass("actik");
+			
+			$(".ackapat").animate({right:-6});
+		}
+	}
+	
+	
+	
+	function getScript(src) {
+    var headElm = document.head || document.getElementsByTagName('head')[0];
+    var script = document.createElement("script");
+    var once = true;
+    script.async = "async";
+    script.type = "text/javascript";
+    script.charset = "UTF-8";
+    script.src = src;
+    script.onload = script.onreadystatechange = function() {
+		
+		
+        if (once && (!script.readyState || /loaded|complete/.test(script.readyState))) {
+            once = false;
+           
+            script.onload = script.onreadystatechange = null;
+			oldu=1;
+			console.log("okeey");
+        }
+		
+		
+    };
+   
+	  headElm.appendChild(script);
+}
+
+ 
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, top-left, top-right
+	}
+
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'fullscreen', //default, fullscreen, center, fill
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('preroll')},
+			AIP_COMPLETE: function (evt)  {
+				game_start();
+			},
+			AIP_REMOVE: function ()  {
+				// Here it's save to remove the PREROLL_ELEM from the page if you want. But it's not recommend.
+			}
+		});
+	});
+
+	function show_preroll() {
+		//check if the adslib is loaded correctly or blocked by adblockers etc.
+		if (typeof aiptag.adplayer !== 'undefined') {
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startPreRoll(); });
+		} else {
+			 game_start();
+		}
+	}
+	
+	
+	
+jQuery(window).on("load",function(){
+	getScript("//api.adinplay.com/libs/aiptag/pub/GRL/paperio3.live/tag.min.js");
+ }); 
+</script>
+<input type="hidden" id="myUlke" value="0" />
+<div style="display:none;" class="kapkap"></div>
+<ul style="display:none;" class="skinList"></ul>
+
+<div class="main">
+<div class="left">
+
+<div class="lb"></div>
+<div style="display:none;" class="skorlar_baslik_aciklama animated zoomIn">
+<div style="display:none;" class="rank_baslik basliktext">Top 10 of This Week</div>
+<div class="rank_baslik basliktextL"></div>
+</div>
+<div style="text-align:center;">
+<a href="javascript:;" onclick="scoreList('today');" id="rank_today" class="scorelist_btn skor_buton_secili">Today</a>
+<a href="javascript:;" onclick="scoreList('thisweek');" id="rank_thisweek" class="scorelist_btn skor_buton_secili_degil">Weekly</a>
+<a href="javascript:;" onclick="scoreList('thismonth');" id="rank_thismonth" class="scorelist_btn skor_buton_secili_degil">Monthly</a>
+<a href="javascript:;" onclick="scoreList('all');" id="rank_all" class="scorelist_btn skor_buton_secili_degil">All</a>
+</div>
+
+
+<ul class="bestScores">
+<div class="sbas bss">Score</div>
+<div style="display:none;" class="tbas bss">Time</div>
+<div class="abas bss">Area</div>
+<li title="1 day ago" onclick="detay('566903');">
+<span>1</span>
+<p title="Korea"><img class="c_flag" src="https://paperio3.live/countries/kr.png" alt="Korea"  title="Korea"/></p>
+<div class="winner">:D</div>
+<i>33.15K</i>
+<div style="display:none;" class="taym">03:29</div>
+<div style="disp" class="area">57.73%</div>
+</li>
+<li title="1 day ago" onclick="detay('566907');">
+<span>2</span>
+<p title="India"><img class="c_flag" src="https://paperio3.live/countries/in.png" alt="India"  title="India"/></p>
+<div class="winner">1ST!!</div>
+<i>29.74K</i>
+<div style="display:none;" class="taym">03:59</div>
+<div style="disp" class="area">67.70%</div>
+</li>
+<li title="11 hours ago" onclick="detay('566964');">
+<span>3</span>
+<p title="U.S.A."><img class="c_flag" src="https://paperio3.live/countries/us.png" alt="U.S.A."  title="U.S.A."/></p>
+<div class="winner"> Indian</div>
+<i>21.07K</i>
+<div style="display:none;" class="taym">13:03</div>
+<div style="disp" class="area">100.00%</div>
+</li>
+<li title="22 hours ago" onclick="detay('566918');">
+<span>4</span>
+<p title="Malaysia"><img class="c_flag" src="https://paperio3.live/countries/my.png" alt="Malaysia"  title="Malaysia"/></p>
+<div class="winner">Paperio3.live_78</div>
+<i>20.92K</i>
+<div style="display:none;" class="taym">01:57</div>
+<div style="disp" class="area">32.63%</div>
+</li>
+<li title="2 hours ago" onclick="detay('566998');">
+<span>5</span>
+<p title="India"><img class="c_flag" src="https://paperio3.live/countries/in.png" alt="India"  title="India"/></p>
+<div class="winner">Pulkit</div>
+<i>19.99K</i>
+<div style="display:none;" class="taym">05:45</div>
+<div style="disp" class="area">91.97%</div>
+</li>
+<li title="7 hours ago" onclick="detay('566984');">
+<span>6</span>
+<p title="India"><img class="c_flag" src="https://paperio3.live/countries/in.png" alt="India"  title="India"/></p>
+<div class="winner">i conq lead</div>
+<i>18.90K</i>
+<div style="display:none;" class="taym">01:13</div>
+<div style="disp" class="area">30.66%</div>
+</li>
+<li title="3 hours ago" onclick="detay('566994');">
+<span>7</span>
+<p title="India"><img class="c_flag" src="https://paperio3.live/countries/in.png" alt="India"  title="India"/></p>
+<div class="winner">HINDUSTAN</div>
+<i>17.80K</i>
+<div style="display:none;" class="taym">00:43</div>
+<div style="disp" class="area">17.01%</div>
+</li>
+<li title="7 hours ago" onclick="detay('566983');">
+<span>8</span>
+<p title="India"><img class="c_flag" src="https://paperio3.live/countries/in.png" alt="India"  title="India"/></p>
+<div class="winner">indian</div>
+<i>16.76K</i>
+<div style="display:none;" class="taym">04:13</div>
+<div style="disp" class="area">70.66%</div>
+</li>
+<li title="2 hours ago" onclick="detay('566996');">
+<span>9</span>
+<p title="India"><img class="c_flag" src="https://paperio3.live/countries/in.png" alt="India"  title="India"/></p>
+<div class="winner">INDIA</div>
+<i>16.24K</i>
+<div style="display:none;" class="taym">01:33</div>
+<div style="disp" class="area">50.33%</div>
+</li>
+<li title="1 day ago" onclick="detay('566900');">
+<span>10</span>
+<p title="India"><img class="c_flag" src="https://paperio3.live/countries/in.png" alt="India"  title="India"/></p>
+<div class="winner">vini</div>
+<i>16.03K</i>
+<div style="display:none;" class="taym">01:29</div>
+<div style="disp" class="area">31.71%</div>
+</li>
+ 
+</ul>
+
+
+	<div style="color:#fff;">Leaderboard errors fixed..</div>
+</div>
+<div class="center">
+<a title="paperio 3" href="https://paperio3.com"><div class="logo"></div></a>
+<div class="inputvebuton">
+<input class="nikos" id="nickname" maxlength="12" type="text" placeholder="Your Name">
+<div onclick="openSkins();" class="selSkinArea">
+<img alt="paper io skin" id="selSkinImg" onclick="openSkins();" src="https://paperio3.live/skins/skin_thumbs/default.png" />
+</div>
+<input id="skin" maxlength="12" value="default" type="hidden">
+<div style="display:none;" class="selectedServer">Select Server</div>
+<select id="servers" class="servers" onchange="serverSelect($(this).find('option:selected').attr('rel'), $(this).val());" required="">
+<option rel="ffa" value="paper2">🎮 FFA Classic 1 —  California</option>
+<option rel="ffa" value="paper2">🎮 FFA Classic 2 —  Texas</option>
+<option rel="speed" value="paper2">🌞 Speed Server 1 —  New York</option>
+<option rel="speed" value="paper2">🌞 Speed Server 2 —  Florida</option>
+<option rel="jet" selected="" value="paper2">🛩️ Jet Motor Server 1 —  Michigan</option>
+<option rel="jet" value="paper2">🛩️ Jet Motor Server 2 —  New Jersey</option>
+</select>
+<div class="playButon b_yesil butonum_yesil" onclick="play();" id="paperplay">PLAY</div>
+</div>
+
+
+
+<div class="rego1">
+
+	<div id="paperio3-live_300x250">
+		<script type="text/javascript">
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('paperio3-live_300x250'); });
+		</script>
+	</div>
+
+
+</div>
+
+
+</div>
+
+
+<div class="right">
+
+
+<div class="blok">	
+	
+<div onclick="openSkins();" class="selSkinArea1">
+<img alt="paper io skin" id="selSkinImg1" onclick="openSkins();" src="https://paperio3.live/skins/skin_thumbs/default.png" />
+<div class="selSkin1" onclick="openSkins();">Select Skin</div>
+</div>
+</div>
+
+<div class="blok">	
+ 
+<div class="rec_blok">
+	<div class="rec_title">My Record</div>
+	<div class="rec_desc">🏆 0 %</div>
+
+</div>
+
+</div>
+
+<div class="blok">	
+ 
+<div class="rec_blok2">
+	<div class="rec_title2">Online Players</div>
+	<div class="rec_desc2"><div>🎮</div><div id="online">2985</div>
+	</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="rengo1" style='margin-bottom: 30px !important;height:250px;width: 970px;text-align: center;margin: 0 auto;grid-column: span 3;margin-top: 30px !important;' id="paperio3-live_970x250">
+			<script type="text/javascript">
+				aiptag.cmd.display.push(function() { aipDisplayTag.display('paperio3-live_970x250'); });
+			</script>
+		</div>
+		
+		
+
+
+ 
+
+ <div class="page">
+ <div class="minimetin">
+<b style="font-size: 16px;">Paper.io 3 Unblocked Online Game </b><br><br>
+ 
+
+<p>The second part of the famous multiplayer game is no worse than the first, see for yourself! Playing the funny Piper Io 2 arcade game becomes more fun thanks to improved graphics and updated gameplay.</p><br><br>
+<p>
+Usurpation of the area will be required as a small square moving across the field. While you are pulling out the areas, try not to run into competitors. If a trickster succeeds in cutting you off, you will start playing by going back to the start and losing all your achievements.</p><br><br>
+<p>The game's rankings are based on the percentage of area you managed to score, as well as the number of your opponents that were destroyed. Cut your opponents' health lines and enjoy cool boosters. Use pretty skins to make your ward unique. They become available after the first Achievements.</p><br><br>
+<p>The rules of the second part of the game have remained unchanged. A small square is continuously moving on a huge piece of paper, leaving a colored mark. Conquer more territory, ahead of other participants. Keep an eye on the "tail", the other players will definitely try to cut it, then the game will have to start over, losing the progress made. Try to get back to the lands marked with your color as soon as possible, because only there is safety. Take over other people's territories, cross the lines of life of your opponents, and become the only winner who has captured the most territories. Avoid direct collisions with the rest of the players, otherwise both will die. To win the game, you will need strategic skills, rational thinking and the ability to make quick decisions.</p><br><br>
+<p>Set the direction of the square using the WASD keys. Playing paper io 3 combines several advantages in an amazing way. The plot is uncomplicated, the graphics are simple, but once you try to play it once, you cannot break away. This "time killer" will perfectly relieve stress and help relieve the nervous system. Piper Io 2: Start playing online right now!</p>
+<p>The mechanics here work as follows: you play for the cube and move around the big field, while the color trail remains behind you. If you go back to a section of your color, the trail closes and everything inside gets colored. If you close the trail yourself or someone else hits your trail, you will die. The main goal on the game will be to capture the biggest piece of the map and of course not die.</p><br><br>
+<p>That's basically it, so the appearance of Paper.io 3 really came as a surprise. You might ask yourself what could have been improved here and suggested new things? First of all, in the second part of the game, management changed. Whereas previously players could only move in 4 directions at an angle of 90 degrees, drawing squares and rectangles, now there are no clear limits to movement.</p><br><br>
+<p>This makes collisions between players more unexpected and intense. The viewing angle has also increased, you can now see better what is happening around you.</p>
+
+<br><br><br>
+
+
+<b style="font-size: 16px;">How to 100% Paper.io 3</b>
+
+<br><br><a href="https://paperio3.live" title="paper.io 3">PaPeR.io 3</a>, is a game for the adventurous, it is a game that has different servers for all players such as FFA mode (classic). Fast server and the slower server, not forgetting the small arena mode. 
+Each of these servers permits different players the ability to try different modes. The FFA mode is the Standard server any players can play. The faster server can be played by players that are more advanced and have a better idea on how to play the game, and survive. 
+The slow server is better suited for the beginner players as the game consists of other players playing on a slower motion. Lastly there is also the small area mode which allows the players to play more competitively as there is less surface to cover and fight for. This means players will have to be more vigiliant and aware of the other competitors. It is a mode for the more skilled gamers as you will be faced with other players 
+<br><br>
+<b style="font-size: 16px;">How the game PaPeR.io can be played:</b><br>
+PaPeR.io  like snake games or tower defense and multiplayer game,  You can control your personal square cursor in a number of different ways, firstly by using your keyboard controls such as, W, A, S, D as well as the keyboard arrow keys. You control your cursor with these controls. 
+<br><br>
+<b style="font-size: 16px;">The aim of the game:</b><br>
+You are given your open personal square cursor, you have to keep yourself away from the other cursors (players) otherwise you will die. The aim of the game is to take up as much of the gaming arena as possible. This is the only way you will ensure you succeed in this game and come out as the winner. 
+<br><br>
+<b style="font-size: 16px;">How the scores are added up:</b><br>
+Your own personal score is based on your own personal playing time and the number of PaPeRio competitors you manage to defeat (kill). 
+<br><br>
+After a long time, we're back with you, we've been making improvements over the game for a long time, but the farther away a game is from the original, the less popular it is.
+So we decided to go back, because you liked it very much, <h1 style="display:inline;font-size: 13px;">PaPeR.io 2</h1> is one of the most popular games in the world, because this game is safe, you can't tease others in the game, the game is only designed to play.
+There are 2 main servers in the game, USA and Europe whichever region you are close to, we recommend playing on those servers.
+The goal of <h2 style="display: inline;"><a href="https://paperio3.live" title="PaPeR.io 3" style="display: inline !important; font-size: 14px;">Paperio 3</a></h2> is simple. Try to get yourself the most space on the playing field with the arrow keys of your keyboard.
+Do not get caught by other players,
+because they will want to block you so that you don't take up a lot of space and capture new territories.
+<br><br>
+Do not forget to save your score when the game is over, when you save your score, take your place in the list with the flag of your country.
+<br><br>
+The leader board consists of 4 main groups: daily, weekly, monthly and all-time.
+
+For example, the score you recorded today at 14.00 remains on the daily table until tomorrow at 14.00, unless you get more points than you...
+<br><br>
+Formerly "PaPeR-io Space", the name of the game now "paperio3.live", because it is more memorable,
+<br><br>
+paperio3.live also has a Discord page where you can let us know your various requests, you can exchange ideas with other friends who play the game via discord, If you still want to contact us, you can write to us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1b737e7777745b6b7a6b7e697274283577726d7e35">[email&#160;protected]</a>
+
+
+
+</div>
+<br><br>
+<div class="minimetin">
+
+<b>PRIVACY POLICY</b>
+<br><br>We use third-party advertising companies to serve ads when you visit our Web site. These companies may use information (not including your name, address, email address or telephone number) about your visits to this and other Web sites in order to provide advertisements about goods and services of interest to you. If you would like more information about this practice and to know your choices about not having this information used by these companies, 
+<a rel="nofollow" target="_blank" href="https://optout.networkadvertising.org/?c=1">read privacy policies</a>
+</div>
+
+</div>
+
+ 
+</div>
+
+ 
+<div class="main2" style="display:none;">
+<a title="paperio 3" href="https://paperio3.live"><div class="logo"></div></a>
+<div id="game_over"></div>
+
+<div class="inf" style="color: #ffffff; font-size: 17px; width: 50%; margin: 0 auto;    margin-bottom: 10px;    background: #d00000;    padding: 10px;    border-radius: 10px;">Turn off ad blocker to save your score. We do not use annoying ads.</div>
+
+<div style="display:none;" class="saveScore">SAVE SCORE</div>
+
+<div style="display:none;" class="playAgain" onclick="play2(),pAgain();">PLAY AGAIN</div>
+<a href="https://paperio3.live"><div style="display:none;" class="changeMode">CHANGE GAMEMODE</div></a>
+<div class="rego2" style="text-align: center;display: inline-block; margin-top: 15px;"></div> 
+</div>
+<div style="display:none;" class="ekSayfa">
+<div onclick="popGizle('partners');" class="kapat">x</div>
+<div class="partners">Partners</div>
+<ul>
+</ul>
+</div> 
+<div style="display:none;" class="ekSayfa2">
+<div onclick="popGizle2('detaylar');" class="kapat">x</div>
+<div class="detaylar"></div>
+<ul>
+<li class="u_puan"></li>
+<li class="u_ulke_adi"></li>
+<li class="u_time"></li>
+<li class="u_oldurulen"></li> 
+<li class="u_skor"></li>
+</ul>
+</div> 
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://paperio3.live/jquery.animateNumber.min.js?1629893153"></script>
+ 
+<script>
+ 
+
+function acilis(){
+ 
+ 
+$('.playButon,.servers,.nikos,.selSkinArea,.blok,ul.bestScores li').hide();
+
+setTimeout(function(){ 
+$('.nikos').show().addClass("animated bounceIn");	
+},275);
+
+setTimeout(function(){ 
+$('.selSkinArea').show().addClass("animated bounceIn");	
+},350);
+
+setTimeout(function(){ 
+$('.servers').show().addClass("animated bounceIn");	
+},425);
+
+
+setTimeout(function(){ 
+$('.playButon').show().addClass("animated bounceIn");	
+},500);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(0).show().addClass("animated bounceIn");	
+//$('.loqo').show().addClass("animated zoomIn");	
+$('.sk1').show().addClass("animated bounceIn");	
+},100);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(1).show().addClass("animated bounceIn");	
+$('.sk2').show().addClass("animated bounceIn");	
+},175);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(2).show().addClass("animated bounceIn");	
+$('.sk3').show().addClass("animated bounceIn");	
+},250);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(3).show().addClass("animated bounceIn");	
+$('.sk4').show().addClass("animated bounceIn");	
+},325);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(4).show().addClass("animated bounceIn");	
+},400);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(5).show().addClass("animated bounceIn");	
+},475);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(6).show().addClass("animated bounceIn");	
+},550);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(7).show().addClass("animated bounceIn");	
+},625);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(8).show().addClass("animated bounceIn");	
+},700);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(9).show().addClass("animated bounceIn");	
+},775);
+
+
+
+
+setTimeout(function(){
+$('.right .blok').eq(0).show().addClass("animated bounceIn");	
+},200);
+
+setTimeout(function(){
+$('.right .blok').eq(1).show().addClass("animated bounceIn");	
+},275);
+
+setTimeout(function(){
+$('.right .blok').eq(2).show().addClass("animated bounceIn");	
+},300);
+
+}
+
+
+
+function skorAcilis(){
+
+$('ul.bestScores li').hide();
+
+setTimeout(function(){
+$('ul.bestScores li').eq(0).show().addClass("animated bounceIn");	
+//$('.loqo').show().addClass("animated zoomIn");	
+$('.sk1').show().addClass("animated bounceIn");	
+},100);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(1).show().addClass("animated bounceIn");	
+$('.sk2').show().addClass("animated bounceIn");	
+},175);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(2).show().addClass("animated bounceIn");	
+$('.sk3').show().addClass("animated bounceIn");	
+},250);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(3).show().addClass("animated bounceIn");	
+$('.sk4').show().addClass("animated bounceIn");	
+},325);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(4).show().addClass("animated bounceIn");	
+},400);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(5).show().addClass("animated bounceIn");	
+},475);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(6).show().addClass("animated bounceIn");	
+},550);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(7).show().addClass("animated bounceIn");	
+},625);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(8).show().addClass("animated bounceIn");	
+},700);
+
+setTimeout(function(){
+$('ul.bestScores li').eq(9).show().addClass("animated bounceIn");	
+},775);
+
+
+}
+ 
+function skinleriGetir(id){
+	jQuery.ajax({  
+		type: "POST",  
+		url: "skinlist.php",  
+		success: function(cevap){
+			$("ul.skinList").html(cevap);
+
+		}
+	});
+}
+
+ function openSkins(){
+	 $("ul.skinList").show();
+	 $(".kapkap").show();	 
+	 skinleriGetir(); 
+ }
+ 
+ 
+
+ function closeSkins(){
+	 $("ul.skinList").hide();
+	 $(".kapkap").hide();	 
+ }
+
+function skin_logla() {
+    var __mySkin = $.trim($("#skin").val());
+    if (__mySkin == "") {
+        __mySkin = "default";
+    }
+        Cookies.set("mySkin", __mySkin);
+}
+function skin_ver() {
+    if (Cookies.get("mySkin") != null) {
+        $("#skin").val(Cookies.get("mySkin"));
+		$("#selSkinImg").attr("src","https://paperio3.live/skins/skin_thumbs/"+Cookies.get("mySkin")+".png");
+		$("#selSkinImg1").attr("src","https://paperio3.live/skins/skin_thumbs/"+Cookies.get("mySkin")+".png");
+    } 
+}
+function nick_logla() {
+    var nik = $("#nick").val();
+    Cookies.set("myNick", nik);
+}
+function nik_ver() {
+    if (Cookies.get("myNick")) {
+        $("#nickname").val(Cookies.get("myNick"));
+    } else {
+		$("#nickname").val("");
+	}
+}
+
+$(document).ready(function() {
+    nik_ver();
+	skin_ver();
+});
+
+function vergelsin(kdiv,rdiv,g,y){
+	$(kdiv).html("<div style='width:"+g+" height:"+y+";' id='"+rdiv+"'></div>");
+	aiptag.cmd.display.push(function() { aipDisplayTag.display(rdiv); });
+}
+
+
+function olduk(){
+	$(".rego2").empty();
+	
+   vergelsin(".rego2","paperio3-live_970x250",970,250);
+	 
+}
+
+
+
+var say = 0;
+function play(){
+	$("#paperio3-live_970x250").remove();
+  	say++;
+	
+	if(say==1){
+		show_preroll();
+		say = -1;
+	} else {
+		var mnick = $.trim($("#nickname").val());
+		var mskin = $.trim($("#skin").val());
+		"undefined" != typeof Cookies && Cookies.set("mySkin", mskin)
+		"undefined" != typeof Cookies && Cookies.set("myNick", mnick)
+		
+		game_start();
+	}  
+}
+
+var bay = 0; 
+function play2(){
+  	bay++;
+	if(bay==2){
+		show_preroll();
+	bay=0;
+	} else{
+		game_start();
+	}  
+}
+
+	function binlik(x) {
+		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+var _0x9042=["\x3A\x76\x69\x73\x69\x62\x6C\x65","\x69\x73","\x23\x66\x69\x6E\x69\x73\x68\x5F\x67\x61\x6D\x65","\x73\x68\x6F\x77","\x23\x63\x75\x72\x76\x65\x78\x2D\x69\x6F\x5F\x33\x30\x30\x78\x32\x35\x30","\x68\x69\x64\x65","\x23\x6F\x6E\x6C\x69\x6E\x65","\x2E\x6F\x6E\x6C\x69\x6E\x65","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x74\x65\x78\x74"];
+setInterval(
+function(){if($(_0x9042[2])[_0x9042[1]](_0x9042[0])){$(_0x9042[4])[_0x9042[3]]()}else {$(_0x9042[4])[_0x9042[5]]()}},200);
+var usron=$(_0x9042[6]);
+var usron2=$(_0x9042[7]);
+
+function getRandomInt(_0xbb4fx4,_0xbb4fx5){return Math[_0x9042[9]](Math[_0x9042[8]]()* (_0xbb4fx5- _0xbb4fx4+ 1))+ _0xbb4fx4}
+setInterval(function(){	usron.animateNumber({ number: getRandomInt(2978,3006) });	
+usron2.animateNumber({ number: getRandomInt(2978,3006) });},5000);
+
+
+function detay(id){
+	datas = {'id':id}
+	jQuery.ajax({  
+		type: "POST",  
+		url: "showScore.jsp",  
+		data: datas,  
+		success: function(cevap){
+			var gelen = cevap.split("|");
+			if(gelen[0]==0){
+				console.log(gelen[0]);
+			} else if(gelen[0]==1){
+				popGoster2("detaylar");
+				$(".detaylar").html(gelen[1]);
+				$(".u_puan").html(gelen[2]);
+				$(".u_ulke_adi").html(gelen[5]);
+				$(".u_time").html(gelen[6]);
+				$(".u_oldurulen").html(gelen[7]);
+				$(".u_skor").html(gelen[8]);
+
+			}
+
+		}
+	});
+}
+
+function popGoster(sayfa){
+	if(sayfa=="partners"){
+		$(".ekSayfa").show();
+		$(".kapkap").show();
+	}
+}
+
+function popGizle(sayfa){
+	if(sayfa=="partners"){
+		$(".ekSayfa").hide();
+		$(".kapkap").hide();
+	}
+}
+
+function popGoster2(sayfa){
+	if(sayfa=="detaylar"){
+		$(".ekSayfa2").show();
+		$(".kapkap").show();
+	}
+}
+
+function popGizle2(sayfa){
+	if(sayfa=="detaylar"){
+		$(".ekSayfa2").hide();
+		$(".kapkap").hide();
+	}
+}
+
+$(".kapkap").on("click",function(){
+	popGizle("partners");
+	popGizle2("detaylar");
+	//skinsKapat();
+	closeSkins();
+});
+
+
+function scoreList(times){
+	$(".basliktext").hide();
+	$(".basliktextL").show();
+	$(".basliktextL").html('Loading...');
+	$(".scorelist_btn").removeClass("skor_buton_secili").addClass("skor_buton_secili_degil");
+	if($(".scorelist_btn").hasClass("skor_buton_secili_degil")){
+	$("#rank_"+times).removeClass("skor_buton_secili_degil").addClass("skor_buton_secili");
+	} 
+	datas = {'times':times}
+	jQuery.ajax({  
+	type: "POST",  
+	url: "scoreList.jsp",  
+	data: datas,  
+	success: function(cevap){
+	var gelen = cevap.split("|");
+	if(gelen[0]==0){
+	alert(gelen[1]);
+	} else if(gelen[0]==1){
+		$("ul.bestScores li").hide();
+	$(".basliktext").addClass("animated wobble");
+	$(".basliktext").show();
+	$(".basliktextL").hide();
+	$(".basliktext").text(gelen[1]);
+	$("ul.bestScores").html(gelen[2]);
+	
+		skorAcilis();
+	}
+	}
+	});
+}
+function pAgain(){
+	$(".saveScore").text("SAVE SCORE");
+	
+}
+
+
+
+$('#nickname').val(Cookies.get('paperio_username'));
+
+
+ 	var adBlockEnabled = false;
+		var testAd = document.createElement('div');
+		testAd.innerHTML = '&nbsp;';
+		testAd.className = 'adsbox';
+		document.body.appendChild(testAd);
+		window.setTimeout(function() {
+		  if (testAd.offsetHeight === 0) {
+			adBlockEnabled = true;
+		  }
+		  testAd.remove();
+		  
+		  console.log('AdBlock Enabled? ', adBlockEnabled);
+		  
+		  if( adBlockEnabled == true ){
+			$(".rego1").html("<a href='https://combatroyale.com' title='yohoho io' target='_blank' rel='nofollow'><img src='malker1.png?pplplp' alt='yohoho.io' /></a>");
+			
+			$(".rengo1").html("<a href='https://combatroyale.com' title='yohoho io' target='_blank' rel='nofollow'><img src='malker2.png?pplplp' alt='yohoho.io' /></a>");
+			$(".rego2").html("<a href='https://combatroyale.com' title='yohoho io' target='_blank' rel='nofollow'><img src='malker2.png?pplplp' alt='yohoho.io' /></a>");
+			$(".inf").show();
+			$(".saveScore").remove();
+			
+		  }
+		}, 100);
+ 
+ setInterval(function(){
+	 if( adBlockEnabled == true ){
+			$(".inf").show();
+			$(".saveScore").hide();
+			//$(".filtre").show();
+		 
+		  } else {
+			  $(".filtre").hide();
+
+			 
+
+		  }
+ },100);
+ 
+	 
+		
+	 if( adBlockEnabled == true ){
+		  jQuery(".bilgi").remove();
+		  jQuery(".main2").append("<div class='bilgi' style='text-align: center;color: #ffffff;width: 380px;margin-bottom: 5px;background: #ff0000;margin: 5px auto;padding: 5px 0px;'>Please turn off ad blocker for save your score!</div>");
+		  
+		  
+		  $(".rego1").html("Neden ama neden?");
+       }
+	   
+
+
+</script>
+
+<script>
+$(window).on('load', function () {
+	acilis();
+ });
+ 
+ 
+ function puanKaydet(a,b,c,d,e) {
+	$(".saveScore").attr('onclick','');
+    var e = {'oyuncu': a,'puan':b,'time':c,'oldurulen':d,'skor':e};
+    jQuery.ajax({
+        type: "POST",
+        url: "saveScore.py",
+        data: e,
+        success: function(z) {
+		var alarm = z.split("|");
+            if(alarm[0]==0){
+				alert(alarm[1]);
+				$(".saveScore").text("SCORE SAVED!");
+				$(".saveScore").attr('onclick','');
+			} else {
+				
+				
+				$(".saveScore").text("SCORE SAVED");
+				$(".saveScore").attr('onclick','');
+				 
+			}
+        }
+    })
+	
+	
+}
+
+
+</script>
+
+<script src="https://paperio3.live/unreal-engine.js?1"></script>
+
+ 
+<script>
+serverSelect('ffa','paper2');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123635827-18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123635827-18');
+</script>
+
+
+
+</body>
+</html>

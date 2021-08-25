@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head><title>Toon Strike Force: Arcade Space Shooter Game Files - Crazy Games</title><link href="https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js" rel="preload" as="script" /><link href="https://www.crazygames.com/game/toon-strike-force-arcade-space-shooter" rel="canonical" /><meta charset="UTF-8" /><meta name="robots" content="noindex, follow" /><meta name="description" content="The game files for Toon Strike Force: Arcade Space Shooter, a free browser game on CrazyGames.com" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Accept-CH" content="DPR" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" /><style id="pacman-styles">/* purple background */
+body {
+  background-image: linear-gradient(290deg, #3b2b73 55%, #6f2f93, #6f2f93);
+  background-position: center;
+  text-align: center;
+}
+/* for positioning of pacman loader */
+body, html { height: 100%; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate_preloadpacman_half_up {
+  0% {
+    transform: rotate(270deg); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(270deg); }
+}
+
+@keyframes rotate_preloadpacman_half_down {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes preloadpacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-100px, -6.25px);
+  }
+}
+
+.preloadpacman {
+  position: relative;
+}
+.preloadpacman > div:nth-child(2) {
+  animation: preloadpacman-balls 1s -0.99s infinite linear;
+}
+.preloadpacman > div:nth-child(3) {
+  animation: preloadpacman-balls 1s -0.66s infinite linear;
+}
+.preloadpacman > div:nth-child(4) {
+  animation: preloadpacman-balls 1s -0.33s infinite linear;
+}
+.preloadpacman > div:nth-child(5) {
+  animation: preloadpacman-balls 1s 0s infinite linear;
+}
+.preloadpacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(3),
+.preloadpacman > div:nth-child(4),
+.preloadpacman > div:nth-child(5),
+.preloadpacman > div:nth-child(6) {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 70px;
+}
+</style></head><body><div class="preloadpacman" id="pacman"><div></div><div></div><div></div><div></div><div></div></div><script type="text/javascript">function loadScript(url, async, callback) {
+  var head = document.head;
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = url;
+  if(async) {
+    script.async = true;
+  }
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+}
+var options = {"loader":"iframe","loaderOptions":{"sandbox":false,"url":"https://files.crazygames.com/toon-strike-force-arcade-space-shooter/1/index.html"},"author":"blobotgames@hotmail.com","thumbnail":"https://images.crazygames.com/games/toon-strike-force-arcade-space-shooter/thumb-1562072507118.png?auto=format,compress&q=75&cs=strip&w=360","gameName":"Toon Strike Force: Arcade Space Shooter","gameHttps":true,"gameSlug":"toon-strike-force-arcade-space-shooter","gameStatus":"published","showAdOnExternal":"ALWAYS","showAdOnInternal":"DEFAULT","appStoreLink":null,"playStoreLink":"https://play.google.com/store/apps/details?id=com.JoyTimeApps.ToonStrikeForce","steamStoreLink":null,"disableEmbedding":false,"dollarRate":0.8506012474917894,"upvotes":100,"downvotes":21,"releaseDate":"2019-07-02","locale":"en_US","controls":{"text":"<h3>Controls</h3>\nUse the mouse to move or arrow keys to move the space ship left and right."},"videoThumbnail":"https://videos.crazygames.com/toon-strike-force-arcade-space-shooter/1/toon-strike-force-arcade-space-shooter-180x111.mov","video":{"original":"https://videos.crazygames.com/toon-strike-force-arcade-space-shooter/1/toon-strike-force-arcade-space-shooter.mov","sizes":[{"width":180,"height":111,"location":"https://videos.crazygames.com/toon-strike-force-arcade-space-shooter/1/toon-strike-force-arcade-space-shooter-180x111.mov"},{"width":360,"height":222,"location":"https://videos.crazygames.com/toon-strike-force-arcade-space-shooter/1/toon-strike-force-arcade-space-shooter-360x222.mov"},{"width":540,"height":333,"location":"https://videos.crazygames.com/toon-strike-force-arcade-space-shooter/1/toon-strike-force-arcade-space-shooter-540x333.mov"},{"width":720,"height":444,"location":"https://videos.crazygames.com/toon-strike-force-arcade-space-shooter/1/toon-strike-force-arcade-space-shooter-720x444.mov"}]},"totalSize":"17 MB","minTimeBetweenMidrollAdsInMs":180000,"minTimeBetweenRewardedAdsInMs":5000,"noMidrollAdInFirstMinutes":3,"noRewardedAdInFirstMinutes":0,"categoryEnSlug":"arcade","tagsEnSlugs":["flying","cartoon","asteroids","2d","airplane"],"fullscreen":"SUPPORTED","orientation":"PORTRAIT","category":"Airplane","categoryLink":"https://www.crazygames.com/t/airplane","gameLink":"https://www.crazygames.com/game/toon-strike-force-arcade-space-shooter","alternativeGames":[{"category":"Shooting","gameSlug":"space-battle","gameName":"Space Battle","rating":9.2,"thumbnail":"https://images.crazygames.com/spacebattle.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/space-battle/1/space-battle-180x111.mp4","gameLink":"https://www.crazygames.com/game/space-battle","loader":"5.4.x"},{"category":".io","gameSlug":"starblastio","gameName":"StarBlast","rating":8.5,"thumbnail":"https://images.crazygames.com/starblastio/20210428165729/starblastio-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/starblastio/2/starblastio-180x111.mp4","gameLink":"https://www.crazygames.com/game/starblastio","loader":"iframe"},{"category":"Arcade","gameSlug":"air-wings-missile-attack","gameName":"Air Wings - Missile Attack","rating":9.1,"thumbnail":"https://images.crazygames.com/airwingsmissileattack.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/air-wings--missile-attack.mp4","gameLink":"https://www.crazygames.com/game/air-wings-missile-attack","loader":"5.6.x"},{"category":"Arcade","gameSlug":"escape-plane","gameName":"Escape Plane","rating":8.1,"thumbnail":"https://images.crazygames.com/escape-plane.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/escape-plane.mp4","gameLink":"https://www.crazygames.com/game/escape-plane","loader":"iframe"},{"category":"Arcade","gameSlug":"cubic-rush","gameName":"Cubic Rush","rating":8.8,"thumbnail":"https://images.crazygames.com/games/cubic-rush/cover-1591719306783.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/cubic-rush/1/cubic-rush-180x111.mp4","gameLink":"https://www.crazygames.com/game/cubic-rush","loader":"5.6.x"},{"category":"Shooting","gameSlug":"bullet-force-multiplayer","gameName":"Bullet Force","rating":9.1,"thumbnail":"https://images.crazygames.com/games/bullet-force-multiplayer/cover-1588010858655.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/bullet-force-multiplayer/8/bullet-force-multiplayer-180x111.mp4","gameLink":"https://www.crazygames.com/game/bullet-force-multiplayer","loader":"5.6.x"},{"category":".io","gameSlug":"shellshockersio","gameName":"Shell Shockers","rating":9.2,"thumbnail":"https://images.crazygames.com/shellshockersio/20200825110135/shellshockersio-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/shellshockersio/2/shellshockersio-180x111.mp4","gameLink":"https://www.crazygames.com/game/shellshockersio","loader":"iframe"},{"category":"Shooting","gameSlug":"solwars","gameName":"Sol Wars","rating":9.3,"thumbnail":"https://images.crazygames.com/solwars.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/solwars/1/solwars-180x111.mp4","gameLink":"https://www.crazygames.com/game/solwars","loader":"5.6.x"},{"category":".io","gameSlug":"war-in-space","gameName":"War in Space","rating":9.2,"thumbnail":"https://images.crazygames.com/warinspacee.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/war-in-space-trimmed.mp4","gameLink":"http://www.crazygames.com/game/war-in-space","loader":"iframe"},{"category":"Shooting","gameSlug":"air-wars-3","gameName":"Air Wars 3","rating":9.1,"thumbnail":"https://images.crazygames.com/air-wars-3-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/air-wars-3/2/air-wars-3-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/air-wars-3","loader":"5.6.x"}],"country":"CA","domainHasNoCMP":false};
+var SDK_READY = false;
+var GF_READY = false;
+var GF_LOAD_CALLED = false;
+loadScript("https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js", true, function() {
+    Crazygames.load(options).then(function() {
+      var pacmanWrapper = document.getElementById('pacman');
+      var pacmanStyles = document.getElementById('pacman-styles');
+
+      if (pacmanWrapper && pacmanStyles) {
+        pacmanWrapper.remove();
+        pacmanStyles.remove();
+      }
+    });
+});</script></body></html>
