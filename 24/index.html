@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" charset="utf-8" async="" src="full-script.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="fbshare.js"></script>
+    <title>machine4fun</title>
+    <style>
+        html {width:100%; height:100%}
+        body {margin:0; padding:0; width: 100%; height: 100%; background-image: url(bg.jpg); background-repeat: no-repeat; background-color: #000;}
+        canvas {margin: 0; padding: 0; top:0; position: fixed; z-index: 0;}
+        #game {width:100%; height:100%}
+    </style>
+</head>
+<body>
+<script type="text/javascript">var clickedOnce = false;</script>
+<img id="btnfullscreen" src="btn_fullscreen.png" alt="fullscreen button" style="margin:5px;" onclick="full()">
+<div id="game" onclick="full()">
+    <script src="machine4fun.min.js"></script>
+</div>
+<!-- A4G Custom Video Tag -->
+<style>
+#A4Gwrap, #a4gpreloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+</style>
+<script type="text/javascript">
+window.lggdusr = false;
+window.showA4GVideoTag = function showA4GVideoTag() {
+	function optionalRemove(tagId) {
+		var el = document.getElementById(tagId);
+
+		if (el && el.parentNode) {
+			el.parentNode.removeChild(el);
+		}
+	}
+    var scriptEl = document.createElement('SCRIPT'),
+        antiCache = Math.round(Math.random() * 100000);
+
+	optionalRemove('A4Gwrap');
+	optionalRemove('a4gpreloader');
+
+    scriptEl.async = true;
+    scriptEl.type = 'text/javascript';
+    scriptEl.src = '//video.a4g.com/www/delivery/video.php?zoneid=61108&width=874&adtype=video_image_text&height=576&disableflash=1&siteurl=http://hidden4fun.com&wrapper=game&skipoffset=10&autoplay=1&l=' + antiCache;
+
+    (document.body || document.getElementsByTagName('body')[0]).appendChild(scriptEl);
+}
+
+</script>
+
+<script type="text/javascript">
+function adBlockDetected(game_ref) {
+  var event = new CustomEvent('adblocker_enabled', {'detail':[game_ref]});
+  window.dispatchEvent(event);
+}
+function adBlockNotDetected(game_ref) {
+  var event = new CustomEvent('adblocker_disabled', {'detail':[game_ref]});
+  window.dispatchEvent(event);
+}
+window.checkAdBlocker = function checkAdBlocker(game_ref) {
+  var script = document.createElement('script');
+  script.src = 'advert.js';
+  script.onload = function () {
+    adBlockNotDetected(game_ref);
+  };
+  script.onerror = function () {
+    adBlockDetected(game_ref);
+  };
+  document.head.appendChild(script);
+}
+</script>
+
+</body>
