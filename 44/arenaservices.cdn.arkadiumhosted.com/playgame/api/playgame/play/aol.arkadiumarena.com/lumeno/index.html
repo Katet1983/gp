@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;" >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="//arenaservices.cdn.arkadiumhosted.com/playgame/dist/content-play-vendors.js" ></script>
+    <script>
+        // TODO: temporary fix for old render codes
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+        
+        window.initParams = ark.urlParameterGetByName('initParams') ? base64.decode(ark.urlParameterGetByName('initParams')) : "show_game_end=false&locale=en-us&device_type=pc&arena_name=aol.arkadiumarena.com&game_name=Lumeno&events=game_start,game_end,pause_ready,event_change,abtest_init,reward_start&play_id=LTUzOTI=";
+        window.playId = ark.urlParameterGetByName('playId') || "LTUzOTI=";
+        window.flashVars = ark.urlParameterGetByName('flashVars')
+            ? base64.decode(ark.urlParameterGetByName('flashVars'))
+            : "params=68ef4a1189b6ea2a43810797299a1318bf33984d04553b9204d2121b8fba73f1d194c5caf0059bcf59db03de71e16183308f1a169892c9221725e5da0a8446719e9a91c883b981aff2ac53cf4ecd8c8bae6d71f2da494c680bea611e1b1c70ef4f35e99c3746f66f4277d704aab72bf9148692cef2389f322883457e&tKey=sjri5jf85jdor560&arenaName=AOL Games&gameName=Lumeno";
+
+        window.ark_jQuery(window).load(function() {
+            var timer;
+            window.ark_jQuery('body').mousemove(function() {
+                clearTimeout(timer);
+
+                timer = setTimeout(function() {
+                        ark.triggerEvent("game_event_change");
+                    },
+                    1000);
+            });
+        });
+    </script>
+    <style>
+        .size-max{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #gameBlock > iframe {
+            margin: 0 !important;
+            padding: 0 !important;
+            max-height: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body class="size-max">
+
+<div id="gameBlock" class="size-max">
+    <script type='text/javascript'>
+    ark.setViewportMeta = function () { };
+    ark.addListener('arkGameStartEvent', CustomGameStart);
+    function CustomGameStart(args) {
+        var p = { gameProtocolParams: initParams, iframeId: 'customGameIframe' };
+        if (arkPage.arena.device == 'pc') {
+            if ('480') {
+                p.height = '480';
+            }
+            if ('640') {
+                p.width = '640';
+            }
+            p.hideNavBar = false;
+        }
+
+        p.appendAdditionalParamsToUrl = new Object();
+        var gUrl = '//ams.cdn.arkadiumhosted.com/assets/global/game/lumeno';
+
+        if ("") {
+            p.appendAdditionalParamsToUrl.configURL = "";
+        }
+
+        ark_renderGame(gUrl, 'gameBlock', p);
+    }
+</script>
+<script type='text/javascript' src='//arenaconnect.cdn.arkadiumhosted.com/games-storage/html5-common-lib/js/render-code.js'></script>
+</div>
+
+<script>
+    window.ark_jQuery(window).load(function() {
+        ark.triggerEvent("arkGameStartEvent");                
+    });
+    ark.addListener('game_game_loaded', function (args) {
+        arkPage.gameCallback(window.initParams);
+    });
+</script></body>
+</html>
+
