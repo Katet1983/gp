@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper Clone</title>
+    <script type="module" src="js/minesweeper.js"></script>
+    <link rel="stylesheet" href="css/common.css"></link>
+    <link rel="stylesheet" href="css/minesweeper.css"></link>
+</head>
+
+<body>
+    <h1>Minesweeper Clone</h1>
+
+    <p>
+    Existem algumas minas escondidas na grade abaixo. Tente abrir todos os quadrados que não são minas por
+    clicando neles, mas não clique nas minas. Os números em quadrados abertos indicam quantos de
+    os 8 quadrados que os cercam (também conhecidos como "quadrados vizinhos") são minas.
+    </p>
+
+    <div id="game-container">
+        <div id="game-inner-container">
+            <div id="game" class="game-area"></div>
+            <span id="game-statusbar"></span>
+        </div>
+
+        <div class="setting-box">
+            <div class="setting-inputs">
+                <label for="width-input">Largura:</label>
+                <input type="number" id="width-input" min="1" value="10" required />
+                <label for="height-input">Altura:</label>
+                <input type="number" id="height-input" min="1" value="10" required />
+                <label for="mine-count-input">Número de minas:</label>
+                <input type="number" id="mine-count-input" min="1" value="10" required />
+                <label for="mine-percentage-input">Porcentagem minha:</label>
+                <input pattern="([1-9][0-9]?|0)(\.[0-9]*)?%" id="mine-percentage-input" required />
+            </div>
+
+            <button id="new-game-button" class="new-game-button">Novo Jogo</button>
+        </div>
+    </div>
+
+    <p>
+    Você pode sinalizar os quadrados clicando com o botão direito. Destina-se a ser usado para que, quando você souber
+    que algum quadrado é uma mina, você coloca uma bandeira aí.
+    </p>
+
+    <p>
+    Se o número de um quadrado aberto for igual ao número de quadrados sinalizados ao seu redor, então qualquer
+    dos quadrados vizinhos não sinalizados do quadrado não podem ser minas, assumindo que você não sinalizou nenhum
+    não-minas. Nesses casos, você pode clicar duas vezes no número e todos os outros quadrados são
+    aberto automaticamente.
+    </p>
+
+    <p id="link2index"><a href="index.html">Voltar para a lista de jogos</a></p>
+</body>
+
+</html>

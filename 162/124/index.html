@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Piano Note Trainer</title>
+    <style type="text/css">
+        body {
+            background-color: #333;
+            font-family: Arial, Verdana;
+            font-size: 14px;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+    </style>
+</head>
+<body>
+
+<piano-app></piano-app>
+
+<script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+<script src="node_modules/systemjs/dist/system.src.js"></script>
+<script src="node_modules/rxjs/bundles/Rx.js"></script>
+<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+<script>
+    System.config({
+        packages: {
+            app: {
+                format: 'register',
+                defaultExtension: 'js'
+            }
+        }
+    });
+    System.import('app/bootstrap')
+            .then(null, console.error.bind(console));
+</script>
+
+</body>
+</html>

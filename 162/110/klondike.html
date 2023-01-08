@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Klondike</title>
+    <script type="module" src="js/klondike.js"></script>
+    <link rel="stylesheet" href="css/common.css"></link>
+    <link rel="stylesheet" href="css/cards.css"></link>
+    <link rel="stylesheet" href="css/klondike.css"></link>
+</head>
+
+<body>
+    <h1>Klondike</h1>
+
+    <p>
+    Tente mover todas as cartas para as fundações (os 4 lugares vazios no canto superior direito).
+    </p>
+
+    <!-- TODO: write more rules -->
+
+    <div id="game" class="game-area"></div>
+
+    <div class="setting-box">
+        <div class="setting-inputs">
+            <label for="pick-input">Cartões para escolher de uma vez:</label>
+            <!-- there are 13*4 cards and 1+2+3+4+5+6+7 of them are never pickable
+                 13*4 - (1+2+3+4+5+6+7) = 24
+                 -->
+            <input type="number" id="pick-input" min="1" max="24" value="3" required />
+        </div>
+        <button id="new-game-button" class="new-game-button">Novo jogo</button>
+    </div>
+
+    <p>
+    Você pode mover um cartão para qualquer uma das fundações clicando no cartão com o
+    roda do mouse (sim, você pode clicar com a roda; basta pressioná-la
+    em vez de rolar). Se você clicar em uma área do jogo que não é
+    um cartão então <strong>any</strong> cartas no jogo que podem ser movidas para um
+    fundação será movida para lá.
+    </p>
+
+    <p id="link2index"><a href="index.html">Voltar para a lista de jogos</a></p>
+</body>
+
+</html>

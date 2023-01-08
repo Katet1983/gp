@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../../files/paf.css" />
+    <link rel="stylesheet" type="text/css" href="css/freecell.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js" type="text/javascript"></script>
+    
+    <script src="freecell.js" type="text/javascript"></script>
+
+    <title>Paciência</title>
+</head>
+<body>
+<div id="title">
+    <h1>Pa<span id="secret">ci</span>ência</h1>
+    <h2>
+        <button id="newgame">Novo Jogo</button>
+        <button id="help">Ajuda</button>
+    </h2>
+</div>
+<div id="table">
+    <div id="free0" class="free"></div>
+    <div id="free1" class="free"></div>
+    <div id="free2" class="free"></div>
+    <div id="free3" class="free"></div>
+
+    <div id="suit0" class="suit"></div>
+    <div id="suit1" class="suit"></div>
+    <div id="suit2" class="suit"></div>
+    <div id="suit3" class="suit"></div>
+
+    <div id="col0" class="column"></div>
+    <div id="col1" class="column"></div>
+    <div id="col2" class="column"></div>
+    <div id="col3" class="column"></div>
+    <div id="col4" class="column"></div>
+    <div id="col5" class="column"></div>
+    <div id="col6" class="column"></div>
+    <div id="col7" class="column"></div>
+</div>
+
+
+<div id="windialog">
+<p>Muito bem, você ganhou!</p>
+</div>
+
+<div id="helptext">
+<p>
+O FreeCell é um jogo de cartas baseado em paciência jogado com um baralho padrão de 52 cartas.
+É fundamentalmente diferente da maioria dos jogos de paciência, pois quase todos
+negócios podem ser resolvidos.
+</p>
+<p>Construção e layout:</p>
+<ul>
+    <li>É usado um baralho de 52 cartas padrão.</li>
+    <li>Existem quatro células abertas e quatro fundações abertas. Algum alternativo
+    as regras usam entre uma a dez células.</li>
+    <li>As cartas são distribuídas em oito cascatas, quatro das quais compreendem sete cartas
+    e quatro dos quais compreendem seis. Algumas regras alternativas usarão entre quatro a dez cascatas.</li>
+</ul>
+<p>Construindo durante o jogo:</p>
+<ul>
+    <li>A carta do topo de cada cascata inicia um quadro.</li>
+    <li>Os tableaux devem ser construídos por cores alternadas.</li>
+    <li>As fundações são construídas por terno.</li>
+</ul>
+<p>Moves:</p>
+<ul>
+    <li>Qualquer cartão de celular ou cartão superior de qualquer cascata pode ser movido para construir em um
+    tableau, ou movido para uma célula vazia, uma cascata vazia ou sua base.</li>
+    <li>Quadros completos ou parciais podem ser movidos para construir nos quadros existentes,
+    ou movido para cascatas vazias, colocando e removendo recursivamente os cartões
+    através de locais intermediários. Embora as implementações de computador frequentemente mostrem
+    este movimento, os jogadores que usam decks físicos normalmente movem o quadro em
+    uma vez.</li>
+</ul>
+<p>Vitória:</p>
+<ul>
+    <li>O jogo é ganho depois que todas as cartas são movidas para suas pilhas de fundação.</li>
+</ul>
+<p>Regras de <a href="http://en.wikipedia.org/wiki/Freecell">Wikipedia.</a>
+</p>
+</div>
+
+</body>

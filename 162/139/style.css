@@ -1,0 +1,55 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+  
+  html,body{
+    display: grid;
+    place-items: center;
+
+  }
+
+#dayIntro
+{
+    font-size: 0px;
+}
+  .container{
+    height: 38px;
+    width: 144px;
+    position: relative;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #00FFF0);
+    border-radius: 6px;
+    cursor: default;
+
+  }
+
+  .container .dispClock,
+  .container {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container .dispClock{
+    top: 50%;
+    height: 36px;
+    width: 140px;
+    background: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    border-radius: 6px;
+    text-align: center;
+  }
+  .dispClock #time{
+    line-height: 35px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #FFFFFF, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
