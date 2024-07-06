@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Objects on Frivls Games</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent horizontal expansion */
+            background-color: #212233; /* Set page background color */
+        }
+
+        .hidden-iframe {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border: 2px solid #212233;
+            margin-left: -2px;
+        }
+
+        .hidden-iframe iframe {
+            position: absolute;
+            margin-top: -2px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #212233;
+        }
+
+        .banner {
+            position: absolute;
+            bottom: 0; /* Position the banner at the bottom */
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #21212f;
+            z-index: 9;
+        }
+    </style>
+</head>
+<body>
+    <div class="hidden-iframe">
+        <iframe id="gameFrame" allowfullscreen></iframe>
+        <!-- Move the banner inside the .hidden-iframe div -->
+        <div class="banner"></div>
+    </div>
+
+    <script>
+        // Function to decode Base64
+        function decodeBase64(encoded) {
+            return atob(encoded);
+        }
+
+        // Get the iframe element
+        var iframe = document.getElementById('gameFrame');
+        // Set the src attribute with the decoded link
+        iframe.src = 'https://www.' + decodeBase64('Y3JhenlnYW1lcw==') +'.com'+'/embed/hidden-objects/';
+        iframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
+
+        // Remove the decoded link from console.log
+        var originalLog = console.log;
+        console.log = function() {
+            var args = Array.from(arguments);
+            args = args.map(function(arg) {
+                if (typeof arg === 'string' && arg.includes('www.crazygames.com')) {
+                    arg = 'Link to crazygames website';
+                }
+                return arg;
+            });
+            originalLog.apply(console, args);
+        };
+    </script>
+    
+    
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sxb1plmcpnl497714'},{'dcenter':'sxb1'},{'cp_id':'6683699'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+

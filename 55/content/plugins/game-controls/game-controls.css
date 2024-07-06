@@ -1,0 +1,72 @@
+.hidden {
+    display: none;
+}
+#playerInstructions {
+    position: absolute;
+    height: 288px;
+    margin-top: -18px;
+   color: #e1dfdf;
+   font-size: 13px;
+     background-color: rgba(33, 34, 51, 0.95);
+    backdrop-filter: blur(8px);
+    border: 0;
+    padding: 10px;
+    z-index: 8; /* Ensure the menu appears above other elements */
+    overflow: auto; /* Add a scrollbar */
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4); /* Add a shadow below the menu */
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+
+   
+}
+
+.title-text {
+color: #fff;
+}
+
+[dir="rtl"] .close-btn {
+  right: 6px;  
+  top: 6px;
+}
+
+[dir="rtl"] .inst-yoti {
+padding-right: 25px;
+}
+
+
+.inst-yoti {
+    display: flex;
+    padding-left: 25px;
+   }
+
+.ptn-video {
+    margin-top: -17px;
+    color: #f7a305;
+    font-size: 12.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* ظل أسود */
+    font-weight: bold; /* جعل الخط عريضًا */
+    transition: color 0.3s ease; /* تحويل تدريجي للتغيير في اللون */
+    cursor: pointer; /* تغيير شكل المؤشر */
+
+    
+}
+
+.ptn-video:hover {
+    color: #f47d26; /* تغيير لون النص عند الاقتراب */
+   font-size: 12.6px;
+    
+}
+
+
+
+
+
+
+

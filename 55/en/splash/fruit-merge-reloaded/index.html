@@ -1,0 +1,220 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <title>Fruit Merge Reloaded </title>
+                    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+                    <meta name="description" content="Merge Fruit is a captivating fruit-matching game that draws inspiration from a renowned Japanese game. Players embark on a thrilling adventure, combining, conquering, and cultivating their fruity empire. With a straightforward yet addictive puzzle concept, this game has taken the global gaming community by storm, appealing to players of all ages. In this comprehensive overview, well delve into Merge Fruits gameplay, its origins, diverse versions, and the tips and tricks for success.
+
+Inspiration and Game Genre: 
+Merge Fruit finds its roots in the famous Suika game, a unique puzzle experience where time and physics rule the orchard. Unlike frantic games like Tetris, Suika Game offers a calm yet challenging environment, emphasizing the dynamic interactions between fruits. Merge Fruit builds upon this foundation, introducing players to a matching game that revolves around combining identical fruits to reach the coveted Golden Watermelon.
+
+Gameplay Mechanics:
+The core gameplay of Merge Fruit involves merging identical fruits to create higher-level fruits, aiming to clear the fruit board. With over 200 different fruits, each with its own value, players strategically plan their moves to maximize scores and advance through levels. Rarer fruits hold higher value, adding depth to the strategic aspect of the game. Players earn coins through merges, enabling them to acquire new fruits, power-ups, and other items.
+
+Tips and Tricks for Success:
+To excel in Merge Fruit, players are advised to plan their moves, focusing on creating high-value fruits. While the gameplay seems straightforward, strategic thinking is crucial to achieving higher scores and efficiently clearing levels.
+
+Key Features:
+- Strategic Merging:  Engage in strategic merging to create a vibrant orchard with various delicious combinations.
+- Rare and Exotic Fruits: Unlock visually stunning and exclusive fruits through merging, adding excitement to gameplay.
+- Intuitive Gameplay: Accessible to players of all skill levels, Merge Fruit combines simplicity with strategic depth.
+- Visually Stunning Design: Immerse yourself in captivating graphics, from lush landscapes to vibrant fruits.
+- Social Interaction: Connect with fellow players through cooperative challenges and friendly competitions.
+- Leaderboards and Achievements: Compete for top spots and unlock achievements, enhancing the competitive element.
+
+Platform Accessibility:
+Merge Fruit is available both as an online game on various platforms and as a mobile app for Android and iOS devices. The online version mirrors the mobile gameplay, providing flexibility for players who prefer larger screens.
+
+Legitimacy and Reviews:
+Merge Fruit is a legitimate game, boasting over 10 million downloads on the Google Play Store and a 4.5-star rating. It has also received positive feedback on the App Store, with a 4.7-star rating. In-app purchases are available but not necessary for an enjoyable experience.
+
+Guidelines for Merging Fruit:
+Unlock the secrets of a bountiful orchard by mastering the rules of Merge Fruit:
+- Merge Similar Fruit to Grow: Combine identical fruits to create higher-tier fruits.
+- Strategic Placement Matters:  Plan moves strategically for maximum merging potential.
+- Optimize Combos for Maximum Points: Aim for combo moves to earn higher scores.
+- Discover Rare and Exotic Fruits: Unlock unique additions to your orchard with specific combinations.
+- Complete Challenges for Rewards: Engage in daily challenges for valuable rewards.
+- Connect with Friends for Cooperative Fun: Collaborate with friends to achieve common goals.
+- Utilize Boosters Wisely: Acquire and use boosters strategically to overcome challenges.
+- Progress Through Levels for Achievements: Advance through levels to unlock achievements and climb leaderboards.
+
+Reviews and Summary:
+Merge Fruit has received overwhelmingly positive reviews worldwide, praising its addictive gameplay and colorful graphics. Players appreciate its simplicity, making it a go-to game for relaxation and unwinding. With its legality, diverse versions, and the promise of hours of entertainment, Merge Fruit stands out as a popular choice for gamers seeking a fun and challenging puzzle-solving experience.">
+                    <link rel="stylesheet" type="text/css" href="https://katet1983.github.io/gp/55//content/themes/arcade-one/css/style.css"/>
+                    <style type="text/css">
+                        body {
+                            color: #eee;
+                            position: inherit;
+                            margin: 0;
+                            padding: 0;
+                            overflow: hidden;
+                            height: 100%;
+                            background: #000;
+                        }
+
+                        #splash-game-content {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            height: 0;
+                            overflow: hidden;
+                            max-width: 100%;
+                            max-height: 100%;
+                            min-width: 100%;
+                            min-height: 100%;
+                            box-sizing: border-box;
+                        }
+
+                        .splash {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            z-index: 1;
+                        }
+
+                        .splash-filter {
+                            background: linear-gradient(-80deg, #7887dbf5, #61e8e8f2), url('/thumbs/fruit-merge-reloaded_1.webp') no-repeat center center;
+                            background-size: cover;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            backdrop-filter: blur(8px);
+                            z-index: -1;
+                        }
+
+                        .splash-content {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            z-index: 2;
+                            transform: translate(-50%, -50%);
+                        }
+
+                        .splash-content img {
+                            width: 180px;
+                            height: auto;
+                            border: 2px solid #fff;
+                            border-radius: 8px;
+                        }
+
+                        .btn-play {
+                            margin-top: 15px;
+                            border: none;
+                            border-radius: 40px;
+                            color: #fff;
+                            text-transform: capitalize;
+                            font-size: 1.3em;
+                            font-weight: 500;
+                            cursor: pointer;
+                            transform: perspective(1px) translateZ(0px);
+                            transition-duration: 0.2s;
+                            font-family: Nunito, Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            background-color: rgb(104, 66, 255);
+                            align-items: center;
+                            display: inline-flex;
+                            justify-content: center;
+                            position: relative;
+                            border-radius: 80px;
+                            padding: 14px 30px;
+                            gap: 5px;
+                            border-width: 0px;
+                        }
+
+                        .css-14yq2cq {
+                            user-select: none;
+                            width: 1em;
+                            height: 1em;
+                            display: inline-block;
+                            fill: currentcolor;
+                            flex-shrink: 0;
+                            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+                            font-size: 1.71429rem;
+                        }
+
+                        .btn-play:hover {
+                            cursor: pointer;
+                            background: var(--solid);
+                        }
+
+                        .splash-game-title {
+                            position: absolute;
+                            top: 95%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 20px;
+                        }
+                    </style>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+                </head>
+                <body>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var button = document.querySelector('.btn-play');
+
+                        button.addEventListener('mouseover', function () {
+                            anime({
+                                targets: '.btn-play',
+                                scale: [
+                                    {value: 1.1, duration: 100},
+                                    {value: 1.15, duration: 90},
+                                    {value: 0.9, duration: 100},
+                                    {value: 1.18, duration: 90},
+                                    {value: 1.1, duration: 100}
+                                ],
+                                easing: 'easeInOutQuad'
+                            });
+                        });
+
+                        button.addEventListener('mouseout', function () {
+                            anime({
+                                targets: '.btn-play',
+                                scale: [
+                                    {value: 1.0, duration: 100}
+                                ],
+                                easing: 'easeInOutQuad'
+                            });
+                        });
+                    });
+                </script>
+
+
+                <div class="splash" id="splash">
+                    <div class="splash-filter"></div>
+                    <div class="splash-content">
+                        <div class="splash-thumbnail">
+                            <img src="https://katet1983.github.io/gp/55//thumbs/fruit-merge-reloaded_small.webp">
+                        </div>
+                        <button class="btn-play" onclick="play_game()">Play Now                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14yq2cq" focusable="false"
+                                 aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M10 15.0657V8.93426C10 8.53491 10.4451 8.29671 10.7773 8.51823L15.376 11.584C15.6728 11.7819 15.6728 12.2181 15.376 12.416L10.7774 15.4818C10.4451 15.7033 10 15.4651 10 15.0657Z"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M9.5 15.0657V8.93426C9.5 8.13556 10.3901 7.65917 11.0547 8.10221L15.6533 11.1679C16.247 11.5638 16.247 12.4362 15.6533 12.8321L11.0547 15.8978C10.3901 16.3408 9.5 15.8644 9.5 15.0657ZM10 8.93426V15.0657C10 15.4651 10.4451 15.7033 10.7774 15.4818L15.376 12.416C15.6728 12.2181 15.6728 11.7819 15.376 11.584L10.7773 8.51823C10.4451 8.29671 10 8.53491 10 8.93426Z"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                            </svg>
+                        </button>
+
+                    </div>
+                    <div class="splash-game-title">Fruit Merge Reloaded </div>
+                </div>
+                <iframe id="splash-game-content" frameborder="0" allow="autoplay" allowfullscreen="" seamless=""
+                        scrolling="no" data-src="https://play.wgplayground.com/ifr/88892be4c018a069c9453333b92f8dee" ></iframe>
+                <script type="text/javascript">
+                    function play_game() {
+                        document.getElementById("splash").remove();
+                        document.getElementById("splash-game-content").src = document.getElementById("splash-game-content").dataset.src;
+                    }
+                </script>
+                </body>
+                <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sxb1plmcpnl497714'},{'dcenter':'sxb1'},{'cp_id':'6683699'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+                

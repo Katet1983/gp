@@ -1,0 +1,159 @@
+.hidden {
+    display: none;
+}
+#embedButton {
+    position: absolute;
+    height: 200px;
+   color: #e1dfdf;
+   font-size: 13px;
+    background-color: rgba(33, 34, 51, 0.95);
+    backdrop-filter: blur(8px);
+    border: 0;
+    padding: 10px;
+    z-index: 8; /* Ensure the menu appears above other elements */
+    overflow: auto; /* Add a scrollbar */
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4); /* Add a shadow below the menu */
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+
+   
+}
+
+.title-text {
+color: #fff;
+}
+
+[dir="rtl"] .close-btn {
+  right: 6px;  
+  top: 6px;
+}
+
+[dir="rtl"] .inst-yoti-1 {
+padding-right: 25px;
+}
+
+
+.inst-yoti-1 {
+display: flex;
+padding-left: 48px;
+padding-right: 48px;
+}
+
+.ptn-video {
+    margin-top: -17px;
+    color: #f7a305;
+    font-size: 12.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Black shadow */
+    font-weight: bold; /* Make the font bold */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    cursor: pointer; /* Change the cursor shape */
+}
+
+.ptn-video:hover {
+    color: #f47d26; /* Change the text color on hover */
+    font-size: 12.6px;
+}
+
+
+/* ------ Embed ------------------- */
+
+ .css-chxnnc {
+  margin-top: 16px;
+  width: 100%;
+  position: relative;
+  -moz-box-align: center;
+  align-items: center;
+  display: flex;
+ 
+        }
+  
+  
+.css-1kgmm81 {
+  background-color: rgb(19, 20, 30);
+  color: rgb(249, 250, 255);
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  padding: 12px 96px 12px 14px;
+  border: 2px solid transparent;
+}
+
+.css-1kgmm81:hover {
+  background-color: rgb(26, 27, 40);
+}
+
+
+
+        #copyButton {
+            font-weight: var(--bs-nav-link-font-weight);
+          border-radius: 30px;
+  transition: 250ms;
+  border: medium;
+  cursor: pointer;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  font-family: Nunito;
+  font-weight: 800;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  background: rgb(104, 66, 255);
+  color: rgb(249, 250, 255);
+  height: 34px;
+  position: absolute;
+  right: 16px;
+}
+
+ #copyButton:hover {
+    background: rgb(130, 102, 242);    
+ }       
+       
+        
+        
+        #iframeText {
+            font-size: 16px;
+  resize: none;
+  background: none;
+  color: rgb(153, 156, 174);
+  width: 100%;
+  height: 25px;
+  font-weight: 700;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  overflow: hidden;/* This is to hide the scroll bar */
+      }
+        
+        
+        #copySuccessImage {
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7; /* Makes the image transparent at 50% */
+}
+
+
+.css-flgf9q {
+
+  font-style: italic;
+  font-size: 12.6px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+
+
+
+

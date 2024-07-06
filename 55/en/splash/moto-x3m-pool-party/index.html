@@ -1,0 +1,195 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <title>Moto X3M Pool Party</title>
+                    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+                    <meta name="description" content="Moto X3M is an exhilarating online bike racing game that is tailor-made for players who are passionate about extreme sports. This game takes the concept of bike racing to the next level, with a combination of thrilling challenges, heart-stopping high-speed action, and stunning features that will keep you engaged and entertained. Get ready for an immersive gaming experience that not only tests your skills but also provides an opportunity to relax and enjoy a good time. Welcome to the exclusive Pool Party version of this incredible bike stunt game. Dive into the world of Moto X3M 5 Pool Party and let the fun begin!
+
+Moto X3M stands out as one of the ultimate online bike racing games. It caters to the tastes of adrenaline junkies and fans of extreme sports who are seeking an adrenaline-pumping, action-packed gaming adventure. With a wide range of levels and a multitude of challenges, this game promises to take you on a roller-coaster ride filled with twists, turns, and hair-raising stunts.
+
+One of the games defining features is its incredible speed. As you zoom through each level, youll experience the rush of high-speed racing. The sense of speed adds a thrilling dimension to the game, making every second an unforgettable experience. Its a true adrenaline rush that will keep you coming back for more.
+
+The Pool Party version of Moto X3M 5 is a special treat for players looking to cool off and have fun in a virtual poolside setting. The game introduces new levels and obstacles inspired by water-themed challenges. Youll navigate through pools, water slides, and other aqua-themed environments, adding an extra layer of fun to the game.
+
+Moto X3M is more than just a racing game; its an immersive experience with high-quality graphics and responsive controls. The games attention to detail and smooth gameplay make it an absolute joy to play. Whether youre a seasoned gamer looking for a fresh challenge or new to bike racing games, Moto X3M is suitable for players of all ages and skill levels.
+
+Now, lets talk about frivls . This is your one-stop gaming destination, offering a wide array of free online games, including Moto X3M. Its the ideal platform for gamers who want to explore a diverse selection of games across various genres. Friv takes your gaming experience to the next level by ensuring that you can enjoy Moto X3M and numerous other games without the hassle of external windows. With a user-friendly interface and a commitment to delivering top-notch gaming content, frivls.com is the ultimate companion for gaming enthusiasts.
+
+In summary, Moto X3M is the ultimate online bike racing game designed for extreme sports enthusiasts. The Pool Party edition brings a refreshing twist to the game. Visit frivls.com and dive into the exciting world of Moto X3M and an extensive collection of games. So, get ready for a thrilling adventure, put on your helmet, and gear up for a ride like no other. Experience the excitement of Moto X3M, exclusively at frivls.com !">
+                    <link rel="stylesheet" type="text/css" href="https://katet1983.github.io/gp/55//content/themes/arcade-one/css/style.css"/>
+                    <style type="text/css">
+                        body {
+                            color: #eee;
+                            position: inherit;
+                            margin: 0;
+                            padding: 0;
+                            overflow: hidden;
+                            height: 100%;
+                            background: #000;
+                        }
+
+                        #splash-game-content {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            height: 0;
+                            overflow: hidden;
+                            max-width: 100%;
+                            max-height: 100%;
+                            min-width: 100%;
+                            min-height: 100%;
+                            box-sizing: border-box;
+                        }
+
+                        .splash {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            z-index: 1;
+                        }
+
+                        .splash-filter {
+                            background: linear-gradient(-80deg, #7887dbf5, #61e8e8f2), url('/thumbs/moto-x3m-pool-party_1.webp') no-repeat center center;
+                            background-size: cover;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            backdrop-filter: blur(8px);
+                            z-index: -1;
+                        }
+
+                        .splash-content {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            z-index: 2;
+                            transform: translate(-50%, -50%);
+                        }
+
+                        .splash-content img {
+                            width: 180px;
+                            height: auto;
+                            border: 2px solid #fff;
+                            border-radius: 8px;
+                        }
+
+                        .btn-play {
+                            margin-top: 15px;
+                            border: none;
+                            border-radius: 40px;
+                            color: #fff;
+                            text-transform: capitalize;
+                            font-size: 1.3em;
+                            font-weight: 500;
+                            cursor: pointer;
+                            transform: perspective(1px) translateZ(0px);
+                            transition-duration: 0.2s;
+                            font-family: Nunito, Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            background-color: rgb(104, 66, 255);
+                            align-items: center;
+                            display: inline-flex;
+                            justify-content: center;
+                            position: relative;
+                            border-radius: 80px;
+                            padding: 14px 30px;
+                            gap: 5px;
+                            border-width: 0px;
+                        }
+
+                        .css-14yq2cq {
+                            user-select: none;
+                            width: 1em;
+                            height: 1em;
+                            display: inline-block;
+                            fill: currentcolor;
+                            flex-shrink: 0;
+                            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+                            font-size: 1.71429rem;
+                        }
+
+                        .btn-play:hover {
+                            cursor: pointer;
+                            background: var(--solid);
+                        }
+
+                        .splash-game-title {
+                            position: absolute;
+                            top: 95%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 20px;
+                        }
+                    </style>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+                </head>
+                <body>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var button = document.querySelector('.btn-play');
+
+                        button.addEventListener('mouseover', function () {
+                            anime({
+                                targets: '.btn-play',
+                                scale: [
+                                    {value: 1.1, duration: 100},
+                                    {value: 1.15, duration: 90},
+                                    {value: 0.9, duration: 100},
+                                    {value: 1.18, duration: 90},
+                                    {value: 1.1, duration: 100}
+                                ],
+                                easing: 'easeInOutQuad'
+                            });
+                        });
+
+                        button.addEventListener('mouseout', function () {
+                            anime({
+                                targets: '.btn-play',
+                                scale: [
+                                    {value: 1.0, duration: 100}
+                                ],
+                                easing: 'easeInOutQuad'
+                            });
+                        });
+                    });
+                </script>
+
+
+                <div class="splash" id="splash">
+                    <div class="splash-filter"></div>
+                    <div class="splash-content">
+                        <div class="splash-thumbnail">
+                            <img src="https://katet1983.github.io/gp/55//thumbs/moto-x3m-pool-party_small.webp">
+                        </div>
+                        <button class="btn-play" onclick="play_game()">Play Now                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14yq2cq" focusable="false"
+                                 aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M10 15.0657V8.93426C10 8.53491 10.4451 8.29671 10.7773 8.51823L15.376 11.584C15.6728 11.7819 15.6728 12.2181 15.376 12.416L10.7774 15.4818C10.4451 15.7033 10 15.4651 10 15.0657Z"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M9.5 15.0657V8.93426C9.5 8.13556 10.3901 7.65917 11.0547 8.10221L15.6533 11.1679C16.247 11.5638 16.247 12.4362 15.6533 12.8321L11.0547 15.8978C10.3901 16.3408 9.5 15.8644 9.5 15.0657ZM10 8.93426V15.0657C10 15.4651 10.4451 15.7033 10.7774 15.4818L15.376 12.416C15.6728 12.2181 15.6728 11.7819 15.376 11.584L10.7773 8.51823C10.4451 8.29671 10 8.53491 10 8.93426Z"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                            </svg>
+                        </button>
+
+                    </div>
+                    <div class="splash-game-title">Moto X3M Pool Party</div>
+                </div>
+                <iframe id="splash-game-content" frameborder="0" allow="autoplay" allowfullscreen="" seamless=""
+                        scrolling="no" data-src="https://html5.gamedistribution.com/f804d079d19f44d3b951ead4588e974a/?gd_sdk_referrer_url=https://frivls.com/games/moto-x3m-pool-party" ></iframe>
+                <script type="text/javascript">
+                    function play_game() {
+                        document.getElementById("splash").remove();
+                        document.getElementById("splash-game-content").src = document.getElementById("splash-game-content").dataset.src;
+                    }
+                </script>
+                </body>
+                <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sxb1plmcpnl497714'},{'dcenter':'sxb1'},{'cp_id':'6683699'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+                

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login | Frivls Games</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="robots" content="noindex">
+		<link rel="stylesheet" type="text/css" href="https://katet1983.github.io/gp/55///vendor/bootstrap5/css/bootstrap.min.css" />
+		<!-- Font Awesome icons (free version)-->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" defer>
+		<link rel="stylesheet" type="text/css" href="https://katet1983.github.io/gp/55//admin/style/admin.css">
+		<link rel="stylesheet" type="text/css" href="https://katet1983.github.io/gp/55//content/themes/arcade-one/css/style.css"><link rel="stylesheet" type="text/css" href="https://katet1983.github.io/gp/55//content/themes/arcade-one/css/custom.css"><script src="https://accounts.google.com/gsi/client" async defer></script>	</head>
+	
+	<body >
+	    <div class="form-MuiBox"> 
+	    <div class="form-login"> 	</div>
+	    
+	    			<div class="login-form">
+				<div class="container">
+					<div class="login-logo text-center">
+						<img src="https://katet1983.github.io/gp/55//images/login-logo.png">
+					</div>
+											<form method="POST" enctype="multipart/form-data">
+														<input type="hidden" name="login" value="true" />
+							<div class="mb-3">
+								<input type="text" id="username" name="username" placeholder="Username" class="form-control" value="" required>
+							</div>
+							<div class="mb-3">
+								<input type="password" id="password" name="password" autocomplete="new-password" placeholder="Password" class="form-control" value="" required>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" name="remember" id="remember-me" checked>
+								<label class="form-check-label" for="remember-me">Remember me</label>
+							</div>
+							<br>
+							<div class="text-center">
+								<button type="submit" style="width: 100%;" class="btn btn-info btn-block">Login</button>
+							</div>
+								<br>
+	<div id="g_id_onload"
+		data-client_id="713016662774-te87p498sd1n6ad1t1jqd6mbaka9uch6.apps.googleusercontent.com"
+		data-callback="handleCredentialResponse">
+	</div>
+	<div class="g_id_signin"
+		data-type="standard"
+		data-size="large"
+		data-theme="outline"
+		data-text="sign_in_with"
+		data-shape="rectangular"
+		data-width="350"
+		data-logo_alignment="center">
+	</div>
+	<script>
+		function handleCredentialResponse(response) {
+			// Send the token to your server
+			fetch('https://katet1983.github.io/gp/55//content/plugins/google-login/action.php', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ token: response.credential })
+			})
+			.then(response => response.json())
+			.then(data => {
+				if(data['status'] == 'success'){
+					location.reload();
+				} else {
+					alert('Error 2!');
+					console.error('Error:', data);
+				}
+			})
+			.catch((error) => {
+				alert('Error!');
+				console.error('Error:', error);
+			});
+		}
+
+		window.onload = function () {
+			google.accounts.id.initialize({
+				client_id: "713016662774-te87p498sd1n6ad1t1jqd6mbaka9uch6.apps.googleusercontent.com",
+				callback: handleCredentialResponse
+			});
+			google.accounts.id.renderButton(
+				document.querySelector('.g_id_signin'), {
+					type: "standard",
+					size: "large",
+					theme: "outline",
+					text: "sign_in_with",
+					shape: "rectangular",
+					width: "350",
+					logo_alignment: "center"
+				}
+			);
+			google.accounts.id.prompt();
+		};
+	</script>
+								<div class="login-links mt-3">
+															<div class="text-center link-register">Or <a href="https://katet1983.github.io/gp/55//register/">Register</a></div>
+																					</div>
+							<div class="text-center mt-3"><a href="https://katet1983.github.io/gp/55//">< Back to Home</a></div>
+						</form>
+									</div>
+			</div> 
+			
+			</div>
+	    
+	    
+	
+		<script type="text/javascript" src="https://katet1983.github.io/gp/55//js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="https://katet1983.github.io/gp/55///vendor/bootstrap5/js/bootstrap.min.js"></script>
+	</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sxb1plmcpnl497714'},{'dcenter':'sxb1'},{'cp_id':'6683699'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
