@@ -1,0 +1,272 @@
+﻿<!--static-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>fruitshappy.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="../static/index/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../static/index/font/iconfont.css">
+<link rel="stylesheet" href="../static/index/fontC/iconfont.css">
+<link rel="stylesheet" href="../static/index/css/main.css">
+<link rel="stylesheet" href="../static/index/layui/layui.css">
+<link rel="stylesheet" href="../static/index/swiper/swiper-bundle.min.css">
+<script src="../static/index/layui/layui.all.js"></script>
+<script src="../static/index/swiper/swiper-bundle.min.js"></script>
+<script src="../static/index/js/jquery.min.js"></script>
+<script src="../static/index/js/fastclick.js"></script>
+<script src="../static/index/js/lazyload.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../npm/cookieconsent%403/build/cookieconsent.min.css">
+<script async="" src="../tag/js/f.txt"></script>
+<script>
+        window.googletag = window.googletag || {cmd: []};
+        googletag.cmd.push(function () {
+            var slot = googletag.defineOutOfPageSlot('/22124916969/fruitshappy.com/fruitshappy-inter-01', googletag.enums.OutOfPageFormat.INTERSTITIAL);
+            // Slot returns null if the page or device does not support interstitials
+            if (slot) slot.addService(googletag.pubads());
+            googletag.enableServices();
+            // Consider delaying until first div on page
+            googletag.display(slot);
+        });
+    </script>
+
+<script async="" src="../gtag/js?id=G-8K9NZ5P6FS"></script>
+<script> window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-8K9NZ5P6FS');
+    </script>
+
+<script async="" src="../gtag/js-1?id=AW-11427138836"></script>
+<script> window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'AW-11427138836');
+    </script>
+
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W8SXWD2F');
+    </script>
+
+</head>
+<body>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8SXWD2F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+<script src="../npm/cookieconsent%403/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#FE2769"
+            },
+            "button": {
+                "background": "#c527fe"
+            }
+        },
+        "content": {
+            "href": "/about/privacy.html"
+        }
+    });
+</script>
+<script src="../static/index/js/jquery.validate.js"></script>
+<script src="../static/index/js/jquery.form.min.js"></script>
+<header>
+<div class="container">
+<div class="headL">
+<a href="../index.htm" class="logo">
+<img src="../static/index/img/logo.png" alt="">
+</a>
+<nav>
+<a href="../index.htm">
+<i class="iconfont icon-home"></i>
+HOME
+</a>
+<a href="../new.html">
+<i class="iconfont icon-heart"></i>
+NEW
+</a>
+<a href="../hot.html">
+<i class="iconfont icon-hot"></i>
+HOT
+</a>
+<a href="../category.html">
+<i class="iconfont icon-Categories"></i>
+CATEGORIES
+</a>
+</nav>
+</div>
+<div class="searchBtn">
+<input type="text" id="searchB" placeholder="Search... " autocomplete="off">
+<button class="searchB" onclick="search()">
+<i class="iconfont icon-search"></i>
+</button>
+</div>
+<p class="cate" onclick="cateBox()">
+<i class="iconfont  icon-nav"></i>
+</p>
+</div>
+</header>
+<style>
+    .error {
+        color: red
+    }
+</style>
+<div class="container  companyBox ">
+<div class="company">
+<h2>Contact</h2>
+<form action="/gamesApi/contact" method="post" id="form" novalidate="novalidate">
+<div class="formItem">
+<input type="text" id="name" name="name" placeholder="Name">
+</div>
+<div class="formItem">
+<input type="text" id="email" name="email" placeholder="EMail Address">
+</div>
+<div class="formItem">
+<input class="why" type="text" id="why" name="reason" placeholder="Why are you contacing us?">
+</div>
+<div class="formItem">
+<textarea id="comcom" rows="10" name="desc" placeholder="Message"></textarea>
+</div>
+<input type="submit" value="Submit">
+</form>
+</div>
+</div>
+<footer>
+<div class="container">
+<nav>
+<a href="company.html">Company</a>
+<a href="privacy.html">Privacy</a>
+<a href="use.html">Terms of use</a>
+<a href="contact.html">Contact us</a>
+</nav>
+<img src="../static/index/img/logo.png" alt="">
+</div>
+</footer>
+<div class="categoryBox">
+<div class="box">
+<p class="close">
+<i class="iconfont icon-close"></i>
+</p>
+<div class="searchBtn">
+<input type="text" id="searchA" placeholder="Search... " autocomplete="off">
+<button class="searchB" onclick="search()">
+<i class="iconfont icon-search"></i>
+</button>
+</div>
+<nav>
+<a href="../index.htm">
+<i class="iconfont icon-home"></i>
+HOME
+</a>
+<a href="../new.html">
+<i class="iconfont icon-heart"></i>
+NEW
+</a>
+<a href="/top.html">
+<i class="iconfont icon-hot"></i>
+HOT
+</a>
+<a href="../category.html">
+<i class="iconfont icon-Categories"></i>
+CATEGORIES
+</a>
+</nav>
+</div>
+</div>
+<script src="../static/index/js/main.js"></script>
+<script>
+    var options = {
+        success: showResponse,
+        dataType: 'json',
+        clearForm: true,
+        resetForm: true,
+    };
+
+    function showResponse(responseText, statusText) {
+        if (statusText == 'success') {
+            if (responseText) {
+                if (responseText.status == 0) {
+                    layer.msg('Plays-Game.com is excited to hear from you and we\'ll get back to you as soon as possible!');
+                } else {
+                    layer.msg(responseText.msg);
+                }
+            }
+        } else {
+            layer.msg('Request failed');
+        }
+    }
+
+    $("#form").validate({
+        errorPlacement: function (error, element) {
+            element.parents("#form").append(error);
+            console.log(error);
+        },
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            reason: {
+                required: true,
+                minlength: 2,
+            },
+            desc: {
+                required: true,
+                minlength: 2,
+            }
+        },
+        messages: {
+            name: {
+                required: " * Name is required. ",
+                minlength: " * The length cannot be less than 2. "
+            },
+            email: {
+                required: " * Email is required. ",
+                email: "'please enter a true email'"
+            },
+            reason: {
+                required: " * Reason is required. ",
+                minlength: " * The length cannot be less than 2. "
+            },
+            desc: {
+                required: " * Comments is required. ",
+                minlength: " * The length cannot be less than 2. "
+            },
+        },
+        submitHandler: function (form) {
+            $(form).ajaxSubmit(options);
+        }
+    });
+
+</script>
+</body>
+</html>
