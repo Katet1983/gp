@@ -1,0 +1,684 @@
+﻿<!doctype html>
+<html lang="en-us">
+<meta name="robots" content="noindex,nofollow">
+<!--
+		War Brokers (c) 2017-2021 Trebuchet Entertainment LLC
+	-->
+<script type="text/javascript" src="../../xmlhttprequest-length-computable-cors.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>War Brokers</title>
+    <style>
+        html,
+        body,
+        #gameContainer,
+        canvas {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+    <script src="../../poki-sdk.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="gameContainer">
+        <canvas id="unity-canvas"></canvas>
+    </div>
+    <div id="loadingBG" style="position:absolute; left:0px; top:0px; width: 100%; height: 100%; background-color: #221f20;"></div>
+    <div id="loadingProgress">
+        <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: url('../../loading_image.png') center center / contain no-repeat; width: 328px; height: 200px;">
+        </div>
+        <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 9px; width: 200px; margin-top: 110px;">
+            <!--
+				<div style="background: url("") right center / cover no-repeat; float: right; width: 11.0407%; height: 100%; display: inline-block;"></div>
+				<div style="background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAASCAYAAABmbl0zAAAACXBIWXMAAAsSAAALEgHS3X78AAAAO0lEQVRo3u3SQREAAAjDMMC/56EB3omEXjtJCg5GAkyDaTANpsE0YBpMg2kwDaYB02AaTINpMA2Yhr8FO18EIBpZMeQAAAAASUVORK5CYII=") left center / cover no-repeat; float: left; width: 88.9593%; height: 100%; display: inline-block;"></div>
+				-->
+            <div>
+                <center>
+                    <p id="pctpct" style="color:white">0%</p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div id="login_options" style="position:absolute; top:20px; left:20px;">
+        <div><img id="gopopup" src="../../img/g_logo.png" width="40" height="40" hidden="true" style="cursor:pointer">
+        </div>
+        <div><img id="vkpopup" src="../../img/vk_logo.png" width="40" height="40" hidden="true" style="cursor:pointer">
+        </div>
+        <div><img id="fbpopup" src="../../img/f_logo.png" width="40" height="40" hidden="true" style="cursor:pointer">
+        </div>
+        <div><img id="stpopup" src="../../img/s_logo.png" width="40" height="40" hidden="true" style="cursor:pointer">
+        </div>
+        <div><img id="twpopup" src="../../img/t_logo.png" width="40" height="40" hidden="true" style="cursor:pointer">
+        </div>
+    </div>
+    <iframe id="warbrokers" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%" hidden="true" allowtransparency="true"></iframe>
+    <script defer="" src="../../beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"848b60b8df4a0f30","version":"2024.1.0","token":"08a46637120a404a963395dd86986b4f"}' crossorigin="anonymous"></script>
+</body>
+<script>
+    var	gameInstance = null;
+		var	cdn = "https://cdn.warbrokers.io/";
+		var	fromFrame = false;
+		var	noCookies = false;
+		var	isMobile = false;
+		var	loadedXsolla = false;
+		var	date = new Date();
+		var	startTime = date.getTime();
+		var	isEmbedded = false;
+		var	useY8 = false;
+		var	locationString = "NA,USA,TX,USA,NA_BATTLE_ROYALE,NA_COMPETITIVE,DEAD_CITY,USA_4V4";
+		var	continent = "NA";
+		var	sessionToken = "";
+		var	gameToken = "";
+		function cancelFullScreen() {
+			if (document.cancelFullScreen) {
+				document.cancelFullScreen();
+			} else if (document.mozCancelFullScreen) {
+				document.mozCancelFullScreen();
+			} else if (document.webkitCancelFullScreen) {
+				document.webkitCancelFullScreen();
+			}
+		}
+		function openXsolla(token) {
+			cancelFullScreen();
+			var options = {
+				access_token: token,
+//				sandbox: true
+			};
+			XPayStationWidget.init(options);
+			XPayStationWidget.open();
+			trackEvent('gamepage','open_xsolla');
+			XPayStationWidget.on(XPayStationWidget.eventTypes.CLOSE, function () {
+				trackEvent('gamepage','close_xsolla');
+				gameInstance.SendMessage('ScriptObject','refreshCoins');
+			});
+		}
+		function xsollaPopup(token) {
+			if (!loadedXsolla) {
+				var s = document.createElement('script');
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://static.xsolla.com/embed/paystation/1.0.7/widget.min.js";
+				s.addEventListener('load', function (e) {
+					openXsolla(token);
+				}, false);
+				var head = document.getElementsByTagName('head')[0];
+				head.appendChild(s);
+				loadedXsolla = true;
+			} else {
+				openXsolla(token);
+			}
+		}
+		function redirectLogin() {
+			// Write me
+		}
+		function redirectSignout() {
+			// Write me
+		}
+		function redirectBanned() {
+			// Write me
+		}
+		function trackEvent(name) {
+		}
+		function trackEventData(name,data) {
+		}
+		function openURL(url) {
+			if (isMobile) {
+				var that = this;
+				that._oauthWindow = window.open(
+				    	url,
+					"War Brokers",
+					'location=0,status=0,width=800,height=600,top=' + ((window.screen.height - 600) / 2) + ',left=' + ((window.screen.width - 800) / 2)
+				);
+				that._oauthInterval = window.setInterval(
+					function() {
+						if (that._oauthWindow.closed) {
+							window.clearInterval(that._oauthInterval);
+						}
+					},
+					1000
+				);
+			} else {
+				var OpenPopup3 = function() {
+					window.open(url);
+					document.getElementById('gameContainer').removeEventListener('click', OpenPopup3);
+				};
+				document.getElementById('gameContainer').addEventListener('click', OpenPopup3, false);
+			}
+		}
+		function openDiscord() {
+			openURL("https://discordapp.com/invite/warbrokers");
+		}
+		function openReddit() {
+			openURL("https://www.reddit.com/r/warbrokers/");
+		}
+		function openTwitter() {
+			openURL("https://twitter.com/warbrokers");
+		}
+		function openInsta() {
+			openURL("https://www.instagram.com/warbrokers.io/");
+		}
+		function openFacebook() {
+			openURL("https://www.facebook.com/warbrokers/");
+		}
+		function openSocketTest() {
+			openURL("http://websocketstest.com/");
+		}
+		function getSessionTokenJS() {
+			return(sessionToken);
+		}
+		function getLoginTokenJS() {
+			return(gameToken);
+		}
+		function getStartingTimeJS() {
+			// Now return time...
+			return(startTime);
+		}
+		function getCurrentTimeJS() {
+       			date = new Date();
+			return(date.getTime());
+		}
+		function getPerformanceNowTimeJS() {
+			var performanceNowTime = performance.now();
+			return( performanceNowTime );
+		}
+		function getLangCodeJS() {
+			PokiSDK.gameLoadingFinished();
+			var langCode = navigator.language.slice(0,2);
+			//var langCode = "en";
+			switch(langCode) {
+				case 'en':
+				case 'ru':
+				case 'es':
+				case 'tr':
+				case 'se':
+				case 'de':
+					// Above languages are hand translated
+					break;
+				default:
+					// Rest are google translated...default to english...
+					langCode = 'en';
+			}
+			return(langCode);
+		}
+		function openSteam() {
+			openURL("https://store.steampowered.com/app/750470/War_Brokers/");
+		}
+		function openStats() {
+			openURL("https://warbrokers.io/view_stats.php?token=" + gameToken);
+		}
+		function openCosmoShop() {
+			openURL("https://warbrokers.io/open_shop.php?token=" + gameToken);
+		}
+		function startWebAudio() {
+			if (GlobalAudioContext.state != "running") {
+				GlobalAudioContext.resume();
+			}
+		}
+		function getCookie(key) {
+			var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+			return keyValue ? keyValue[2] : "";
+		}
+		function getContinentJS() {
+			return(continent);
+		}
+		function getLocationJS() {
+			return(locationString);
+		}
+		function openSteamAdJS(langCode) {
+		}
+		function closeSteamAdJS() {
+		}
+		function startPokiAdJS() {
+			PokiSDK.commercialBreak()
+			.then(
+				() => {
+					//console.log('End of commercial break');
+					gameInstance.SendMessage('ScriptObject','endPokiAd');
+				}
+			);
+		}
+		function gameplayStartedJS() {
+			PokiSDK.gameplayStart();
+		}
+		function gameplayEndedJS() {
+			PokiSDK.gameplayStop();
+		}
+		function startRewardBreakJS() {
+			PokiSDK.rewardedBreak().then(
+				(withReward) => {
+					//console.log(`Should the user get a reward? ${withReward}`)
+					if (withReward) {
+						gameInstance.SendMessage('ScriptObject','endRewardBreakWithReward');
+					} else {
+						gameInstance.SendMessage('ScriptObject','endRewardBreak');
+					}
+				}
+			);
+		}
+		// https://developers.google.com/web/updates/2018/03/clipboardapi
+		function getClipboardJS() {
+			if (navigator.clipboard != undefined) {
+				try {
+					navigator.clipboard.readText().then(text => {
+						var len = text.length;
+						var maxLen = 4000;
+						if ( len >= maxLen - 1 ) {
+							text = text.substring(0,maxLen - 1);
+						}
+						gameInstance.SendMessage('ScriptObject','getClipboardCB', text );
+					});
+				} catch (e) {
+					console.log('No clipboard');
+				}
+			}
+			return 1;
+		}
+		async function setClipboardJS(text) {
+			if (navigator.clipboard != undefined) {
+				try {
+					await navigator.clipboard.writeText( text );
+				} catch (err) {
+					console.error('Failed to copy: ', err);
+				}
+			}
+			return 0;
+		}
+		function getLanguageFromClipboardJS() {
+			if (navigator.clipboard != undefined) {
+				try {
+					navigator.clipboard.readText().then(text => {
+						var len = text.length;
+						var maxLen = 100000;
+						if ( len >= maxLen - 1 ) {
+							text = text.substring(0,maxLen - 1);
+						}
+						gameInstance.SendMessage('ScriptObject','getLangDataCB', text );
+					});
+				} catch (e) {
+					console.log('No clipboard');
+				}
+			}
+			return 1;
+		}
+		function setIconPosition(label,x,y) {
+			document.getElementById(label).style.position = "absolute";
+			document.getElementById(label).style.top = y + "px";
+			document.getElementById(label).style.left = x + "px";
+		}
+		var storeIsOpen = false;
+		function resizeFunc() {
+			// Move signin options
+			var sizeX = 40;
+			var sizeY = 40;
+			var fudge = 1.5;
+			var posX;
+			posX = window.innerWidth / 2 - sizeX * 4.0 - fudge * 2;
+			var posY = window.innerHeight / 2 - sizeY * 0.5;
+			setIconPosition('gopopup',posX,posY);
+			posX += sizeX * fudge;
+			setIconPosition('vkpopup',posX,posY);
+			posX += sizeX * fudge;
+			setIconPosition('fbpopup',posX,posY);
+			posX += sizeX * fudge;
+			setIconPosition('stpopup',posX,posY);
+			posX += sizeX * fudge;
+			setIconPosition('twpopup',posX,posY);
+			posX += sizeX * fudge;
+		}
+		function serverMenuOpen() {
+			console.log('Server menu open');
+			serverMenu = true;
+			resizeFunc();
+		}
+		function serverMenuClose() {
+			serverMenu = false;
+			console.log('Server menu close');
+		}
+		var	storeOpen = false;
+		function storeMenuOpen() {
+			console.log('Store menu open');
+			storeOpen = true;
+			showSignInButtons();
+			showLikeButtons();
+			storeIsOpen = true;
+		}
+		function storeMenuClose() {
+			console.log('Store menu close');
+			storeOpen = false;
+			hideSignInButtons();
+			hideLikeButtons();
+			storeIsOpen = false;
+		}
+		function loadingMenuOpen() {
+			console.log('Loading screen open');
+		}
+		function loadingMenuClose() {
+			console.log('Loading screen closed');
+		}
+		function setStorePageInfo(storeTab,storePage) {
+			if (gameToken != "") {
+				return;
+			}
+			if (!storeIsOpen) {
+				return;
+			}
+			if (storeTab == 0) {
+				if ((storePage != 1) && (storePage != 2)) {
+					showSignInButtons();
+				} else {
+					hideSignInButtons();
+				}
+			} else if (storeTab == 4) {
+				hideSignInButtons();
+			} else if (storeTab == 9) {
+				hideSignInButtons();
+			} else {
+				showSignInButtons();
+			}
+		}
+
+		var	lastHP = 1;
+		function setGameModeJS(c,s,m,t,h) {
+			//console.log('connected : ' + c);
+			//console.log('gameState : ' + s);
+			//console.log('gameMode : ' + m);
+			//console.log('timeLeft : ' + t);
+			//console.log('hitPoints : ' + h);
+			lastHP = h;
+		}
+		function hasRewardVideoJS() {
+			return(false);
+		}
+		function isEmbeddedJS() {
+			return(isEmbedded);
+		}
+		// Show/hide sign-in buttons
+		var signInVisible = false;
+		function hideSignInButtons() {
+			document.getElementById('gopopup').hidden = true;
+			document.getElementById('vkpopup').hidden = true;
+			document.getElementById('fbpopup').hidden = true;
+			document.getElementById('stpopup').hidden = true;
+			document.getElementById('twpopup').hidden = true;
+			signInVisible = false;
+		}
+		var hasSteam = "";
+		function showSignInButtons() {
+			if (gameToken == "") {
+				document.getElementById('gopopup').hidden = false;
+				document.getElementById('vkpopup').hidden = false;
+				document.getElementById('fbpopup').hidden = false;
+				document.getElementById('stpopup').hidden = false;
+				document.getElementById('twpopup').hidden = false;
+				signInVisible = true;
+			} else {
+				gameInstance.SendMessage('ScriptObject','gotLoginToken',gameToken);
+			}
+		}
+		// Show/hide like buttons
+		function hideLikeButtons() {
+			document.getElementById('fblike').hidden = true;
+		}
+		function showLikeButtons() {
+			//!TEST!
+			return;
+			document.getElementById('fblike').hidden = false;
+			if (gameToken != "") {
+				document.getElementById('like_options').style.top = "20px";
+			}
+		}
+		// Cookies
+		function setCookie(cname, cvalue, exdays) {
+			var d = new Date();
+			d.setTime(d.getTime() + (exdays*24*60*60*1000));
+			var expires = "expires="+ d.toUTCString();
+			document.cookie = cname + "=" + cvalue + ";" + expires + ";";
+		}
+		// Game login
+		function gameLogin(inToken,inNick,inSteam) {
+			gameInstance.SendMessage('ScriptObject','gotLoginToken',inToken);
+			gameInstance.SendMessage('ScriptObject','gotLoginNick',inNick);
+			gameToken = inToken;
+			hideSignInButtons();
+			setCookie("game_token",gameToken,30);
+			hasSteam = inSteam;
+			if (inSteam != 0) {
+				console.log("User has steam attached");
+			} else {
+				console.log("User does not have steam attached");
+			}
+		}
+		var closeMessage = false;
+		window.addEventListener("message", (event) => {
+			// Do we trust the sender of this message?	(might be
+			// different from what we originally opened, for example).
+			if (event.origin !== "https://warbrokers.io") {
+				return;
+			}
+			// event.source is popup
+			// event.data is "hi there yourself!	the secret response is: rheeeeet!"
+			try {
+				closeMessage = true;
+				var json = JSON.parse(event.data);
+				if (typeof json.error === 'undefined') {
+					gameLogin(json.token,json.nick,json.hasSteam);
+				}
+			} catch (e) {
+			}
+		}, false);
+		function doLogin() {
+			var that = this;
+//			that._oauthWindow = window.open(
+//			    	"https://warbrokers.io/login_all.php",
+//				"Sign in with Google",
+//				'location=0,status=0,width=800,height=600,top=' + ((window.screen.height - 600) / 2) + ',left=' + ((window.screen.width - 800) / 2)
+//			);
+			closeMessage = false;
+			document.getElementById('warbrokers').hidden = false;
+			document.getElementById('warbrokers').src = "https://warbrokers.io/login_all.php";
+			that._oauthWindow = document.getElementById('warbrokers').contentWindow;
+			that._oauthInterval = window.setInterval(
+				function() {
+					//if (that._oauthWindow.closed) {
+					if (closeMessage) {
+						window.clearInterval(that._oauthInterval);
+						document.getElementById('warbrokers').hidden = true;
+					} else {
+						that._oauthWindow.postMessage("getLoginData","https://warbrokers.io");
+					}
+				},
+				500
+			);
+		}
+		try {
+			$("#gopopup").click(
+				function() {
+					doLogin();
+				}
+			);
+		} catch (e) {
+		}
+		try {
+			$("#vkpopup").click(
+				function() {
+					doLogin();
+				}
+			);
+		} catch (e) {
+		}
+		try {
+			$("#fbpopup").click(
+				function() {
+					doLogin();
+				}
+			);
+		} catch(e) {
+		}
+		try {
+			$("#stpopup").click(
+				function() {
+					doLogin();
+				}
+			);
+		} catch(e) {
+		}
+		try {
+			$("#twpopup").click(
+				function() {
+					doLogin();
+				}
+			);
+		} catch(e) {
+		}
+
+		// Hook pointer lock state change events for different browsers
+		document.addEventListener('pointerlockchange', lockChangeAlert, false);
+		document.addEventListener('mozpointerlockchange', lockChangeAlert, false);
+		document.addEventListener('webkitpointerlockchange', lockChangeAlert, false);
+		document.addEventListener('mspointerlockchange', lockChangeAlert, false);
+		function notifyPointerLockJS() {
+			console.log("notifyPointerLockJS");
+		}
+		function lockChangeAlert(event) {
+			//console.log("lockChangeAlert");
+			var pointerLockElement = document.pointerLockElement || document.mozPointerLockElement || document.webkitPointerLockElement || document.msPointerLockElement;
+			var isPointerLocked = !!pointerLockElement;
+			if (isPointerLocked) {
+				//console.log("Pointer locked");
+			} else {
+				//console.log("Pointer not locked");
+				gameInstance.SendMessage('ScriptObject','pointerLockChange');
+			}
+		}
+		function reloadPage() {
+			location.reload();
+		}
+		// Android touch stuff
+		function getMessageFromJava(msg) {
+		}
+		function purchaseSKU(sku,token) {
+		}
+		// IME input
+		function openKeyboardInput(msg,curval) {
+		}
+
+		// Pay with paypal or Xsolla
+
+		function buySkuGeneric(sku) {
+			try {
+				$.get(
+					"https://warbrokers.io/get_xsolla_access_token.php?sku=" + sku + "&token=" + gameToken,
+					function(data,status) {
+						if (status == "success") {
+							if (!data.includes("Error")) {
+								xsollaPopup(data);
+							}
+						}
+					}
+				);
+			} catch(e) {
+			}
+		}
+
+		// Init poki sdk
+
+		PokiSDK.init().then(()=>{ console.log("PokiSDK initialized"); PokiSDK.gameLoadingStart(); }).catch(()=>{ console.log("Adblock enabled"); });
+
+		// Get our session token from wbio
+
+		sessionToken = getCookie("session_token");
+		if (sessionToken == "") {
+			$.get(
+				"https://warbrokers.io/get_session_token.php",
+				function(data,status) {
+					if (status == "success") {
+						sessionToken = data;
+						setCookie("session_token",data,30);
+					}
+				}
+			);
+		}
+
+		// Validate our previous game token
+
+		gameToken = getCookie("game_token");
+		if (gameToken != "") {
+			$.get(
+				"https://warbrokers.io/validate_game_token.php?token=" + gameToken,
+				function(data,status) {
+					if (status == "success") {
+						if (data.includes("Error!")) {
+							gameToken = "";
+						}
+					}
+				}
+			);
+		}
+
+		// Find our location for best server
+
+		$.get(
+			"https://warbrokers.io/get_location.php",
+			function(data,status) {
+				if (status == "success") {
+					locationString = data;
+					var result = data.split(',');
+					continent = result[0];
+				}
+			}
+		);
+
+		// Load the thing up
+
+		$.get(
+			"https://warbrokers.io/game3d.php?gameBranch=true",
+			function(data,status) {
+				if (status == "success") {
+					var clientBranch = data;
+					$.getScript(
+						cdn + clientBranch + "/Build/www.loader.js",
+						function(script,textStatus,jqXHR) {
+							function onProgress(percent) {
+								percent = Math.floor(percent * 111 + 1);
+								if (percent > 100) {
+									percent = 100;
+								}
+								document.getElementById("pctpct").innerHTML = '<center><p style="color:white">' + percent + '%</p></center>';
+							}
+							var config = {
+								dataUrl: cdn + clientBranch + "/Build/www.data.unityweb",
+								frameworkUrl: cdn + clientBranch + "/Build/www.framework.js.unityweb",
+								codeUrl: cdn + clientBranch + "/Build/www.wasm.unityweb",
+								streamingAssetsUrl: "StreamingAssets",
+								companyName: "Trebuchet Entertainment LLC",
+								productName: "War_Brokers",
+								productVersion: "1.0",
+								// matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+								devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+								webglContextAttributes:{"preserveDrawingBuffer": true},
+							};
+							var canvas = document.querySelector("#unity-canvas");
+							createUnityInstance(canvas,config,onProgress).then((unityInstance) => {
+								gameInstance = unityInstance;
+								var bg1 = document.getElementById("loadingProgress");
+								var bg2 = document.getElementById("loadingBG");
+								bg1.remove();
+								bg2.remove();
+							});
+						}
+					);
+				}
+			}
+		);
+</script>
+
+<body onresize="resizeFunc()">
+
+</body></html>

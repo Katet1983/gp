@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover, target-densityDpi=device-dpi">
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+
+   <!--  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file://* *; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src * 'unsafe-inline' 'unsafe-eval'">-->
+   
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src gap://ready file://* *; img-src * 'self' data: http: data: cdvfile:; style-src 'self' http://* https://* 'unsafe-inline'; script-src 'self' http://* https://* 'unsafe-inline' 'unsafe-eval'"> -->
+   
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <title>Prismo Coloring</title>
+	
+  <link rel="stylesheet" href="css/micromodal.css">
+</head>
+
+<body>
+	<div class="hi" id="hi">
+	_
+	</div>
+    <title>Coloring</title>
+
+    <script>
+        window.menu1Textures = ["graphics\/menu\/menu1Textures.json"];
+        window.menu2Textures = ["graphics\/menu\/menu2Textures.json"];
+        window.drawingTextures = ["graphics\/drawing\/drawingTextures.json", "graphics\/drawing\/drawingTextures2.json"];
+        
+        window.WAVAssets = ["sounds\/drawing\/woosh.mp3","sounds\/drawing\/pencilDown.mp3","sounds\/drawing\/pencilDrawing.mp3","sounds\/drawing\/selectPencil.mp3","sounds\/menu\/bookFlip1.mp3","sounds\/menu\/bookOpen.mp3","sounds\/menu\/bookPlace.mp3","sounds\/menu\/pencilDrawingmp3.mp3","sounds\/menu\/picturesAppear0.mp3","sounds\/menu\/picturesAppear1.mp3","sounds\/menu\/picturesAppear2.mp3","sounds\/menu\/picturesAppear3.mp3","sounds\/menu\/picturesAppear4.mp3","sounds\/menu\/selectPicture.mp3","sounds\/menu\/selectPictureBack.mp3","sounds\/menu\/selectPictureMagic.mp3",
+			"sounds\/drawing\/partDrawn\/partDrawn.mp3",
+			"sounds\/drawing\/partDrawn\/boing1.mp3", 
+			"sounds\/drawing\/partDrawn\/boing2.mp3",    
+			"sounds\/drawing\/partDrawn\/chimesound7143.mp3",  
+			"sounds\/drawing\/partDrawn\/Drop1.mp3",  
+			"sounds\/drawing\/partDrawn\/Drop.mp3",  
+			"sounds\/drawing\/partDrawn\/FunnyEffect1.mp3",  
+			"sounds\/drawing\/partDrawn\/FunnyEffect11.mp3",  
+			"sounds\/drawing\/partDrawn\/FunnyEffect12.mp3",  
+			"sounds\/drawing\/partDrawn\/Funnyeffect22.mp3",  
+			"sounds\/drawing\/partDrawn\/Ting.mp3"];
+	</script>
+	
+    <script src="../../poki-sdk.js"></script>
+
+    <!--<script src="src/m.js"></script>-->
+    <script src="src/app.js"></script>
+    <!--<script src="src/tools/greensock/TweenMax.min.js"></script>-->
+    <style>
+        * { margin:0; padding: env(safe-area-inset); }
+        html, body { width:100%; height:100%; }
+        canvas { display:block; }
+
+        body {
+			background-color: #002B50;
+            -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+            -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+            -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+            
+            height:100%;
+            margin:0px;
+            padding:0px;
+            width:100%;
+            overflow:hidden;
+			
+			:focus {
+				outline: none;
+			}
+        }
+		
+        modal_container {
+            z-index: 1;
+        }
+    </style>
+
+    <script type="text/javascript">
+		window.poki = true;
+        Main.main(); 
+    </script>
+	
+    <!--<canvas id="myCanvas" width="0" height="0"></canvas>-->
+	
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+		  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<header class="modal__header">
+			  <h2 class="modal__title" id="modal-1-title">
+				About
+			  </h2>
+			  <button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+			</header>
+			<main class="modal__content" id="modal-1-content">
+			  <p>
+				In the Prismo coloring game there are over 250 coloring pictures to color. Enjoy!<br>
+						<br>
+						<br>
+							
+				<div class="row">
+					<div class="column">
+						<b>The game is made by:</b><br>
+						- Jeroen Wimmers<br>
+						<br>
+						<b>Much love to:</b><br>
+						- Laura Estacio<br>
+						<br>
+						<b>Supporting art by:</b><br>
+						- Molly Heady-Carroll<br>
+						- Stein Louisse<br>
+				  </div>
+				  <div class="column">
+					<b>Public domain coloring pictures from:</b><br>
+					- www.supercoloring.com<br>
+					- www.abbythepup.com<br>
+					<br>
+					<b>Various patterns from:</b><br>
+					- www.rawpixel.com<br>
+				  </div>
+				</div>
+				<br>
+				<br>
+			  
+			</main>
+			<footer class="modal__footer">
+			  <button class="modal__btn" data-micromodal-close="" aria-label="Close this dialog window">Close</button>
+			</footer>
+		  </div>
+		</div>
+	</div>
+			
+	<div class="modal micromodal-slide" id="modal-licence" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+		  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<header class="modal__header">
+			  <h2 class="modal__title" id="modal-1-title">
+				Credit
+			  </h2>
+			  <button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+			</header>
+			<main class="modal__content" id="modal-1-content">
+			  <div id="licences">
+			  
+				<b>Author:</b><br>
+				<div id="author">SuperColoring</div><br>
+				
+				<b>Licensed under:</b><br>
+				<div id="license"><a target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/#">CC BY-NC 4.0</a></div><br>
+				
+				<b>Source:</b><br>
+				<div id="source"><a target="_blank" href="https://www.supercoloring.com/coloring-pages/christmas-unicorn-0?tag=65184">https://www.supercoloring.com/coloring-pages/christmas-unicorn-0?tag=65184</a></div><br>
+				
+				<b>Modifications:</b><br>
+				<div id="modifications">No modifications to the material were made</div><br>
+				
+			  </div>
+			</main>
+			<footer class="modal__footer">
+			  <button class="modal__btn" data-micromodal-close="" aria-label="Close this dialog window">Close</button>
+			</footer>
+		  </div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
