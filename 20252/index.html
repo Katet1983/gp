@@ -23,38 +23,7 @@
     </style>
     <script src="js/adsdk.min_89f7b65d.js"></script>
     <script>
-        window["GD_OPTIONS"] = {
-            "gameId": "hhnbpg76uvlj0v25b7q8l9tlcrpnbfvt",
-            "onEvent": function(event) {
-                switch (event.name) {
-                    case "SDK_GAME_START":
-                        // advertisement done, resume game logic and unmute audio
-                        window.egret && window.egret.ticker.resume();
-                        break;
-                    case "SDK_GAME_PAUSE":
-                        // pause game logic / mute audio
-                        window.egret && window.egret.ticker.pause();
-                        break;
-                    case "SDK_GDPR_TRACKING":
-                        // this event is triggered when your user doesn't want to be tracked
-                        break;
-                    case "SDK_GDPR_TARGETING":
-                        // this event is triggered when your user doesn't want personalised targeting of ads and such
-                        break;
-                    case "AD_SDK_REQUEST_ADS":
-                        break;
-                    case "AD_SDK_FINISHED":
-
-                        break;
-                    case "AD_SDK_ERROR":
-                    case "AD_CANCELED":
-
-                        break;
-                    case "SDK_READY":
-                        window.adSDK = new adService();
-                        window.adSDK.startPreLoad();
-                        break;
-                }
+       
             },
         };
         (function(d, s, id) {
