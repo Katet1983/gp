@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin & Installation Guide - WhatsApp Direct</title>
+    <style>
+        :root {
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --primary-color: #075E54;
+            --text-color: #212529;
+            --text-color-light: #495057;
+            --border-color: #dee2e6;
+            --code-bg: #e9ecef;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-background);
+            padding: 24px 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 1.5em;
+        }
+        h1 {
+            text-align: center;
+        }
+        p, li {
+            color: var(--text-color-light);
+            font-size: 1.05em;
+        }
+        strong {
+            color: var(--text-color);
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: var(--code-bg);
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 0.9em;
+            border-radius: 3px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffeeba;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin & Installation Guide</h1>
+        
+        <h2>Introduction</h2>
+        <p>
+            Welcome to the WhatsApp Direct admin guide. This application is a <strong>static web app</strong>, which means it does not require a traditional backend server (like Node.js, PHP, or Python). All logic runs directly in the user's browser.
+        </p>
+        <p>This makes hosting simple, cheap, and infinitely scalable. This guide will walk you through deploying the app and configuring its features.</p>
+        
+        <h2>Section 1: Installation & Deployment</h2>
+        <p>To get the app online, you just need a place to host the static files (`.html`, `.css`, `.js`, etc.).</p>
+        
+        <h3>Steps:</h3>
+        <ol>
+            <li><strong>Download Files:</strong> Make sure you have all the application files in a single folder on your computer.</li>
+            <li>
+                <strong>Choose a Hosting Provider:</strong> Select a static web hosting provider. Excellent, easy-to-use options include:
+                <ul>
+                    <li><a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a></li>
+                    <li><a href="https://netlify.com" target="_blank" rel="noopener noreferrer">Netlify</a></li>
+                    <li><a href="https://firebase.google.com/docs/hosting" target="_blank" rel="noopener noreferrer">Firebase Hosting</a></li>
+                    <li><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></li>
+                    <li><a href="https://pages.cloudflare.com/" target="_blank" rel="noopener noreferrer">Cloudflare Pages</a></li>
+                </ul>
+            </li>
+            <li><strong>Deploy the App:</strong> Follow your chosen provider's instructions. Most modern providers allow you to simply drag-and-drop your project folder to deploy it instantly. Alternatively, you can connect a GitHub repository for automatic deployments.</li>
+        </ol>
+        <p>Once deployed, your app will be live on the internet! Now, you can configure the optional services below.</p>
+
+        <h2>Section 2: Configuration</h2>
+        <p>All configuration is done in the <code>index.tsx</code> file. Open this file and locate the configuration objects at the top.</p>
+
+        <div class="note">
+            <p><strong>Important:</strong> After making any changes to <code>index.tsx</code>, you will need to re-deploy or upload the updated file to your hosting provider.</p>
+        </div>
+
+        <h3>1. Firebase Configuration</h3>
+        <p>This is for connecting Google Analytics to track anonymous usage statistics.</p>
+        <pre><code>const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  // ... and other keys
+};</code></pre>
+        <h4>How to get your Firebase config:</h4>
+        <ol>
+            <li>Go to the <a href="https://console.firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase Console</a> and create a new project.</li>
+            <li>In your project dashboard, click the "Web" icon (<code>&lt;/&gt;</code>) to register a new web app.</li>
+            <li>Give your app a nickname and click "Register app".</li>
+            <li>Firebase will display the <code>firebaseConfig</code> object. Copy this entire object and paste it into <code>index.tsx</code>, replacing the placeholder values.</li>
+        </ol>
+
+        <h3>2. OneSignal Configuration</h3>
+        <p>This is for enabling optional push notifications.</p>
+        <pre><code>const oneSignalAppId = "YOUR_ONESIGNAL_APP_ID";</code></pre>
+        <h4>How to get your OneSignal App ID:</h4>
+        <ol>
+            <li>Sign up at <a href="https://onesignal.com/" target="_blank" rel="noopener noreferrer">OneSignal</a> and create a new App/Project.</li>
+            <li>Choose "Web" as your platform.</li>
+            <li>Follow the setup steps. In your OneSignal dashboard, go to <strong>Settings &rarr; Keys & IDs</strong>.</li>
+            <li>You will find your <strong>OneSignal App ID</strong> here. Copy it and paste it as the value for <code>oneSignalAppId</code>.</li>
+        </ol>
+
+        <h3>3. AdSense Configuration</h3>
+        <p>This section controls all monetization features.</p>
+        <pre><code>const adsenseConfig = {
+    ad_client_id: "ca-pub-xxxxxxxxxxxxxxxx",
+    enable_ads: true,
+    show_header_banner: true,
+    header_banner_ad_slot: "YOUR_HEADER_AD_SLOT_ID",
+    // ... and other settings
+};</code></pre>
+        <h4>How to configure AdSense:</h4>
+        <ul>
+            <li><code>ad_client_id</code>: This is your unique publisher ID from Google AdSense. You can find it in your AdSense account under <strong>Account &rarr; Settings &rarr; Account information</strong>. It looks like <code>ca-pub-1234567890123456</code>.</li>
+            <li><code>enable_ads</code>: Set this to <code>false</code> to disable all ads across the app.</li>
+            <li><code>show_..._ad</code>: These are switches to enable or disable specific ad placements (header, footer, interstitial).</li>
+            <li><code>..._ad_slot</code>: For each ad placement you enable, you must create a corresponding ad unit in your AdSense account (under <strong>Ads &rarr; By ad unit</strong>). After creating an ad unit, AdSense will give you a code snippet containing an ad slot ID (a string of numbers). Copy that ID and paste it here.</li>
+        </ul>
+    </div>
+</body>
+</html>

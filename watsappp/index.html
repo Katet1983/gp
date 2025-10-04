@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Direct</title>
+    <meta name="description" content="Open a WhatsApp chat without saving the number."/>
+    
+    <link rel="manifest" href="data:application/json;base64,ewogICJzaG9ydF9uYW1lIjogIldBIERpcmVjdCIsCiAgIm5hbWUiOiAiV2hhdHNBcHAgRGlyZWN0IiwKICAiZGVzY3JpcHRpb24iOiAiT3BlbiBhIFdoYXRzQXBwIGNoYXQgd2l0aG91dCBzYXZpbmcgdGhlIGNvbnRhY3QncyBwaG9uZSBudW1iZXIuIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiaWNvbnMvaWNvbi03Mng3Mi5zdmciLAogICAgICAic2l6ZXMiOiAiNzJ4NzIiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreG1sIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJpY29ucy9pY29uLTk2eDk2LnN2ZyIsCiAgICAgICJzaXplcyI6ICI5Nng5NiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9LAogICAgewogICAgICAic3JjIjogImljb25zL2ljb24tMTI4eDEyOC5zdmciLAogICAgICAic2l6ZXMiOiAiMTI4eDEyOCIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9LAogICAgewogICAgICAic3JjIjogImljb25zL2ljb24tMTQ0eDE0NC5zdmciLAogICAgICAic2l6ZXMiOiAiMTQ0eDE0NCIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9LAogICAgewogICAgICAic3JjIjogImljb25zL2ljb24tMTUyeDE1Mi5zdmciLAogICAgICAic2l6ZXMiOiAiMTUyeDE1MiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9LAogICAgewogICAgICAic3JjIjogImljb25zL2ljb24tMTkyeDE5Mi5zdmciLAogICAgICAic2l6ZXMiOiAiMTkyeDE5MiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9LAogICAgewogICAgICAic3JjIjogImljb25zL2ljb24tMzg0eDM4NC5zdmciLAogICAgICAic2l6ZXMiOiAiMzg0eDM4NCIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9LAogICAgewogICAgICAic3JjIjogImljb25zL2ljb24tNTEyeDUxMi5zdmciLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9CiAgXSwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmMGYyZjUiLAogICJ0aGVtZV9jb2xvciI6ICIjMDc1RTU0IiwKICAic2hhcmVfdGFyZ2V0IjogewogICAgImFjdGlvbiI6ICIvIiwKICAgICJtZXRob2QiOiAiR0VUIiwKICAgICJwYXJhbXMiOiB7CiAgICAgICJ0aXRsZSI6ICJuYW1lIiwKICAgICAgInRleHQiOiAicGhvbmUiLAogICAgICAidXJsIjogInVybCIKICAgIH0KICB9Cn0=" />
+    <meta name="theme-color" content="#25D366" />
+    <link rel="apple-touch-icon" href="/assets/icon-192x192-65f63389.svg">
+
+    <!-- Google Tag Manager - Replace GTM-XXXXXXXX with your Container ID -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google AdSense script is now injected dynamically from index.tsx based on your configuration -->
+
+    <!-- OneSignal -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+    </script>
+
+
+
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js",
+    "firebase/analytics": "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.3.0/",
+    "qrcode": "https://esm.sh/qrcode@1.5.3",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.4",
+    "vite": "https://aistudiocdn.com/vite@^7.1.9"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-caecac15.js"></script>
+  <link rel="stylesheet" href="/assets/index-44c7e4f3.css">
+</head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js').then(registration => {
+            console.log('SW registered: ', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
+  
+</body>
+</html>
