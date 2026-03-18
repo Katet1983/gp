@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>unknowngame</title>
+
+    <script>
+        // Auto-Injected Game ID
+        window.famobi_gameID = "unknowngame";
+        window.famobi_isPaused = false;
+        window.famobi_hasMutedAudio = false; 
+        
+        window.isForcedMode = function() { return false; }; 
+        window.skipTitleScreen = function() { return false; };
+        window.isExternalStart = function() { return false; }; 
+        
+        // The Universal God Mode Proxy
+        const silentProxy = new Proxy(function() {}, {
+            get: function(target, prop) {
+                if (prop === Symbol.toPrimitive || prop === 'valueOf') return function() { return 0; };
+                if (prop === 'toString') return function() { return "0"; }; 
+                if (prop === 'getSafeArea') return function() { return {top:0, left:0, bottom:0, right:0}; };
+                
+                if (prop === 'getVolume') return function() { return 1; }; 
+                if (prop === 'isMuted') return function() { return false; };
+                if (prop === 'hasAudio') return function() { return true; };
+                
+                if (typeof prop === 'string') {
+                    const p = prop.toLowerCase();
+                    if (p.includes('score') || p.includes('coin') || p.includes('level')) {
+                        return function() { return 0; };
+                    }
+                }
+                
+                if (prop === 'then') return function(cb) { if (cb) cb(); return silentProxy; };
+                if (prop === 'catch' || prop === 'finally') return function() { return silentProxy; };
+                if (prop === 'hasFeature') return function() { return false; }; 
+                if (prop === 'isReady') return function() { return true; };
+                
+                return silentProxy;
+            },
+            apply: function(target, thisArg, argList) {
+                for (let i = 0; i < argList.length; i++) {
+                    const arg = argList[i];
+                    if (typeof arg === 'function') {
+                        setTimeout(arg, 10); 
+                    } else if (typeof arg === 'object' && arg !== null) {
+                        ['callback', 'afterAd', 'onClose', 'success', 'onComplete'].forEach(cb => {
+                            if (typeof arg[cb] === 'function') {
+                                setTimeout(arg[cb], 10);
+                            }
+                        });
+                    }
+                }
+                return silentProxy; 
+            }
+        });
+
+        window.famobi = silentProxy;
+        window.famobi_analytics = silentProxy;
+        window.famobi_tracking = silentProxy;
+        window.google = silentProxy;
+        window.gamesnacks = silentProxy;
+        window.GameSnacks = silentProxy;
+        window.TransitionScreen = silentProxy;
+        window.EventTypes = silentProxy;
+        
+        const originalPM = window.parent.postMessage;
+        window.parent.postMessage = function(m, t, x) { 
+            try { originalPM(m, "*", x); } catch(e) {} 
+        };
+    </script>
+</head>
+<body>
+    <div id="application-container"></div>
+    <script src="playcanvas-stable.min.js"></script>
+    <script>
+        if (window.pc && pc.Application) {
+            pc.Application.prototype.getFamobiAdjustedCanvasSize = function() {
+                return { width: window.innerWidth, height: window.innerHeight };
+            };
+        }
+    </script>
+    <script src="__settings__.js"></script>
+    <script src="__modules__.js"></script>
+    <script src="__start__.js"></script>
+    <script src="__loading__.js"></script>
+</body>
+</html>
