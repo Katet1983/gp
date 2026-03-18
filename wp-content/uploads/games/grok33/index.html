@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arrow Escape: Puzzle</title>
+  <script type="module" crossorigin src="./js/index-BcGL4uLy.js"></script>
+  <link rel="stylesheet" crossorigin href="./css/index-D4U-cjNz.css">
+<script>window.__GS_BOOT_CFG__={version: 0, sdkSrc: 'sdk-bundle/gamepush.gd.js', platformType: 'GAME_DISTRIBUTION'};</script>
+</head>
+
+
+<body>
+  <!-- FPS Counter is created dynamically in DEV mode only -->
+  <script>
+    try {
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-theme');
+      }
+    } catch (e) { }
+  </script>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div id="loadingPercentage" class="loading-percentage">0%</div>
+    </div>
+  </div>
+
+  <!-- Main Menu (hidden - game starts directly) -->
+  <div class="main-menu" id="mainMenu" style="display: none;">
+    <div class="menu-content">
+      <h1 class="game-title">Arrow Puzzle</h1>
+      <div class="menu-level-indicator" id="menuLevelIndicator">Level 1</div>
+
+      <button class="play-btn" id="playBtn">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+        Play
+      </button>
+    </div>
+  </div>
+
+  <!-- Game Over Modal -->
+  <div class="game-over-modal" id="gameOverModal" style="display: none;">
+    <!-- Ad Loading Overlay (blocking UI while rewarded ad loads) -->
+    <div class="ad-loading-overlay" id="adLoadingOverlay" style="display: none;"></div>
+    <div class="game-over-content">
+      <div class="game-over-icon">💔</div>
+      <h2 class="game-over-title">Out of Lives!</h2>
+      <p class="game-over-text">Don't give up, try again!</p>
+      <div class="game-over-buttons">
+        <button class="restart-btn" id="restartLevelBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
+          </svg>
+          Restart
+        </button>
+        <button class="watch-ad-btn" id="watchAdBtn">
+          <span class="watch-ad-content">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM9 8v8l7-4-7-4z" />
+            </svg>
+            Get +6 ❤️ lives
+          </span>
+          <div class="btn-spinner"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hint Modal -->
+  <div class="game-over-modal" id="hintModal" style="display: none;">
+    <div class="game-over-content">
+      <div class="game-over-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 1em; height: 1em;">
+          <defs>
+            <linearGradient id="modalBulbBody" x1="12" y1="2" x2="12" y2="16" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fde68a" />
+              <stop offset="1" stop-color="#fbbf24" />
+            </linearGradient>
+            <linearGradient id="modalBulbBase" x1="12" y1="16" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#94a3b8" />
+              <stop offset="1" stop-color="#64748b" />
+            </linearGradient>
+            <radialGradient id="modalBulbGlow" cx="12" cy="8" r="8" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fef3c7" stop-opacity="0.8" />
+              <stop offset="1" stop-color="#fbbf24" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <!-- Glow removed -->
+          <!-- Bulb glass -->
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V16.5c0 .28.22.5.5.5h7c.28 0 .5-.22.5-.5v-1.76c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7z"
+            fill="url(#modalBulbBody)" />
+          <!-- Highlight on glass -->
+          <ellipse cx="9" cy="7" rx="2" ry="3" fill="white" fill-opacity="0.4" />
+          <!-- Base -->
+          <rect x="8" y="17" width="8" height="1.5" rx="0.5" fill="url(#modalBulbBase)" />
+          <rect x="9" y="19" width="6" height="1" rx="0.5" fill="#64748b" />
+          <rect x="10" y="20.5" width="4" height="1.5" rx="0.75" fill="#475569" />
+          <!-- Filament lines -->
+          <path d="M10 12V10M12 13V9M14 12V10" stroke="#4338ca" stroke-width="0.8" stroke-linecap="round"
+            opacity="0.5" />
+        </svg>
+      </div>
+      <h2 class="game-over-title">Out of Hints!</h2>
+      <p class="game-over-text">Get +3 hints after a short ad</p>
+      <div class="game-over-buttons">
+        <button class="watch-ad-btn" id="hintWatchAdBtn">
+          <span class="watch-ad-content">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM9 8v8l7-4-7-4z" />
+            </svg>
+            Get +3 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="width: 1.2em; height: 1.2em; vertical-align: text-bottom; margin: 0 -8px;">
+              <defs>
+                <linearGradient id="btnBulbBody" x1="12" y1="2" x2="12" y2="16" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#fde68a" />
+                  <stop offset="1" stop-color="#fbbf24" />
+                </linearGradient>
+                <linearGradient id="btnBulbBase" x1="12" y1="16" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#94a3b8" />
+                  <stop offset="1" stop-color="#64748b" />
+                </linearGradient>
+                <radialGradient id="btnBulbGlow" cx="12" cy="8" r="8" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#fef3c7" stop-opacity="0.8" />
+                  <stop offset="1" stop-color="#fbbf24" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+              <!-- Glow removed -->
+              <!-- Bulb glass -->
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V16.5c0 .28.22.5.5.5h7c.28 0 .5-.22.5-.5v-1.76c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7z"
+                fill="url(#btnBulbBody)" />
+              <!-- Highlight on glass -->
+              <ellipse cx="9" cy="7" rx="2" ry="3" fill="white" fill-opacity="0.4" />
+              <!-- Base -->
+              <rect x="8" y="17" width="8" height="1.5" rx="0.5" fill="url(#btnBulbBase)" />
+              <rect x="9" y="19" width="6" height="1" rx="0.5" fill="#64748b" />
+              <rect x="10" y="20.5" width="4" height="1.5" rx="0.75" fill="#475569" />
+              <!-- Filament lines -->
+              <path d="M10 12V10M12 13V9M14 12V10" stroke="#4338ca" stroke-width="0.8" stroke-linecap="round"
+                opacity="0.5" />
+            </svg> hints
+          </span>
+          <div class="btn-spinner"></div>
+        </button>
+        <button class="restart-btn" id="hintCancelBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+          </svg>
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Level Complete Modal -->
+  <div class="level-complete-modal" id="levelCompleteModal" style="display: none;">
+    <div class="modal-background"></div>
+    <canvas id="confettiCanvas"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"></canvas>
+    <div class="level-complete-content">
+      <div class="level-complete-icon" style="position: relative; z-index: 1;">🎉</div>
+      <div style="position: relative; z-index: 2;">
+        <h2 class="level-complete-title">Level Complete!</h2>
+        <p class="level-complete-level" id="completedLevelNumber">Level 1</p>
+        <button class="continue-btn" id="continueBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          Continue
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pause Modal -->
+  <div class="pause-modal" id="pauseModal" style="display: none;">
+    <div class="pause-content">
+      <button class="close-pause-btn" id="closePauseBtn">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+        </svg>
+      </button>
+      <h2 class="pause-title">Pause</h2>
+      <div class="pause-buttons">
+        <button class="restart-btn" id="pauseRestartBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
+          </svg>
+          Restart
+        </button>
+        <button class="exit-btn" id="exitToMenuBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+          </svg>
+          Exit to Menu
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game UI -->
+  <div class="game-container" id="gameContainer" style="display: none;">
+    <!-- Wrong Move Flash Effect -->
+    <div class="wrong-move-overlay" id="wrongMoveOverlay"></div>
+
+    <!-- Top UI Panel - New Design -->
+    <div class="top-ui">
+
+      <div class="level-info">
+        <div class="level-name" id="levelNameDisplay">Level 1</div>
+        <div class="lives-counter" id="livesContainer">
+          <!-- Hearts will be injected here via JS -->
+        </div>
+      </div>
+
+      <!-- Right: Actions Group (Restart + Settings) -->
+      <div class="top-actions">
+
+
+        <button class="action-btn" id="settingsBtn" title="Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2-.3l-.15-.09a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 .32l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 .3l.15.09a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.47a2 2 0 0 1 1-1.74l-.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2-.32l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+            </path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="app">
+      <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Tutorial Hand Overlay (Level 1 only) -->
+    <div class="tutorial-hand-overlay" id="tutorialHandOverlay" style="display: none;">
+      <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой%202'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20212.57%20168.51'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23fff;%20}%20.cls-2%20{%20fill:%20%23000D27;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='Layer_1'%20data-name='Layer%201'%3e%3cg%3e%3cpath%20class='cls-1'%20d='M120.99,4.69c-3.22,3-5.18,6.94-5.64,11.24-6.83-4.22-15.93-3.62-21.89,1.93-3.22,3-5.18,6.94-5.64,11.24-6.83-4.22-15.93-3.62-21.89,1.93-3.06,2.85-4.99,6.56-5.56,10.63L30.95,12.26c-6.9-6.9-18.22-7.22-25.22-.7C2.13,14.93.09,19.49,0,24.42c-.09,4.93,1.78,9.56,5.27,13.04l60.37,60.37c-2.24-.16-4.52.11-6.73.81-4.58,1.46-8.32,4.61-10.52,8.88-2.21,4.27-2.62,9.14-1.16,13.72,1.46,4.58,4.61,8.32,8.88,10.52,0,0,34.13,17.64,47.56,24.57,2,1.03,4.03,2.14,5.99,3.2.76.41,1.51.82,2.27,1.23,12.01,6.49,26.11,9.03,39.69,7.15,14.05-1.94,26.79-8.29,36.85-18.34l5.18-5.18c25.25-25.25,25.25-66.32,0-91.57L146.2,5.39c-6.9-6.9-18.22-7.22-25.22-.7Z'/%3e%3cpath%20class='cls-2'%20d='M120.99,4.69c-3.22,3-5.18,6.94-5.64,11.24-6.83-4.22-15.93-3.62-21.89,1.93-3.22,3-5.18,6.94-5.64,11.24-6.83-4.22-15.93-3.62-21.89,1.93-3.06,2.85-4.99,6.56-5.56,10.63L30.95,12.26c-6.9-6.9-18.22-7.22-25.22-.7C2.13,14.93.09,19.49,0,24.42c-.09,4.93,1.78,9.56,5.27,13.04l60.37,60.37c-2.24-.16-4.52.11-6.73.81-4.58,1.46-8.32,4.61-10.52,8.88-2.21,4.27-2.62,9.14-1.16,13.72,1.46,4.58,4.61,8.32,8.88,10.52,0,0,34.13,17.64,47.56,24.57,2,1.03,4.03,2.14,5.99,3.2.76.41,1.51.82,2.27,1.23,12.01,6.49,26.11,9.03,39.69,7.15,14.05-1.94,26.79-8.29,36.85-18.34l5.18-5.18c25.25-25.25,25.25-66.32,0-91.57L146.2,5.39c-6.9-6.9-18.22-7.22-25.22-.7ZM188.55,57.91c22.44,22.44,22.44,58.95,0,81.39l-5.18,5.18c-17.85,17.85-45.83,21.95-68.03,9.95l-2.25-1.22c-1.99-1.09-4.06-2.21-6.13-3.28-13.43-6.92-47.56-24.56-47.56-24.56-2.56-1.32-4.45-3.57-5.33-6.31s-.63-5.67.7-8.23c.52-1.01,1.18-1.9,1.95-2.67,3.23-3.23,8.32-4.17,12.6-1.96l10.14,5.24c1.55.8,3.46.37,4.52-1.02.03-.04.06-.08.09-.12,1.01-1.43.84-3.38-.4-4.62L10.36,32.37c-2.09-2.09-3.21-4.87-3.16-7.83.05-2.95,1.27-5.69,3.45-7.71,4.2-3.91,11.03-3.68,15.22.52l39.59,39.59,24.5,24.5c1.41,1.41,3.68,1.41,5.09,0,1.41-1.41,1.41-3.68,0-5.09l-24.5-24.5c-2.09-2.09-3.21-4.87-3.16-7.83.05-2.95,1.27-5.69,3.45-7.71,4.2-3.91,11.03-3.68,15.22.52l6.93,6.93,22.37,22.37c1.41,1.41,3.68,1.41,5.09,0s1.41-3.68,0-5.09l-22.37-22.37c-2.09-2.09-3.21-4.87-3.16-7.83.05-2.95,1.28-5.69,3.45-7.71,4.2-3.91,11.03-3.68,15.22.52l6.93,6.93,18.85,18.85c1.41,1.41,3.68,1.41,5.09,0,1.41-1.41,1.41-3.68,0-5.09l-18.85-18.85c-2.09-2.09-3.21-4.87-3.16-7.83.05-2.95,1.28-5.69,3.45-7.71,4.2-3.91,11.03-3.68,15.22.52l47.44,47.44Z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="Click here" class="tutorial-hand-icon">
+    </div>
+
+    <!-- Developer Panel is created dynamically in DEV mode only -->
+
+    <!-- Bottom UI Group -->
+    <div class="bottom-ui-group">
+
+      <!-- Hint Button -->
+      <button class="hint-btn" id="hintBtn">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bulbBody" x1="12" y1="2" x2="12" y2="16" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fde68a" />
+              <stop offset="1" stop-color="#fbbf24" />
+            </linearGradient>
+            <linearGradient id="bulbBase" x1="12" y1="16" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#94a3b8" />
+              <stop offset="1" stop-color="#64748b" />
+            </linearGradient>
+            <radialGradient id="bulbGlow" cx="12" cy="8" r="8" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fef3c7" stop-opacity="0.8" />
+              <stop offset="1" stop-color="#fbbf24" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <!-- Glow removed -->
+          <!-- Bulb glass -->
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V16.5c0 .28.22.5.5.5h7c.28 0 .5-.22.5-.5v-1.76c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7z"
+            fill="url(#bulbBody)" />
+          <!-- Highlight on glass -->
+          <ellipse cx="9" cy="7" rx="2" ry="3" fill="white" fill-opacity="0.4" />
+          <!-- Base -->
+          <rect x="8" y="17" width="8" height="1.5" rx="0.5" fill="url(#bulbBase)" />
+          <rect x="9" y="19" width="6" height="1" rx="0.5" fill="#64748b" />
+          <rect x="10" y="20.5" width="4" height="1.5" rx="0.75" fill="#475569" />
+          <!-- Filament lines -->
+          <path d="M10 12V10M12 13V9M14 12V10" stroke="#4338ca" stroke-width="0.8" stroke-linecap="round"
+            opacity="0.5" />
+        </svg>
+      </button>
+
+      <!-- Zoom Slider -->
+      <div class="zoom-controls">
+        <span class="zoom-icon">🔍−</span>
+        <input type="range" id="zoomSlider" min="0.9" max="4.0" step="0.01" value="0.9" />
+        <span class="zoom-icon">🔍+</span>
+      </div>
+
+      <!-- Direction Guide Toggle (Grid) -->
+      <button class="guide-btn" id="guideBtn" title="Toggle Guides">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="8" y1="3" x2="8" y2="21"></line>
+          <line x1="16" y1="3" x2="16" y2="21"></line>
+          <line x1="3" y1="8" x2="21" y2="8"></line>
+          <line x1="3" y1="16" x2="21" y2="16"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Settings Backdrop (Moved to root) -->
+  <div class="settings-backdrop" id="settingsBackdrop" style="display: none;"></div>
+
+  <!-- Settings Dropdown Menu (Moved to root) -->
+  <div class="settings-menu" id="settingsMenu" style="display: none;">
+    <button class="settings-close-btn" id="settingsCloseBtn">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+      </svg>
+    </button>
+    <div class="settings-header">Settings</div>
+    <!-- Sound Toggle -->
+    <div class="settings-item" id="soundToggleRow">
+      <div class="settings-label">
+        <svg class="settings-icon sound-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+        </svg>
+        <span>Sound</span>
+      </div>
+      <div class="toggle-switch">
+        <input type="checkbox" id="soundCheckbox" checked>
+        <span class="slider round"></span>
+      </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="settings-item" id="themeToggleRow">
+      <div class="settings-label">
+        <svg class="settings-icon theme-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+        <span>Dark Theme</span>
+      </div>
+      <div class="toggle-switch">
+        <input type="checkbox" id="themeCheckbox">
+        <span class="slider round"></span>
+      </div>
+    </div>
+
+    <!-- Restart Level -->
+    <div class="settings-item settings-item-button" id="settingsRestartBtn">
+      <div class="settings-label">
+        <svg class="settings-icon restart-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
+        </svg>
+        <span>Restart Level</span>
+      </div>
+      <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- install code before body close tag -->
+  <script async
+    src="./sdk-bundle/gamepush.gd.js?projectId=25995&publicToken=47V8zF3a38DAgik3A0BAVpGjsnAkc2eG&callback=onGPInit"></script>
+  <script>
+    // Callback вызывается когда SDK загружен
+    window.onGPInit = (gp) => {
+      window.gp = gp;
+      // Уведомляем менеджер о готовности SDK (если он уже загружен)
+      if (window.GamePushManager) {
+        window.GamePushManager.onSDKReady(gp);
+      }
+    };
+  </script>
+</body>
+
+</html>
