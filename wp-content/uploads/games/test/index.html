@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script>
+    (function() {
+        // 1. Unbreakable Crypto Polyfill
+        const fakeUUID = function() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        };
+        try { if (typeof Crypto !== 'undefined' && !Crypto.prototype.randomUUID) Crypto.prototype.randomUUID = fakeUUID; } catch(e) {}
+        try { if (typeof window.crypto !== 'undefined' && !window.crypto.randomUUID) Object.defineProperty(window.crypto, 'randomUUID', { value: fakeUUID, writable: true }); } catch(e) {}
+
+        // 2. AudioContext Autoplay Polyfill
+        const audioCtxs = [];
+        const OrigAudioContext = window.AudioContext || window.webkitAudioContext;
+        if (OrigAudioContext) {
+            window.AudioContext = function(...args) {
+                const ctx = new OrigAudioContext(...args);
+                audioCtxs.push(ctx);
+                return ctx;
+            };
+            window.AudioContext.prototype = OrigAudioContext.prototype;
+        }
+        window.addEventListener('click', () => { audioCtxs.forEach(ctx => { if (ctx.state === 'suspended') ctx.resume(); }); }, { once: true });
+
+        // 3. UI Unblocker
+        const removeLoaders = () => {
+            const loaders = document.querySelectorAll('#loader, .loader, #loading, .loading-screen');
+            loaders.forEach(l => l.style.display = 'none');
+        };
+
+        // 4. SDK Mocks (With Adblock Validation Payload)
+        const fakePoki = {
+            init: () => Promise.resolve({ adBlock: false }), // Critical handshake for MotoX3M
+            gameLoadingStart: () => {}, gameLoadingProgress: () => {}, 
+            gameLoadingFinished: () => { removeLoaders(); }, gameInteractive: () => { removeLoaders(); }, 
+            gameplayStart: () => {}, gameplayStop: () => {}, customEvent: () => {}, 
+            commercialBreak: () => Promise.resolve(), rewardedBreak: () => Promise.resolve(true),
+            displayAd: () => {}, destroyAd: () => {}, getURLParam: () => "", setDebug: () => {}
+        };
+        try { Object.defineProperty(window, 'PokiSDK', { get: () => fakePoki, set: () => {} }); } catch(e) {}
+        window.initPokiBridge = function() {};
+
+        window.addEventListener('click', removeLoaders);
+
+        // 5. DOM Interceptor
+        const blockScript = function(el) {
+            if (el && el.tagName === 'SCRIPT' && el.src) {
+                const s = el.src.toLowerCase();
+                if (s.includes('poki') || s.includes('crazy') || s.includes('pksl') || s.includes('sitelock')) {
+                    setTimeout(() => { if(el.onload) el.onload(); }, 10);
+                    return true;
+                }
+            }
+            return false;
+        };
+        const origAppend = Element.prototype.appendChild;
+        Element.prototype.appendChild = function(el) { return blockScript(el) ? el : origAppend.call(this, el); };
+        const origInsert = Element.prototype.insertBefore;
+        Element.prototype.insertBefore = function(el, ref) { return blockScript(el) ? el : origInsert.call(this, el, ref); };
+
+        // 6. Network Sandbox
+        const origFetch = window.fetch;
+        window.fetch = async function(...args) {
+            const url = typeof args[0] === 'string' ? args[0] : (args[0] ? args[0].url : '');
+            if (url && (url.includes('poki-sdk') || url.includes('pksl') || url.includes('sitelock') || url.includes('analytics'))) {
+                return new Response("console.log('Blocked SDK');", {status: 200, headers: {'Content-Type': 'application/javascript'}});
+            }
+            return origFetch.apply(this, args);
+        };
+        const origOpen = XMLHttpRequest.prototype.open;
+        XMLHttpRequest.prototype.open = function(method, url, ...rest) {
+            this._archiver_url = url;
+            return origOpen.call(this, method, url, ...rest);
+        };
+        const origSend = XMLHttpRequest.prototype.send;
+        XMLHttpRequest.prototype.send = function(...args) {
+            if (this._archiver_url && typeof this._archiver_url === 'string') {
+                const u = this._archiver_url.toLowerCase();
+                if (u.includes('poki-sdk') || u.includes('pksl') || u.includes('sitelock')) {
+                    Object.defineProperty(this, 'responseText', {value: "console.log('Blocked SDK');"});
+                    Object.defineProperty(this, 'status', {value: 200});
+                    Object.defineProperty(this, 'readyState', {value: 4});
+                    if (this.onreadystatechange) this.onreadystatechange();
+                    if (this.onload) this.onload();
+                    return;
+                }
+            }
+            return origSend.apply(this, args);
+        };
+
+        window.open = function() { return null; };
+    })();
+    </script>
+    
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,shrink-to-fit=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <title>Monkey Mart</title>
+    <meta name="description" content="Monkey Mart is an idle/management game where you manage a monkey-run supermarket, growing produce, selling items, and hiring assistants.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="Monkey Mart Game" name="twitter:title">
+    <meta content="bg_loading.png" name="twitter:image:src">
+    <meta content="Monkey Mart Game" property="og:title">
+    <meta content="Monkey Mart is an idle/management game where you manage a monkey-run supermarket, growing produce, selling items, and hiring assistants." property="og:description">
+    <meta content="bg_loading.png" property="og:image">
+    <link rel="manifest" href="manifest.json">
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+<div id="app-container" class="canvas-app-container">
+    <div id="canvas-container" class="canvas-app-canvas-container">
+        <canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="960" height="640"></canvas>
+    </div>
+    <div class="buttons-background">
+    </div>
+    <div id="progress-bar-root" style="position: absolute; bottom: 16%; left: 50%; visibility: hidden; z-index: 4;">
+        <img id="progress-bar-bg" src="load_bar_bg.png">
+        <img id="progress-bar-fg" src="load_bar_fg.png" style="position:absolute; clip: rect(0px,0px,0px,0px);">
+    </div>
+</div>
+<script id="engine-loader" type="text/javascript" src="dmloader.js"></script>
+<!-- -->
+<script id="engine-setup" type="text/javascript">
+    var extra_params = {
+        archive_location_filter: function (path) {
+            return ("archive" + path + "");
+        },
+        engine_arguments: ["--verify-graphics-calls=false",],
+        custom_heap_size: 134217728,
+        full_screen_container: "#canvas-container",
+        disable_context_menu: true
+    }
+
+    Module['INITIAL_MEMORY'] = extra_params.custom_heap_size;
+
+    Module['onRuntimeInitialized'] = function () {
+        Module.runApp("canvas", extra_params);
+    };
+
+    Module["locateFile"] = function (path, scriptDirectory) {
+        if (path == "dmengine.wasm" || path == "dmengine_release.wasm" || path == "dmengine_headless.wasm") {
+            path = "MonkeyMart.wasm";
+        }
+        return scriptDirectory + path;
+    };
+
+    var is_iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    var buttonHeight = 0;
+    var prevInnerWidth = -1;
+    var prevInnerHeight = -1;
+
+    function resize_game_canvas() {
+        // Hack for iOS when exit from Fullscreen mode
+        if (is_iOS) {
+            window.scrollTo(0, 0);
+        }
+        var app_container = document.getElementById('app-container');
+        var game_canvas = document.getElementById('canvas');
+        var progress_bar_root = document.getElementById('progress-bar-root');
+        var progress_bar_fg = document.getElementById('progress-bar-fg');
+        var progress_bar_bg = document.getElementById('progress-bar-bg');
+        var innerWidth = window.innerWidth;
+        var innerHeight = window.innerHeight - buttonHeight;
+        if (prevInnerWidth == innerWidth && prevInnerHeight == innerHeight) {
+            return;
+        }
+        prevInnerWidth = innerWidth;
+        prevInnerHeight = innerHeight;
+        var width = 960;
+        var height = 640;
+        var targetRatio = width / height;
+        var actualRatio = innerWidth / innerHeight;
+        //Stretch
+        width = innerWidth;
+        height = innerHeight;
+        app_container.style.width = width + "px";
+        app_container.style.height = height + buttonHeight + "px";
+        game_canvas.width = width;
+        game_canvas.height = height;
+        // progress bar
+        var bar_h = width < height ? width : height;
+        progress_bar_bg.width = Math.min(Math.ceil(bar_h * 0.06 * 300 / 24), width * 0.8);
+
+        progress_bar_bg.style.marginLeft = -progress_bar_bg.width / 2 + "px";
+        progress_bar_fg.width = Math.ceil(progress_bar_bg.width * 1);
+
+        progress_bar_fg.style.marginTop = (progress_bar_bg.width * 0) * (0) / 2 + "px";
+        progress_bar_fg.style.marginLeft = -progress_bar_bg.width / 2 - progress_bar_fg.width / 2 + "px";
+        // progress_bar_text.style.fontSize = Math.ceil(bar_h * 0.10) + "px";
+        progress_bar_root.style.bottom = Math.ceil(height * 0.08 + buttonHeight) + "px";
+    }
+
+    resize_game_canvas();
+    window.addEventListener('resize', resize_game_canvas, false);
+    window.addEventListener('orientationchange', resize_game_canvas, false);
+    // window.addEventListener('wheel', e => e.preventDefault(), { passive: false });
+    window.addEventListener("keydown", function (e) {
+        if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            e.preventDefault();
+        }
+    }, false);
+    window.addEventListener('focus', resize_game_canvas, false);
+
+    !function () {
+        var r = function (r) {
+            for (var n = "", t = 7; t >= 0; t--) n += "0123456789abcdef".charAt(r >> 4 * t & 15);
+            return n
+        }, n = function (r, n) {
+            var t = (65535 & r) + (65535 & n);
+            return (r >> 16) + (n >> 16) + (t >> 16) << 16 | 65535 & t
+        }, e = function (r, n) {
+            return r << n | r >>> 32 - n
+        }, o = function (r, n, t, e) {
+            return r < 20 ? n & t | ~n & e : r < 40 ? n ^ t ^ e : r < 60 ? n & t | n & e | t & e : n ^ t ^ e
+        }, u = function (r) {
+            return r < 20 ? 1518500249 : r < 40 ? 1859775393 : r < 60 ? -1894007588 : -899497514
+        };
+        window._HashSHA1 = function (f) {
+            for (var a = function (r) {
+                for (var n = 1 + (r.length + 8 >> 6), t = new Array(16 * n), e = 0; e < 16 * n; e++) t[e] = 0;
+                for (e = 0; e < r.length; e++) t[e >> 2] |= r.charCodeAt(e) << 24 - e % 4 * 8;
+                return t[e >> 2] |= 128 << 24 - e % 4 * 8, t[16 * n - 1] = 8 * r.length, t
+            }(f), c = new Array(80), i = 1732584193, h = -271733879, v = -1732584194, A = 271733878, g = -1009589776, l = 0; l < a.length; l += 16) {
+                for (var w = i, d = h, y = v, H = A, b = g, s = 0; s < 80; s++) c[s] = s < 16 ? a[l + s] : e(c[s - 3] ^ c[s - 8] ^ c[s - 14] ^ c[s - 16], 1), t = n(n(e(i, 5), o(s, h, v, A)), n(n(g, c[s]), u(s))), g = A, A = v, v = e(h, 30), h = i, i = t;
+                i = n(i, w), h = n(h, d), v = n(v, y), A = n(A, H), g = n(g, b)
+            }
+            return r(i) + r(h) + r(v) + r(A) + r(g)
+        }
+    }();
+    var old_preloadAndCallMain = Module._preloadAndCallMain;
+    Module._preloadAndCallMain = function () {
+        //
+        // Delete all LiveUpdate files stored in IDBFS
+        var dir = DMSYS.GetUserPersistentDataRoot();
+        var resDir = _HashSHA1("MonkeyMart");
+        try {
+            FS.unlink(dir + "/." + resDir + "/liveupdate.arcd");
+        } catch (e) {
+        }
+        try {
+            FS.unlink(dir + "/." + resDir + "/liveupdate.arci");
+        } catch (e) {
+        }
+        try {
+            FS.unlink(dir + "/." + resDir + "/liveupdate.arci.tmp");
+        } catch (e) {
+        }
+        try {
+            FS.unlink(dir + "/." + resDir + "/liveupdate.mounts");
+        } catch (e) {
+        }
+        //
+
+        if (Module._archiveLoaded) {
+            //
+        }
+        old_preloadAndCallMain();
+    };
+</script>
+<script id="engine-start" type="text/javascript">
+    var currentPercentage = 0
+
+    Progress.updateProgress = function (percentage) {
+        Progress.notifyListeners(percentage);
+        if (currentPercentage > percentage) {
+            percentage = currentPercentage
+        }
+        currentPercentage = percentage
+        var fg = document.getElementById('progress-bar-fg');
+        fg.style.clip = "rect(0px," + fg.width * percentage / 100 + "px," + fg.height + "px," + "0px)"
+
+        if (isNaN(percentage)) {
+            var progress_bar_root = document.getElementById('progress-bar-root');
+            progress_bar_root.style.visibility = "hidden";
+        }
+    };
+    Progress.addProgress = function () {
+        var progress_bar_root = document.getElementById('progress-bar-root');
+        progress_bar_root.style.visibility = "visible"
+    }
+    Progress.removeProgress = function () {
+        var progress_bar_root = document.getElementById('progress-bar-root');
+        progress_bar_root.style.visibility = "hidden";
+        Module.canvas.style.background = "";
+    }
+
+    EngineLoader.stream_wasm = "false" === "true";
+    EngineLoader.load("canvas", "MonkeyMart");
+</script>
+<script type="text/javascript">
+    function poki_showBanner(vBanner) {
+        PokiSDK.displayAd(document.getElementById(vBanner), '320x50');
+    }
+
+    function poki_showBigBanner(vBanner) {
+        PokiSDK.displayAd(document.getElementById(vBanner), '728x90');
+    }
+
+    function poki_hideBanner(vBanner) {
+        PokiSDK.destroyAd(document.getElementById(vBanner));
+    }
+</script>
+
+<!-- GA4 Tracking Code -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7FNMNDL9SJ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-7FNMNDL9SJ');
+</script>
+<script src="GameAnalytics.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"522a50d6e54048988efe9ea885b966c2","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
