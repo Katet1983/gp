@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Cannon Balls 3D</title>
+
+    <script>
+        // 1. Neutralize Specific SDK Variables
+        window.famobi_gameID = "cannon-balls-3d";
+        window.famobi_isPaused = false;
+        window.famobi_hasMutedAudio = false; 
+        
+        window.isForcedMode = function() { return false; }; 
+        window.skipTitleScreen = function() { return false; };
+        window.isExternalStart = function() { return false; }; 
+        
+        // 2. The Ultimate Proxy (Tracker Blocker, Audio Fixer, & Ad Skipper)
+        const silentProxy = new Proxy(function() {}, {
+            get: function(target, prop) {
+                // Prevent Screen-Scaling Math Crashes
+                if (prop === Symbol.toPrimitive || prop === 'valueOf') return function() { return 0; };
+                if (prop === 'getSafeArea') return function() { return {top:0, left:0, bottom:0, right:0}; };
+                
+                // Force Audio ON
+                if (prop === 'getVolume') return function() { return 1; }; 
+                if (prop === 'isMuted') return function() { return false; };
+                if (prop === 'hasAudio') return function() { return true; };
+                
+                // Prevent Promise Crashes
+                if (prop === 'then') return function(cb) { if (cb) cb(); return silentProxy; };
+                if (prop === 'catch' || prop === 'finally') return function() { return silentProxy; };
+                if (prop === 'hasFeature') return function() { return false; }; 
+                if (prop === 'isReady') return function() { return true; };
+                
+                return silentProxy;
+            },
+            apply: function(target, thisArg, argList) {
+                // THE AD-SKIPPER: Immediately execute any callback functions to skip interstitial ad freezes
+                for (let i = 0; i < argList.length; i++) {
+                    if (typeof argList[i] === 'function') {
+                        setTimeout(argList[i], 10); 
+                    }
+                }
+                return silentProxy; 
+            }
+        });
+
+        // 3. Bind the Proxy to all tracking and publisher objects
+        window.famobi = silentProxy;
+        window.famobi_analytics = silentProxy;
+        window.famobi_tracking = silentProxy;
+        window.google = silentProxy;
+        window.gamesnacks = silentProxy;
+        window.GameSnacks = silentProxy;
+        window.TransitionScreen = silentProxy;
+        window.EventTypes = silentProxy;
+        
+        // 4. Block cross-origin communication crashes
+        const originalPM = window.parent.postMessage;
+        window.parent.postMessage = function(m, t, x) { 
+            try { originalPM(m, "*", x); } catch(e) {} 
+        };
+    </script>
+</head>
+<body>
+    <div id="application-container"></div>
+    <script src="playcanvas-stable.min.js"></script>
+    
+    <script>
+        // 5. Inject screen-scaling fix natively into PlayCanvas
+        if (window.pc && pc.Application) {
+            pc.Application.prototype.getFamobiAdjustedCanvasSize = function() {
+                return { width: window.innerWidth, height: window.innerHeight };
+            };
+        }
+    </script>
+    
+    <script src="__settings__.js"></script>
+    <script src="__modules__.js"></script>
+    <script src="__start__.js"></script>
+    <script src="__loading__.js"></script>
+</body>
+</html>
