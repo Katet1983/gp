@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <title>Archery World Tour - The Checkmate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.01, minimal-ui" />
+    <style>
+        body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: #000; }
+        canvas { display: block; width: 100vw; height: 100vh; position: absolute; top:0; left:0; z-index: 1; }
+        #god-overlay { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+            background: rgba(0,255,0,0.2); z-index: 9999; cursor: pointer;
+            display: flex; align-items: center; justify-content: center; flex-direction: column;
+            color: white; font-family: sans-serif; text-align: center;
+        }
+        #god-overlay h1 { font-size: 3rem; text-shadow: 2px 2px 0 #000; animation: pulse 1s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+    </style>
+    <script>
+        const magicPixel = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+
+        // 1. Image 404 Catchers (Console will show 404, but this fixes it instantly under the hood)
+        const OriginalImage = window.Image;
+        window.Image = function(w, h) {
+            const img = new OriginalImage(w, h);
+            img.addEventListener('error', function() { this.src = magicPixel; });
+            return img;
+        };
+        const origCreateElement = document.createElement;
+        document.createElement = function(tag) {
+            const el = origCreateElement.call(document, tag);
+            if (tag.toLowerCase() === 'img') el.addEventListener('error', function() { this.src = magicPixel; });
+            return el;
+        };
+
+        // --- THE INVINCIBLE OBJECT GENERATOR (V21 UPGRADE) ---
+        const createBlackhole = (targetObj) => {
+            // THE CHIMERA: Acts like a function, but has String methods to survive .indexOf() checks!
+            const safeReturn = () => "";
+            safeReturn.indexOf = () => -1;
+            safeReturn.toLowerCase = () => "";
+            safeReturn.split = () => [];
+            safeReturn.replace = () => "";
+            safeReturn.length = 0;
+
+            return new Proxy(targetObj, {
+                get: (target, prop) => {
+                    if (prop in target) return target[prop];
+                    if (prop === Symbol.toPrimitive) return (hint) => hint === 'number' ? 0 : "";
+                    if (prop === 'then') return (cb) => { if(cb) cb(); return Promise.resolve(); };
+                    return safeReturn;
+                }
+            });
+        };
+
+        window.famobi_gameID = "archery";
+        window.famobi_loaded = true;
+
+        const sdkMock = {
+            hasFeature: (f) => !['external_start', 'ads', 'more_games'].includes(f),
+            getBranding: () => ({ logo: magicPixel, action: () => {} }),
+            getCurrentLanguage: () => "en",
+            getVolume: () => 1,
+            setVolume: () => {},
+            getMoreGames: () => [],
+            getMoreGamesButtonImage: () => "", // <-- THE MISSING PIECE RESTORED!
+            getAppLink: () => "",
+            __: (str) => str, 
+            config: { features: { ads: false }, languages: ["en"] },
+            
+            adapters: createBlackhole({ add: () => {}, has: () => true }),
+            analytics: createBlackhole({ trackEvent: () => {}, trackScreen: () => {}, trackStats: () => Promise.resolve() }),
+            
+            gameReady: () => Promise.resolve(),
+            playerReady: () => Promise.resolve(),
+            localStorage: window.localStorage,
+            sessionStorage: window.sessionStorage
+        };
+
+        const blackhole = createBlackhole(sdkMock);
+
+        window.famobi = blackhole;
+        window.famobi_analytics = blackhole;
+        window.GAMESNACKS = blackhole;
+        window.GameSnacks = blackhole;
+        window.gamesnacks = blackhole;
+        window.GameAPI = blackhole;
+        
+        window.getVolume = () => 1;
+        window.setVolume = () => {};
+        window.caches = { open: () => Promise.resolve({ match: () => Promise.resolve(null), put: () => Promise.resolve() }) };
+    </script>
+</head>
+<body>
+    <div id="god-overlay">
+        <h1>CLICK ANYWHERE TO START GAME</h1>
+        <p>This bypasses the AudioContext security block</p>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="html5games/gameapi/zepto.min.js"></script>
+    <script src="custom.js"></script>
+    <script src="TweenMax.min.js"></script>
+    <script src="Howler.min.js"></script>
+    <script src="VisibilityManager.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        (function() {
+            let started = false;
+            const boot = () => {
+                if (started || typeof extGameLoad !== 'function') return;
+                started = true;
+                console.log("[Omni-Ripper] Firing extGameLoad...");
+                extGameLoad();
+            };
+
+            document.getElementById('god-overlay').addEventListener('click', function() {
+                this.style.display = 'none';
+                console.log("[Omni-Ripper] AudioContext Unlocked.");
+                if (typeof onAdFree === 'function') onAdFree();
+                if (typeof onAdDone === 'function') onAdDone();
+                window.dispatchEvent(new Event('resize'));
+            });
+
+            const checker = setInterval(() => {
+                if (typeof extGameLoad === 'function') {
+                    clearInterval(checker);
+                    boot();
+                }
+            }, 100);
+        })();
+    </script>
+</body>
+</html>
