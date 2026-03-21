@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+      }
+
+      body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      #tutorial-p-c3{
+        width: 468px;
+        height: 887px;
+        margin:  auto;
+      }
+    
+      #containerT-p-c3{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: auto;
+      }
+
+      /********* header ************/
+       #clodeIcon-p-c3{
+        width: 25px;
+        height: 25px;
+      }
+
+      #backIcon-p-c3{
+        width: 28.5px;
+        height: 28.5px;
+      }
+      
+    
+      #heading-p-c3{
+         font-size: 40px;
+         font-family: "MPLUSRou-Bold";
+      }
+     
+      #headerT-p-c3{
+        visibility: hidden;
+        position: absolute;
+        top: 2%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #polygonImg-p-c3{
+        width: 348px;
+        height: 348px;
+      }
+     
+      #polygonImg-p-c3 img{
+        width: 100%;
+        height: 100%;
+      }  
+
+ 
+    #answerList-p-c3 li{
+        list-style-type: none;
+        font-family:  "MPLUSRou-Medium";
+
+    }
+
+    #tutorialContent-p-c3{
+        position: absolute;
+        top: 10%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #tutorialContent-p-c3 * {
+      color: #323352;
+    }
+    #leftContent-p-c3{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* #rightContent-p-c3{
+        flex-basis: 100%;
+    } */
+
+    #answerList-p-c3{
+         display: inline-flex;
+    }
+
+    #answerList-p-c3 li{
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+
+    #currentInput-p-c3{
+        font-size: 41px;
+        margin: 20px 0px;
+        font-family: "MPLUSRou-ExtraBold";
+    }
+      
+    #rightContent-p-c3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 45px;
+    }
+    #subTitle-p-c3{
+    font-size: 30px;
+    font-family: "MPLUSRou-ExtraBold";
+    }
+    #content-p-c3{
+     width: 90%;
+     font-size: 18px;
+     margin: 4px 0;
+     font-family: "MPLUSRou-Bold";
+     line-height: 25px;
+    } 
+
+    </style>
+</head>
+<body>
+    <!-- D:\polymatchC\assets\newArt\howToPlay_bg_L.svg -->
+    <div id="tutorial-p-c3">
+        <div id="containerT-p-c3">
+            <!-- header -->
+            <div id="headerT-p-c3">
+                <div id="headerIcon-p-c3" id="backIcon-p">
+                   <!-- <img src = "../art/uiElements/backArrow_H.svg" -->
+                    <img src = "./src/assets/art/uiElements/backArrow_H.svg">
+                </div>
+                <div id="heading-p-c3">How to Play</div>
+                <div id="headerIcon-p-c3" id="clodeIcon-p">
+                    <img src = "./src/assets/art/uiElements/close_P.svg">
+                </div>
+            </div>
+             
+            <!-- tutorialContent -->
+            <div id="tutorialContent-p-c3">
+                <div id="leftContent-p-c3">
+                        <ul id="answerList-p-c3">
+                            <li>AUTO</li>
+                        </ul>
+                        <div id="currentInput-p-c3">OPE</div>
+                        <div id="polygonImg-p-c3">
+                            <img src="./src/assets/tutorial/howToPlay_img_02_P.png">
+                        </div>
+                </div>
+                <div id="rightContent-p-c3">
+                    <div id="subTitle-p-c3">
+                        Rules
+                    </div>
+                    <div id="content-p-c3">
+                        Adjacent letters cannot be connected<br>
+                        The last letter of your word will be first letter of your next word
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </body>
+
+</html>

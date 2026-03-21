@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+      }
+
+      body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      #tutorial-p-c1{
+        width: 468px;
+        height: 887px;
+        margin:  auto;
+      }
+    
+      #containerT-p-c1{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: auto;
+        border-radius: 20px;
+        color: #323352;
+      }
+      #tutorialContent-p-c1 *{
+        color: #323352;
+
+      }
+
+      /********* header ************/
+       #clodeIcon-p-c1{
+        width: 25px;
+        height: 25px;
+      }
+
+      #backIcon-p-c1{
+        width: 28.5px;
+        height: 28.5px;
+      }
+      
+    
+      #heading-p-c1{
+         font-size: 40px;
+         font-family: "MPLUSRou-Bold";
+         color: #323352;
+      }
+     
+      #headerT-p-c1{
+        visibility: hidden;
+        position: absolute;
+        top: 2%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #polygonImg-p-c1{
+        width: 348px;
+        height: 348px;
+      }
+     
+      #polygonImg-p-c1 img{
+        width: 100%;
+        height: 100%;
+      }  
+
+ 
+    #answerList-p-c1 li{
+        list-style-type: none;
+        font-family:  "MPLUSRou-Medium";
+
+    }
+
+    #tutorialContent-p-c1{
+        position: absolute;
+        top: 10%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #leftContent-p-c1{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* #rightContent-p-c1{
+        flex-basis: 100%;
+    } */
+
+    #answerList-p-c1{
+         display: inline-flex;
+    }
+
+    #answerList-p-c1 li{
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+
+    #currentInput-p-c1{
+        font-size: 41px;
+        margin: 20px 0px;
+        font-family: "MPLUSRou-ExtraBold";
+    }
+      
+    #rightContent-p-c1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 45px;
+    }
+      #subTitle-p-c1{
+      font-size: 30px;
+      font-family: "MPLUSRou-ExtraBold";
+    }
+    #content-p-c1{
+     width: 90%;
+     font-size: 18px;
+     margin: 4px 0;
+     font-family: "MPLUSRou-Bold";
+     line-height: 25px;
+    } 
+
+    </style>
+</head>
+<body>
+    <!-- D:\polymatchC\assets\newArt\howToPlay_bg_L.svg -->
+    <div id="tutorial-p-c1">
+        <div id="containerT-p-c1">
+            <!-- header -->
+            <div id="headerT-p-c1">
+                <div id="headerIcon-p-c1" id="backIcon-p">
+                   <!-- <img src = "../art/uiElements/backArrow_H.svg" -->
+                    <img src = "./src/assets/art/uiElements/backArrow_H.svg">
+                </div>
+                <div id="heading-p-c1">How to Play</div>
+                <div id="headerIcon-p-c1" id="clodeIcon-p">
+                    <img src = "./src/assets/art/uiElements/close_P.svg">
+                </div>
+            </div>
+             
+            <!-- tutorialContent -->
+            <div id="tutorialContent-p-c1">
+                <div id="leftContent-p-c1">
+                        <ul id="answerList-p-c1">
+                          <li>AUTO</li>
+                          <li>OPERA</li>
+                          <li>ACTOR</li>
+                        </ul>
+                        <div id="currentInput-p-c1">RURAL</div>
+                        <div id="polygonImg-p-c1">
+                            <img src="./src/assets/tutorial/howToPlay_img_03_P.png">
+                        </div>
+                </div>
+                <div id="rightContent-p-c1">
+                    <div id="subTitle-p-c1">
+                        Objective
+                    </div>
+                    <div id="content-p-c1">
+                        From words using all the letters on the polygon to complete the level.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </body>
+
+</html>

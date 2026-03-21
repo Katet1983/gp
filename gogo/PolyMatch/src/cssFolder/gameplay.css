@@ -1,0 +1,208 @@
+:root {
+  /*White color*/
+  --white: #ffffff;
+  /*Wrong node bg color*/
+  --wrongNode: #fc8608;
+  --darkBlue: #323352;
+  /* --darkBlue: #41425e; */
+  --borderColor: #35abfc;
+  /*On submit of correct input letter*/
+  --correctInput: #89d90b;
+  /*On submit of wrong input letter*/
+  --wrongInput: #f04c16;
+}
+
+/*Game play buttons related*/
+.gamePlayBtns {
+  width: 169.18px;
+  height: 54.5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  user-select: none;
+}
+
+.submitActive {
+  background: url("../../src/assets/dom/gamePlay/gameplay_done_active.svg");
+}
+
+.submitInactive {
+  background: url("../../src/assets/dom/gamePlay/gameplay_done_inactive.svg");
+}
+
+.undoActive {
+  background: url("../../src/assets/dom/gamePlay/gameplay_undo_active.svg");
+}
+
+.undoInactive {
+  background: url("../../src/assets/dom/gamePlay/gameplay_undo_inactive.svg");
+}
+
+.hintActive {
+  background: url("../../src/assets/dom/gamePlay/gameplay_hint_active.svg");
+  width: 173px;
+  height: 58px;
+  background-repeat: no-repeat;
+}
+
+.hintInactive {
+  background: url("../../src/assets/dom/gamePlay/gameplay_hint_inactive.svg");
+  width: 173px;
+  height: 58px;
+  background-repeat: no-repeat;
+}
+.addIcon {
+  width: 43.71px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url("../../src/assets/dom/gamePlay/ad_icon_P.svg");
+  user-select: none;
+  background-repeat: no-repeat;
+  color: #323352;
+}
+.settingsBtn {
+  width: 56.04px;
+  height: 56.04px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background: url("../../src/assets/dom/gamePlay/gameplay_settings.svg");
+  user-select: none;
+}
+.hintTitle {
+  color: var(--white);
+  font-family: "MPLUSRou-Medium";
+  font-size: 20px;
+  user-select: none;
+  height: 30px;
+  width: 60px;
+  text-transform: uppercase;
+  user-select: none;
+}
+.revealHintText {
+  color: var(--white);
+  font-family: "MPLUSRou-Medium";
+  font-size: 20px;
+  user-select: none;
+  user-select: none;
+}
+.previousSolvedText {
+  color: var(--white);
+  font-family: "MPLUSRou-Regular";
+  font-size: 30px;
+  user-select: none;
+  position: absolute;
+  word-break: normal;
+  text-align: center;
+  width: 330px;
+  height: auto;
+  overflow-y: scroll;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+  user-select: none;
+  scrollbar-gutter: "stable both-edges";
+  scrollbar-color: var(--darkBlue) transparent;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* background-color: rgba(0,0,0,.5); */
+  background-color: var(--darkBlue);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+#inputLetterText {
+  color: var(--darkBlue);
+  font-family: "MPLUSRou-ExtraBold";
+  /* font-size: 3.75rem; */
+  font-size: 60px;
+  user-select: none;
+  width: 410px;
+  height: 100px;
+  letter-spacing: 8px;
+  /* background-color: #35abfc; */
+  text-align: center;
+  /* overflow-y: scroll; */
+  scroll-behavior: smooth;
+  word-break: break-all;
+  user-select: none;
+  
+  scrollbar-gutter: "stable both-edges";
+  scrollbar-color: var(--darkBlue) transparent;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* background-color: rgba(0,0,0,.5); */
+  background-color: var(--darkBlue);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.inputLetterWrong {
+  color: var(--wrongInput);
+}
+.inputLetterCorrect {
+  color: var(--correctInput);
+}
+.validationText {
+  color: var(--darkBlue);
+  font-family: "MPLUSRou-Bold";
+  font-size: 50px;
+  user-select: none;
+}
+
+.wrongValidation {
+  color: var(--wrongInput);
+}
+
+#completedWordsWrapper {
+  justify-content: center;
+  font-size: 20px;
+  text-align: center;
+  width: 299px;
+  height: 119px;
+  word-spacing: 20px;
+  overflow-y: scroll;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+  text-transform: uppercase;
+  font-family: "MPLUSRou-Medium";
+  user-select: none;
+
+  scrollbar-gutter: "stable both-edges";
+  scrollbar-color: var(--darkBlue) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* background-color: rgba(0,0,0,.5); */
+  background-color: var(--darkBlue);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.polygonLine {
+  background-color: white;
+  width: 2px;
+  height: 2px;
+  background-repeat: no-repeat;
+}

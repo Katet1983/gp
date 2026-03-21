@@ -1,0 +1,49 @@
+{
+  "skeleton": {
+    "hash": "6abrokiNIjA",
+    "spine": "4.1.16",
+    "x": -51,
+    "y": -66.5,
+    "width": 102,
+    "height": 133
+  },
+  "bones": [{ "name": "root" }, { "name": "bone3", "parent": "root" }],
+  "slots": [
+    {
+      "name": "rect_blurred_glow",
+      "bone": "bone3",
+      "attachment": "rect_blurred_glow",
+      "blend": "additive"
+    }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "rect_blurred_glow": { "rect_blurred_glow": { "width": 102, "height": 133 } }
+      }
+    }
+  ],
+  "animations": {
+    "animation": {
+      "slots": {
+        "rect_blurred_glow": {
+          "rgba": [
+            { "color": "b600ff00" },
+            { "time": 0.0667, "color": "b600ff00" },
+            { "time": 0.1333, "color": "b600ff81", "curve": "stepped" },
+            { "time": 0.2, "color": "b600ff81" },
+            { "time": 0.2667, "color": "b600ff00" }
+          ]
+        }
+      },
+      "bones": {
+        "root": { "translate": [{ "x": 75.89, "y": -60.15 }], "scale": [{ "x": 0.56 }] },
+        "bone3": {
+          "translate": [{ "x": -134.98, "y": 61.69 }],
+          "scale": [{ "x": 28.295, "y": 11.024 }]
+        }
+      }
+    }
+  }
+}

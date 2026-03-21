@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- FONT_FAMILY_REGULAR: "MPLUSRou-Regular",
+    FONT_FAMILY_MEDIUM: "MPLUSRou-Medium",
+    FONT_FAMILY_EXTRABOLD: "MPLUSRou-ExtraBold",
+    FONT_FAMILY_BOLD: "MPLUSRou-Bold", -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .tutorial-L{
+        width: 700px;
+        height: 496px;
+      
+      }
+
+     .container-L{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+       
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /*********** header **************/
+      #clodeIcon-L{
+        width: 25px;
+        height: 25px;
+      }
+
+      #backIcon-L{
+        width: 28.5px;
+        height: 28.5px;
+      }
+      
+      .headerIcon-L img{
+        width: 100%;
+        height: 100%;
+      }
+   
+      .heading-L{
+         font-size: 40px;
+         font-family: "MPLUSRou-Bold";
+         color: #323352;
+      }
+
+      .headerT-L{
+        visibility: hidden;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2%;
+      }
+      .leftContent-L .polygonImg{
+        width: 200px;
+        height: 200px;
+      }
+
+     .leftContent-L .polygonImg img{
+        width: 100%;
+        height: 100%;
+      }
+    .leftContent-L .answerList li{
+        list-style-type: none;
+        font-family:  "MPLUSRou-Medium";
+    }
+
+    .tutorialContent-L{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3%;
+    }
+    
+    .leftContent-L{
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightContent-L{
+        flex-basis: 45%;
+    }
+    .leftContent-L .answerList{
+         display: inline-flex;
+    }
+    .leftContent-L .answerList li{
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+    .leftContent-L .currentInput{
+        font-size: 41px;
+        margin: 10px 0px;
+        font-family: "MPLUSRou-ExtraBold";
+    }
+     
+    .rightContent-L{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 35px;
+    }
+    .rightContent-L {
+        font-size: 30px;
+        font-family: "MPLUSRou-ExtraBold";
+    }
+    #subTitle-l{
+        font-size: 30px;
+        font-family: "MPLUSRou-ExtraBold";
+    }
+    .rightContent-L {
+     width: 90%;
+     font-size: 18px;
+     margin: 20px 0;
+     font-family: "MPLUSRou-Bold"
+    }
+    #content{
+     width: 90%;
+     font-size: 18px;
+     margin: 20px 0;
+     font-family: "MPLUSRou-Bold"
+    }
+
+    </style>
+</head>
+<body>
+    <!-- D:\polymatchC\assets\newArt\howToPlay_bg_L.svg -->
+    <div class="tutorial-L">
+        <div class="container-L">
+            <!-- header -->
+            <div class="headerT-L">
+                <div class="headerIcon-L" id="backIcon-L">
+                    <!-- <img src="./assets/art/uiElements/backArrow_H.svg"> -->
+                    <img src="../art/uiElements/backArrow_H.svg">
+                </div>
+                <div class="heading-L">How to Play</div>
+                <div class="headerIcon-L" id="clodeIcon-L">
+                    <!-- <img src="./assets/art/uiElements/close_H.svg"> -->
+                    <img src="../art/uiElements/close_H.svg">
+
+                </div>
+            </div>
+           
+            <!-- tutorialContent -->
+            <div class="tutorialContent-L">
+                <div class="leftContent-L">
+                    <!-- <div class="answerList"> -->
+                        <ul class="answerList">
+                            <li>CITY</li>
+                            <li>YARD</li>
+                            <li>DEN</li>
+                        </ul>
+                        <div class="currentInput">NOTE</div>
+                        <div class="polygonImg">
+                            <img src="../tutorial/howToPlay_img_01_L.svg">
+                        </div>
+                    <!-- </div> -->
+                </div>
+                <div class="rightContent-L">
+                    <div id="subTitle-l">
+                        Objective
+                    </div>
+                    <div id="content-l">
+                        From words using all the letters on the polygon to complete the level.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

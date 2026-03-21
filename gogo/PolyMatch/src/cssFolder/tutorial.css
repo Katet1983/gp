@@ -1,0 +1,97 @@
+.tutorialImage{
+    width: 311.5px;
+    height: 318.5px;
+    /* visibility: hidden; */
+    /* position: relative !important; */
+}
+.tutorailHeading{
+    font-family:"MPLUSRou-Bold";
+    font-size: 28px;
+    text-align: center;
+    color: "#323352";
+}
+.tutorailRules{
+    width: 450.5px;
+    height: 318.5px;
+    font-family:"MPLUSRou-Medium";
+    font-size: 32px;
+    text-align: left;
+    color: "#323352";
+    overflow: auto !important;
+}
+.howtoplayHeading{
+    font-size: 31px;
+    font-family: "MPLUSRou-Bold";
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.tutorialArrow{
+    width: 68px;
+    height: 68px;
+    opacity: 1!important;
+}
+.tutorialOverlay{
+    top:50%;
+    left :50%;
+    transform: translate(-50%,-50%)!important;
+}
+.closeIcon {
+    width: 35.04px;
+    height: 35.04px;
+}
+.clearOpacity {
+    opacity: 0.3 !important ;
+}
+
+.addOpacity{
+    opacity: 1 !important;
+}
+
+.maskOverlay{
+    width: 400px;
+    height: 540px;
+    display: none;
+    fill: #323352;
+}
+
+.main-menu-button{
+    border-radius: 30px; 
+    background-color: #323352; 
+    width: 395.5px; 
+    height: 65.5px; 
+    font-size: 30px;
+    font-family: "MPLUSRou-Medium"; 
+    font-weight: bold; 
+    justify-content: center; 
+    color: white;
+    text-align: center;
+    position: relative;
+    border: none;
+}
+.main-menu-button:hover,
+.main-menu-button:hover:focus,
+.main-menu-button:hover:active {
+        background: #2a2b45;
+      }
+
+.progressbar-container{
+background-image: url("../assets/art/loading/loading_bar_BG_HA.png"); background-repeat: no-repeat;width: 394px;height: 23px;
+}
+.progress-bar{
+    background-image: url("../assets/art/loading/loading_bar_HA_LH.png"); background-repeat: no-repeat;width: 394px;height: 23px;
+}
+
+
+@media screen and (max-width: 360px) {
+    .progressbar-container{
+       width: 200px;
+       height: 23px;
+      }
+.progress-bar{
+    width: 62% !important;
+   height: 23px;
+}
+
+}

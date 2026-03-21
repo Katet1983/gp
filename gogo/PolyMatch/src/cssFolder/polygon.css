@@ -1,0 +1,61 @@
+:root {
+  /*White color*/
+  --white: #ffffff;
+  /*Wrong node bg color*/
+  --wrongNode: #fc8608;
+  --darkBlue: #323352;
+  /* --darkBlue: #41425e; */
+  --borderColor: #35abfc;
+}
+
+/* Gameplay related styles */
+/*Default node styles*/
+.defaultNode {
+  background-color: var(--white);
+  color: var(--darkBlue);
+  border: none;
+}
+
+/*Selected node styles*/
+.selectedNode {
+  background-color: var(--white);
+  color: var(--darkBlue);
+  border-style: solid;
+  border-color: var(--borderColor);
+  border-width: 6px;
+}
+
+/*Wrong node styles*/
+.wrongNode {
+  background-color: var(--wrongNode);
+  color: var(--white);
+  border: none;
+}
+
+/*Previously selected node styles*/
+.prevSelectedUsedNode {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border-style: solid;
+  border-color: var(--borderColor);
+  border-width: 5px;
+}
+/*Previously used node styles*/
+.prevUsedNode {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border-style: none;
+}
+
+/*For all polygon nodes styles*/
+.polygonNode {
+  width: 69.64px;
+  height: 69.64px;
+  border-radius: 50px;
+  /* display: flex !important;
+        justify-content: center;
+        align-items: center; */
+  font-family: "MPLUSRou-Bold";
+  font-size: 33.6px;
+  /* z-index: 0; */
+}

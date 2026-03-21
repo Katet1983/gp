@@ -1,0 +1,102 @@
+/* #mainMenuButton {
+    border-radius: 30px;
+    background-color: #323352;
+    width: 394px; 
+    height: 26px;
+    font: 24px Arial; 
+    font-weight: bold;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative; 
+    padding: 15px;
+} */
+
+.dayLocked {
+  background-color: #8296a5;
+  color: white;
+  width: 45px;
+  height: 58px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "MPLUSRou-Medium";
+  border: none;
+  border-radius: 8.5px;
+  letter-spacing: -2px;
+  opacity: 0;
+}
+
+.dayUnLocked {
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+.monthPanelImage {
+  background-color: #323352;
+  color: white;
+  width: 232px;
+  height: 52.5px;
+  text-align: center;
+  font-size: 22px;
+  font-family: "MPLUSRou-Bold";
+  border: none;
+  border-radius: 16px;
+  opacity: 0;
+}
+
+.arrowBg {
+  /*background-color: #323352;*/
+  width: 53px;
+  height: 52px;
+  /* border-radius: 16px;*/
+  border: none;
+}
+
+.arrowIcon {
+  width: 20px;
+  height: 16px;
+  color: #323352;
+  display: none !important;
+}
+
+#rightIcon {
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.backIcon {
+  width: 28px;
+  height: 22px;
+}
+
+.closeIcon {
+  width: 35.04px;
+  height: 35.04px;
+}
+
+.screenTitle {
+  font-size: 31px;
+  color: #323352;
+  font-family: "MPLUSRou-Bold";
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.playBtnIcon {
+  width: 29px;
+  height: 29px;
+}
+
+.tickMark {
+  width: 18px;
+  height: 18px;
+}
+
+.maskOverlay {
+  width: 400px;
+  height: 540px;
+  display: none;
+  fill: #323352;
+  /* fill: #323352; */
+}

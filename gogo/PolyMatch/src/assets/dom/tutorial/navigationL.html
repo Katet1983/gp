@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    #parent-nav-l{
+        width: 700px;
+    }
+    
+    #footer-nav-l{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    #container-nav-l{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .arrowIcons-l{
+        width: 50px;
+        height: 50px;
+    }
+       
+    #sliderIndicators-nav-l ul{
+        display: inline-flex;
+        padding: 0px;
+    }
+    #sliderIndicators-nav-l ul li{
+        list-style: none;
+        margin: 0px 5px;
+      }
+    #sliderIndicators-nav-l ul li img{
+        width: 12px;
+        height: 12px;
+        opacity: 0.5;
+       
+      }
+      #left-arrow-l{
+        opacity: 0.5;
+       
+      }
+    </style>
+</head>
+<body>
+    <div id = "parent-nav-l">
+    <div id = "footer-nav-l">
+    <div id = "container-nav-l">      
+        <div class = "arrowIcons-l" id="previousIcon">
+            <img id="left-arrow-l-d" src="./src/assets/tutorial.svg" name ="left">
+        </div>
+        <div id = "sliderIndicators-nav-l">
+            <ul>
+                <li><img id="indicator-l-1-d" src="../../tutorial/howToPlay_selected_P.svg"></li>
+                <li><img id="indicator-l-2-d" src="../../tutorial/howToPlay_selected_P.svg"></li>
+                <li><img id="indicator-l-3-d" src="../../tutorial/howToPlay_selected_P.svg"></li>
+            </ul>
+        </div>
+        <div class = "arrowIcons-l" id="nextIcon">
+            <img id="right-arrow-l-d" src="../../tutorial/howToPlay_next_active.svg" name ="right">
+        </div>
+    </div> 
+    </div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+  "skeleton": {
+    "hash": "rgSeL5uhxUY",
+    "spine": "4.1.16",
+    "x": -66.5,
+    "y": -66.5,
+    "width": 134,
+    "height": 134
+  },
+  "bones": [{ "name": "root" }, { "name": "кость140", "parent": "root" }],
+  "slots": [
+    {
+      "name": "rect_glow25",
+      "bone": "кость140",
+      "attachment": "rect_glow",
+      "blend": "additive"
+    }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "rect_glow25": {
+          "rect_glow": {
+            "x": 0.5,
+            "y": 0.5,
+            "scaleX": 2,
+            "scaleY": 2,
+            "width": 67,
+            "height": 67
+          }
+        }
+      }
+    }
+  ],
+  "animations": {
+    "3_lines": {
+      "slots": {
+        "rect_glow25": {
+          "rgba": [
+            { "color": "ffffff00", "curve": "stepped" },
+            { "time": 0.0667, "color": "ffffff00" },
+            { "time": 0.6667, "color": "ffffffff" },
+            { "time": 1.6667, "color": "ffffff00" }
+          ]
+        }
+      },
+      "bones": {
+        "кость140": {
+          "translate": [{ "y": 28.07 }],
+          "scale": [{ "x": 11.06, "y": 4.159 }]
+        },
+        "root": { "translate": [{ "y": -29.49 }] }
+      }
+    },
+    "4_lines": {
+      "slots": {
+        "rect_glow25": {
+          "rgba": [
+            { "color": "ffffff00" },
+            { "time": 0.4333, "color": "ffffffff", "curve": "stepped" },
+            { "time": 1.6, "color": "ffffffff" },
+            { "time": 2.4667, "color": "ffffff00" }
+          ]
+        }
+      },
+      "bones": {
+        "кость140": {
+          "translate": [{ "y": 28.07 }],
+          "scale": [{ "x": 11.06, "y": 5.058 }]
+        },
+        "root": { "translate": [{ "y": -29.49 }] }
+      }
+    },
+    "5-6_lines": {
+      "slots": {
+        "rect_glow25": {
+          "rgba": [
+            { "color": "ffffff00" },
+            { "time": 0.4333, "color": "ffffffff", "curve": "stepped" },
+            { "time": 2.3333, "color": "ffffffff" },
+            { "time": 3.2, "color": "ffffff00" }
+          ]
+        }
+      },
+      "bones": {
+        "кость140": {
+          "translate": [{ "y": 28.07 }],
+          "scale": [{ "x": 11.06, "y": 7.035 }]
+        },
+        "root": { "translate": [{ "y": -29.49 }] }
+      }
+    }
+  }
+}

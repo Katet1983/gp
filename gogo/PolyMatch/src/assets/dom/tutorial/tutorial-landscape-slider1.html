@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- FONT_FAMILY_REGULAR: "MPLUSRou-Regular",
+    FONT_FAMILY_MEDIUM: "MPLUSRou-Medium",
+    FONT_FAMILY_EXTRABOLD: "MPLUSRou-ExtraBold",
+    FONT_FAMILY_BOLD: "MPLUSRou-Bold", -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #tutorial-l-c2{
+        width: 700px;
+        height: 496px;
+      }
+
+     #container-l-c2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #container-l-c2 *{
+        color: #323352;
+      }
+
+      /*********** header **************/
+      #clodeIcon-L{
+        width: 25px;
+        height: 25px;
+      }
+
+      #backIcon-L{
+        width: 28.5px;
+        height: 28.5px;
+      }
+      
+      .headerIcon-L img{
+        width: 100%;
+        height: 100%;
+      }
+   
+      .heading-L{
+         font-size: 40px;
+         font-family: "MPLUSRou-Bold";
+      }
+
+      #header-l-c2{
+        visibility: hidden;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0%;
+      }
+      
+      #polygonImg-l-c2{
+        width: 242px;
+        height: 242px;
+      }
+
+     #polygonImg-l-c2 img{
+        width: 100%;
+        height: 100%;
+      }
+    #answerList-l-c2 li{
+        list-style-type: none;
+        font-family:  "MPLUSRou-Medium";
+    }
+
+    #tutorialContent-l-c2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3%;
+    }
+    
+    #leftContent-l-c2{
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #rightContent-l-c2{
+        flex-basis: 45%;
+    }
+     #answerList-l-c2{
+         display: inline-flex;
+    }
+     #answerList-l-c2 li{
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+     #currentInput-l-c2{
+        font-size: 41px;
+        margin: 10px 0px;
+        font-family: "MPLUSRou-ExtraBold";
+    }
+     
+    #rightContent-l-c2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 35px;
+    }
+    #subTitle-l-c2{
+        font-size: 30px;
+        font-family: "MPLUSRou-ExtraBold";
+    }
+     #content-l-c2{
+     /* width: 90%; */
+     width: 90%;
+     font-size: 18px;
+     margin: 4px 0;
+     font-family: "MPLUSRou-Medium"
+    }
+
+    </style>
+</head>
+<body>
+    <!-- D:\polymatchC\assets\newArt\howToPlay_bg_L.svg -->
+    <div id="tutorial-l-c2">
+        <div id="container-l-c2">
+            <!-- header -->
+            <div id="header-l-c2">
+                <div class="headerIcon-L" id="backIcon-L">
+                    <img src="./src/assets/art/uiElements/backArrow_H.svg">
+                    <!-- <img src="../art/uiElements/backArrow_H.svg"> -->
+                </div>
+                <div class="heading-L">How to Play</div>
+                <div class="headerIcon-L" id="clodeIcon-L">
+                    <img src="./src/assets/art/uiElements/close_H.svg">
+                    <!-- <img src="../art/uiElements/close_H.svg"> -->
+
+                </div>
+            </div>
+           
+            <!-- tutorialContent -->
+            <div id="tutorialContent-l-c2">
+                <div id="leftContent-l-c2">
+                    <!-- <div id="answerList"> -->
+                        <ul id="answerList-l-c2">
+                        </ul>
+                        <div id="currentInput-l-c2">AU</div>
+                        <div id="polygonImg-l-c2">
+                            <img src="./src/assets/tutorial/howToPlay_img_01_L.png">
+                            <!-- <img src="../newArt/howToPlay_img_01_L.svg"> -->
+                        </div>
+                    <!-- </div> -->
+                </div>
+                <div id="rightContent-l-c2">
+                    <div id="subTitle-l-c2">
+                        Controls
+                    </div>
+                    <div id="content-l-c2">
+                        Swipe or tap letters to connect them to one another
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

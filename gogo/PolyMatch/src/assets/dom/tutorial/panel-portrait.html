@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <title>Panel</title>
+  <!-- <link href="landscpae.css" rel="stylesheet" /> -->
+  <style>
+    *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      background: #051188;
+      height: 100%;
+    }
+
+    #panel-container-p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    #panel-wrapper-p {
+      /* display: flex;
+        justify-content: space-between; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: url("../../tutorial/howToPlay_bg_P.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 448px;
+      height: 887px;
+    }
+
+    #back-icon-howtoplay {
+      width: 28px;
+      height: 22px;
+      margin: 33px 17px;
+    }
+
+    #close-icon-howtoplay {
+      width: 25px;
+      height: 25px;
+      margin: 22px 10px;
+      transition: all .2s ease-in-out;
+      opacity: 0;
+    }
+
+    #close-icon-howtoplay:hover {
+      transform: scale(1.1);
+    }
+
+    /* #parent-nav-p {
+        width: 700px;
+      } */
+
+    #footer-nav-p {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    #container-nav-p {
+      width: 58%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .arrowIcons-p {
+      width: 68px;
+      height: 68px;
+    }
+
+    #sliderIndicators-nav-p ul {
+      display: inline-flex;
+      padding: 0px;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    #sliderIndicators-nav-p ul li {
+      list-style: none;
+      margin: 0px 5px;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    #sliderIndicators-nav-p ul li img {
+      width: 12px;
+      height: 12px;
+      opacity: 0.5;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    #left-arrow-p {
+      opacity: 0.5;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    #panel-top-wrapper-p {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #right-arrow-p {
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="panel-container-p">
+    <div id="panel-wrapper-p">
+      <div id="panel-top-wrapper-p">
+        <div>
+          <!-- <img
+              id="back-icon-howtoplay"
+              src="./assets/art/uiElements/backArrow_H.svg"
+              alt="backbutton"
+              name="back"
+            /> -->
+        </div>
+        <div>
+          <!-- for title text -->
+          <p></p>
+        </div>
+        <div>
+          <img id="close-icon-howtoplay" src="./src/assets/art/uiElements/close_P.svg" alt="closebutton" name="close" />
+        </div>
+      </div>
+
+      <div id="parent-nav-p">
+        <div id="footer-nav-p">
+          <div id="container-nav-p">
+            <div class="arrowIcons-p" id="previousIcon">
+              <img id="left-arrow-p" src="./src/assets/tutorial/howToPlay_previous_active.svg" name="left" />
+            </div>
+            <div id="sliderIndicators-nav-p">
+              <ul>
+                <li>
+                  <img id="indicator-p-1" src="./src/assets/tutorial/howToPlay_selected_P.svg" />
+                </li>
+                <li>
+                  <img id="indicator-p-2" src="./src/assets/tutorial/howToPlay_selected_P.svg" />
+                </li>
+                <li>
+                  <img id="indicator-p-3" src="./src/assets/tutorial/howToPlay_selected_P.svg" />
+                </li>
+              </ul>
+            </div>
+            <div class="arrowIcons-p" id="nextIcon">
+              <img id="right-arrow-p" src="./src/assets/tutorial/howToPlay_next_active.svg" name="right" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

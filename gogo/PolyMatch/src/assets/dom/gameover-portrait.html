@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <title>Gameover</title>
+    <!-- <link href="settings.css" rel="stylesheet" /> -->
+    <style>
+
+
+      
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+html {
+  height: 100%;
+}
+body {
+  background: #323352;
+  height: 100%;
+}
+
+
+#gameover-wrapper-popup-p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#gameover-setting-popup-p {
+  background-image: url("../dom/settings_bg_P.svg"), linear-gradient( 50deg, #6fb6e1, #a1c1ca, #6fb6e1 100%);
+  /* background: url('./settings_bg_P.svg'); */
+  border-radius: 20px;
+  width: 464px;
+  height: 568px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#gameover-title-p {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'MPLUSRou-ExtraBold';
+  margin: 0px;
+  color: #323352;
+}
+
+
+#gameover-content-wrapper-p {
+  padding: 40px 0px 20px 0px;
+}
+#gameover-scores-p {
+  font-size: 120px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-family: 'MPLUSRou-ExtraBold';
+    height: 148px;
+
+  
+}
+#gameover-words-title-p {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin: 0px;
+  font-family: 'MPLUSRou-ExtraBold';
+
+}
+#gameover-words-wrapper-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gameover-words-display-p {
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  height: 82px;
+  word-spacing: 20px;
+  overflow-y: scroll !important;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-family: "MPLUSRou-Medium";
+  color: #323352;
+}
+#gameover-button-wrapper-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 42px;
+}
+#gameover-replay-buttons-p {
+  height: 55px;
+  border-radius: 30px;
+  width: 140px;
+  outline: none;
+  border: none;
+  background: #323251;
+  color: #fff;
+  margin: 0px 10px;
+  font-size: 20px;
+  font-family: 'MPLUSRou-ExtraBold';
+  transition: background-color 0.3s;
+}
+#gameover-archive-buttons-p {
+  height: 55px;
+  border-radius: 30px;
+  width: 140px;
+  outline: none;
+  border: none;
+  background: #323251;
+  color: #fff;
+  margin: 0px 10px;
+  font-size: 20px;
+  font-family: 'MPLUSRou-ExtraBold';
+  transition: background-color 0.3s;
+
+}
+#gameover-previousword-title-p{
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  margin: 0px;
+  font-family: 'MPLUSRou-ExtraBold';
+}
+#gameover-wordscount-title-p{
+  color: #323352;
+  font-size: 24px;
+  margin-left: 10px;
+  font-family: 'MPLUSRou-ExtraBold';
+
+}
+
+#gameover-replay-buttons-p:hover, #gameover-replay-buttons-p:focus, #gameover-replay-buttons-p:active {
+  background: #2a2b45;
+}
+#gameover-archive-buttons-p:hover, #gameover-archive-buttons-p:focus, #gameover-archive-buttons-p:active {
+  background: #2a2b45;
+}
+
+#previous-word-p{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* background-color: rgba(0,0,0,.5); */
+  background-color: #323251;
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+#default-bg{
+  /* width: 443px;
+    height: 476px;
+  background-image: linear-gradient( 50deg, #6fb6e1, #a1c1ca, #6fb6e1 100%) ;
+  border-radius: 20px;
+  padding: 40px 0px 20px 0px;
+  margin: auto; */
+}
+
+
+    </style>
+  </head>
+  <body>
+    <section id="gameover-wrapper-popup-p">
+      <div id="gameover-wrapper-p">
+        <div id="gameover-setting-popup-p">
+          <!-- <img src="./settings_bg_P.svg" /> -->
+          <div id="gameover-content-wrapper-p">
+            <div id="default-bg">
+              <p id="gameover-title-p" id="gameOverTitle">Great Work!</p>
+              <!-- scores -->
+              <p id="gameover-scores-p">8</p>
+              <p id="gameover-words-title-p">Words</p>
+              <!-- words container -->
+                 <div id="previous-word-p">
+                <p id="gameover-previousword-title-p">Previous Best
+                  </p>
+                  <p id="gameover-wordscount-title-p"> : 3 Words</p>
+                 </div>
+  
+              <div id="gameover-words-wrapper-p">
+                <p id="gameover-words-display-p">
+                  Intensity Tipi Lite Intensity Tipi Lite Intensity Tipi Lite
+                  Intensity Tipi Lite Intensity Tipi Lite Intensity Tipi Lite
+                </p>
+              </div>
+              <div id="gameover-button-wrapper-p">
+                <button id="gameover-replay-buttons-p" name="replay">Replay</button>
+                <button id="gameover-archive-buttons-p" name="archive">Archive</button>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+    window.onload(()=> {
+      // debugger
+    })
+
+  </script>
+  </body>
+</html>

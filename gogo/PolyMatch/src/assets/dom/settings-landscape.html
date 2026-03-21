@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <title>Settings</title>
+    <!-- <link href="landscpae.css" rel="stylesheet" /> -->
+    <style>
+    
+      *,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        background: #323352;
+        height: 100%;
+      }
+      #setting-relative-container-l {
+        position: relative;
+      }
+      #settings-close-button-l {
+        max-width: 51px;
+        max-height: 51px;
+        position: absolute;
+        top: 2px;
+        right: 20px;
+        transition: all .2s ease-in-out;
+        opacity: 0;
+      }
+      #settings-close-button-l:hover { transform: scale(1.1); }
+      #settings-wrapper-popup-l {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        min-height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       
+      }
+      #settings-setting-popup-l {
+        /* background: url("./assets/dom/settings_bg_P.svg"); */
+        background-image: url("./src/assets/dom/settings_bg_P.svg"), linear-gradient( 50deg, #6fb6e1, #a1c1ca, #6fb6e1 100%) ;
+        border-radius: 20px;
+        width: 379px;
+        height: 464px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      #settings-title-l {
+        font-size: 40px;
+        text-align: center;
+        font-family: "MPLUSRou-ExtraBold";
+        color: #323352;
+      }
+
+      #settings-content-wrapper-l {
+        padding: 8px 0px 20px 0px;
+      }
+
+      #settings-button-wrapper-l {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18px;
+        flex-direction: column;
+      }
+      #settings-howtoplay-buttons-l {
+        height: 64px;
+        border-radius: 32px;
+        width: 248px;
+        outline: none;
+        border: none;
+        background: #323251;
+        color: #fff;
+        margin: 10px 10px;
+        font-size: 24px;
+        font-family: "MPLUSRou-ExtraBold";
+      }
+      #settings-endgame-buttons-l {
+        height: 64px;
+        border-radius: 32px;
+        width: 248px;
+        outline: none;
+        border: none;
+        background: #323251;
+        color: #fff;
+        margin: 10px 10px;
+        font-size: 24px;
+        font-family: "MPLUSRou-ExtraBold";
+      }
+      #settings-archive-buttons-l {
+        height: 64px;
+        border-radius: 32px;
+        width: 248px;
+        outline: none;
+        border: none;
+        background: #323251;
+        color: #fff;
+        margin: 10px 10px;
+        font-size: 24px;
+        font-family: "MPLUSRou-ExtraBold";
+      }
+      #settings-on-sound-button-l {
+        width: 92px;
+        height: 43px;
+        margin-bottom: 20px;
+      }
+      #settings-off-button-l {
+        width: 92px;
+        height: 43px;
+        margin-bottom: 20px;
+        display: none;
+      }
+      #settings-version-text-l {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+        font-family: "MPLUSRou-Bold";
+        color: #323352;
+      }
+      #settings-howtoplay-buttons-l:hover,
+      #settings-howtoplay-buttons-l:focus,
+      #settings-howtoplay-buttons-l:active {
+        background: #2a2b45;
+      }
+      #settings-endgame-buttons-l:hover,
+      #settings-endgame-buttons-l:focus,
+      #settings-endgame-buttons-l:active {
+        background: #2a2b45;
+      }
+      #settings-archive-buttons-l:hover,
+      #settings-archive-buttons-l:focus,
+      #settings-archive-buttons-l:active {
+        background: #2a2b45;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <section id="settings-wrapper-popup-l">
+      <div id="settings-wrapper-l">
+        <div id="settings-setting-popup-l">
+          <div id="settings-content-wrapper-l">
+            <div id="setting-relative-container-l">
+              <p id="settings-title-l">Settings</p>
+              <img id="settings-close-button-l" src="./src/assets/dom/close.svg" alt="close" name="close"/>
+            </div>
+            <!-- scores -->
+            <div id="settings-button-wrapper-l">
+              <img id="settings-on-sound-button-l" src="./src/assets/art/SVG/settings/sound_on.svg" name="effects"/>
+              <img id="settings-off-button-l" src="./src/assets/art/SVG/settings/sound_off.svg" name="effects"/>
+   
+              <button id="settings-howtoplay-buttons-l" name="howtoplay">How to play</button>
+              <button id="settings-endgame-buttons-l" name="end game">End Game</button>
+              <button id="settings-archive-buttons-l" name="archive">Archive</button>
+              <p id="settings-version-text-l">v0.2.7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+        function toggleButtons() {
+            var onButton = document.getElementById("settings-on-sound-button-l");
+            var offButton = document.getElementById("settings-off-button-l");
+
+            if (onButton.style.display === "none") {
+            onButton.style.display = "block";
+            offButton.style.display = "none";
+            } else {
+            onButton.style.display = "none";
+            offButton.style.display = "block";
+            }
+        }
+        var onButton = document.getElementById("settings-on-sound-button-l");
+        var offButton = document.getElementById("settings-off-button-l");
+
+        onButton.addEventListener("click", toggleButtons);
+        offButton.addEventListener("click", toggleButtons);
+    </script>
+  </body>
+</html>

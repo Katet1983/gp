@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+      }
+
+      body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+  
+      }
+
+      #tutorial-p-Bg{
+        width: 468px;
+        height: 887px;
+        margin:  auto;
+      }
+    
+      #container-p-Bg{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+
+        /* background-image: url(./src/assets/newArt/howToPlay_bg_P.svg); */
+        background-image: url(../../tutorial/howToPlay_bg_L.svg), 
+        linear-gradient( 50deg, #6fb6e1, #a1c1ca, #6fb6e1 100%) ;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* / position: relative; /
+        / margin: auto; / */
+        justify-content: space-around;
+        align-items: center;
+        z-index: -10;
+        background-color: #82b5dcd9;
+      }
+
+      /********* header ************/
+       #closeIcon-p-Bg{
+        width: 25px;
+        height: 25px;
+        visibility: hidden;
+      }
+
+      #backIcon-p-Bg{
+        width: 28.5px;
+        height: 28.5px;
+        visibility: hidden;
+      }
+      
+      #headerIcon-p-Bg img{
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        display: none;
+      }
+       #heading{
+         font-size: 40px;
+         font-family: "MPLUSRou-Bold";
+         color: #323352;
+      }
+     
+      #header-p-Bg{
+        /* position: absolute;
+        top: 2%; */
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #polygonImg{
+        width: 348px;
+        height: 348px;
+      }
+      
+      #polygonImg img{
+        width: 100%;
+        height: 100%;
+      }  
+
+   
+    #answerList li{
+        list-style-type: none;
+        font-family:  "MPLUSRou-Medium";
+
+    }
+
+    #tutorialContentT-p-Bg{
+        /* position: absolute;
+        top: 10%; */
+        visibility: hidden;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #leftContent-p-Bg{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #rightContent-p-Bg{
+        flex-basis: 100%;
+    }
+    
+    #answerList{
+        display: inline-flex;
+    }
+    
+    #answerList li{
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+    #leftContent-p-Bg
+    #currentInput{
+        font-size: 41px;
+        margin: 20px 0px;
+        font-family: "MPLUSRou-ExtraBold";
+    }
+      
+    #rightContent-p-Bg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 45px;
+    }
+    #subTitle{
+    font-size: 30px;
+    font-family: "MPLUSRou-ExtraBold";
+    }
+    #content{
+     width: 90%;
+     font-size: 21px;
+     margin: 20px 0;
+     font-family: "MPLUSRou-Bold";
+     line-height: 25px;
+    } 
+
+    #parent{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+    }
+    
+    #footer{
+        width: 50%;
+    }
+        
+    #container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #arrowIcons{
+        width: 60px;
+        height: 60px;
+    }
+       
+    #sliderIndicators ul{
+        display: inline-flex;
+        padding: 0px;
+    }
+    #sliderIndicators ul li{
+        list-style: none;
+        margin: 0px 5px;
+      }
+      #sliderIndicators ul li img{
+        width: 12px;
+        height: 12px;
+       
+      }
+
+    </style>
+</head>
+<body>
+    <!-- D:\polymatchC\assets\newArt\howToPlay_bg_L.svg -->
+    <div id="tutorial-p-Bg">
+        <div id="container-p-Bg">
+            <!-- header -->
+            <div id="header-p-Bg">
+                <div class="headerIcon-p" id="backIcon-p-Bg">
+                   <!-- <img src = "../art/uiElements/backArrow_H.svg"/> -->
+                    <img src = "./src/assets/art/uiElements/backArrow_H.svg" name="back">
+                </div>
+                <div id="heading">How to Play</div>
+                <div  class="headerIcon-p" id="closeIcon-p-Bg">
+                    <img src = "./src/assets/art/uiElements/close_P.svg" name="close">
+                    <!-- <img src = "../art/uiElements/close_P.svg"> -->
+                </div>
+            </div>
+             
+            <!-- tutorialContent -->
+            <div id="tutorialContentT-p-Bg">
+                <div id="leftContent-p-Bg">
+                        <ul id="answerList">
+                            <li>CITY</li>
+                            <li>YARD</li>
+                            <li>DEN</li>
+                        </ul>
+                        <div id="currentInput">NOTE</div>
+                        <div id="polygonImg">
+                            <img src="./src/assets/tutorial/howToPlay_img_01_P.svg">
+                            <!-- <img src="../newArt/howToPlay_img_01_P.svg"> -->
+
+                        </div>
+                </div>
+                <div id="rightContent-p-Bg">
+                    <div id="subTitle">
+                        Objective
+                    </div>
+                    <div id="content">
+                        From words using all the letters on the polygon to complete the level.
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div id="parent">
+              <div id="footer">
+              <div id="container">      
+                  <div id="arrowIcons" id="previousIcon">
+                      <img src="./src/assets/tutorial/howToPlay_previous_active.svg">
+                  </div>
+                  <div id="sliderIndicators">
+                      <ul>
+                          <li><img src="./src/assets/tutorial/howToPlay_selected_P.svg"></li>
+                          <li><img src="./src/assets/tutorial/howToPlay_selected_P.svg"></li>
+                          <li><img src="./src/assets/tutorial/howToPlay_selected_P.svg"></li>
+                      </ul>
+                  </div>
+                  <div id="arrowIcons" id="nextIcon">
+                      <img src="./src/assets/tutorial/howToPlay_next_active.svg">
+                  </div>
+              </div> 
+              </div>
+          </div> 
+        </div>
+    </div>
+</body>
+
+  
+
+</html>

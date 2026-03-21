@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <title>Settings</title>
+    <!-- <link href="landscpae.css" rel="stylesheet" /> -->
+    <style>
+      *,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        /* background: #323352; */
+        height: 100%;
+      }
+      /* #loader-container-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      } */
+      #progress-bar {
+        border-radius: 20px;
+        /* width: 100%; */
+        width: 394px;
+        height: 22px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+      }
+      #progress-bar::-webkit-progress-bar {
+        background-image: url("./src/assets/art/loading/loading_bar_BG_HA.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.5s ease-out;
+
+      }
+      #progress-bar::-webkit-progress-value {
+        background: url("./src/assets/art/loading/loading_bar_HA_LH.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #progress-bar::-moz-progress-bar {
+        background-image: url("./loader-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+     /* Media Queries for Responsiveness */
+
+        /* @media (max-width:568px) {
+            #progress-bar {
+                width: 80%;
+            }
+        } */
+  
+
+  </style>
+  </head>
+  <body>
+    <section id="loader-container-p">
+      <progress id="progress-bar" value="0" max="100" min="0"></progress>
+    </section>
+    <script></script>
+  </body>
+</html>

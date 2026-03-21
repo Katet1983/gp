@@ -1,0 +1,78 @@
+{
+  "skeleton": { "hash": "Yud/bV7nMCA", "spine": "4.1.16" },
+  "bones": [
+    { "name": "root" },
+    { "name": "bone2", "parent": "root" },
+    { "name": "bone", "parent": "bone2" },
+    { "name": "bone4", "parent": "bone2", "rotation": -0.11, "scaleX": 2, "scaleY": 2 }
+  ],
+  "slots": [
+    { "name": "45", "bone": "bone4", "blend": "additive" },
+    { "name": "light", "bone": "bone", "blend": "additive" }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "45": {
+          "lightning_fx_3": { "x": -134.4, "y": -527.7, "width": 64, "height": 256 },
+          "lightning_fx_4": { "x": -134.4, "y": -527.7, "width": 64, "height": 256 },
+          "lightning_fx_5": { "x": -134.4, "y": -527.7, "width": 64, "height": 256 },
+          "lightning_fx_6": { "x": -134.4, "y": -527.7, "width": 64, "height": 256 },
+          "lightning_fx_8": { "x": -134.4, "y": -527.7, "width": 64, "height": 256 }
+        },
+        "light": {
+          "energy_strike_6": { "x": 0.5, "y": 0.5, "width": 455, "height": 77 },
+          "energy_strike_7": { "x": 0.5, "y": 0.5, "width": 455, "height": 77 },
+          "energy_strike_8": { "x": 0.5, "y": 0.5, "width": 455, "height": 77 },
+          "energy_strike_9": { "x": 0.5, "y": 0.5, "width": 455, "height": 77 },
+          "energy_strike_10": { "x": 0.5, "y": 0.5, "width": 455, "height": 77 },
+          "energy_strike_11": { "x": 0.5, "y": 0.5, "width": 455, "height": 77 },
+          "energy_strike_12": { "x": 0.5, "y": 0.5, "width": 455, "height": 77 },
+          "energy_strike_13": { "x": 0.5, "y": 0.5, "width": 455, "height": 77 }
+        }
+      }
+    }
+  ],
+  "animations": {
+    "animation": {
+      "slots": {
+        "45": {
+          "attachment": [
+            { "time": 0.0333, "name": "lightning_fx_3" },
+            { "time": 0.0667, "name": "lightning_fx_5" },
+            { "time": 0.1, "name": "lightning_fx_4" },
+            { "time": 0.1333, "name": "lightning_fx_3" },
+            { "time": 0.1667, "name": "lightning_fx_4" },
+            { "time": 0.2 }
+          ]
+        },
+        "light": {
+          "attachment": [
+            { "time": 0.0333, "name": "energy_strike_6" },
+            { "time": 0.1, "name": "energy_strike_7" },
+            { "time": 0.1667, "name": "energy_strike_8" },
+            { "time": 0.2333, "name": "energy_strike_9" },
+            { "time": 0.2667, "name": "energy_strike_10" },
+            { "time": 0.3, "name": "energy_strike_11" },
+            { "time": 0.3333, "name": "energy_strike_12" },
+            { "time": 0.3667, "name": "energy_strike_13" },
+            { "time": 0.4 }
+          ]
+        }
+      },
+      "bones": {
+        "bone": {
+          "rotate": [{ "value": -90 }],
+          "translate": [{ "x": -87.69, "y": -459.19 }],
+          "scale": [
+            { "x": 2.736, "y": 2.726, "curve": "stepped" },
+            { "time": 0.4333, "x": 2.736, "y": 2.726 }
+          ]
+        },
+        "bone4": { "translate": [{ "x": 127.8, "y": 534.45 }] },
+        "bone2": { "translate": [{ "x": 75.89, "y": -60.15 }], "scale": [{ "x": 0.56 }] }
+      }
+    }
+  }
+}
