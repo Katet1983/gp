@@ -1,0 +1,144 @@
+:root {
+  /*White color*/
+  --white: #ffffff;
+}
+
+.scoreTitle {
+  user-select: none;
+  width: 32.18px;
+  height: 24.57px;
+  background: url("../assets/art/domImages/gamePlay/score_crown.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.scoreText {
+  color: var(--white);
+  font-family: "Montserrat-SemiBold";
+  font-size: 37.5px;
+  user-select: none;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  border: none;
+}
+.title {
+  color: var(--white);
+  font-family: "Montserrat-Bold";
+  font-size: 18px;
+  user-select: none;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  border: none;
+}
+
+.newScoreText {
+  color: #fff;
+  font-family: "Montserrat-Bold";
+  font-size: 40px;
+  user-select: none;
+  width: 110px;
+  height: 100px;
+  text-align: center;
+  border: none;
+}
+
+.scoreTextActive {
+  color: #7fffd4;
+}
+
+.settingsBtn {
+  width: 47.43px;
+  height: 47.96px;
+  background: url("../assets/art/domImages/gamePlay/settings_icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  user-select: none;
+}
+.holdBtnText {
+  color: var(--white);
+  font-family: "Montserrat-Bold";
+  font-size: 12px;
+  user-select: none;
+  width: 64px;
+  height: fit-content;
+  text-align: center;
+  border: none;
+}
+.holdTextTitle {
+  color: var(--white);
+  font-family: "Montserrat-Bold";
+  font-size: 22px;
+  user-select: none;
+  width: 320px;
+  height: 35px;
+  text-align: center;
+  border: none;
+}
+.powerUpsExistTitle {
+  color: var(--white);
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  user-select: none;
+  width: 320px;
+  height: 35px;
+  text-align: center;
+  border: none;
+}
+.bombBtnActive {
+  width: 73px;
+  height: 73px;
+  background: url("../assets/art/domImages/gamePlay/bomb_on.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  user-select: none;
+}
+
+.bombBtnInActive {
+  background: url("../assets/art/domImages/gamePlay/bomb_off.svg");
+  width: 73px;
+  height: 73px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  user-select: none;
+}
+.bombBtnSelected {
+  background: url("../assets/art/domImages/gamePlay/bomb_selected.svg");
+  width: 73px;
+  height: 73px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  user-select: none;
+}
+.shuffleBtnActive {
+  width: 63.34px;
+  height: 52.86px;
+  background: url("../assets/art/domImages/gamePlay/shuffle_on.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  user-select: none;
+}
+.shuffleBtnInActive {
+  background: url("../assets/art/domImages/gamePlay/shuffle_off.svg");
+  width: 63.34px;
+  height: 52.86px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  user-select: none;
+}
+
+.addIcon {
+  width: 43.71px;
+  height: 34px;
+  background: url("../assets/art/domImages/ad_icon.svg");
+  /* background: url("./assets/art/domImages/ad_icon.svg"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  user-select: none;
+}

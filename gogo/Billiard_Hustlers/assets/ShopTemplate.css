@@ -1,0 +1,122 @@
+.main-container {
+    width: 100%;
+    display: flex;
+    height: 520px;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.section > span {
+    color: #fff;
+    font-family: Futura-Bold;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.arrow-up, .arrow-down {
+    position: absolute;
+    z-index: 4;
+    width: 60px;
+    cursor: pointer;
+}
+
+.arrow-up {
+    transform: rotate(180deg);
+    top: 28px;
+}
+
+.arrow-up:hover {
+    scale: 1.1;
+}
+
+.arrow-down {
+    bottom: 0;
+}
+
+.arrow-down:hover {
+    scale: 1.1;
+}
+
+
+.avatars, .cues, .tables {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 8px;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.unlocked, .locked {
+    display: flex;
+    width: 228px;
+    height: 228px;
+    min-width: 228px;
+    min-height: 228px;
+    max-width: 228px;
+    max-height: 228px;
+    border-radius: 12px;
+    background-size: contain;
+}
+
+.unlocked img,  .locked .locked-content {
+    width: calc(100% - 26px);
+    height: calc(100% - 26px);
+    border-radius: 12px;
+    position: relative;
+    left: 12.5px;
+    top: 12.5px;
+    pointer-events: none;
+}
+
+.unlocked .frame {
+    width: calc(100% );
+    height: calc(100%   );
+    border-radius: 12px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+}
+
+.locked .locked-content {
+    background-color: #1d2c57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.locked .locked-content span {
+    color: #01aadb;
+    margin-top: 24px;
+    font-family: Futura-PT-Medium;
+    font-size: 16px;
+
+}
+
+.divider {
+    height: 100%;
+    margin: 0 48px;
+}
+
+.equipedTitle {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    font-family: Futura-PT-Medium;
+    font-size: 19px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}

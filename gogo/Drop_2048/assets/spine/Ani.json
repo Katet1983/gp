@@ -1,0 +1,46 @@
+{
+"skeleton": { "hash": "DYv0MNwpDcY1zplAdh7jTflsAy4", "spine": "3.7.94", "width": 136, "height": 126, "images": "./images/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Main", "parent": "root" }
+],
+"slots": [
+	{ "name": "Fx_merge", "bone": "Main", "attachment": "Fx_merge", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"Fx_merge": {
+			"Fx_merge": { "width": 136, "height": 126 }
+		}
+	}
+},
+"animations": {
+	"ani": {
+		"slots": {
+			"Fx_merge": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.332, 0.35, 0.202, 1 ]
+					},
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Main": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0, 0.6, 0.202, 1 ]
+					},
+					{ "time": 0.3333, "x": 1.2, "y": 1.2 }
+				]
+			}
+		}
+	}
+}
+}

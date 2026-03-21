@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <title>Settings</title>
+    <!-- <link href="landscpae.css" rel="stylesheet" /> -->
+    <style>
+   
+      *,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        background: #030b6d;
+        height: 100%;
+      }
+      #tentris-setting-relative-container {
+        position: relative;
+      }
+      #tentris-settings-close-button {
+        max-width: 28px;
+        max-height: 23px;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+      }
+      #tentris-settings-wrapper-popup {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        min-height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      #tentris-settings-setting-popup {
+        background: url("./src/assets/art/svg/settings_bgPanel_P_L.svg");
+        width: 447px;
+        height: 512px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      #tentris-settings-title {
+        font-size: 37.5px;
+        text-align: center;
+        font-family: "Montserrat-SemiBold";
+        color: #fff;
+        margin-top: 30px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+
+      #tentris-settings-content-wrapper {
+        padding: 30px 0px 20px 0px;
+      }
+
+      #tentris-settings-button-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        flex-direction: column;
+      }
+      #tentris-settings-howtoplay-buttons {
+        height: 77px;
+        border-radius: 50px;
+        width: 278px;
+        outline: none;
+        border: none;
+        background: #000b6d;
+        color: #fff;
+        margin: 10px;
+        font-size: 30px;
+        font-family: "Montserrat-SemiBold";
+        border: 3px solid #643ae5;
+      }
+      #tentris-settings-endgame-buttons {
+        height: 77px;
+        border-radius: 50px;
+        width: 278px;
+        outline: none;
+        border: none;
+        background: #000b6d;
+        color: #fff;
+        margin: 10px;
+        font-size: 30px;
+        font-family: "Montserrat-SemiBold";
+        border: 3px solid #643ae5;      
+      }
+   
+      #tentris-settings-on-sound-button {
+        width: 118px;
+        height: 52px;
+        margin-bottom: 20px;
+      }
+      #tentris-settings-off-button {
+        width: 118px;
+        height: 52px;
+        margin-bottom: 20px;
+        display: none;
+      }
+      #tentris-settings-version-text {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 50px;
+        font-family: "Montserrat-Regular";
+        color: #fff;
+      }
+      #tentris-settings-close-button:hover, #tentris-settings-close-button:active{
+        opacity: 0.75;
+      }
+      #tentris-settings-howtoplay-buttons:hover, #tentris-settings-howtoplay-buttons:active{
+        background-color: #1b28b5;
+      }
+      #tentris-settings-endgame-buttons:hover, #tentris-settings-endgame-buttons:active {
+        background-color: #1b28b5;
+      }
+   
+    </style>
+  </head>
+  <body>
+  
+    <section id="tentris-settings-wrapper-popup">
+      <div id="tentris-settings-wrapper">
+        <div id="tentris-settings-setting-popup">
+          <div id="tentris-settings-content-wrapper">
+            <div id="tentris-setting-relative-container">
+              <p id="tentris-settings-title">Settings</p>
+              <img id="tentris-settings-close-button" src="./src/assets/art/svg/close_icon.svg" alt="close" name="close" />
+            </div>
+            <!-- scores -->
+            <div id="tentris-settings-button-wrapper">
+              <img id="tentris-settings-on-sound-button" src="./src/assets/art/svg/sound_on.svg" name="sound"/>
+              <img id="tentris-settings-off-button" src="./src/assets/art/svg/sound_off.svg"  name="sound"/>
+              <button id="tentris-settings-howtoplay-buttons" name="howtoplay">How to play</button>
+              <button id="tentris-settings-endgame-buttons" name="end game">End game</button>
+             
+              <p id="tentris-settings-version-text">v0.1.9</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+        // function toggleButtons() {
+        //     var onButton = document.getElementById("tentris-settings-on-sound-button");
+        //     var offButton = document.getElementById("tentris-settings-off-button");
+
+        //     if (onButton.style.display === "none") {
+        //     onButton.style.display = "block";
+        //     offButton.style.display = "none";
+        //     } else {
+        //     onButton.style.display = "none";
+        //     offButton.style.display = "block";
+        //     }
+        // }
+        // var onButton = document.getElementById("tentris-settings-on-sound-button");
+        // var offButton = document.getElementById("tentris-settings-off-button");
+
+        // onButton.addEventListener("click", toggleButtons);
+        // offButton.addEventListener("click", toggleButtons);
+    </script>
+  </body>
+</html>

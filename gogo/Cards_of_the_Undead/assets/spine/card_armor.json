@@ -1,0 +1,144 @@
+{
+"skeleton": {
+	"hash": "VevUbxR+vmw",
+	"spine": "4.1.17",
+	"x": -92.19,
+	"y": -46.69,
+	"width": 184,
+	"height": 182.94,
+	"images": "./images/",
+	"audio": "/Users/dabntz/Library/CloudStorage/GoogleDrive-dabntz@gmail.com/Mi unidad/DBGS/Google/Cards of the Undead/Source Files/Animations/Spine Files/card_HP"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone_floating", "parent": "root", "length": 48.34, "rotation": 90, "x": 0.63, "y": 0.13 },
+	{
+		"name": "bone_shadow_small",
+		"parent": "root",
+		"length": 23.76,
+		"rotation": 90,
+		"x": -0.19,
+		"y": -0.69,
+		"skin": true
+	},
+	{ "name": "bone_floating_02", "parent": "root", "length": 47.81, "rotation": 89.17, "x": 20.58, "y": 3.58 }
+],
+"slots": [
+	{ "name": "shadow_small", "bone": "bone_shadow_small", "attachment": "shadow" },
+	{ "name": "card_armor_01", "bone": "bone_floating", "attachment": "card_armor_01" },
+	{ "name": "card_armor_02", "bone": "bone_floating", "attachment": "card_armor_02" },
+	{ "name": "card_armor_03", "bone": "bone_floating", "attachment": "card_armor_03" },
+	{ "name": "card_armor_04_R", "bone": "bone_floating_02", "attachment": "card_armor_04_R" },
+	{ "name": "card_armor_04_L", "bone": "bone_floating", "attachment": "card_armor_04_L" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"shadow_small": {
+				"shadow": { "rotation": -90, "width": 184, "height": 92 }
+			}
+		}
+	},
+	{
+		"name": "card_armor_01",
+		"bones": [ "bone_shadow_small" ],
+		"attachments": {
+			"card_armor_01": {
+				"card_armor_01": { "x": 90.89, "y": -0.5, "rotation": -90, "width": 125, "height": 148 }
+			}
+		}
+	},
+	{
+		"name": "card_armor_02",
+		"bones": [ "bone_shadow_small" ],
+		"attachments": {
+			"card_armor_02": {
+				"card_armor_02": { "x": 90.89, "y": -0.5, "rotation": -90, "width": 129, "height": 144 }
+			}
+		}
+	},
+	{
+		"name": "card_armor_03",
+		"bones": [ "bone_shadow_small" ],
+		"attachments": {
+			"card_armor_03": {
+				"card_armor_03": { "x": 97.3, "rotation": -90, "width": 122, "height": 184 }
+			}
+		}
+	},
+	{
+		"name": "card_armor_04",
+		"bones": [ "bone_shadow_small" ],
+		"attachments": {
+			"card_armor_04_L": {
+				"card_armor_04_L": { "x": 81.12, "y": 36.05, "rotation": -90, "width": 98, "height": 110 }
+			},
+			"card_armor_04_R": {
+				"card_armor_04_R": { "x": 76.39, "y": -15.1, "rotation": -89.17, "width": 102, "height": 110 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"bone_floating": {
+				"rotate": [
+					{
+						"curve": [ 0.444, 0, 0.889, 3.81 ]
+					},
+					{
+						"time": 1.3333,
+						"value": 3.81,
+						"curve": [ 1.778, 3.81, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.444, 0, 0.889, 0, 0.444, 0, 0.889, 21.05 ]
+					},
+					{
+						"time": 1.3333,
+						"y": 21.05,
+						"curve": [ 1.778, 0, 2.222, 0, 1.778, 21.05, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				]
+			},
+			"bone_shadow_small": {
+				"scale": [
+					{},
+					{ "time": 1.3333, "y": 0.893 },
+					{ "time": 2.6667 }
+				]
+			},
+			"bone_floating_02": {
+				"rotate": [
+					{
+						"curve": [ 0.533, 0, 1.067, 3.81 ]
+					},
+					{
+						"time": 1.6,
+						"value": 3.81,
+						"curve": [ 1.956, 3.81, 2.311, 0 ]
+					},
+					{ "time": 2.6667 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.533, 0, 1.067, 0, 0.533, 0, 1.067, 21.05 ]
+					},
+					{
+						"time": 1.6,
+						"y": 21.05,
+						"curve": [ 1.956, 0, 2.311, 0, 1.956, 21.05, 2.311, 0 ]
+					},
+					{ "time": 2.6667 }
+				]
+			}
+		}
+	}
+}
+}

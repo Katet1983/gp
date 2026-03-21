@@ -1,0 +1,85 @@
+{
+"skeleton": { "hash": "Cbs1Mw3AFdpisxex6ityzOc1Ztk", "spine": "3.7.94", "width": 131, "height": 133, "images": "./images/", "audio": "C:/Users/Admin/Desktop/작업파일/9. 드롭2048_경택님/스파인/Lobby_bt" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Main", "parent": "root" },
+	{ "name": "Trophy_Main", "parent": "Main" },
+	{ "name": "Fx_Main", "parent": "Main" },
+	{ "name": "Bling_1", "parent": "Fx_Main" },
+	{ "name": "Bling_2", "parent": "Fx_Main" },
+	{ "name": "Bling_3", "parent": "Fx_Main" },
+	{ "name": "Bow_Main", "parent": "Main" },
+	{ "name": "Bow_Stick", "parent": "Bow_Main", "x": 11.27, "y": 8.76 },
+	{ "name": "Box_Main", "parent": "Main" },
+	{ "name": "Box", "parent": "Box_Main", "y": -48.42 },
+	{ "name": "Ribbon_Main", "parent": "Box_Main", "x": -0.33, "y": 23.11 },
+	{ "name": "Ribbon_L", "parent": "Ribbon_Main", "length": 27.18, "rotation": -169.32, "x": -2.77, "y": -0.5 },
+	{ "name": "Ribbon_R", "parent": "Ribbon_Main", "length": 28.07, "rotation": -11.92, "x": 1.26, "y": -0.5 },
+	{ "name": "Flag_Main", "parent": "Main", "x": 8.33 },
+	{ "name": "Book_Main", "parent": "Main" }
+],
+"slots": [
+	{ "name": "trophy", "bone": "Trophy_Main" },
+	{ "name": "star", "bone": "Bling_1" },
+	{ "name": "star2", "bone": "Bling_2" },
+	{ "name": "star3", "bone": "Bling_3" },
+	{ "name": "Bow", "bone": "Bow_Main" },
+	{ "name": "Crack", "bone": "Bow_Main" },
+	{ "name": "Bow2", "bone": "Bow_Stick" },
+	{ "name": "Box", "bone": "Box" },
+	{ "name": "Ribbon_Shadow", "bone": "Box" },
+	{ "name": "Ribbon_R", "bone": "Ribbon_R" },
+	{ "name": "Ribbon_L", "bone": "Ribbon_L" },
+	{ "name": "Ribbon_Center", "bone": "Ribbon_Main" },
+	{ "name": "Flag", "bone": "Flag_Main", "attachment": "flag_1_00" },
+	{ "name": "history", "bone": "Book_Main" }
+],
+"skins": {
+	"default": {
+		"Flag": {
+			"flag_1_00": { "width": 131, "height": 133 }
+		}
+	}
+},
+"animations": {
+	"4": {
+		"bones": {
+			"Flag_Main": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 5.16,
+						"curve": [ 0.375, 0.5, 0.75, 1 ]
+					},
+					{
+						"time": 0.2509,
+						"angle": 0,
+						"curve": [ 0.332, 0, 0.439, 1 ]
+					},
+					{
+						"time": 0.7509,
+						"angle": 10.28,
+						"curve": [ 0.25, 0, 0.625, 0.5 ]
+					},
+					{ "time": 1, "angle": 5.16 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0.37,
+						"y": 0.75,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"x": 0.37,
+						"y": 12.45,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "x": 0.37, "y": 0.75 }
+				]
+			}
+		}
+	}
+}
+}

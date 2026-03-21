@@ -1,0 +1,52 @@
+{
+"skeleton": {
+	"hash": "Xm3SNA3i54o",
+	"spine": "4.1.15",
+	"x": -64.14,
+	"y": -51,
+	"width": 128.28,
+	"height": 223,
+	"images": "./images/",
+	"audio": "/Users/dabntz/Library/CloudStorage/GoogleDrive-dabntz@gmail.com/Mi unidad/DBGS/Google/Cards of the Undead/Source Files/Animations/Spine Files/card_potions"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 65.29, "rotation": 88.43, "x": 0.23, "y": 1.36 }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "whiskey_bottle", "bone": "bone", "attachment": "whiskey" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"shadow": {
+				"shadow": { "scaleX": 0.7919, "width": 162, "height": 102 }
+			},
+			"whiskey_bottle": {
+				"whiskey": { "x": 82.41, "y": -9, "rotation": -88.43, "width": 94, "height": 177 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{
+						"curve": [ 0.444, 0, 0.889, 10.05 ]
+					},
+					{
+						"time": 1.3333,
+						"value": 10.05,
+						"curve": [ 1.778, 10.05, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				]
+			}
+		}
+	}
+}
+}

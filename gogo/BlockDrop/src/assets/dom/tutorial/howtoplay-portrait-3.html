@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>How to play</title>
+    <!-- <link href="landscpae.css" rel="stylesheet" /> -->
+    <style>
+         *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+    }
+        #tentris-howtoplay3-button-wrapper-p {
+            position: relative;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            /* margin-top: 25px; */
+            flex-direction: column;
+            width: 844px;
+            justify-content: stretch;
+           
+
+        }
+        #wrapper-container{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;            
+        }
+        /* #tentris-howtoplay3-button-wrapper-p>div{
+            height: 100%;
+    
+        } */
+
+        #howtoplay3-title-p-1 {
+            font-size: 24px;
+            color: #fff;
+            font-family: "Montserrat-SemiBold";
+        }
+        #howtoplay3-title-p-2 {
+            font-size: 24px;
+            color: #fff;
+            font-family: "Montserrat-SemiBold";
+        }
+        #howtoplay3-title-p-3 {
+            font-size: 24px;
+            color: #fff;
+            font-family: "Montserrat-SemiBold";
+        }
+
+
+        #bomb-image-p {
+            width: 77px;
+            height: 80px;
+        }
+
+        #redraw-image-p {
+            width: 63px;
+            height: 52px;
+        }
+
+        #hold-image-p {
+            width: 74px;
+            height: 63px;
+        }
+
+
+        #bomb-wrapper-p {
+            display: flex;
+            align-items: center;
+            margin: 20px 0px 30px;
+        }
+
+        #redraw-wrapper-p {
+            display: flex;
+            align-items: center;
+            margin: 20px 0px 30px;
+        }
+
+        #hold-wrapper-p {
+            display: flex;
+            align-items: center;
+            margin: 20px 0px 30px;
+        }
+
+        #howtoplay3-goal-title-1-p {
+            font-size: 18px;
+            font-family: "Montserrat-Medium";
+            color: #bec2ff;
+            margin-top: 5px;
+            width: 300px;
+        }
+        #howtoplay3-goal-title-2-p {
+            font-size: 18px;
+            font-family: "Montserrat-Medium";
+            color: #bec2ff;
+            margin-top: 5px;
+            width: 300px;
+        }
+        #howtoplay3-goal-title-3-p {
+            font-size: 18px;
+            font-family: "Montserrat-Medium";
+            color: #bec2ff;
+            margin-top: 5px;
+            width: 300px;
+        }
+
+        .content-wrapper-p {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tentris-howtoplay3-button-wrapper-p">
+        <!-- bomb -->
+        <div id="wrapper-container">
+            <div id="bomb-wrapper-p">
+                <img id="bomb-image-p" src="./src/assets/art/svg/howToPlay_bomb_P.svg" />
+                <div class="content-wrapper-p">
+                    <h3 id="howtoplay3-title-p-1">Bomb</h3>
+                    <p id="howtoplay3-goal-title-1-p">Clears a 3x3 area on the board</p>
+                </div>
+            </div>
+            <!-- redraw -->
+            <div id="redraw-wrapper-p">
+                <img id="redraw-image-p" src="./src/assets/art/svg/howToPlay_shuffle_P.svg" />
+                <div class="content-wrapper-p">
+                    <h3 id="howtoplay3-title-p-2">Redraw</h3>
+                    <p id="howtoplay3-goal-title-2-p">Get a new set of puzzle blocks</p>
+                </div>
+            </div>
+            <!-- hold -->
+            <div id="hold-wrapper-p">
+                <img id="hold-image-p" src="./src/assets/art/svg/howToPlay_hold_P.svg" />
+                <div class="content-wrapper-p">
+                    <h3 id="howtoplay3-title-p-3">Hold</h3>
+                    <p id="howtoplay3-goal-title-3-p">Hold a block for later use in the game</p>
+                </div>
+            </div>
+        </div>
+     
+    </div>
+</body>
+
+</html>

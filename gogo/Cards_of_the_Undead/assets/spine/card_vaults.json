@@ -1,0 +1,80 @@
+{
+"skeleton": {
+	"hash": "VcYxZwMlo+c",
+	"spine": "4.1.15",
+	"x": -115.85,
+	"y": -113.61,
+	"width": 244,
+	"height": 201.91,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "vaults_bone", "parent": "root", "length": 52.23, "rotation": 89.44, "x": -19.47, "y": -47.06 }
+],
+"slots": [
+	{ "name": "vault_shadow", "bone": "root", "attachment": "vault_shadow" },
+	{ "name": "vault_01", "bone": "vaults_bone", "attachment": "vault_01" },
+	{ "name": "vault_02", "bone": "vaults_bone", "attachment": "vault_02" },
+	{ "name": "vault_03", "bone": "vaults_bone", "attachment": "vault_03" },
+	{ "name": "vault_04", "bone": "vaults_bone", "attachment": "vault_04" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"vault_shadow": {
+				"vault_shadow": { "x": 6.15, "y": -45.11, "width": 244, "height": 137 }
+			}
+		}
+	},
+	{
+		"name": "vault_01",
+		"attachments": {
+			"vault_01": {
+				"vault_01": { "x": 50.52, "y": -16.39, "rotation": -89.44, "width": 220, "height": 170 }
+			}
+		}
+	},
+	{
+		"name": "vault_02",
+		"attachments": {
+			"vault_02": {
+				"vault_02": { "x": 47.95, "y": -13.5, "rotation": -89.44, "width": 221, "height": 175 }
+			}
+		}
+	},
+	{
+		"name": "vault_03",
+		"attachments": {
+			"vault_03": {
+				"vault_03": { "x": 47.75, "y": -16.22, "rotation": -89.44, "width": 221, "height": 171 }
+			}
+		}
+	},
+	{
+		"name": "vault_04",
+		"attachments": {
+			"vault_04": {
+				"vault_04": { "x": 47.25, "y": -19.51, "rotation": -89.44, "width": 217, "height": 172 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"vaults_bone": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 1.2 },
+					{ "time": 1.3333, "x": 1.048, "y": 1.1 },
+					{ "time": 1.4667, "curve": "stepped" },
+					{ "time": 2.6667 }
+				]
+			}
+		}
+	}
+}
+}

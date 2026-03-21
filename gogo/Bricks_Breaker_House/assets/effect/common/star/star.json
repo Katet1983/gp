@@ -1,0 +1,59 @@
+{
+"skeleton": {
+	"hash": "lV0pF7YdiNk",
+	"spine": "4.1.19",
+	"x": -28.5,
+	"y": -27.5,
+	"width": 57,
+	"height": 55,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "star", "parent": "root" }
+],
+"slots": [
+	{ "name": "star", "bone": "star", "attachment": "star", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"star": {
+				"star": { "width": 57, "height": 55 }
+			}
+		}
+	}
+],
+"animations": {
+	"star": {
+		"slots": {
+			"star": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1667, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"star": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": 90 },
+					{ "time": 0.3333, "value": 225.83 },
+					{ "time": 0.5, "value": 360 }
+				],
+				"translate": [
+					{ "y": 50 },
+					{ "time": 0.5 }
+				],
+				"scale": [
+					{ "x": 2, "y": 2 },
+					{ "time": 0.5 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,70 @@
+{
+  "toolGameId": "kPXIQNrOAk80tBLTDLrQ",
+  "gameId": "star-stars-arena",
+  "name": "STAR: Stars Arena",
+  "version": "0.0.16",
+  "exportedAt": "2025-11-05T09:56:34.369Z",
+  "features": {
+    "audio": false,
+    "copyright": false,
+    "credits": false,
+    "pause": true,
+    "progress": true,
+    "score": true,
+    "tutorial": true,
+    "version": false,
+    "visibilitychange": false,
+    "iap": true,
+    "home": true,
+    "privacy": false
+  },
+  "ads": {
+    "initial": {
+      "timeout": 250,
+      "retry": 2000,
+      "preload": 250,
+      "enabled": false
+    },
+    "interstitial": {
+      "cooldown": 60,
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 250,
+      "eventIds": [
+        "break:betweenrounds:start",
+        "break:result:back",
+        "button:menu:start"
+      ]
+    },
+    "rewarded": {
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 500,
+      "eventIds": [
+        "button:league:doublereward",
+        "button:game:restart",
+        "button:levelfinish:doublereward",
+        "button:shop:gems",
+        "button:cardpack:extra",
+        "button:rewardpopup:double",
+        "button:skill:upgrade",
+        "button:quest:refresh",
+        "button:roulette:spin",
+        "button:result:restart",
+        "button:game:bighamster"
+      ]
+    },
+    "banner": {
+      "preload": 250,
+      "retry": 2000,
+      "enabled": false,
+      "timeout": 250
+    }
+  },
+  "storage": {
+    "shouldCompress": false
+  },
+  "gameSnacks": {}
+}

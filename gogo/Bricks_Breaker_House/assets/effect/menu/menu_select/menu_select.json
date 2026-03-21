@@ -1,0 +1,68 @@
+{
+"skeleton": {
+	"hash": "s4rHKI+UQfc",
+	"spine": "4.1.23",
+	"x": -70,
+	"y": -70,
+	"width": 140,
+	"height": 140,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" }
+],
+"slots": [
+	{ "name": "radius", "bone": "bone", "attachment": "radius" },
+	{ "name": "light", "bone": "bone", "attachment": "그룹 1", "blend": "additive" },
+	{ "name": "btn_stage_03", "bone": "root" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"light": {
+				"그룹 1": { "width": 140, "height": 140 }
+			},
+			"radius": {
+				"radius": { "width": 136, "height": 136 }
+			}
+		}
+	}
+],
+"animations": {
+	"1": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "value": -30 }
+				]
+			}
+		}
+	},
+	"animation": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "value": -30 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.111, 1, 0.222, 0.84, 0.111, 1, 0.222, 0.84 ]
+					},
+					{
+						"time": 0.3333,
+						"x": 0.84,
+						"y": 0.84,
+						"curve": [ 0.444, 0.84, 0.556, 1, 0.444, 0.84, 0.556, 1 ]
+					},
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	}
+}
+}

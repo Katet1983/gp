@@ -1,0 +1,75 @@
+{
+"skeleton": {
+	"hash": "UBPwThVIQQk",
+	"spine": "4.1.17",
+	"x": -80.56,
+	"y": -42,
+	"width": 154.39,
+	"height": 218.25,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "x": -4.77 },
+	{ "name": "bone", "parent": "root", "length": 65.29, "rotation": 88.43, "x": 5, "y": -3.88 }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "card_potion_HP", "bone": "bone", "attachment": "card_potion_HP" },
+	{ "name": "card_potion_poison", "bone": "bone", "attachment": "card_potion_poison" },
+	{ "name": "card_potion_XP", "bone": "bone", "attachment": "card_potion_XP" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"shadow": {
+				"shadow": { "x": 0.5, "y": 0.5, "scaleX": 0.9597, "width": 159, "height": 85 }
+			}
+		}
+	},
+	{
+		"name": "potion_HP",
+		"attachments": {
+			"card_potion_HP": {
+				"card_potion_HP": { "x": 92.44, "y": -10.08, "rotation": -88.43, "width": 122, "height": 176 }
+			}
+		}
+	},
+	{
+		"name": "potion_poison",
+		"attachments": {
+			"card_potion_poison": {
+				"card_potion_poison": { "x": 92.7, "y": -9.3, "rotation": -88.43, "width": 122, "height": 176 }
+			}
+		}
+	},
+	{
+		"name": "potion_XP",
+		"attachments": {
+			"card_potion_XP": {
+				"card_potion_XP": { "x": 92.77, "y": -8.92, "rotation": -88.43, "width": 122, "height": 176 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{
+						"curve": [ 0.444, 0, 0.889, 10.05 ]
+					},
+					{
+						"time": 1.3333,
+						"value": 10.05,
+						"curve": [ 1.778, 10.05, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				]
+			}
+		}
+	}
+}
+}

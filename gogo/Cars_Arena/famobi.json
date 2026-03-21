@@ -1,0 +1,87 @@
+{
+  "toolGameId": "n1InZGKGT66UsJ1tP5s6",
+  "gameId": "cars-arena",
+  "name": "Cars Arena",
+  "version": "1.2.3",
+  "exportedAt": "2025-11-04T14:40:46.452Z",
+  "features": {
+    "audio": false,
+    "copyright": false,
+    "credits": false,
+    "pause": true,
+    "progress": true,
+    "score": true,
+    "tutorial": true,
+    "version": false,
+    "visibilitychange": false,
+    "iap": true,
+    "home": true,
+    "privacy": false
+  },
+  "ads": {
+    "initial": {
+      "timeout": 250,
+      "retry": 2000,
+      "preload": 250,
+      "enabled": false
+    },
+    "interstitial": {
+      "cooldown": 60,
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 250,
+      "initialCooldown": 120000,
+      "eventIds": [
+        "button:home:settings",
+        "button:settings:quit",
+        "button:home:cars",
+        "button:home:garage",
+        "button:shop:skins",
+        "button:shop:premiumskins",
+        "button:shop:trails",
+        "button:shop:quit",
+        "button:reviveboosterscreen:quit",
+        "button:rocketboosterscreen:quit",
+        "button:glovesboosterscreen:quit",
+        "button:containersscreen:next",
+        "button:containersscreen:garage",
+        "button:garage:quit",
+        "button:garage:achievments"
+      ]
+    },
+    "rewarded": {
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 500,
+      "eventIds": [
+        "button:result:freecoins",
+        "button:reviveboosterscreen:use",
+        "button:rocketboosterscreen:use",
+        "button:glovesboosterscreen:use",
+        "button:startboosteroffer:use",
+        "button:containersscreen:free",
+        "button:store:free",
+        "button:rewardpopup:claim",
+        "button:chillzpopup:getreward",
+        "button:resrcspopup:getreward",
+        "button:paintpopup:getreward",
+        "button:figwallpopup:getreward",
+        "button:lotterypopup:getreward",
+        "button:skinspopup:getreward",
+        "button:minipolice:revive"
+      ]
+    },
+    "banner": {
+      "preload": 250,
+      "retry": 2000,
+      "enabled": false,
+      "timeout": 250
+    }
+  },
+  "storage": {
+    "shouldCompress": false
+  },
+  "gameSnacks": {}
+}

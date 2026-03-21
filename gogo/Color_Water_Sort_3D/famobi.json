@@ -1,0 +1,72 @@
+{
+  "toolGameId": "pDQQnyX23tmnJxEGJobj",
+  "gameId": "color-water-sort-3d",
+  "name": "Color Water Sort 3D",
+  "version": "2.0.4",
+  "exportedAt": "2025-11-17T13:25:11.353Z",
+  "features": {
+    "audio": false,
+    "copyright": false,
+    "credits": false,
+    "pause": true,
+    "progress": true,
+    "score": true,
+    "tutorial": true,
+    "version": false,
+    "visibilitychange": false,
+    "iap": true,
+    "home": true,
+    "privacy": false
+  },
+  "ads": {
+    "initial": {
+      "timeout": 250,
+      "retry": 2000,
+      "preload": 250,
+      "enabled": false
+    },
+    "interstitial": {
+      "cooldown": 60,
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 250,
+      "initialCooldown": 120000,
+      "eventIds": [
+        "button:gameplay:pause",
+        "button:main:start"
+      ]
+    },
+    "rewarded": {
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 500,
+      "eventIds": [
+        "button:game:skiplevel",
+        "button:game:extratube",
+        "button:game:undo",
+        "button:game:hint",
+        "button.shop.getmoney",
+        "button.spinwheel.spin",
+        "button.winscreen.getscaled",
+        "button.nomoremoves.xtratube",
+        "button.giftbox.morekeys",
+        "button.progression.open",
+        "button.nomoremoves.skip"
+      ]
+    },
+    "banner": {
+      "preload": 250,
+      "retry": 2000,
+      "enabled": false,
+      "timeout": 250
+    }
+  },
+  "storage": {
+    "shouldCompress": false
+  },
+  "gameSnacks": {
+    "shouldSendGameCompleteCount": true
+  }
+}

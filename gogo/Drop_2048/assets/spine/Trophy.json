@@ -1,0 +1,174 @@
+{
+"skeleton": { "hash": "HqGF0uyEe/LND9u3qikboZ9wXRQ", "spine": "3.7.94", "width": 95, "height": 129, "images": "./images/", "audio": "C:/Users/Admin/Desktop/작업파일/9. 드롭2048_경택님/스파인/Lobby_bt" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Main", "parent": "root" },
+	{ "name": "Trophy_Main", "parent": "Main" },
+	{ "name": "Fx_Main", "parent": "Main" },
+	{ "name": "Bling_1", "parent": "Fx_Main" },
+	{ "name": "Bling_2", "parent": "Fx_Main" },
+	{ "name": "Bling_3", "parent": "Fx_Main" },
+	{ "name": "Bow_Main", "parent": "Main" },
+	{ "name": "Bow_Stick", "parent": "Bow_Main", "x": 11.27, "y": 8.76 },
+	{ "name": "Box_Main", "parent": "Main" },
+	{ "name": "Box", "parent": "Box_Main", "y": -48.42 },
+	{ "name": "Ribbon_Main", "parent": "Box_Main", "x": -0.33, "y": 23.11 },
+	{ "name": "Ribbon_L", "parent": "Ribbon_Main", "length": 27.18, "rotation": -169.32, "x": -2.77, "y": -0.5 },
+	{ "name": "Ribbon_R", "parent": "Ribbon_Main", "length": 28.07, "rotation": -11.92, "x": 1.26, "y": -0.5 },
+	{ "name": "Flag_Main", "parent": "Main", "x": 8.33 },
+	{ "name": "Book_Main", "parent": "Main" }
+],
+"slots": [
+	{ "name": "trophy", "bone": "Trophy_Main", "attachment": "trophy" },
+	{ "name": "star", "bone": "Bling_1", "attachment": "star" },
+	{ "name": "star2", "bone": "Bling_2", "attachment": "star" },
+	{ "name": "star3", "bone": "Bling_3", "attachment": "star" },
+	{ "name": "Bow", "bone": "Bow_Main" },
+	{ "name": "Crack", "bone": "Bow_Main" },
+	{ "name": "Bow2", "bone": "Bow_Stick" },
+	{ "name": "Box", "bone": "Box" },
+	{ "name": "Ribbon_Shadow", "bone": "Box" },
+	{ "name": "Ribbon_R", "bone": "Ribbon_R" },
+	{ "name": "Ribbon_L", "bone": "Ribbon_L" },
+	{ "name": "Ribbon_Center", "bone": "Ribbon_Main" },
+	{ "name": "Flag", "bone": "Flag_Main" },
+	{ "name": "history", "bone": "Book_Main" }
+],
+"skins": {
+	"default": {
+		"star": {
+			"star": { "width": 24, "height": 24 }
+		},
+		"star2": {
+			"star": { "width": 24, "height": 24 }
+		},
+		"star3": {
+			"star": { "width": 24, "height": 24 }
+		},
+		"trophy": {
+			"trophy": { "width": 95, "height": 129 }
+		}
+	}
+},
+"animations": {
+	"1": {
+		"slots": {
+			"star": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.418, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"star2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.1333,
+						"color": "ffffff00",
+						"curve": [ 0.332, 0.35, 0.202, 1 ]
+					},
+					{
+						"time": 0.1667,
+						"color": "ffffffff",
+						"curve": [ 0.408, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			},
+			"star3": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.3,
+						"color": "ffffff00",
+						"curve": [ 0.332, 0.35, 0.202, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"color": "ffffffff",
+						"curve": [ 0.408, 0, 0.75, 1 ]
+					},
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Trophy_Main": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.2667,
+						"angle": -8.01,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.7333,
+						"angle": 2.94,
+						"curve": [ 0.25, 0, 1, 1 ]
+					},
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"x": 0,
+						"y": 9.13,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"x": 1,
+						"y": 1.096,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			},
+			"Bling_1": {
+				"translate": [
+					{ "time": 0, "x": 3.81, "y": 52.58 }
+				]
+			},
+			"Bling_2": {
+				"translate": [
+					{ "time": 0, "x": -22.1, "y": 64.77 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.633, "y": 0.633 }
+				]
+			},
+			"Bling_3": {
+				"translate": [
+					{ "time": 0, "x": 25.15, "y": 73.91 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.485, "y": 0.485 }
+				]
+			}
+		}
+	}
+}
+}

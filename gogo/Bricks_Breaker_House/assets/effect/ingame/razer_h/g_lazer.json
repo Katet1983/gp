@@ -1,0 +1,63 @@
+{
+"skeleton": {
+	"hash": "QRPQ76vm89g",
+	"spine": "4.1.23",
+	"x": -1564.56,
+	"y": -38.81,
+	"width": 3129.12,
+	"height": 77.62,
+	"images": "./images/",
+	"audio": "C:/Users/Admin/Desktop/작업파일/진영님_BBH/spine/fx_item"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "G_lazer", "parent": "root", "scaleX": 49.6685, "scaleY": 2.8747 }
+],
+"slots": [
+	{ "name": "G_lazer_01", "bone": "G_lazer", "attachment": "G_lazer_04" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"G_lazer_01": {
+				"G_lazer_01": { "width": 63, "height": 30 },
+				"G_lazer_02": { "width": 63, "height": 27 },
+				"G_lazer_03": { "width": 63, "height": 27 },
+				"G_lazer_04": { "width": 63, "height": 27 }
+			}
+		}
+	}
+],
+"animations": {
+	"lazer": {
+		"slots": {
+			"G_lazer_01": {
+				"attachment": [
+					{ "name": "G_lazer_01" },
+					{ "time": 0.0667, "name": "G_lazer_02" },
+					{ "time": 0.1333, "name": "G_lazer_03" },
+					{ "time": 0.2, "name": "G_lazer_04" },
+					{ "time": 0.2667, "name": "G_lazer_01" },
+					{ "time": 0.3333, "name": "G_lazer_02" }
+				]
+			}
+		},
+		"bones": {
+			"G_lazer": {
+				"scale": [
+					{
+						"y": 0,
+						"curve": [ 0.022, 1, 0.044, 1, 0.022, 0, 0, 0.96 ]
+					},
+					{
+						"time": 0.0667,
+						"curve": [ 0.156, 1, 0.244, 1, 0.212, 0.942, 0.084, 0.112 ]
+					},
+					{ "time": 0.3333, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
