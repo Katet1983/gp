@@ -1,0 +1,495 @@
+{
+	"happiness": 
+		{
+			"offline": 
+			{
+				"dirtiness": { "coef": 0.05, "minutes": 30 },
+				"hunger": { "coef": 0.05, "minutes": 30 }
+			},
+			"online": 
+			{
+				"dirtiness": { "coef": 0.05, "minutes": 1 },
+				"hunger": { "coef": 0.05, "minutes": 1 }
+			},
+			"energyCap": [
+				{ "min": 0, "max": 0.2, "cap": 0.5 },
+				{ "min": 0.2, "max": 0.4, "cap": 0.6 },
+				{ "min": 0.4, "max": 0.6, "cap": 0.7 },
+				{ "min": 0.6, "max": 0.8, "cap": 0.8 },
+				{ "min": 0.8, "max": 0.9, "cap": 0.9 },
+				{ "min": 0.9, "max": 1, "cap": 1 }
+			],
+			"maxFeedReward": 1,
+			"maxCleanReward": 1
+		},
+	"energy": 
+	{
+		"max": 10,
+		"loss": 2
+	},
+	"skin": [
+		{
+			"title": "Skin",
+			"iconId": "button_skin",
+			"gallery" : [
+				{
+					"name": "Default",
+					"cost": 0,
+					"type": 0,
+					"index": 0
+				},
+				{
+					"name": "Red",
+					"cost": 10,
+					"type": 0,
+					"index": 1
+				},
+				{
+					"name": "Green",
+					"cost": 10,
+					"type": 0,
+					"index": 5
+				},
+				{
+					"name": "Blue",
+					"cost": 25,
+					"type": 0,
+					"index": 4
+				},
+				{
+					"name": "Purple",
+					"cost": 25,
+					"type": 0,
+					"index": 2
+				},
+				{
+					"name": "Orange",
+					"cost": 25,
+					"type": 0,
+					"index": 3
+				},
+				{
+					"name": "Brown",
+					"cost": 25,
+					"type": 0,
+					"index": 6
+				},
+				{
+					"name": "Violet",
+					"cost": 25,
+					"type": 0,
+					"index": 7
+				},
+				{
+					"name": "Yellow",
+					"cost": 25,
+					"type": 0,
+					"index": 8
+				},
+				{
+					"name": "Ash Gray",
+					"cost": 50,
+					"type": 0,
+					"index": 9
+				},
+				{
+					"name": "Sky Blue",
+					"cost": 50,
+					"type": 0,
+					"index": 10
+				},
+				{
+					"name": "Black",
+					"cost": 50,
+					"type": 0,
+					"index": 14
+				},
+				{
+					"name": "White",
+					"cost": 50,
+					"type": 0,
+					"index": 15
+				},
+				{
+					"name": "Gold",
+					"cost": 75,
+					"type": 0,
+					"index": 13
+				},
+				{
+					"name": "Skeleton",
+					"cost": 100,
+					"type": 0,
+					"index": 11
+				},
+				{
+					"name": "Rainbow",
+					"cost": 100,
+					"type": 0,
+					"index": 12
+				}
+			]
+		},
+		{
+			"title": "Headwear",
+			"iconId": "button_hat",
+			"gallery": [
+				{
+					"name": "Default",
+					"cost": 0,
+					"type": 2,
+					"index": 0
+				},
+				{
+					"name": "Swirl Antenna",
+					"cost": 10,
+					"type": 2,
+					"index": 1
+				},
+				{
+					"name": "Bandana",
+					"cost": 10,
+					"type": 3,
+					"index": 1
+				},
+				{
+					"name": "Baseball Cap",
+					"cost": 25,
+					"type": 3,
+					"index": 2
+				},
+				{
+					"name": "Beanie",
+					"cost": 25,
+					"type": 3,
+					"index": 3
+				},
+				{
+					"name": "Skater Helmet",
+					"cost": 25,
+					"type": 3,
+					"index": 4
+				},
+				{
+					"name": "Afro",
+					"cost": 25,
+					"type": 4,
+					"index": 1
+				},
+				{
+					"name": "Sombrero",
+					"cost": 50,
+					"type": 3,
+					"index": 5
+				},
+				{
+					"name": "Top Hat",
+					"cost": 50,
+					"type": 3,
+					"index": 6
+				},
+				{
+					"name": "Mohawk",
+					"cost": 50,
+					"type": 4,
+					"index": 4
+				},
+				{
+					"name": "Ponytail",
+					"cost": 75,
+					"type": 4,
+					"index": 5
+				},
+				{
+					"name": "Pig Tails",
+					"cost": 75,
+					"type": 4,
+					"index": 6
+				},
+				{
+					"name": "Rainbow Afro",
+					"cost": 100,
+					"type": 4,
+					"index": 2
+				},
+				{
+					"name": "Braid",
+					"cost": 100,
+					"type": 4,
+					"index": 3
+				},
+				{
+					"name": "Unicorn Horn",
+					"cost": 200,
+					"type": 3,
+					"index": 7
+				}
+			]
+		},
+		{
+			"title": "Earrings",
+			"iconId": "button_earring",
+			"gallery": [
+				{
+					"name": "Default",
+					"cost": 0,
+					"type": 7,
+					"index": 0
+				},
+				{
+					"name": "Silver",
+					"cost": 50,
+					"type": 7,
+					"index": 2
+				},
+				{
+					"name": "Gold",
+					"cost": 100,
+					"type": 7,
+					"index": 1
+				}
+			]
+		},
+		{
+			"title": "Mustache",
+			"iconId": "button_mustache",
+			"gallery": [
+				{
+					"name": "Default",
+					"cost": 0,
+					"type": 5,
+					"index": 0
+				},
+				{
+					"name": "Petite",
+					"cost": 10,
+					"type": 5,
+					"index": 1
+				},
+				{
+					"name": "Walrus",
+					"cost": 10,
+					"type": 5,
+					"index": 5
+				},
+				{
+					"name": "Horseshoe",
+					"cost": 25,
+					"type": 5,
+					"index": 3
+				},
+				{
+					"name": "Handlebar",
+					"cost": 50,
+					"type": 5,
+					"index": 4
+				},
+				{
+					"name": "Viking",
+					"cost": 100,
+					"type": 5,
+					"index": 2
+				}
+			]
+		},
+		{
+			"title": "Eyewear",
+			"iconId": "button_glasses",
+			"gallery": [
+				{
+					"name": "Default",
+					"cost": 0,
+					"type": 6,
+					"index": 0
+				},
+				{
+					"name": "Sunglasses",
+					"cost": 25,
+					"type": 6,
+					"index": 2
+				},
+				{
+					"name": "Fashion",
+					"cost": 25,
+					"type": 6,
+					"index": 3
+				},
+				{
+					"name": "Patch",
+					"cost": 50,
+					"type": 6,
+					"index": 1
+				}
+			]
+		},
+		{
+			"title": "Eyes",
+			"iconId": "button_eyes",
+			"gallery": [
+				{
+					"name": "Default",
+					"cost": 0,
+					"type": 8,
+					"index": 0
+				},
+				{
+					"name": "Rounded",
+					"cost": 10,
+					"type": 8,
+					"index": 1
+				},
+				{
+					"name": "Snake",
+					"cost": 25,
+					"type": 8,
+					"index": 5
+				},
+				{
+					"name": "Sweet",
+					"cost": 25,
+					"type": 8,
+					"index": 3
+				},
+				{
+					"name": "Enigmatic",
+					"cost": 50,
+					"type": 8,
+					"index": 4
+				},
+				{
+					"name": "Eyelash",
+					"cost": 75,
+					"type": 8,
+					"index": 2
+				}
+			]
+		},
+		{
+			"title": "Teeth",
+			"iconId": "button_teeth",
+			"gallery": [
+				{
+					"name": "Default",
+					"cost": 0,
+					"type": 9,
+					"index": 0
+				},
+				{
+					"name": "Vampire",
+					"cost": 50,
+					"type": 9,
+					"index": 1
+				}
+			]
+		},
+		{
+			"title": "Clothes",
+			"iconId": "button_clothes",
+			"gallery": [
+				{
+					"name": "Default",
+					"cost": 0,
+					"type": 1,
+					"index": 0
+				},
+				{
+					"name": "Plain Shirt",
+					"cost": 10,
+					"type": 1,
+					"index": 6
+				},
+				{
+					"name": "Sneakers",
+					"cost": 10,
+					"type": 1,
+					"index": 9
+				},
+				{
+					"name": "Camouflage",
+					"cost": 10,
+					"type": 1,
+					"index": 1
+				},
+				{
+					"name": "Checkered",
+					"cost": 10,
+					"type": 1,
+					"index": 2
+				},
+				{
+					"name": "Dye",
+					"cost": 10,
+					"type": 1,
+					"index": 3
+				},
+				{
+					"name": "Hawaiian",
+					"cost": 25,
+					"type": 1,
+					"index": 4
+				},
+				{
+					"name": "Maid",
+					"cost": 25,
+					"type": 1,
+					"index": 5
+				},
+				{
+					"name": "Referee",
+					"cost": 25,
+					"type": 1,
+					"index": 7
+				},
+				{
+					"name": "Royal Guard",
+					"cost": 50,
+					"type": 1,
+					"index": 8
+				},
+				{
+					"name": "Tuxedo",
+					"cost": 50,
+					"type": 1,
+					"index": 11
+				},
+				{
+					"name": "Vampire",
+					"cost": 75,
+					"type": 1,
+					"index": 12
+				},
+				{
+					"name": "Super Suit",
+					"cost": 100,
+					"type": 1,
+					"index": 10
+				}
+			]
+		}
+	],
+	"feed":
+	{
+		"slices": [
+			[ [ 20, 10 ], [ -20, 0 ], [ -20, 10 ] ],
+			[ [ -10, 20 ], [ 10, 20 ], [ -20, -20 ], [ 20, -20 ] ],
+			[ [ -10, -20 ], [ 10, 0 ], [ -10, 20 ], [ 10, 20 ] ],
+			[ [ -20, -10 ], [ 10, 0 ], [ 10, 20 ] ] 
+		]
+	},
+	"clean":
+	{
+		"dirt": [
+			{ "boneId": "R_arm2" },
+			{ "boneId": "R_arm6" },
+			{ "boneId": "L_arm2" },
+			{ "boneId": "L_arm6" },
+			{ "boneId": "Body3", "offset": [ -10, 0 ] },
+			{ "boneId": "Body3", "offset": [ 100, -10 ] },
+			{ "boneId": "R_ear2" },
+			{ "boneId": "L_ear2" },
+			{ "boneId": "Body13" },
+			{ "boneId": "L_leg4" },
+			{ "boneId": "R_leg4" }
+		]
+	}
+}

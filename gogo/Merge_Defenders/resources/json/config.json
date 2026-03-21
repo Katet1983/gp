@@ -1,0 +1,125 @@
+{
+    "player":
+        {
+            "maxHealth": 10,
+            "winBonusMult": 0.8
+        },
+    "level":
+        {
+            "endGame": 10,
+            "minDuration": 30,
+            "maxDuration": 120,
+            "nextEnemyType": 2,
+            "wave": [
+                {
+                    "durationMult": 0.5,
+                    "baseSpeedMult": 1
+                },
+                {
+                    "durationMult": 0.3,
+                    "baseSpeedMult": 1
+                },
+                {
+                    "durationMult": 0.2,
+                    "baseSpeedMult": 1
+                }
+            ]
+        },
+    "tower": 
+        {
+            "damageVarPerLevel": 0.4,
+            "minDamageVar": 0.1,
+            "maxDamageVar": 6,
+            "baseFireInterval": 0.7,
+            "minFireRate": 1,
+            "maxFireRate": 3,
+            "bulletSpeed": 900,
+            "basePrice": 300
+        },
+    "enemy": {
+        "speed": 30,
+        "life": 12,
+        "classes": [
+            {
+                "type": "BASIC",
+                "lifeMult": 1,
+                "speedMult": 1,
+                "damage": 1,
+                "vfxScale": { "hit": 0.5, "dead": 0.8 },
+                "spineId": "Basic Enemy/Walk",
+                "laneCount": 1,
+                "explosionCount": 1
+            },
+            {
+                "type": "FAST",
+                "lifeMult": 0.8,
+                "speedMult": 2,
+                "damage": 1,
+                "vfxScale": { "hit": 0.5, "dead": 0.8 },
+                "spineId": "Fast Enemy/Walk",
+                "laneCount": 1,
+                "explosionCount": 1
+            },
+            {
+                "type": "ARMORED",
+                "lifeMult": 1.4,
+                "speedMult": 1,
+                "damage": 1,
+                "vfxScale": { "hit": 0.5, "dead": 0.8 },
+                "spineId": "Armored Enemy/Walk",
+                "laneCount": 1,
+                "explosionCount": 1
+            },
+            {
+                "type": "KAMIKAZE",
+                "lifeMult": 1,
+                "speedMult": 1,
+                "damage": 2,
+                "vfxScale": { "hit": 0.5, "dead": 0.8 },
+                "spineId": "Kamikaze Enemy/Walk",
+                "laneCount": 1,
+                "explosionCount": 1
+            },
+            {
+                "type": "TELEPORTER",
+                "lifeMult": 1,
+                "speedMult": 1,
+                "damage": 1,
+                "vfxScale": { "hit": 0.5, "dead": 0.8 },
+                "spineId": "Teleporter Enemy/Walk",
+                "laneCount": 1,
+                "explosionCount": 1
+            },
+            {
+                "type": "SHOOTER",
+                "lifeMult": 1,
+                "speedMult": 1,
+                "damage": 1,
+                "vfxScale": { "hit": 0.5, "dead": 0.8 },
+                "spineId": "Shooter Enemy/Walk",
+                "laneCount": 1,
+                "explosionCount": 1
+            },
+            {
+                "type": "BOSS",
+                "lifeMult": 5,
+                "speedMult": 0.8,
+                "damage": 4,
+                "vfxScale": { "hit": 0.7, "dead": 1 },
+                "spineId": "Boss Enemy/Walk",
+                "laneCount": 2,
+                "explosionCount": 2
+            },
+            {
+                "type": "TORPEDO",
+                "lifeMult": 0.01,
+                "speedMult": 1,
+                "damage": 2,
+                "vfxScale": { "hit": 0.3, "dead": 0.6 },
+                "spriteId": "bullet_3",
+                "laneCount": 1,
+                "explosionCount": 2
+            }
+        ]
+    }
+}

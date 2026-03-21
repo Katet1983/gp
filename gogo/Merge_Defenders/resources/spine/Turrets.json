@@ -1,0 +1,914 @@
+{
+"skeleton": {
+	"hash": "9YcX5s8UnL8",
+	"spine": "4.1.20",
+	"x": -92.8,
+	"y": 83.09,
+	"width": 200,
+	"height": 304.75,
+	"images": "./Turrets_Images/",
+	"audio": "/Users/dabntz/Library/CloudStorage/GoogleDrive-dabntz@gmail.com/Mi unidad/DBGS/Client | GKO/Merge Shooter/Turret Designs/Spine Animations/Spine"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "body", "parent": "root", "length": 21.7, "rotation": 90, "x": 6.21, "y": 147.87 },
+	{ "name": "gun1", "parent": "body", "length": 21.7, "x": 36.05 },
+	{ "name": "gun2", "parent": "body", "length": 16.02, "x": 28.38 },
+	{ "name": "base", "parent": "root", "x": 3.83, "y": 144.48 }
+],
+"slots": [
+	{ "name": "Turret Shooting FX", "bone": "root", "attachment": "Turret Shooting FX" },
+	{ "name": "turrets_preview", "bone": "root", "color": "ffffffcd" },
+	{ "name": "Base", "bone": "base", "attachment": "Turret_Base" },
+	{ "name": "Gun2", "bone": "gun2", "attachment": "Gun2_v" },
+	{ "name": "Gun1", "bone": "gun1", "attachment": "Gun1_v" },
+	{ "name": "Body", "bone": "body", "attachment": "Body_Turret" },
+	{ "name": "Level", "bone": "root", "attachment": "Level_Number" }
+],
+"skins": [
+	{
+		"name": "turret_level_01",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L01/Base", "x": 2.73, "y": 7.83, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L01/Body", "x": 15.04, "y": -1.86, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L01/Gun1", "x": 8.26, "y": -0.06, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L01/Level", "x": 7.41, "y": 120.09, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 1-5/fx_",
+					"x": 7.2,
+					"y": 230.97,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_02",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L02/Base", "x": 2.73, "y": 6.03, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L02/Body", "x": 10.06, "y": -1.86, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L02/Gun1", "x": 6.06, "y": -0.06, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L02/Level", "x": 7.41, "y": 118.1, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 1-5/fx_",
+					"x": 7.2,
+					"y": 230.97,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_03",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L03/Base", "x": 3.51, "y": 3.69, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L03/Body", "x": 8.78, "y": -1.86, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L03/Gun1", "x": 6.82, "y": -1.36, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L03/Level", "x": 7.78, "y": 115.83, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 1-5/fx_",
+					"x": 7.2,
+					"y": 230.97,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_04",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L04/Base", "x": 3.51, "y": 3.69, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L04/Body", "x": 8.78, "y": -2.17, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L04/Gun1", "x": 6.82, "y": -0.49, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L04/Level", "x": 6.88, "y": 115.61, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 1-5/fx_",
+					"x": 7.2,
+					"y": 230.97,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_05",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L05/Base", "x": 4.04, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L05/Body", "x": 8.78, "y": -2.17, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L05/Gun1", "x": 7.27, "y": -1.38, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L05/Level", "x": 6.88, "y": 115.61, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 1-5/fx_",
+					"x": 7.2,
+					"y": 230.97,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_06",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L06/Base", "x": 3.35, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L06/Body", "x": 8.78, "y": -1.18, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L06/Gun1", "x": 7.93, "y": -0.54, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L06/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 6-10/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_07",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L07/Base", "x": 3.74, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L07/Body", "x": 8.78, "y": -1.18, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L07/Gun1", "x": 7.93, "y": -0.54, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L07/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 6-10/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_08",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L08/Base", "x": 3.74, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L08/Body", "x": 8.78, "y": -1.18, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L08/Gun1", "x": 7.93, "y": -0.54, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L08/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 6-10/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_09",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L09/Base", "x": 3.74, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L09/Body", "x": 8.78, "y": -1.18, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L09/Gun1", "x": 10.13, "y": -0.54, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L09/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 6-10/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_10",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L10/Base", "x": 3.74, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L10/Body", "x": 8.78, "y": -1.18, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L10/Gun1", "x": 13.65, "y": -0.54, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L10/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 6-10/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 16, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_11",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L11/Base", "x": 3.74, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L11/Body", "x": 5.11, "y": -1.18, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L11/Gun1", "x": 10.68, "y": -0.54, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L11/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 11-12/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_12",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L12/Base", "x": 3.74, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L12/Body", "x": 2.31, "y": -1.18, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L12/Gun1", "x": 10.68, "y": -1.09, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L12/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 11-12/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_13",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L13/Base", "x": 3.74, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L13/Body", "x": 8.82, "y": -1.18, "rotation": -90, "width": 104, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L13/Gun1", "x": 8.44, "y": -1.09, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L13/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 13-15/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_14",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L14/Base", "x": 3.74, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L14/Body", "x": 8.82, "y": -1.97, "rotation": -90, "width": 107, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L14/Gun1", "x": 8.44, "y": -1.09, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L14/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 13-15/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_15",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L15/Base", "x": 3.74, "y": 1.96, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L15/Body", "x": 6.09, "y": -1.56, "rotation": -90, "width": 111, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L15/Gun1", "x": 8.44, "y": -1.09, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L15/Level", "x": 6.88, "y": 113.59, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 13-15/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_16",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L16/Base", "x": 3.74, "y": -5.77, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L16/Body", "x": 10.82, "y": -1.56, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L16/Gun1", "x": 13.67, "y": -1.09, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Gun2": {
+				"Gun2_v": { "name": "Turrets L16/Gun2", "x": 5.71, "y": -1.2, "rotation": -90, "width": 66, "height": 64 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L16/Level", "x": 7.53, "y": 106.36, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 16-18/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_17",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L17/Base", "x": 4.84, "y": -6.44, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L17/Body", "x": 10.82, "y": -1.56, "rotation": -90, "width": 87, "height": 80 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L17/Gun1", "x": 13.67, "y": -1.09, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Gun2": {
+				"Gun2_v": { "name": "Turrets L17/Gun2", "x": 5.71, "y": -2.1, "rotation": -90, "width": 66, "height": 64 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L17/Level", "x": 7.53, "y": 106.36, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 16-18/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_18",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L18/Base", "x": 3.74, "y": -6.44, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L18/Body", "x": 10.82, "y": -1.56, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L18/Gun1", "x": 13.67, "y": -1.09, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Gun2": {
+				"Gun2_v": { "name": "Turrets L18/Gun2", "x": 5.71, "y": -2.1, "rotation": -90, "width": 66, "height": 64 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L18/Level", "x": 7.53, "y": 106.36, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 16-18/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_19",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L19/Base", "x": 3.74, "y": -6.44, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L19/Body", "x": 10.82, "y": -1.56, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L19/Gun1", "x": 13.67, "y": -1.09, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Gun2": {
+				"Gun2_v": { "name": "Turrets L19/Gun2", "x": 5.71, "y": -2.1, "rotation": -90, "width": 66, "height": 64 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L19/Level", "x": 7.53, "y": 106.36, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 19-20/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	},
+	{
+		"name": "turret_level_20",
+		"attachments": {
+			"Base": {
+				"Turret_Base": { "name": "Turrets L20/Base", "x": 3.74, "y": -6.44, "width": 112, "height": 124 }
+			},
+			"Body": {
+				"Body_Turret": { "name": "Turrets L20/Body", "x": 7.88, "y": -1.56, "rotation": -90, "width": 87, "height": 81 }
+			},
+			"Gun1": {
+				"Gun1_v": { "name": "Turrets L20/Gun1", "x": 13.67, "y": -1.09, "rotation": -90, "width": 64, "height": 83 }
+			},
+			"Gun2": {
+				"Gun2_v": { "name": "Turrets L20/Gun2", "x": 5.71, "y": -2.1, "rotation": -90, "width": 66, "height": 64 }
+			},
+			"Level": {
+				"Level_Number": { "name": "Turrets L20/Level", "x": 7.53, "y": 106.36, "width": 51, "height": 61 }
+			},
+			"Turret Shooting FX": {
+				"Turret Shooting FX": {
+					"name": "Turret Shooting FX V01/fx_000",
+					"path": "Turret Shooting FX 19-20/fx_",
+					"x": 7.2,
+					"y": 237.83,
+					"width": 200,
+					"height": 300,
+					"sequence": { "count": 17, "start": 0, "digits": 3, "setup": 4 }
+				}
+			}
+		}
+	}
+],
+"events": {
+	"fire": {}
+},
+"animations": {
+	"shoot": {
+		"bones": {
+			"body": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "y": -3.62 },
+					{ "time": 0.3333, "y": -3.07 },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"shear": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				]
+			},
+			"gun1": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": -5.39 },
+					{ "time": 0.2667, "x": 5.32 },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"shear": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				]
+			},
+			"gun2": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": -7.07 },
+					{ "time": 0.2667, "x": 4.65 },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"shear": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667 }
+				]
+			},
+			"base": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667 },
+					{ "time": 0.2667, "x": 1.043 },
+					{ "time": 0.3333 }
+				],
+				"shear": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3333 }
+				]
+			}
+		},
+		"attachments": {
+			"turret_level_01": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_02": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_03": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_04": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_05": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_06": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_07": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_08": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_09": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_10": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_11": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_12": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_13": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_14": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_15": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_16": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_17": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_18": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_19": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			},
+			"turret_level_20": {
+				"Turret Shooting FX": {
+					"Turret Shooting FX": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			}
+		},
+		"events": [
+			{ "name": "fire", "time": 0 }
+		]
+	}
+}
+}

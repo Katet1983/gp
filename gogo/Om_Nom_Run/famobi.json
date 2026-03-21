@@ -1,0 +1,63 @@
+{
+  "toolGameId": "ATlREPxAkjMpYAMNCiOa",
+  "gameId": "om-nom-run",
+  "version": "1.2.3",
+  "exportedAt": "2025-09-03T07:21:32.968Z",
+  "features": {
+    "audio": false,
+    "copyright": false,
+    "credits": false,
+    "pause": true,
+    "progress": true,
+    "score": true,
+    "tutorial": true,
+    "version": false,
+    "visibilitychange": true,
+    "iap": true,
+    "home": true,
+    "privacy": false
+  },
+  "ads": {
+    "initial": {
+      "timeout": 250,
+      "retry": 2000,
+      "preload": 250,
+      "enabled": false
+    },
+    "interstitial": {
+      "cooldown": 60,
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 250,
+      "eventIds": [
+        "button:mainmenu:go",
+        "button:levels:start",
+        "button:defeat:quit",
+        "button:defeat:restart",
+        "button:pausemenu:quit",
+        "button:freerunmode:run",
+        "button:victory:continue"
+      ]
+    },
+    "rewarded": {
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 500,
+      "eventIds": [
+        "rewarded:multipass"
+      ]
+    },
+    "banner": {
+      "preload": 250,
+      "retry": 2000,
+      "enabled": false,
+      "timeout": 250
+    }
+  },
+  "storage": {},
+  "gameSnacks": {
+    "shouldSendGameCompleteCount": false
+  }
+}

@@ -1,0 +1,168 @@
+{
+	"features": {
+		"highscores": 1,
+		"rewarded": 1,
+		"leaderboard": 0,
+		"multiplayer": 0,
+		"standalone": 1,
+		"credits": 0,
+		"multiplayer_local": 1,
+		"audio": 1,
+		"external_mute": 1
+	},
+	"game_i18n": {},
+	"game_info": {
+		"client_version": "1.3.28",
+		"api_version": "2.2",
+		"orientation": {
+			"phone": {
+				"portrait": "green",
+				"landscape": "green"
+			},
+			"tablet": {
+				"portrait": "green",
+				"landscape": "green"
+			}
+		},
+		"forced_mode": {
+			"state": {
+				"active_powerups": {
+					"description": "Enables certain power-ups to be used in the level.",
+					"type": "array",
+					"values": ["time", "painter", "bomb", "laser"]
+				}
+			},
+			"override": {
+				"hide_ui": {
+					"description": "Hide parts of the ui",
+					"type": "array",
+					"values": ["time", "score", "floating_points", "achievements"]
+				},
+				"bubble_colors": {
+					"description": "Enforce up to three bubbles colors (e.g. [red,green,yellow]).",
+					"type": "array",
+					"values": ["red", "purple", "aqua", "green", "yellow", "pink"]
+				},
+				"time": {
+					"description": "Game round duration in seconds (0=unlimited)",
+					"type": "number"
+				},
+				"shots": {
+					"description": "Number of available shots (0=unlimited)",
+					"type": "number"
+				},
+				"fireball_enabled": {
+					"type": "boolean"
+				},
+				"bubble_speed": {
+					"description": "board movement speed multiplier (1 = regular speed, > 1: speed up)",
+					"type": "number",
+					"min": "1",
+					"max": "10"
+				}
+			}
+		},
+		"track_stats": {
+			"bubble_swapped": {
+				"description": "Player swaps bubbles",
+				"type": "number"
+			},
+			"projectile_shot": {
+				"description": "Player shoots a bubble",
+				"params": {
+					"bubble_color": {
+						"type": "string",
+						"values": ["red", "purple", "aqua", "green", "yellow", "pink"]
+					},
+					"shot_type": {
+						"type": "string",
+						"values": ["normal", "fireball", "bomb", "painter"]
+					}
+				}
+			},
+			"bubbles_destroyed": {
+				"description": "Player clears bubbles by making a match",
+				"params": {
+					"bubble_color": {
+						"type": "string",
+						"values": ["red", "purple", "aqua", "green", "yellow", "pink", "time"]
+					},
+					"destruction_type": {
+						"type": "string",
+						"values": ["popped", "detached"]
+					},
+					"destruction_cause": {
+						"type": "string",
+						"values": ["fireball", "bomb", "normal_shot"]
+					}
+				}
+			},
+			"powerup_used": {
+				"params": {
+					"powerup_type": {
+						"type": "string",
+						"values": ["laser", "fireball", "painter", "bomb"]
+					}
+				}
+			},
+			"powerup_purchased": {
+				"params": {
+					"powerup_type": {
+						"type": "string",
+						"values": ["time", "bomb", "painter", "laser"]
+					}
+				}
+			},
+			"combo_achieved": {
+				"description": "1-based, counts successive matches",
+				"params": {
+					"combo_value": {
+						"type": "number",
+						"min": ["1"],
+						"max": ["99"]
+					}
+				}
+			},
+			"experience_increase": {
+				"description": "1-based",
+				"type": "number"
+			},
+			"currency_change": {
+				"params": {
+					"currency_type": {
+						"type": "string",
+						"values": ["coins"]
+					},
+					"change_type": {
+						"type": "string",
+						"values": ["increase", "decrease"]
+					}
+				}
+			},
+			"player_levelup": {
+				"params": {
+					"new_level": {
+						"type": "number"
+					}
+				}
+			}
+		}
+	},
+	"aid": "A1234-5",
+	"logging": false,
+	"api": "famobi",
+	"name": "Google GameSnacks",
+	"more_games_url": "",
+	"more_games_button_image": "logo",
+	"show_splash": "",
+	"splash_duration": 3000,
+	"branch": "master",
+	"gameParams": {
+		"ad_type": "off"
+	},
+	"menuless": true,
+	"disable_console": false,
+	"includeJS": [],
+	"version": "72919889",
+	"supportedLanguages": []
+}

@@ -1,0 +1,1022 @@
+{
+	"GameResultsScreen": {
+		"container": {
+			"window": true,
+			"padding": [
+				0.05,
+				0.2
+			],
+			"container": {
+				"name": "pane",
+				"size": [
+					412,
+					470
+				],
+				"position": [
+					0,
+					0
+				],
+				"fit": "window",
+				"container": [
+					{
+						"name": "squirrel1",
+						"size": [
+							120,
+							120
+						],
+						"position": [
+							145,
+							-80
+						]
+					},
+					{
+						"name": "squirrel2",
+						"size": [
+							120,
+							120
+						],
+						"position": [
+							145,
+							-90
+						]
+					},
+					{
+						"name": "star0",
+						"size": [
+							343,
+							242
+						],
+						"position": [
+							25,
+							34
+						]
+					},
+					{
+						"name": "star1",
+						"size": [
+							67,
+							70
+						],
+						"position": [
+							63,
+							46
+						]
+					},
+					{
+						"name": "star2",
+						"size": [
+							67,
+							70
+						],
+						"position": [
+							26,
+							149
+						]
+					},
+					{
+						"name": "star3",
+						"size": [
+							67,
+							70
+						],
+						"position": [
+							258,
+							163
+						]
+					},
+					{
+						"name": "star4",
+						"size": [
+							67,
+							70
+						],
+						"position": [
+							298,
+							41
+						]
+					},
+					{
+						"name": "title",
+						"size": [
+							370,
+							46
+						],
+						"position": [
+							17,
+							15
+						]
+					},
+					{
+						"name": "info",
+						"size": [
+							370,
+							32
+						],
+						"position": [
+							17,
+							80
+						]
+					},
+					{
+						"name": "points",
+						"size": [
+							324,
+							90
+						],
+						"position": [
+							40,
+							100
+						]
+					},
+					{
+						"name": "bonus",
+						"size": [
+							370,
+							38
+						],
+						"position": [
+							17,
+							183
+						]
+					},
+					{
+						"name": "rewards_info",
+						"size": [
+							370,
+							32
+						],
+						"position": [
+							17,
+							215
+						]
+					},
+					{
+						"name": "rewards_bg",
+						"size": [
+							350,
+							86
+						],
+						"position": [
+							31,
+							234
+						]
+					},
+					{
+						"name": "rewards_x2_l",
+						"size": [
+							128,
+							50
+						],
+						"position": [
+							15,
+							253
+						]
+					},
+					{
+						"name": "rewards_x2_r",
+						"size": [
+							128,
+							50
+						],
+						"position": [
+							270,
+							253
+						]
+					},
+					{
+						"name": "level_star",
+						"size": [
+							39,
+							37
+						],
+						"position": [
+							109,
+							259
+						]
+					},
+					{
+						"name": "xp_amount",
+						"size": [
+							80,
+							40
+						],
+						"position": [
+							150,
+							253
+						]
+					},
+					{
+						"name": "coin",
+						"size": [
+							37,
+							38
+						],
+						"position": [
+							221,
+							259
+						]
+					},
+					{
+						"name": "coin_amount",
+						"size": [
+							80,
+							40
+						],
+						"position": [
+							264,
+							253
+						]
+					},
+					{
+						"name": "button",
+						"size": [
+							176,
+							70
+						],
+						"position": [
+							114,
+							328
+						]
+					}
+				]
+			}
+		}
+	},
+	"HomeScreen": {
+		"container": {
+			"window": true,
+			"layout": {
+				"type": "grid",
+				"cols": 1,
+				"rows": [
+					0.15,
+					0.3,
+					0.55
+				],
+				"spacing": 0.03
+			},
+			"container": [
+				{
+					"name": "row1"
+				},
+				{
+					"name": "logo"
+				},
+				{
+					"name": "play"
+				}
+			]
+		}
+	},
+	"PauseDialog": {
+		"container": {
+			"window": true,
+			"padding": [
+				0.2,
+				0.3
+			],
+			"container": {
+				"name": "pane",
+				"size": [
+					308,
+					270
+				],
+				"position": [
+					0,
+					0
+				],
+				"fit": "window",
+				"container": [
+					{
+						"name": "title",
+						"size": [
+							280,
+							46
+						],
+						"position": [
+							10,
+							12
+						]
+					},
+					{
+						"name": "resume",
+						"size": [
+							198,
+							62
+						],
+						"position": [
+							49,
+							90
+						]
+					},
+					{
+						"name": "end",
+						"size": [
+							198,
+							62
+						],
+						"position": [
+							49,
+							160
+						]
+					}
+				]
+			}
+		}
+	},
+	"LevelUpScreen": {
+		"container": {
+			"window": true,
+			"padding": [
+				0.1,
+				0.2
+			],
+			"container": {
+				"name": "pane",
+				"size": [
+					380,
+					428
+				],
+				"position": [
+					0,
+					0
+				],
+				"fit": "window",
+				"container": [
+					{
+						"name": "banderole",
+						"size": [
+							464,
+							96
+						],
+						"position": [
+							-42,
+							-28
+						]
+					},
+					{
+						"name": "squirrel",
+						"size": [
+							80,
+							80
+						],
+						"position": [
+							155,
+							-100
+						]
+					},
+					{
+						"name": "title",
+						"size": [
+							260,
+							46
+						],
+						"position": [
+							60,
+							-24
+						]
+					},
+					{
+						"name": "star",
+						"size": [
+							258,
+							235
+						],
+						"position": [
+							61,
+							51
+						]
+					},
+					{
+						"name": "frame",
+						"size": [
+							292,
+							60
+						],
+						"position": [
+							44,
+							313
+						]
+					},
+					{
+						"name": "bonus",
+						"size": [
+							300,
+							32
+						],
+						"position": [
+							40,
+							295
+						]
+					},
+					{
+						"name": "percent",
+						"size": [
+							120,
+							46
+						],
+						"position": [
+							128,
+							318
+						]
+					},
+					{
+						"name": "percent_with_bonus",
+						"size": [
+							120,
+							46
+						],
+						"position": [
+							75,
+							318
+						]
+					},
+					{
+						"name": "item",
+						"size": [
+							60,
+							60
+						],
+						"position": [
+							190,
+							318
+						]
+					},
+					{
+						"name": "item_amount",
+						"size": [
+							100,
+							46
+						],
+						"position": [
+							238,
+							318
+						]
+					},
+					{
+						"name": "info",
+						"size": [
+							300,
+							32
+						],
+						"position": [
+							40,
+							79
+						]
+					},
+					{
+						"name": "level",
+						"size": [
+							114,
+							114
+						],
+						"position": [
+							133,
+							113
+						]
+					},
+					{
+						"name": "ok",
+						"size": [
+							176,
+							70
+						],
+						"position": [
+							102,
+							388
+						]
+					}
+				]
+			}
+		}
+	},
+	"BoostUnlockedScreen": {
+		"container": {
+			"window": true,
+			"padding": [
+				0.13,
+				0.2
+			],
+			"container": {
+				"name": "pane",
+				"size": [
+					350,
+					405
+				],
+				"position": [
+					0,
+					0
+				],
+				"fit": "window",
+				"container": [
+					{
+						"name": "banderole",
+						"size": [
+							464,
+							96
+						],
+						"position": [
+							-57,
+							-30
+						]
+					},
+					{
+						"name": "title",
+						"size": [
+							230,
+							42
+						],
+						"position": [
+							60,
+							-23
+						]
+					},
+					{
+						"name": "rays",
+						"size": [
+							286,
+							202
+						],
+						"position": [
+							30,
+							50
+						]
+					},
+					{
+						"name": "frame",
+						"size": [
+							123,
+							152
+						],
+						"position": [
+							113,
+							58
+						]
+					},
+					{
+						"name": "boost",
+						"size": [
+							160,
+							160
+						],
+						"position": [
+							94,
+							56
+						]
+					},
+					{
+						"name": "highlight",
+						"size": [
+							67,
+							70
+						],
+						"position": [
+							166,
+							70
+						]
+					},
+					{
+						"name": "name",
+						"size": [
+							330,
+							40
+						],
+						"position": [
+							8,
+							208
+						]
+					},
+					{
+						"name": "info",
+						"size": [
+							290,
+							86
+						],
+						"position": [
+							28,
+							267
+						]
+					},
+					{
+						"name": "ok",
+						"size": [
+							176,
+							70
+						],
+						"position": [
+							88,
+							365
+						]
+					}
+				]
+			}
+		}
+	},
+	"AchievementUnlockedScreen": {
+		"container": {
+			"window": true,
+			"padding": [
+				0.13,
+				0.2
+			],
+			"container": {
+				"name": "pane",
+				"size": [
+					350,
+					405
+				],
+				"position": [
+					0,
+					0
+				],
+				"fit": "window",
+				"container": [
+					{
+						"name": "banderole",
+						"size": [
+							464,
+							96
+						],
+						"position": [
+							-57,
+							-30
+						]
+					},
+					{
+						"name": "title",
+						"size": [
+							230,
+							42
+						],
+						"position": [
+							60,
+							-23
+						]
+					},
+					{
+						"name": "rays",
+						"size": [
+							286,
+							202
+						],
+						"position": [
+							30,
+							50
+						]
+					},
+					{
+						"name": "frame",
+						"size": [
+							123,
+							152
+						],
+						"position": [
+							113,
+							58
+						]
+					},
+					{
+						"name": "icon",
+						"size": [
+							160,
+							160
+						],
+						"position": [
+							94,
+							56
+						]
+					},
+					{
+						"name": "highlight",
+						"size": [
+							67,
+							70
+						],
+						"position": [
+							210,
+							24
+						]
+					},
+					{
+						"name": "name",
+						"size": [
+							330,
+							40
+						],
+						"position": [
+							8,
+							220
+						]
+					},
+					{
+						"name": "info",
+						"size": [
+							290,
+							86
+						],
+						"position": [
+							28,
+							267
+						]
+					},
+					{
+						"name": "ok",
+						"size": [
+							176,
+							70
+						],
+						"position": [
+							88,
+							365
+						]
+					}
+				]
+			}
+		}
+	},
+	"AchievementsScreen": {
+		"container": {
+			"window": true,
+			"padding": [
+				0.13,
+				0.1
+			],
+			"container": {
+				"name": "pane",
+				"size": [
+					350,
+					505
+				],
+				"position": [
+					0,
+					0
+				],
+				"fit": "window",
+				"container": [
+					{
+						"name": "banderole",
+						"size": [
+							464,
+							96
+						],
+						"position": [
+							-57,
+							-30
+						]
+					},
+					{
+						"name": "title",
+						"size": [
+							230,
+							42
+						],
+						"position": [
+							60,
+							-23
+						]
+					},
+					{
+						"name": "info",
+						"size": [
+							240,
+							40
+						],
+						"position": [
+							55,
+							40
+						]
+					},
+					{
+						"name": "frame",
+						"size": [
+							300,
+							360
+						],
+						"position": [
+							25,
+							90
+						],
+						"layout": {
+							"type": "grid",
+							"cols": [
+								0.3,
+								0.7
+							],
+							"rows": [
+								0.3,
+								0.7
+							],
+							"spacing": 0.03
+						},
+						"container": [
+							{
+								"name": "icon"
+							},
+							{
+								"name": "text"
+							}
+						]
+					},
+					{
+						"name": "ok",
+						"size": [
+							176,
+							70
+						],
+						"position": [
+							88,
+							465
+						]
+					}
+				]
+			}
+		}
+	},
+	"BoostSelectScreen": {
+		"container": {
+			"window": true,
+			"padding": [
+				0.02,
+				0.2
+			],
+			"container": {
+				"name": "pane",
+				"size": [
+					450,
+					330
+				],
+				"position": [
+					0,
+					0
+				],
+				"fit": "window",
+				"container": [
+					{
+						"name": "squirrel",
+						"size": [
+							120,
+							120
+						],
+						"position": [
+							165,
+							-70
+						]
+					},
+					{
+						"name": "title",
+						"size": [
+							380,
+							46
+						],
+						"position": [
+							35,
+							19
+						]
+					},
+					{
+						"name": "frame",
+						"size": [
+							390,
+							186
+						],
+						"position": [
+							30,
+							83
+						],
+						"layout": {
+							"type": "grid",
+							"cols": 4,
+							"rows": [
+								0.7,
+								0.25,
+								0.05
+							],
+							"spacing": 4
+						},
+						"container": [
+							{
+								"name": "booster1"
+							},
+							{
+								"name": "booster2"
+							},
+							{
+								"name": "booster3"
+							},
+							{
+								"name": "booster4"
+							},
+							{
+								"name": "info1",
+								"layout": {
+									"type": "split",
+									"axis": 1,
+									"ratio": 0.5
+								},
+								"container": [
+									{
+										"name": "coin1",
+										"padding": [
+											0.1,
+											0.1
+										]
+									},
+									{
+										"name": "amount1",
+										"padding": [
+											0.0,
+											0.1
+										]
+									}
+								]
+							},
+							{
+								"name": "info2",
+								"layout": {
+									"type": "split",
+									"axis": 1,
+									"ratio": 0.5
+								},
+								"container": [
+									{
+										"name": "coin2",
+										"padding": [
+											0.1,
+											0.1
+										]
+									},
+									{
+										"name": "amount2",
+										"padding": [
+											0.0,
+											0.1
+										]
+									}
+								]
+							},
+							{
+								"name": "info3",
+								"layout": {
+									"type": "split",
+									"axis": 1,
+									"ratio": 0.5
+								},
+								"container": [
+									{
+										"name": "coin3",
+										"padding": [
+											0.1,
+											0.1
+										]
+									},
+									{
+										"name": "amount3",
+										"padding": [
+											0.0,
+											0.1
+										]
+									}
+								]
+							},
+							{
+								"name": "info4",
+								"layout": {
+									"type": "split",
+									"axis": 1,
+									"ratio": 0.5
+								},
+								"container": [
+									{
+										"name": "coin4",
+										"padding": [
+											0.1,
+											0.1
+										]
+									},
+									{
+										"name": "amount4",
+										"padding": [
+											0.0,
+											0.1
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "ok",
+						"size": [
+							172,
+							70
+						],
+						"position": [
+							139,
+							286
+						]
+					}
+				]
+			}
+		}
+	}
+}
