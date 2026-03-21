@@ -1,0 +1,93 @@
+{
+    "features": {
+        "highscores": 1,
+        "rewarded": 1
+    },
+    "game_i18n" : {
+        "default": {
+            "filename.png"  : "fg_i18n/en/images/filename.png"
+        }
+    },
+    "game_analytics": {
+        "build": "elements_blocks_v1",
+        "resource_currencies": ["star"],
+        "resource_item_types": ["powerup", "levelReward", "achievementReward"],
+        "game_key": "",
+        "secret_key": ""
+    },  
+    "game_info": {
+        "client_version": "4.6.0", 
+        "api_version": "2.0",
+        "forced_mode": {
+            "state": {    
+                "difficulty": {        
+                    "description": "Represents how quick the difficulty curve is growing with time. 1 = smooth difficulty progressin, 10 = rapid progression",
+                    "type": "number",
+                    "min": 1,
+                    "max": 10
+                }
+            },
+            "override": {
+                "hide_ui": {
+		        	"description": "What UI elements should be hidden?",
+					"type": "array",
+					"values": ["powerups", "settings_button", "restart_button_in_settings_menu", "achievements_button", "scores_counter", "starts_counter", "floating_scores", "floating_stars", "combo"]
+				}
+            }
+        },
+        "track_stats": {
+            "blocks_placed" : {
+                "description": "Player has placed a figure containing a few colored block on the board",
+                "params": {
+                    "color": {
+                      "type": "string",
+                      "values": ["blue", "red", "green", "yellow", "orange", "purple", "white"]
+                    }
+                }
+            },
+
+            "block_destroyed" : {
+                "description": "Player has destroyed a colored block",
+                "params": {
+                    "color": {
+                      "type": "string",
+                      "values": ["blue", "red", "green", "yellow", "orange", "purple", "white"]
+                    },
+                    "cause": {
+                      "type": "string",
+                      "values": ["matched", "bomb", "lightning"]
+                    }
+                }
+            },
+            "powerup_used" : {
+                "description": "Player has used a powerup",
+                "params": {
+                    "powerup_type": {
+                      "type": "string",
+                      "values": ["lightning", "bomb"]
+                    }
+                }
+            },
+            "stars_picked_up" : {
+                "description": "Player has picked up some stars",
+                "type": "number"
+            },
+            "lines_removed" : {
+                "description": "Player has removed/cleared a few colored block lines",
+                "type": "number"
+            }
+        },      
+        "power_ups": ["bomb","lightning"],  
+        "orientation": {
+            "phone": {
+                "portrait": "green",
+                "landscape": "green"
+            },
+            "tablet": {
+                "portrait": "green",
+                "landscape": "green"
+            }
+        }
+    }
+
+}

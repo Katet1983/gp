@@ -1,0 +1,248 @@
+var language = 'en';
+var TEXT_SCORE     = "SCORE";
+var TEXT_TOT_SCORE = "TOTAL SCORE";
+var TEXT_ARE_SURE = "ARE YOU SURE?";
+var TEXT_GAMEOVER = "CONGRATULATIONS!";
+var TEXT_LOSE = "PLAYER ";
+var TEXT_LOSE2 = " WON THIS MATCH";
+var TEXT_WIN_2PLAYERS = "PLAYER " ;
+var TEXT_WIN_2PLAYERS_2 = " WON THIS MATCH";
+var TEXT_WIN_TOURNAMENT = "CONGRATULATIONS, YOU WON THE TOURNAMENT!";
+var TEXT_DELETE_SAVE = "ALL YOUR PROGRESSES WILL BE DELETED\n\n\nARE YOU SURE?";
+var TEXT_SELECT_PLAYERS_MENU = "SELECT MODE";
+var TEXT_SELECT_MODE_MENU = "SELECT MODE";
+var TEXT_SELECT_LEVEL = "SELECT A LEVEL";
+var TEXT_TUTORIAL_1 = "PRESS THESE BUTTONS TO MOVE YOUR STICKS UP OR DOWN";
+var TEXT_TUTORIAL_2 = "THE AIM OF THE GAME IS TO SCORE THE GREATEST NUMBER OF GOALS. GOOD LUCK!!!";
+var TEXT_TUTORIAL_3 = "PUT THE BALL INTO PLAY BY PRESSING SPACEBAR OR THIS BUTTON WHEN IT'S DISPLAYED";
+var TEXT_TUTORIAL_4 = "PUT THE BALL INTO PLAY BY PRESSING THIS BUTTON WHEN IT'S DISPLAYED";
+var TEXT_TUTORIAL_PLAYER = "PLAYER";
+var TEXT_PAUSE = "Pause";
+var TEXT_ERR_LS = "YOUR WEB BROWSER DOES NOT SUPPORT STORING SETTING LOCALLY. IN SAFARI, THE MOST COMMON CAUSE OF THIS IS USING 'PRIVATE BROWSING MODE'. SOME INFO MAY NOT SAVE OR SOME FEATURE MAY NOT WORK PROPERLY.";
+var TEXT_PRELOADER_CONTINUE = "START";
+
+var TEXT_SHARE_IMAGE = "200x200.png";
+var TEXT_SHARE_TITLE = "Congratulations!";
+var TEXT_SHARE_MSG1 = "You collected <strong>";
+var TEXT_SHARE_MSG2 = " points</strong>!<br><br>Share your score with your friends!";
+var TEXT_SHARE_SHARE1 = "My score is ";
+var TEXT_SHARE_SHARE2 = " points! Can you do better";
+
+var changeLang = (lang) => {
+  const supported = ['en', 'uk', 'ru', 'ar', 'de', 'es', 'pt', 'fr', 'it'];
+  if (supported.includes(lang)) {
+    language = lang;
+  } else {
+    language = 'en';
+  }
+  
+  window.setItem('language', language);
+
+  if (lang === 'en') {
+      TEXT_SCORE = 'SCORE';
+      TEXT_TOT_SCORE = 'TOTAL SCORE';
+      TEXT_ARE_SURE = 'ARE YOU SURE?';
+      TEXT_GAMEOVER = 'CONGRATULATIONS!';
+      TEXT_LOSE = 'PLAYER ';
+      TEXT_LOSE2 = ' WON THIS MATCH';
+      TEXT_WIN_2PLAYERS = 'PLAYER ';
+      TEXT_WIN_2PLAYERS_2 = ' WON THIS MATCH';
+      TEXT_WIN_TOURNAMENT = 'CONGRATULATIONS, YOU WON THE TOURNAMENT!';
+      TEXT_DELETE_SAVE = 'ALL YOUR PROGRESSES WILL BE DELETED\n\n\n ARE YOU SURE?';
+      TEXT_SELECT_PLAYERS_MENU = 'SELECT MODE';
+      TEXT_SELECT_MODE_MENU = 'SELECT MODE';
+      TEXT_SELECT_LEVEL = 'SELECT A LEVEL';
+      TEXT_TUTORIAL_1 = 'PRESS THESE BUTTONS TO MOVE YOUR STICKS UP OR DOWN';
+      TEXT_TUTORIAL_2 = 'THE AIM OF THE GAME IS TO SCORE THE GREATEST NUMBER OF GOALS. GOOD LUCK!!!';
+      TEXT_TUTORIAL_3 = "PUT THE BALL INTO PLAY BY PRESSING SPACEBAR OR THIS BUTTON WHEN IT'S DISPLAYED";
+      TEXT_TUTORIAL_4 = "PUT THE BALL INTO PLAY BY PRESSING THIS BUTTON WHEN IT'S DISPLAYED";
+      TEXT_TUTORIAL_PLAYER = 'PLAYER';
+      TEXT_PAUSE = 'Pause';
+      TEXT_SHARE_TITLE = 'Congratulations!';
+  }
+
+  if (lang === 'ru') {
+      TEXT_SCORE = 'CЧЕТ';
+      TEXT_TOT_SCORE = 'ОБЩИЙ СЧЕТ';
+      TEXT_ARE_SURE = 'ВЫ УВЕРЕНЫ?';
+      TEXT_GAMEOVER = 'ПОЗДРАВЛЯЮ!';
+      TEXT_LOSE = 'ИГРОК ';
+      TEXT_LOSE2 = ' ВЫИГРАЛ ЭТОТ МАТЧ';
+      TEXT_WIN_2PLAYERS = 'ИГРОК ';
+      TEXT_WIN_2PLAYERS_2 = ' ВЫИГРАЛ ЭТОТ МАТЧ';
+      TEXT_WIN_TOURNAMENT = 'ПОЗДРАВЛЯЕМ, ВЫ ПОБЕДИЛИ В ТУРНИРЕ!';
+      TEXT_DELETE_SAVE = 'ВЕСЬ ВАШ ПРОГРЕСС БУДУТ УДАЛЕН\n\n\n ВЫ УВЕРЕНЫ?';
+      TEXT_SELECT_PLAYERS_MENU = 'ВЫБЕРИТЕ РЕЖИМ';
+      TEXT_SELECT_MODE_MENU = 'ВЫБЕРИТЕ РЕЖИМ';
+      TEXT_SELECT_LEVEL = 'ВЫБЕРИТЕ УРОВЕНЬ';
+      TEXT_TUTORIAL_1 = 'НАЖМИТЕ ЭТИ КНОПКИ, ЧТОБЫ ПЕРЕМЕЩАТЬ СТИКИ ВВЕРХ ИЛИ ВНИЗ';
+      TEXT_TUTORIAL_2 = 'ЦЕЛЬ ИГРЫ - ЗАБИТЬ БОЛЬШЕЕ КОЛИЧЕСТВО ГОЛОВ. УДАЧИ!!!';
+      TEXT_TUTORIAL_3 = "НАЧНИТЕ ИГРУ, НАЖИМАЯ ПРОБЕЛ ИЛИ ЭТУ КНОПКУ";
+      TEXT_TUTORIAL_4 = "НАЧНИТЕ ИГРУ, НАЖИМАЯ ЭТУ КНОПКУ";
+      TEXT_TUTORIAL_PLAYER = 'ИГРОК';
+      TEXT_PAUSE = 'Пауза';
+      TEXT_SHARE_TITLE = 'Поздравляем!';
+  }
+
+  if (lang === 'de') {
+      TEXT_SCORE = 'PUNKTZAHL';
+      TEXT_TOT_SCORE = 'GESAMTPUNKTZAHL';
+      TEXT_ARE_SURE = 'BIST DU SICHER?';
+      TEXT_GAMEOVER = 'HERZLICHEN GLÜCKWUNSCH!';
+      TEXT_LOSE = 'SPIELER ';
+      TEXT_LOSE2 = ' HAT DIESES SPIEL GEWONNEN';
+      TEXT_WIN_2PLAYERS = 'SPIELER ';
+      TEXT_WIN_2PLAYERS_2 = ' HAT DIESES SPIEL GEWONNEN';
+      TEXT_WIN_TOURNAMENT = 'HERZLICHEN GLÜCKWUNSCH, DU HAST DAS TURNIER GEWONNEN!';
+      TEXT_DELETE_SAVE = 'ALLE DEINE FORTSCHRITTE WERDEN GELÖSCHT\n\n\n BIST DU SICHER?';
+      TEXT_SELECT_PLAYERS_MENU = 'AUSWAHL DES MODUS';
+      TEXT_SELECT_MODE_MENU = 'AUSWAHL DES MODUS';
+      TEXT_SELECT_LEVEL = 'WÄHLE EIN LEVEL';
+      TEXT_TUTORIAL_1 = 'DRÜCKE DIESE KNÖPFE, UM DEINE STÄBE HOCH ODER RUNTER ZU BEWEGEN';
+      TEXT_TUTORIAL_2 = 'DAS ZIEL DES SPIELS IST ES, DIE GRÖSSTE ANZAHL VON TOREN ZU ERZIELEN. VIEL GLÜCK!!!';
+      TEXT_TUTORIAL_3 = "STARTE DAS SPIEL, INDEM DU DIE LEERTASTE ODER DIESEN KNOPF DRÜCKST, WENN ER ANGEZEIGT WIRD";
+      TEXT_TUTORIAL_4 = "STARTE DAS SPIEL, INDEM DU DIESEN KNOPF DRÜCKST, WENN ER ANGEZEIGT WIRD";
+      TEXT_TUTORIAL_PLAYER = 'SPIELER';
+      TEXT_PAUSE = 'Pause';
+      TEXT_SHARE_TITLE = 'Glückwunsch!';
+  }
+
+  if (lang === 'uk') {
+      TEXT_SCORE = 'РАХУНОК';
+      TEXT_TOT_SCORE = 'ЗАГАЛЬНИЙ РАХУНОК';
+      TEXT_ARE_SURE = 'ВИ ВПЕВНЕНІ?';
+      TEXT_GAMEOVER = 'ВІТАЮ!';
+      TEXT_LOSE = 'ГРАВЕЦЬ ';
+      TEXT_LOSE2 = ' ВИГРАВ ЦЕЙ МАТЧ';
+      TEXT_WIN_2PLAYERS = 'ГРАВЕЦЬ ';
+      TEXT_WIN_2PLAYERS_2 = ' ВИГРАВ ЦЕЙ МАТЧ';
+      TEXT_WIN_TOURNAMENT = 'ВІТАЄМО, ВИ ПЕРЕМОГЛИ В ТУРНІРІ!';
+      TEXT_DELETE_SAVE = 'ВЕСЬ ВАШ ПРОГРЕС БУДЕ ВИДАЛЕНО\n\n\n ВИ ВПЕВНЕНІ?';
+      TEXT_SELECT_PLAYERS_MENU = 'ОБЕРІТЬ РЕЖИМ';
+      TEXT_SELECT_MODE_MENU = 'ОБЕРІТЬ РЕЖИМ';
+      TEXT_SELECT_LEVEL = 'ОБЕРІТЬ РІВЕНЬ';
+      TEXT_TUTORIAL_1 = 'НАТИСНІТЬ ЦІ КНОПКИ, ЩОБ ПЕРЕМІЩУВАТИ СТІКИ ВВЕРХ АБО ВНИЗ';
+      TEXT_TUTORIAL_2 = 'МЕТА ГРИ - ЗАБИТИ ЯКОМОГА БІЛЬШУ КІЛЬКІСТЬ ГОЛІВ. УСПІХІВ!!!';
+      TEXT_TUTORIAL_3 = "ПОЧНІТЬ ГРУ, НАТИСКАЮЧИ ПРОБІЛ АБО ЦЮ КНОПКУ";
+      TEXT_TUTORIAL_4 = "ПОЧНІТЬ ГРУ, НАТИСКАЮЧИ ЦЮ КНОПКУ";
+      TEXT_TUTORIAL_PLAYER = 'ГРАВЕЦЬ';
+      TEXT_PAUSE = 'Пауза';
+      TEXT_SHARE_TITLE = 'Вітаємо!';
+  }
+
+  if (lang === 'it') {
+      TEXT_SCORE = 'PUNTEGGIO';
+      TEXT_TOT_SCORE = 'PUNTEGGIO TOTALE';
+      TEXT_ARE_SURE = 'CONTINUARE?';
+      TEXT_GAMEOVER = 'COMPLIMENTI!';
+      TEXT_LOSE = 'GIOCATORE ';
+      TEXT_LOSE2 = ' HA VINTO QUESTA PARTITA';
+      TEXT_WIN_2PLAYERS = 'GIOCATORE ';
+      TEXT_WIN_2PLAYERS_2 = ' HA VINTO QUESTA PARTITA';
+      TEXT_WIN_TOURNAMENT = 'COMPLIMENTI, HAI VINTO THE TORNEO!';
+      TEXT_DELETE_SAVE = 'TUTTI I TUOI PROGRESSI VERRANNO ELIMINATI\n\n\nCONTINUARE?';
+      TEXT_SELECT_PLAYERS_MENU = 'MODALITÀ SELEZIONA';
+      TEXT_SELECT_MODE_MENU = 'MODALITÀ SELEZIONA';
+      TEXT_SELECT_LEVEL = 'SELEZIONA UN LIVELLO';
+      TEXT_TUTORIAL_1 = 'PREMI QUESTI PULSANTI PER SPOSTARE LE BARRE IN SU O IN GIÙ';
+      TEXT_TUTORIAL_2 = 'LO SCOPO DEL GIOCO È DI SEGNARE IL MAGGIOR NUMERO DI GOL. BUONA FORTUNA!!!';
+      TEXT_TUTORIAL_3 = "METTI LA PALLINA IN GIOCO PREMENDO LA BARRA SPAZIATRICE O QUESTO PULSANTE QUANDO VIENE VISUALIZZATO";
+      TEXT_TUTORIAL_4 = "METTI LA PALLINA IN GIOCO PREMENDO QUESTO PULSANTE QUANDO VIENE VISUALIZZATO";
+      TEXT_TUTORIAL_PLAYER = 'GIOCATORE';
+      TEXT_PAUSE = 'Pausa';
+      TEXT_SHARE_TITLE = 'Complimenti!';
+  }
+  
+  if (lang === 'fr') {
+      TEXT_SCORE = 'SCORE';
+      TEXT_TOT_SCORE = 'SCORE TOTAL';
+      TEXT_ARE_SURE = 'TU ES SÛR ?';
+      TEXT_GAMEOVER = 'FÉLICITATIONS !';
+      TEXT_LOSE = 'JOUEUR ';
+      TEXT_LOSE2 = ' A REMPORTÉ CE MATCH';
+      TEXT_WIN_2PLAYERS = 'JOUEUR ';
+      TEXT_WIN_2PLAYERS_2 = ' A REMPORTÉ CE MATCH';
+      TEXT_WIN_TOURNAMENT = 'FÉLICITATIONS, TU AS REMPORTÉ LE TOURNOI !';
+      TEXT_DELETE_SAVE = 'TOUT TA PROGRESSION SERA SUPPRIMÉE\n\n\nTU ES SÛR ?';
+      TEXT_SELECT_PLAYERS_MENU = 'SÉLECTION DU MODE';
+      TEXT_SELECT_MODE_MENU = 'SÉLECTION DU MODE';
+      TEXT_SELECT_LEVEL = 'SÉLECTIONNE UN NIVEAU';
+      TEXT_TUTORIAL_1 = 'APPUIE SUR CES BOUTONS POUR DÉPLACER TES BARRES VERS LE HAUT OU VERS LE BAS';
+      TEXT_TUTORIAL_2 = 'LE BUT DU JEU EST DE MARQUER LE PLUS GRAND NOMBRE DE BUTS. BONNE CHANCE !';
+      TEXT_TUTORIAL_3 = "METS LA BALLE EN JEU EN APPUYANT SUR LA BARRE D'ESPACE OU SUR CE BOUTON QUAND IL EST AFFICHÉ";
+      TEXT_TUTORIAL_4 = "METS LA BALLE EN JEU EN APPUYANT SUR CE BOUTON QUAND IL EST AFFICHÉ";
+      TEXT_TUTORIAL_PLAYER = 'JOUEUR';
+      TEXT_PAUSE = 'Pause';
+      TEXT_SHARE_TITLE = 'Félicitations !';
+  }
+
+  if (lang === 'es') {
+      TEXT_SCORE = 'PUNTUACIÓN';
+      TEXT_TOT_SCORE = 'PUNTUACIÓN TOTAL';
+      TEXT_ARE_SURE = '¿SEGURO?';
+      TEXT_GAMEOVER = '¡ENHORABUENA!';
+      TEXT_LOSE = 'JUGADOR ';
+      TEXT_LOSE2 = ' HAS GANADO ESTE PARTIDO';
+      TEXT_WIN_2PLAYERS = 'JUGADOR ';
+      TEXT_WIN_2PLAYERS_2 = ' HAS GANADO ESTE PARTIDO';
+      TEXT_WIN_TOURNAMENT = '¡ENHORABUENA, HAS GANADO EL TORNEO!';
+      TEXT_DELETE_SAVE = 'SE ELIMINARÁ TODO EL PROGRESO.\n\n\n¿QUIERES CONFIRMAR?';
+      TEXT_SELECT_PLAYERS_MENU = 'SELECCIONAR MODO';
+      TEXT_SELECT_MODE_MENU = 'SELECCIONAR MODO';
+      TEXT_SELECT_LEVEL = 'SELECCIONA UN NIVEL';
+      TEXT_TUTORIAL_1 = 'PULSA ESTOS BOTONES PARA MOVER LOS PALOS HACIA ARRIBA O HACIA ABAJO';
+      TEXT_TUTORIAL_2 = 'EL OBJETIVO DEL JUEGO ES MARCAR EL MAYOR NÚMERO DE GOLES. ¡¡¡BUENA SUERTE!!!';
+      TEXT_TUTORIAL_3 = "PON LA PELOTA EN JUEGO PULSANDO LA BARRA ESPACIADORA O ESTE BOTÓN CUANDO APAREZCA EN LA PANTALLA.";
+      TEXT_TUTORIAL_4 = "PON LA PELOTA EN JUEGO PULSANDO ESTE BOTÓN CUANDO APAREZCA EN LA PANTALLA.";
+      TEXT_TUTORIAL_PLAYER = 'JUGADOR';
+      TEXT_PAUSE = 'Pausa';
+      TEXT_SHARE_TITLE = '¡Enhorabuena!';
+  }
+
+  if (lang === 'pt') {
+      TEXT_SCORE = 'PONTUAÇÃO';
+      TEXT_TOT_SCORE = 'PONTUAÇÃO TOTAL';
+      TEXT_ARE_SURE = 'TEM CERTEZA?';
+      TEXT_GAMEOVER = 'PARABÉNS!';
+      TEXT_LOSE = 'JOGADOR ';
+      TEXT_LOSE2 = ' VENCEU ESTA PARTIDA';
+      TEXT_WIN_2PLAYERS = 'JOGADOR ';
+      TEXT_WIN_2PLAYERS_2 = ' VENCEU ESTA PARTIDA';
+      TEXT_WIN_TOURNAMENT = 'PARABÉNS, VOCÊ VENCEU O TORNEIO!';
+      TEXT_DELETE_SAVE = 'TODO SEU PROGRESSO SERÁ EXCLUÍDO\n\n\nVOCÊ TEM CERTEZA?';
+      TEXT_SELECT_PLAYERS_MENU = 'SELECIONE O MODO';
+      TEXT_SELECT_MODE_MENU = 'SELECIONE O MODO';
+      TEXT_SELECT_LEVEL = 'SELECIONE UM NÍVEL';
+      TEXT_TUTORIAL_1 = 'PRESSIONE ESTES BOTÕES PARA MOVER SEUS BASTÕES PARA CIMA OU PARA BAIXO';
+      TEXT_TUTORIAL_2 = 'O OBJETIVO DO JOGO É MARCAR O MAIOR NÚMERO DE GOLS. BOA SORTE!!';
+      TEXT_TUTORIAL_3 = "COLOQUE A BOLA EM JOGO PRESSIONANDO A BARRA DE ESPAÇO OU ESTE BOTÃO QUANDO ELE FOR EXIBIDO";
+      TEXT_TUTORIAL_4 = "COLOQUE A BOLA EM JOGO PRESSIONANDO ESTE BOTÃO QUANDO ELE FOR EXIBIDO";
+      TEXT_TUTORIAL_PLAYER = 'JOGADOR';
+      TEXT_PAUSE = 'Pausar';
+      TEXT_SHARE_TITLE = 'Parabéns!';
+  }
+
+  if (lang === 'ar') {
+      TEXT_SCORE = 'مجموع نقاط';
+      TEXT_TOT_SCORE = 'إجمالي الدرجة';
+      TEXT_ARE_SURE = 'هل أنت متأكد؟';
+      TEXT_GAMEOVER = '!تهانينا';
+      TEXT_LOSE = ' اللاعب ';
+      TEXT_LOSE2 = ' فزت بهذه المباراة ';
+      TEXT_WIN_2PLAYERS = ' اللاعب ';
+      TEXT_WIN_2PLAYERS_2 = ' فزت بهذه المباراة ';
+      TEXT_WIN_TOURNAMENT = '     !تهانينا، لقد فزت بهذه المباراة';
+      TEXT_DELETE_SAVE = 'سيتم حذف كل ما أحرزته من تقدم\n\n\nهل ترغب في ذلك بالفعل؟';
+      TEXT_SELECT_PLAYERS_MENU = 'اختر الوضع';
+      TEXT_SELECT_MODE_MENU = 'اختر الوضع';
+      TEXT_SELECT_LEVEL = 'اختر مستوى';
+      TEXT_TUTORIAL_1 = 'أضغط على هذه الأزرار لتحريك العصي لأعلى أو أسفل';
+      TEXT_TUTORIAL_2 = '!!!هدف المباراة هو تسجيل أكبر عدد من الأهداف. حظ سعيد';
+      TEXT_TUTORIAL_3 = "ابدأ اللعب بالكرة بالضغط على مفتاح المسافة أو على هذا الزر عند ظهوره";
+      TEXT_TUTORIAL_4 = "ابدأ اللعب بالكرة بالضغط  على هذا الزر عند ظهوره";
+      TEXT_TUTORIAL_PLAYER = 'اللاعب';
+      TEXT_PAUSE = 'توقف مؤقت';
+      TEXT_SHARE_TITLE = '!تهانينا';
+  }
+  console.log(lang);
+};

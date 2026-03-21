@@ -1,0 +1,911 @@
+{
+  "id": "26d24323-8df8-4c3d-8774-88727c3f001d",
+  "worldId": "a786ab24-1e69-4b32-bb7e-fc13c509e86a",
+  "name": "Deep Fried Plunge",
+  "options": {
+    "isTutorial": false,
+    "speed": 1,
+    "difficulty": 0,
+    "seed": 506608,
+    "wall": "default",
+    "floor": "default",
+    "levelAssetSet": "normal"
+  },
+  "segments": [
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "c188b871-f9aa-4ed7-a092-41798c57e1c7",
+      "decorations": [
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 2,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "55078f51-b936-49c1-af05-a6eb1a879d07"
+        },
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 3.9688589097307068,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "426bb569-701e-422a-b707-6d67a09ca5ee"
+        }
+      ]
+    },
+    {
+      "id": "deepFrier3xSegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "05918546-5c9f-4368-978a-33a673ca3913",
+      "decorations": [
+        {
+          "id": "movingPlatformDecoration",
+          "options": {
+            "position": {
+              "x": 2.0206205298451696,
+              "y": 1.3116845142244933,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 2
+            },
+            "speed": 1.5,
+            "duration": 0,
+            "pauseTime": 1,
+            "timeOffset": 0,
+            "width": 1
+          },
+          "uid": "433bc273-3e54-4097-bf89-e2ac524fab50"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 2.086255444496577,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "b9af5ec6-5c29-47c7-af18-36c1dcfdda56"
+        }
+      ]
+    },
+    {
+      "id": "checkpointSegment",
+      "options": {
+        "yOffset": 4,
+        "xEndOverwrite": 0
+      },
+      "uid": "801ab506-f49b-4759-b303-0895db9b8c5e",
+      "decorations": [
+        {
+          "id": "coinThrowDecoration",
+          "options": {
+            "position": {
+              "x": 1.1153473865608134,
+              "y": 0.9692844689908862,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "template": "custom",
+            "reverse": false,
+            "coins": 5,
+            "speed": 4,
+            "angle": 0,
+            "time": 1
+          },
+          "uid": "fd1b8d2f-fb6c-4bda-be91-6a8b913d5dcf"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "c0ab19f5-4f91-45fd-b7c9-696bc4ecdb7f"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "c4a87bb5-cf65-4145-870f-d973a9ad8b63",
+      "decorations": []
+    },
+    {
+      "id": "deepFrier3xSegment",
+      "options": {
+        "yOffset": -4,
+        "xEndOverwrite": 0
+      },
+      "uid": "42144577-999f-4845-be4f-6cd59e8bdef2",
+      "decorations": [
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": -0.42597273921652246,
+              "y": 0.9685904520394271,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "6d483bbd-7777-49f5-8e1c-30c13ba2e5b5"
+        },
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": 2.2258973030747127,
+              "y": 0.9817031728573467,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "2806183b-aded-4a55-ac21-85b7182cac7f"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 1.9686257382990782,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "6efebfe4-6ee2-4822-9808-08d9919e88f1"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "ec50b9b6-dc23-4ffe-9376-e81bdbe0d610",
+      "decorations": [
+        {
+          "id": "wallPinDecoration",
+          "options": {
+            "position": {
+              "x": 0.835235773767522,
+              "y": 2.6257713035717,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "19c6d463-cabc-4c48-9bcb-e71ae1ba3e85"
+        },
+        {
+          "id": "wallPaperTowelDecoration",
+          "options": {
+            "position": {
+              "x": 0.8268114935429267,
+              "y": 3.6034510122693133,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "5ce739ce-e2a5-46af-84d7-9d71ba76c9af"
+        },
+        {
+          "id": "fireExtinguisherDecoration",
+          "options": {
+            "position": {
+              "x": -0.35441924987474493,
+              "y": -1.9825872635190582,
+              "z": 0.28575416372314066
+            },
+            "rotation": {
+              "x": 0,
+              "y": -0.4044957150482646,
+              "z": 0
+            }
+          },
+          "uid": "d4282b1c-590a-4146-b510-fa2b74602a91"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "1399d43a-e72f-4db9-a725-6d3ea1ccc766",
+      "decorations": []
+    },
+    {
+      "id": "deepFrier3xSegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "7b39f3bd-e7a6-41f0-87ae-83716811cab7",
+      "decorations": [
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": -0.3796567929913337,
+              "y": 0.9292709610383758,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "bd6eda6a-2579-4017-b5a3-c8f863d09755"
+        },
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": 2.2499162862711586,
+              "y": 0.9292709610383758,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "f0df986b-97bb-4b58-a1da-11d7675e92e5"
+        },
+        {
+          "id": "coinLineDecoration",
+          "options": {
+            "position": {
+              "x": 1.0737079736587845,
+              "y": 0.9257282645075846,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "coins": 3,
+            "start": [
+              0,
+              0
+            ],
+            "end": [
+              2,
+              0
+            ]
+          },
+          "uid": "eea8163e-03e1-4099-ae0f-03624ffbd939"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 3.766554470449311,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "88265d73-2c1e-4d18-86be-41c9e26d67df"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "70d36ed8-6e79-418d-8287-11e69c7a4ede",
+      "decorations": [
+        {
+          "id": "doorDecoration",
+          "options": {
+            "position": {
+              "x": 1.0549719316101331,
+              "y": -2,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "e4da001c-8299-4fa2-ab7b-67a5d5622b19"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "7cbf2c43-bc5a-4655-9b69-2f0f0d6d9449",
+      "decorations": []
+    },
+    {
+      "id": "checkpointSegment",
+      "options": {
+        "yOffset": 2,
+        "xEndOverwrite": 0
+      },
+      "uid": "d4fa6193-356d-43b6-95db-f184ba58a495",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "d36bb13b-4c3c-46cd-883d-9a8c0cbde1c9"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 1,
+        "xEndOverwrite": 0
+      },
+      "uid": "a7606a3c-c2e4-46a2-8599-824ea1c8b66c",
+      "decorations": [
+        {
+          "id": "sawDecoration",
+          "options": {
+            "position": {
+              "x": 1.021288994297663,
+              "y": 0,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "minX": -1.3,
+            "maxX": 1.3,
+            "speed": 2,
+            "moveInterval": 3,
+            "startDelay": 0,
+            "retract": true
+          },
+          "uid": "076a570e-f1e0-4d70-9103-6f40e9e8782a"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "7d3fdc93-d0f0-44fa-ba5f-685afc06036c"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "aaf7b712-6957-43b6-a45e-366b65592415",
+      "decorations": [
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 1.2,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "b523f639-e76b-4962-896f-55f6d6dc31fa"
+        },
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": -1,
+              "y": 3.2,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "d3b41274-f7e4-442c-adb7-dd3c9ab05c80"
+        }
+      ]
+    },
+    {
+      "id": "deepFrierSegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "d5d2ec85-e111-47b8-9e87-9ea352234000",
+      "decorations": [
+        {
+          "id": "arrowSmallDecoration",
+          "options": {
+            "position": {
+              "x": 0.22667186710492615,
+              "y": 3.113740229905615,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 2.272262412697439
+            }
+          },
+          "uid": "09c16c60-7243-4f7d-b5e9-7ac060c07169"
+        },
+        {
+          "id": "arrowSmallDecoration",
+          "options": {
+            "position": {
+              "x": -0.2930517372643351,
+              "y": 2.646960006257034,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 2.2653311008099686
+            }
+          },
+          "uid": "7916c7f3-dc4a-4f23-a988-fabff39242b5"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "062da9ca-07c4-4273-9020-3866c8ec5791"
+        }
+      ]
+    },
+    {
+      "id": "changeCounterTopSegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "83dae599-94cc-4b66-843a-ab19fa69a651",
+      "decorations": []
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 5,
+        "xEndOverwrite": 0
+      },
+      "uid": "796015bf-1434-4ea1-b880-0ebfba8962ae",
+      "decorations": [
+        {
+          "id": "singleCoinDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 1.0321746846429551,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "57ae0675-dbcd-44e3-983c-913b16bb5c07"
+        },
+        {
+          "id": "singleCoinDecoration",
+          "options": {
+            "position": {
+              "x": -3.4583528532896324,
+              "y": -1.269383979624748,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "529847f9-22dc-4d67-bd04-573ab41d5528"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "5cc7208d-a407-4664-9983-6070e4b79012"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": -4,
+        "xEndOverwrite": 0
+      },
+      "uid": "74e41842-6ba9-4236-8d22-2da6b452bd28",
+      "decorations": [
+        {
+          "id": "paniniIronDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "interval": 2,
+            "openTime": 0,
+            "closedTime": 0,
+            "delay": 0,
+            "startClosed": true
+          },
+          "uid": "b15eacdf-7a77-4193-8957-c51cc68b9a59"
+        },
+        {
+          "id": "wallPaperTowelDecoration",
+          "options": {
+            "position": {
+              "x": 0.4202972595412078,
+              "y": 2.4043369938027626,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "2e8c5b68-69fc-44b5-ae08-194e5cf9157b"
+        },
+        {
+          "id": "wallPaperTowelDecoration",
+          "options": {
+            "position": {
+              "x": -1.5769984901323681,
+              "y": -0.4755965557895028,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "04c62a01-9b61-4397-a3a5-df42a20cc4fd"
+        },
+        {
+          "id": "wallPinDecoration",
+          "options": {
+            "position": {
+              "x": -0.4487124522398105,
+              "y": 3.0905114071250885,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "ee4018e4-d879-4e36-9772-2a811c79eee9"
+        },
+        {
+          "id": "wallPinDecoration",
+          "options": {
+            "position": {
+              "x": -2.4601111441417274,
+              "y": -1.0104658495770478,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "b9081fe9-272c-4623-a61b-cbdfe1244bd6"
+        },
+        {
+          "id": "doorDecoration",
+          "options": {
+            "position": {
+              "x": -0.8866242870023271,
+              "y": -5.924390528721235,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "75386840-1293-4eea-8321-d2cda5fa813f"
+        },
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": 6.631234152908817,
+              "y": -2.022697994176001,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "f8a8f841-b9bd-406e-9a7e-0c81fe045a0f"
+        }
+      ]
+    },
+    {
+      "id": "changeCounterTopSegment",
+      "options": {
+        "yOffset": -2,
+        "xEndOverwrite": 0
+      },
+      "uid": "e3d51a57-989f-415a-9c7f-edd153e2f87f",
+      "decorations": []
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 1,
+        "xEndOverwrite": 0
+      },
+      "uid": "12ffa94b-4b9d-41f6-9969-37495c646e6b",
+      "decorations": [
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 1.1207121363134211,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "83513d64-a1ce-4c80-8bab-c40bc6455195"
+        },
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 5.729958909116369,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "139cb5b2-63c4-46e8-b981-da42787d7c23"
+        },
+        {
+          "id": "spikeStripDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 3.1204061898779463,
+              "z": -0.03627351433002313
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "columns": 5
+          },
+          "uid": "99c469a7-9fbc-4de5-a309-875747221e2c"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "99ab0dc2-d574-46c4-82b3-1a603c41aa5a",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "1bdecb54-1080-4d58-a230-b43dfcc1e3d0"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": -2,
+        "xEndOverwrite": 0
+      },
+      "uid": "c75cfb73-d457-4da6-9ef0-047f209f9ef7",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "bdc06d4f-a123-476c-a307-30ac5505ec89"
+        }
+      ]
+    }
+  ],
+  "hashedId": 78538,
+  "meta": {
+    "generation": {
+      "options": {
+        "averageDifficulty": 1,
+        "segmentCount": 6
+      },
+      "enabledTags": []
+    }
+  }
+}

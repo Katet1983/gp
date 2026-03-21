@@ -1,0 +1,991 @@
+{
+  "id": "28f4ae7b-9168-4069-a304-04d0dd9b3430",
+  "worldId": "e7f3646a-4222-4461-a021-cbc0a849b477",
+  "name": "Sweet Saws",
+  "options": {
+    "isTutorial": false,
+    "speed": 1,
+    "difficulty": 0,
+    "seed": 8571374,
+    "wall": "default",
+    "floor": "default",
+    "levelAssetSet": "normal"
+  },
+  "segments": [
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 6.2
+      },
+      "uid": "cdfcb160-5c48-4067-ae28-d3aec169e9d3",
+      "decorations": [
+        {
+          "id": "fanDecoration",
+          "options": {
+            "position": {
+              "x": 2,
+              "y": -1.5,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 3.141592653589793
+            },
+            "force": 1200,
+            "minimumForce": 600,
+            "size": 2,
+            "forceDistance": 16,
+            "covered": true
+          },
+          "uid": "6461c381-1f81-47bd-8357-764dbb6b51a2"
+        },
+        {
+          "id": "fanDecoration",
+          "options": {
+            "position": {
+              "x": 4,
+              "y": -1.5,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 3.141592653589793
+            },
+            "force": 1200,
+            "minimumForce": 600,
+            "size": 2,
+            "forceDistance": 16,
+            "covered": true
+          },
+          "uid": "19c92aaf-13b3-4112-bbee-ff3d97b89a31"
+        },
+        {
+          "id": "gameplayShelfDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 4,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "width": 3,
+            "depth": 1.7
+          },
+          "uid": "f2200dfb-38ed-450b-8642-7ec898328d0f"
+        },
+        {
+          "id": "wallMountedSawDecoration",
+          "options": {
+            "position": {
+              "x": 2.5,
+              "y": 1,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 11
+            },
+            "speed": 1.5,
+            "pauseTime": 0,
+            "timeOffset": 0,
+            "faceDirection": false
+          },
+          "uid": "281b6b86-0f92-496f-8bfc-cbabfd3639cd"
+        },
+        {
+          "id": "wallMountedSawDecoration",
+          "options": {
+            "position": {
+              "x": 3.35,
+              "y": 1,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 11
+            },
+            "speed": 1.5,
+            "pauseTime": 0,
+            "timeOffset": 0.075,
+            "faceDirection": false
+          },
+          "uid": "7a7b5999-b14c-456e-aadb-0f1c38d546fb"
+        },
+        {
+          "id": "wallMountedSawDecoration",
+          "options": {
+            "position": {
+              "x": 4.2,
+              "y": 1,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 11
+            },
+            "speed": 1.5,
+            "pauseTime": 0,
+            "timeOffset": 0.15,
+            "faceDirection": false
+          },
+          "uid": "51aa9f80-a24c-48f6-b52f-ed048c7af1c4"
+        },
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": -2.5565993055967953,
+              "y": 3.849957531770932,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "9480df52-e297-480c-9e44-5f4943ceef47"
+        },
+        {
+          "id": "coinThrowDecoration",
+          "options": {
+            "position": {
+              "x": 6.157702195914213,
+              "y": 1.9069482724173061,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "template": "custom",
+            "reverse": true,
+            "coins": 5,
+            "speed": 10,
+            "angle": 62,
+            "time": 1.2
+          },
+          "uid": "fc90bd5b-2944-4387-b85d-3fc17afa90a4"
+        },
+        {
+          "id": "coffeeCupDecoration",
+          "options": {
+            "position": {
+              "x": -3.1788059018292625,
+              "y": 5.798521851851604,
+              "z": 0.6840962087053342
+            },
+            "rotation": {
+              "x": 0,
+              "y": -0.25437471896574504,
+              "z": 0
+            }
+          },
+          "uid": "9266d3fa-a565-4d58-815a-d90e77b9ec40"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 1,
+        "xEndOverwrite": 0
+      },
+      "uid": "8131a161-733f-4289-b640-991872fba669",
+      "decorations": [
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 5,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "6bf42018-629b-44aa-92a2-a3a40b26227a"
+        },
+        {
+          "id": "gameplayShelfDecoration",
+          "options": {
+            "position": {
+              "x": 3.072303210536191,
+              "y": 6.962976432040497,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "width": 4,
+            "depth": 1.83
+          },
+          "uid": "3c135af1-f344-4f89-8652-bca912e58d8f"
+        },
+        {
+          "id": "checkpointDecoration",
+          "options": {
+            "position": {
+              "x": 1.5,
+              "y": 7,
+              "z": 0.17472193830964677
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "testFromHere": false
+          },
+          "uid": "f557fb86-45cd-4a51-a999-181058ad01ef"
+        },
+        {
+          "id": "wallMountedSawDecoration",
+          "options": {
+            "position": {
+              "x": 5.8,
+              "y": 6,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 3
+            },
+            "speed": 1.5,
+            "pauseTime": 0,
+            "timeOffset": 0,
+            "faceDirection": false
+          },
+          "uid": "48f07a91-dfb7-4540-81a7-1d40e6b062bb"
+        },
+        {
+          "id": "wallMountedSawDecoration",
+          "options": {
+            "position": {
+              "x": 6.6,
+              "y": 6,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 3
+            },
+            "speed": 1.5,
+            "pauseTime": 0,
+            "timeOffset": 0,
+            "faceDirection": false
+          },
+          "uid": "d44397d8-d456-40c9-8c78-e4b176b0fde1"
+        },
+        {
+          "id": "wallMountedSawDecoration",
+          "options": {
+            "position": {
+              "x": 7.4,
+              "y": 6,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 3
+            },
+            "speed": 1.5,
+            "pauseTime": 0,
+            "timeOffset": 0,
+            "faceDirection": false
+          },
+          "uid": "855dee60-dd7e-4c2b-94c5-72f7cae63bca"
+        },
+        {
+          "id": "gameplayShelfDecoration",
+          "options": {
+            "position": {
+              "x": 10.127984551140713,
+              "y": 6.962976432040497,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "width": 4,
+            "depth": 1.83
+          },
+          "uid": "a0cb5971-dba1-40b0-abe5-40043d183ced"
+        },
+        {
+          "id": "gameplayShelfDecoration",
+          "options": {
+            "position": {
+              "x": 14.882006155291762,
+              "y": 9.082572454908423,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "width": 3,
+            "depth": 1.83
+          },
+          "uid": "1c720f13-5f90-4802-bc78-cacdb67c5004"
+        },
+        {
+          "id": "gameplayShelfDecoration",
+          "options": {
+            "position": {
+              "x": 21.406523156729587,
+              "y": 7.3578963013637,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "width": 6,
+            "depth": 1.83
+          },
+          "uid": "17948c28-0791-4b98-bdb3-49eacf4ff085"
+        },
+        {
+          "id": "sawDecoration",
+          "options": {
+            "position": {
+              "x": 21.406523156729587,
+              "y": 7.3578963013637,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "minX": -1.2,
+            "maxX": 1.2,
+            "speed": 3,
+            "moveInterval": 3,
+            "startDelay": 0,
+            "retract": false
+          },
+          "uid": "f826a801-b20a-454f-97d5-b27e9f341fb1"
+        },
+        {
+          "id": "checkpointDecoration",
+          "options": {
+            "position": {
+              "x": 23.55677500922472,
+              "y": 7.375699488200931,
+              "z": 0.2500934376064414
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "testFromHere": false
+          },
+          "uid": "8c37ab77-1184-429a-b54d-1c51bae292a4"
+        },
+        {
+          "id": "arrowSmallDecoration",
+          "options": {
+            "position": {
+              "x": -0.2763311052813968,
+              "y": 1.7641536538683726,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 2.127636397354604
+            }
+          },
+          "uid": "93753d70-177b-4672-9e63-d314acf80f2b"
+        },
+        {
+          "id": "arrowSmallDecoration",
+          "options": {
+            "position": {
+              "x": -4.957522841318858,
+              "y": 4.745869445020637,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0.8826861263707159
+            }
+          },
+          "uid": "8c729243-be8b-4321-9d30-6ca1d908a8e1"
+        },
+        {
+          "id": "coinBoxDecoration",
+          "options": {
+            "position": {
+              "x": 14.697705985854785,
+              "y": 10.136593887062745,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "columns": 2,
+            "rows": 2,
+            "spacing": 0.6
+          },
+          "uid": "d1ff1f97-845b-4e42-988d-192ebe2ee655"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "c2d3cf50-1905-41cf-bff8-cbb01991b675"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "77569908-8f5d-47ea-b140-6cd03b5bf2ff",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": -7.591532600911778,
+              "y": 3.0348265326531894,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "ce39b95f-57b4-4e1a-9296-b5a5ac1411da"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 4,
+        "xEndOverwrite": 0
+      },
+      "uid": "78926532-ed5f-4534-9712-04f0e45aa9df",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": -3.9734661203924677,
+              "y": 2.9999096602311104,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "7f5fe1c8-cffe-4ffe-96e4-c8897a6186f0"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 22
+      },
+      "uid": "74fc9df3-945b-4f7a-b715-35ede13c2aac",
+      "decorations": [
+        {
+          "id": "doorDecoration",
+          "options": {
+            "position": {
+              "x": 0.6474758128619555,
+              "y": -7.001036655231748,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "cac8c2bb-998e-4aee-8150-34fa36043e0c"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 8.780133112683352,
+              "y": 4.305102888214335,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "030a9d2c-35d6-4e06-8b46-fe401e35e7e0"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": -1,
+        "xEndOverwrite": 0
+      },
+      "uid": "651ce100-c76c-48a3-a54c-f549a70002b4",
+      "decorations": [
+        {
+          "id": "depthSawRowDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 1.5,
+            "moveInterval": 2.5,
+            "rows": 7,
+            "gap": 1,
+            "startDelay": 0,
+            "stagger": -0.35,
+            "retract": true
+          },
+          "uid": "21292b4b-b9af-4a69-91eb-0acd8a8e8a4e"
+        },
+        {
+          "id": "coinLineDecoration",
+          "options": {
+            "position": {
+              "x": 2.0336876441425957,
+              "y": 0.6555900275721959,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "coins": 3,
+            "start": [
+              0,
+              0
+            ],
+            "end": [
+              1.5,
+              0
+            ]
+          },
+          "uid": "eb68f6e0-ce60-4473-83e9-e2233b0dd9c5"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "cf1ea78e-e5a1-44ed-b953-608a1a82504b"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "672ecf4b-627e-4208-b092-b8a0d8abd961",
+      "decorations": []
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "8f91f3ab-5964-4772-9f5f-8a12803eea25",
+      "decorations": [
+        {
+          "id": "holeCupboardDecoration",
+          "options": {
+            "position": {
+              "x": -1.0560871966344223,
+              "y": 1.613445902962689,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "e3e22cbc-4e96-473e-b8b9-126238c0a09d"
+        },
+        {
+          "id": "booksHozDecoration",
+          "options": {
+            "position": {
+              "x": -1.0560871966344223,
+              "y": 1.6583458132460889,
+              "z": -0.324694734034388
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "e5d24991-4837-4800-86ee-928ad0f56591"
+        },
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": 0.2653187224632134,
+              "y": 1.0758054913247683,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "394d8eaf-e3aa-4935-baaf-54fd1dd01b92"
+        },
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": -4.771653865202325,
+              "y": 1.0758054913247683,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "7efcbdf1-8f56-4927-b681-532d6ebad71f"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "f0510896-89f3-4a70-a0a1-3f213a55bf06",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "a829df74-585a-4425-aed6-870addca3ca1"
+        }
+      ]
+    },
+    {
+      "id": "fridgeSegment",
+      "options": {
+        "yOffset": -4,
+        "xEndOverwrite": 0
+      },
+      "uid": "3b6a3b2a-3521-48a7-a18d-fe80b8b5704c",
+      "decorations": [
+        {
+          "id": "wallPinDecoration",
+          "options": {
+            "position": {
+              "x": 0.15267427779318865,
+              "y": 4.622721282010669,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "9009e0ec-5e63-49a9-8b2c-e2b5cbcf60bd"
+        },
+        {
+          "id": "wallPinDecoration",
+          "options": {
+            "position": {
+              "x": 3.6988505402735825,
+              "y": 4.607057009560193,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "879d5a10-b4eb-4a6b-a04e-3b44b019cc02"
+        },
+        {
+          "id": "wallPinDecoration",
+          "options": {
+            "position": {
+              "x": 2.195403923425701,
+              "y": 3.548120761453027,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "520bee2d-c348-4f09-85ac-cd7ad5343b46"
+        },
+        {
+          "id": "wallPinDecoration",
+          "options": {
+            "position": {
+              "x": 3.7266439929068724,
+              "y": 2.683238384821168,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "5edc8feb-166c-463c-b593-8059b84a2c25"
+        },
+        {
+          "id": "wallPinDecoration",
+          "options": {
+            "position": {
+              "x": 5.795109166514777,
+              "y": 2.7053349962556306,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "f99d3231-074f-4e0a-9348-3c917a31ffdd"
+        },
+        {
+          "id": "wallPinDecoration",
+          "options": {
+            "position": {
+              "x": 5.7486545510351235,
+              "y": 4.624319961879795,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "a36e3d41-f174-4a53-aff4-e3499cb601cf"
+        },
+        {
+          "id": "coinLineDecoration",
+          "options": {
+            "position": {
+              "x": 2.0122545822745934,
+              "y": 1.5913437923339155,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "coins": 3,
+            "start": [
+              0,
+              0
+            ],
+            "end": [
+              2,
+              0
+            ]
+          },
+          "uid": "0ce684ae-d2ca-4994-a8ee-ae4aaf42e8cc"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 1,
+        "xEndOverwrite": 0
+      },
+      "uid": "9a3b71cb-0241-49c6-bf2d-5dc1ad5fc573",
+      "decorations": []
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "2bf31f1c-8619-4154-994f-527a5316a8fd",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "a7be8542-877e-45bd-b4a2-f1224653e6c9"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "f3ab8862-d90d-4ca9-ba35-6589b969ee94",
+      "decorations": []
+    }
+  ],
+  "hashedId": 77274,
+  "meta": {
+    "generation": {
+      "options": {
+        "averageDifficulty": 1,
+        "segmentCount": 6
+      },
+      "enabledTags": []
+    }
+  }
+}

@@ -1,0 +1,776 @@
+<!DOCTYPE html><script nonce="xhWlVlb3porY3Vqa3DMSNQ">(function(){'use strict';function f(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function q(a){var b=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(b)return b.call(a);if(typeof a.length=="number")return{next:f(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}var t=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,e){if(a==Array.prototype||a==Object.prototype)return a;a[b]=e.value;return a};
+function u(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var e=a[b];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var v=u(this);function w(a,b){if(b)a:{var e=v;a=a.split(".");for(var g=0;g<a.length-1;g++){var l=a[g];if(!(l in e))break a;e=e[l]}a=a[a.length-1];g=e[a];b=b(g);b!=g&&b!=null&&t(e,a,{configurable:!0,writable:!0,value:b})}}
+function x(a){if(!(a instanceof Object))throw new TypeError("Iterator result "+a+" is not an object");}function y(){this.v=!1;this.j=null;this.o=void 0;this.g=1;this.i=this.l=0;this.A=this.h=null}function z(a){if(a.v)throw new TypeError("Generator is already running");a.v=!0}y.prototype.B=function(a){this.o=a};function A(a,b){a.h={J:b,K:!0};a.g=a.l||a.i}y.prototype.getNextAddressJsc=function(){return this.g};y.prototype.getYieldResultJsc=function(){return this.o};
+y.prototype.return=function(a){this.h={return:a};this.g=this.i};y.prototype["return"]=y.prototype.return;y.prototype.H=function(a){this.h={u:a};this.g=this.i};y.prototype.jumpThroughFinallyBlocks=y.prototype.H;y.prototype.m=function(a,b){this.g=b;return{value:a}};y.prototype.yield=y.prototype.m;y.prototype.P=function(a,b){a=q(a);var e=a.next();x(e);if(e.done)this.o=e.value,this.g=b;else return this.j=a,this.m(e.value,b)};y.prototype.yieldAll=y.prototype.P;y.prototype.u=function(a){this.g=a};
+y.prototype.jumpTo=y.prototype.u;y.prototype.I=function(){this.g=0};y.prototype.jumpToEnd=y.prototype.I;y.prototype.N=function(a,b){this.l=a;b!=void 0&&(this.i=b)};y.prototype.setCatchFinallyBlocks=y.prototype.N;y.prototype.O=function(a){this.l=0;this.i=a||0};y.prototype.setFinallyBlock=y.prototype.O;y.prototype.M=function(a,b){this.g=a;this.l=b||0};y.prototype.leaveTryBlock=y.prototype.M;y.prototype.D=function(a){this.l=a||0;a=this.h.J;this.h=null;return a};y.prototype.enterCatchBlock=y.prototype.D;
+y.prototype.F=function(a,b,e){e?this.A[e]=this.h:this.A=[this.h];this.l=a||0;this.i=b||0};y.prototype.enterFinallyBlock=y.prototype.F;y.prototype.L=function(a,b){b=this.A.splice(b||0)[0];(b=this.h=this.h||b)?b.K?this.g=this.l||this.i:b.u!=void 0&&this.i<b.u?(this.g=b.u,this.h=null):this.g=this.i:this.g=a};y.prototype.leaveFinallyBlock=y.prototype.L;y.prototype.G=function(a){return new E(a)};y.prototype.forIn=y.prototype.G;
+function E(a){this.i=a;this.g=[];for(var b in a)this.g.push(b);this.g.reverse()}E.prototype.h=function(){for(;this.g.length>0;){var a=this.g.pop();if(a in this.i)return a}return null};E.prototype.getNext=E.prototype.h;function F(a){this.g=new y;this.h=a}function G(a,b){z(a.g);var e=a.g.j;if(e)return H(a,"return"in e?e["return"]:function(g){return{value:g,done:!0}},b,a.g.return);a.g.return(b);return I(a)}
+function H(a,b,e,g){try{var l=b.call(a.g.j,e);x(l);if(!l.done)return a.g.v=!1,l;var k=l.value}catch(c){return a.g.j=null,A(a.g,c),I(a)}a.g.j=null;g.call(a.g,k);return I(a)}function I(a){for(;a.g.g;)try{var b=a.h(a.g);if(b)return a.g.v=!1,{value:b.value,done:!1}}catch(e){a.g.o=void 0,A(a.g,e)}a.g.v=!1;if(a.g.h){b=a.g.h;a.g.h=null;if(b.K)throw b.J;return{value:b.return,done:!0}}return{value:void 0,done:!0}}
+function J(a){this.next=function(b){z(a.g);a.g.j?b=H(a,a.g.j.next,b,a.g.B):(a.g.B(b),b=I(a));return b};this.throw=function(b){z(a.g);a.g.j?b=H(a,a.g.j["throw"],b,a.g.B):(A(a.g,b),b=I(a));return b};this.return=function(b){return G(a,b)};this[Symbol.iterator]=function(){return this}}function K(a){function b(g){return a.next(g)}function e(g){return a.throw(g)}return new Promise(function(g,l){function k(c){c.done?g(c.value):Promise.resolve(c.value).then(b,e).then(k,l)}k(a.next())})}
+w("Symbol",function(a){function b(k){if(this instanceof b)throw new TypeError("Symbol is not a constructor");return new e(g+(k||"")+"_"+l++,k)}function e(k,c){this.g=k;t(this,"description",{configurable:!0,writable:!0,value:c})}if(a)return a;e.prototype.toString=function(){return this.g};var g="jscomp_symbol_"+(Math.random()*1E9>>>0)+"_",l=0;return b});
+w("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");t(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return L(f(this))}});return a});function L(a){a={next:a};a[Symbol.iterator]=function(){return this};return a}
+w("Promise",function(a){function b(c){this.h=0;this.i=void 0;this.g=[];this.o=!1;var d=this.j();try{c(d.resolve,d.reject)}catch(h){d.reject(h)}}function e(){this.g=null}function g(c){return c instanceof b?c:new b(function(d){d(c)})}if(a)return a;e.prototype.h=function(c){if(this.g==null){this.g=[];var d=this;this.i(function(){d.l()})}this.g.push(c)};var l=v.setTimeout;e.prototype.i=function(c){l(c,0)};e.prototype.l=function(){for(;this.g&&this.g.length;){var c=this.g;this.g=[];for(var d=0;d<c.length;++d){var h=
+c[d];c[d]=null;try{h()}catch(m){this.j(m)}}}this.g=null};e.prototype.j=function(c){this.i(function(){throw c;})};b.prototype.j=function(){function c(m){return function(n){h||(h=!0,m.call(d,n))}}var d=this,h=!1;return{resolve:c(this.F),reject:c(this.l)}};b.prototype.F=function(c){if(c===this)this.l(new TypeError("A Promise cannot resolve to itself"));else if(c instanceof b)this.H(c);else{a:switch(typeof c){case "object":var d=c!=null;break a;case "function":d=!0;break a;default:d=!1}d?this.D(c):this.m(c)}};
+b.prototype.D=function(c){var d=void 0;try{d=c.then}catch(h){this.l(h);return}typeof d=="function"?this.I(d,c):this.m(c)};b.prototype.l=function(c){this.v(2,c)};b.prototype.m=function(c){this.v(1,c)};b.prototype.v=function(c,d){if(this.h!=0)throw Error("Cannot settle("+c+", "+d+"): Promise already settled in state"+this.h);this.h=c;this.i=d;this.h===2&&this.G();this.B()};b.prototype.G=function(){var c=this;l(function(){if(c.A()){var d=v.console;typeof d!=="undefined"&&d.error(c.i)}},1)};b.prototype.A=
+function(){if(this.o)return!1;var c=v.CustomEvent,d=v.Event,h=v.dispatchEvent;if(typeof h==="undefined")return!0;typeof c==="function"?c=new c("unhandledrejection",{cancelable:!0}):typeof d==="function"?c=new d("unhandledrejection",{cancelable:!0}):(c=v.document.createEvent("CustomEvent"),c.initCustomEvent("unhandledrejection",!1,!0,c));c.promise=this;c.reason=this.i;return h(c)};b.prototype.B=function(){if(this.g!=null){for(var c=0;c<this.g.length;++c)k.h(this.g[c]);this.g=null}};var k=new e;b.prototype.H=
+function(c){var d=this.j();c.C(d.resolve,d.reject)};b.prototype.I=function(c,d){var h=this.j();try{c.call(d,h.resolve,h.reject)}catch(m){h.reject(m)}};b.prototype.then=function(c,d){function h(p,r){return typeof p=="function"?function(B){try{m(p(B))}catch(C){n(C)}}:r}var m,n,D=new b(function(p,r){m=p;n=r});this.C(h(c,m),h(d,n));return D};b.prototype.catch=function(c){return this.then(void 0,c)};b.prototype.C=function(c,d){function h(){switch(m.h){case 1:c(m.i);break;case 2:d(m.i);break;default:throw Error("Unexpected state: "+
+m.h);}}var m=this;this.g==null?k.h(h):this.g.push(h);this.o=!0};b.resolve=g;b.reject=function(c){return new b(function(d,h){h(c)})};b.race=function(c){return new b(function(d,h){for(var m=q(c),n=m.next();!n.done;n=m.next())g(n.value).C(d,h)})};b.all=function(c){var d=q(c),h=d.next();return h.done?g([]):new b(function(m,n){function D(B){return function(C){p[B]=C;r--;r==0&&m(p)}}var p=[],r=0;do p.push(void 0),r++,g(h.value).C(D(p.length-1),n),h=d.next();while(!h.done)})};return b});
+function M(a,b){a instanceof String&&(a+="");var e=0,g=!1,l={next:function(){if(!g&&e<a.length){var k=e++;return{value:b(k,a[k]),done:!1}}g=!0;return{done:!0,value:void 0}}};l[Symbol.iterator]=function(){return l};return l}w("Array.prototype.keys",function(a){return a?a:function(){return M(this,function(b){return b})}});(function(){var a,b,e,g,l;return K(new J(new F(function(k){switch(k.g){case 1:if(!("serviceWorker"in navigator)){k.u(0);break}return k.m(navigator.serviceWorker.getRegistration("../.."),3);case 3:return(a=k.o)?k.m(a.unregister(),4):k.return();case 4:return window.caches==null?k.return():k.m(window.caches.keys(),5);case 5:b=k.o,e=q(b),g=e.next();case 6:if(g.done){k.u(0);break}l=g.value;return k.m(window.caches.delete(l),7);case 7:g=e.next(),k.u(6)}})))})();}).call(this);
+</script><script src="https://sdks.gamesnacks.com/developer/v2/index.js" data-target-origin="https://gamesnacks.com" data-user-activity-metrics data-run-slotcar-ads-in-game-center data-game-center-monetized data-rewarded-monetizable data-interstitial-monetizable data-level-complete-monetizable data-game-over-monetizable nonce="xhWlVlb3porY3Vqa3DMSNQ"></script><meta name="robots" content="noindex, nofollow"><meta charset="UTF-8">
+		<link rel="icon" type="image/svg+xml" href="/vite.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+		<title>Flip 'N Flap: Kitchen Race</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+		<style>
+			html {
+				font-size: 1px;
+			}
+
+			#loading-screen {
+				line-height: 1;
+				box-sizing: border-box;
+				position: absolute;
+				font-family: 'Paytone One', sans-serif;
+				inset: 0;
+				overflow: hidden;
+
+				pointer-events: all;
+				z-index: 1000000;
+			}
+
+			.splash {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				color: #3d7043;
+				font-size: 24px;
+
+				@media (min-width: 768px) {
+					font-size: 32px;
+				}
+			}
+
+			.logo {
+				width: 50%;
+				max-width: 500px;
+				box-sizing: border-box;
+
+				@media (min-height: 800px) {
+					width: 80%;
+					max-width: 1000px;
+				}
+			}
+
+			#loader-parent {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: 120px;
+
+				gap: 8px;
+			}
+
+			.loading-screen-loader,
+			.loading-screen-loader:before,
+			.loading-screen-loader:after {
+				border-radius: 50%;
+				width: 2.5em;
+				height: 2.5em;
+				animation-fill-mode: both;
+				animation: bblFadInOut 1.8s infinite ease-in-out;
+			}
+
+			.loading-screen-loader {
+				color: #3d7043;
+				font-size: 7px;
+				position: relative;
+				text-indent: -9999em;
+				transform: translateZ(0);
+				animation-delay: -0.16s;
+			}
+
+			.loading-screen-loader:before,
+			.loading-screen-loader:after {
+				content: '';
+				position: absolute;
+				top: 0;
+			}
+
+			.loading-screen-loader:before {
+				left: -3.5em;
+				animation-delay: -0.32s;
+			}
+
+			.loading-screen-loader:after {
+				left: 3.5em;
+			}
+
+			@keyframes bblFadInOut {
+				0%,
+				80%,
+				100% {
+					box-shadow: 0 2.5em 0 -1.3em;
+				}
+
+				40% {
+					box-shadow: 0 2.5em 0 0;
+				}
+			}
+
+			.loading-background {
+				position: absolute;
+				inset: 0;
+
+				display: grid;
+				grid-template-columns: repeat(30, 154rem);
+				transform: rotate(-3.5deg);
+
+				align-content: center;
+				justify-content: center;
+
+				animation: background-animation 10s linear infinite;
+			}
+
+			@keyframes background-animation {
+				from {
+					transform: rotate(-3.5deg) translate(0rem, 0rem);
+				}
+				to {
+					transform: rotate(-3.5deg) translate(154rem, 154rem);
+				}
+			}
+
+			.background-block {
+				width: 154rem;
+				height: 154rem;
+
+				background-color: #e0dde0;
+			}
+
+			.even {
+				background-color: #b7c8d4;
+			}
+
+			.spacing {
+				height: 100px;
+			}
+		</style>
+		<script type="module" crossorigin="" src="./assets/index-BesMIShw.js"></script>
+		<link rel="stylesheet" crossorigin="" href="./assets/index-Qln69FRe.css"><body><div id="app"></div>
+
+		<div id="loading-screen">
+			<div class="loading-background" id="loading-background">
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+				<div class="background-block even"></div>
+				<div class="background-block"></div>
+			</div>
+
+			<div class="splash">
+				<div class="logo">
+						<svg width="100%" viewBox="0 0 396 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1180_27492)">
+							<g opacity="0.14">
+							<path d="M273.08 101.17C194.63 113.77 137.02 112.21 114.83 111.86C112.45 111.82 110.18 111.18 108.11 109.09L99.88 99.5801L94 106.37C94 106.37 98.81 126.46 101.85 134.29C102.66 136.38 106.06 139.85 117.64 140.97C155.17 144.61 270.09 146.43 279.73 145.38C285.39 144.76 291.04 141.54 290.46 136.32C289.75 129.98 286.73 111.05 286.73 111.05C285.96 105.14 279.3 100.16 273.08 101.16V101.17Z" fill="#0A0A09"></path>
+							</g>
+							<path opacity="0.14" d="M330.71 99.8496C331.33 99.9096 331.96 99.9497 332.58 100.01C334.45 100.19 336.33 100.38 338.2 100.59C338.22 100.59 338.23 100.59 338.25 100.59C347.68 101.66 357.12 103.2 366.57 105.27C367.35 105.44 368.13 105.61 368.91 105.79C370.06 106.05 371.21 106.33 372.37 106.61C373.11 106.79 373.85 106.96 374.58 107.15C375.85 107.47 377.11 107.81 378.38 108.15C379 108.32 379.62 108.48 380.24 108.65C382.13 109.17 384.02 109.71 385.9 110.28C386.59 83.9296 387.27 57.5896 387.96 31.2597C380.88 29.0097 373.81 27.1197 366.74 25.5297C366.74 25.5297 366.74 25.5197 366.74 25.5097C366.25 25.3997 365.75 25.2997 365.26 25.1897C364.47 25.0197 363.69 24.8497 362.9 24.6797C361.78 24.4397 360.66 24.2196 359.54 23.9997C358.77 23.8496 358 23.6996 357.22 23.5496C356.06 23.3296 354.9 23.1297 353.74 22.9197C353.01 22.7896 352.28 22.6597 351.55 22.5397C350.28 22.3297 349.01 22.1297 347.75 21.9397C347.13 21.8497 346.52 21.7496 345.9 21.6596C345.78 21.6396 345.67 21.6197 345.55 21.6097C338.49 20.5897 331.44 19.8496 324.4 19.3296C324.4 19.3296 324.4 19.3296 324.4 19.3196C324.04 19.2896 323.67 19.2696 323.31 19.2497C322.54 19.1996 321.76 19.1497 320.99 19.0997C319.87 19.0297 318.75 18.9596 317.64 18.8996C316.86 18.8596 316.08 18.8197 315.29 18.7797C314.17 18.7297 313.05 18.6796 311.93 18.6396C311.16 18.6096 310.39 18.5796 309.62 18.5596C308.47 18.5196 307.32 18.4996 306.16 18.4696C305.43 18.4496 304.7 18.4397 303.97 18.4297C303.74 18.4297 303.5 18.4197 303.27 18.4197C296.23 18.3297 289.2 18.4197 282.16 18.6797C281.92 18.6797 281.68 18.6996 281.44 18.7096C280.7 18.7396 279.97 18.7696 279.23 18.7996C278.08 18.8496 276.93 18.8997 275.79 18.9497C275.02 18.9897 274.24 19.0296 273.47 19.0696C272.36 19.1296 271.24 19.1897 270.13 19.2597C269.35 19.3097 268.56 19.3496 267.78 19.3996C266.66 19.4696 265.55 19.5497 264.43 19.6197C263.66 19.6697 262.9 19.7297 262.13 19.7797C261.78 19.8097 261.43 19.8297 261.07 19.8497C254.04 20.3797 247.02 21.0196 239.99 21.7497C239.91 21.7497 239.83 21.7697 239.75 21.7697C236.6 22.0997 233.44 22.4397 230.29 22.7897C229.79 22.8497 229.28 22.8996 228.78 22.9596C225.72 23.3096 222.66 23.6697 219.6 24.0297C219.38 24.0597 219.16 24.0797 218.93 24.1097C211.89 24.9597 204.86 25.8396 197.82 26.7296C191.04 27.5896 184.27 28.4497 177.49 29.2697C170.05 30.1797 162.61 31.0497 155.17 31.8397C152.06 32.1697 148.95 32.4797 145.85 32.7797C145.56 32.8097 145.27 32.8397 144.98 32.8597C141.87 33.1497 138.75 33.4297 135.64 33.6797C127.26 34.3696 118.88 34.8996 110.5 35.2096C109.89 35.2296 109.28 35.2596 108.67 35.2796C104.92 35.3996 101.16 35.4796 97.4 35.5096C96.8 35.5096 96.21 35.5096 95.61 35.5096C86.74 35.5396 77.86 35.2796 68.98 34.6596C68.25 34.6096 67.53 34.5596 66.8 34.5096C65.52 34.4096 64.25 34.2996 62.97 34.1896C62.36 34.1396 61.76 34.0896 61.15 34.0296C49.83 32.9596 38.49 31.2396 27.14 28.7497C26.37 28.5796 25.6 28.4096 24.84 28.2396C23.68 27.9696 22.51 27.6896 21.35 27.4096C20.62 27.2296 19.89 27.0596 19.17 26.8796C17.89 26.5596 16.61 26.2197 15.33 25.8697C14.72 25.7097 14.11 25.5496 13.5 25.3796C11.61 24.8596 9.72002 24.3196 7.83002 23.7396C7.14002 50.0896 6.46002 76.4296 5.77002 102.76C12.85 105.01 19.92 106.9 26.99 108.49C26.99 108.49 26.99 108.5 26.99 108.51C27.49 108.62 27.98 108.72 28.47 108.83C29.25 109 30.04 109.17 30.82 109.34C31.94 109.58 33.07 109.8 34.19 110.03C34.96 110.18 35.73 110.33 36.51 110.48C37.67 110.7 38.82 110.9 39.98 111.11C40.71 111.24 41.44 111.37 42.17 111.49C43.44 111.7 44.71 111.9 45.97 112.09C46.59 112.18 47.2 112.29 47.82 112.37C47.94 112.39 48.05 112.41 48.17 112.42C55.23 113.44 62.28 114.18 69.32 114.7C69.32 114.7 69.32 114.7 69.32 114.71C69.68 114.74 70.05 114.76 70.41 114.78C71.18 114.83 71.96 114.88 72.73 114.93C73.85 115 74.96 115.07 76.08 115.13C76.87 115.17 77.65 115.21 78.44 115.25C79.56 115.3 80.67 115.35 81.79 115.39C82.56 115.42 83.33 115.45 84.1 115.47C85.26 115.51 86.42 115.53 87.58 115.56C88.3 115.58 89.03 115.59 89.75 115.6C89.99 115.6 90.22 115.61 90.46 115.61C97.5 115.7 104.53 115.61 111.57 115.35C111.81 115.35 112.05 115.34 112.3 115.33C113.03 115.3 113.76 115.27 114.49 115.24C115.65 115.19 116.8 115.14 117.96 115.08C118.73 115.04 119.49 115 120.26 114.96C121.38 114.9 122.5 114.84 123.62 114.77C124.4 114.72 125.18 114.68 125.95 114.63C127.07 114.56 128.19 114.48 129.32 114.41C130.08 114.36 130.84 114.3 131.6 114.25C131.95 114.22 132.31 114.2 132.66 114.17C139.69 113.64 146.71 113 153.74 112.28C153.82 112.28 153.9 112.26 153.99 112.26C157.14 111.93 160.3 111.59 163.45 111.24C163.96 111.18 164.46 111.13 164.97 111.07C168.03 110.72 171.08 110.37 174.13 110C174.36 109.97 174.58 109.95 174.81 109.92C181.84 109.07 188.86 108.19 195.88 107.3C202.68 106.44 209.48 105.58 216.28 104.75C223.7 103.84 231.11 102.97 238.53 102.19C241.65 101.86 244.78 101.54 247.9 101.24C248.18 101.21 248.46 101.18 248.75 101.16C251.87 100.86 254.99 100.59 258.12 100.34C266.48 99.6596 274.85 99.1296 283.22 98.8196C283.84 98.7997 284.45 98.7696 285.07 98.7496C288.82 98.6296 292.57 98.5496 296.33 98.5196C296.95 98.5196 297.56 98.5196 298.18 98.5196C307.03 98.4896 315.88 98.7496 324.75 99.3697C325.49 99.4197 326.22 99.4697 326.96 99.5296C328.22 99.6296 329.48 99.7396 330.74 99.8496H330.71Z" fill="#0A0A09"></path>
+							<path d="M392.59 108.03C261.73 63.7405 130.86 139.29 0 92.7605C1.21 64.0605 2.43 35.3505 3.64 6.63046C134.5 50.9205 265.37 -24.6295 396.23 21.9005C395.02 50.6005 393.8 79.3105 392.59 108.03Z" fill="white"></path>
+							<path d="M24.54 34.5709C17.27 32.7809 9.99998 30.6609 2.72998 28.1709C3.02998 20.9909 3.33998 13.8109 3.63998 6.63086C10.91 9.09086 18.18 11.1809 25.45 12.9409C25.15 20.1509 24.84 27.3609 24.54 34.5709Z" fill="#EFEBE6"></path>
+							<path d="M45.4404 60.6913C38.1704 59.4913 30.9004 58.0113 23.6304 56.1913C23.9304 48.9813 24.2404 41.7813 24.5404 34.5713C31.8104 36.3613 39.0804 37.8213 46.3504 38.9913C46.0504 46.2213 45.7404 53.4613 45.4404 60.6913Z" fill="#EFEBE6"></path>
+							<path d="M22.7202 77.8112C15.4502 75.9612 8.18016 73.7912 0.910156 71.2312C1.21016 64.0512 1.52016 56.8812 1.82016 49.7012C9.09016 52.2212 16.3602 54.3712 23.6302 56.1912C23.3302 63.4012 23.0202 70.6012 22.7202 77.8112Z" fill="#EFEBE6"></path>
+							<path d="M43.6201 104.081C36.3501 102.841 29.0801 101.301 21.8101 99.4305C22.1101 92.2305 22.4201 85.0205 22.7201 77.8105C29.9901 79.6605 37.2601 81.1705 44.5301 82.3905C44.2301 89.6205 43.9201 96.8506 43.6201 104.081Z" fill="#EFEBE6"></path>
+							<path d="M68.1601 41.681C60.8901 41.041 53.6201 40.161 46.3501 38.991C46.6501 31.761 46.9601 24.521 47.2601 17.291C54.5301 18.441 61.8001 19.301 69.0701 19.911C68.7701 27.171 68.4601 34.421 68.1601 41.681Z" fill="#EFEBE6"></path>
+							<path d="M89.06 64.7107C81.79 64.5107 74.52 64.1007 67.25 63.4507C67.55 56.1907 67.86 48.9407 68.16 41.6807C75.43 42.3207 82.7 42.7007 89.97 42.8907C89.67 50.1707 89.36 57.4407 89.06 64.7107Z" fill="#EFEBE6"></path>
+							<path d="M66.3403 85.2114C59.0703 84.5314 51.8003 83.6114 44.5303 82.3914C44.8303 75.1614 45.1403 67.9314 45.4403 60.6914C52.7103 61.8914 59.9803 62.7914 67.2503 63.4514C66.9503 70.7114 66.6403 77.9614 66.3403 85.2214V85.2114Z" fill="#EFEBE6"></path>
+							<path d="M87.2402 108.351C79.9702 108.121 72.7002 107.671 65.4302 106.971C65.7302 99.7209 66.0402 92.4609 66.3402 85.2109C73.6102 85.8909 80.8802 86.3109 88.1502 86.5309C87.8502 93.8009 87.5402 101.081 87.2402 108.351Z" fill="#EFEBE6"></path>
+							<path d="M111.78 42.8505C104.51 43.0405 97.2402 43.0605 89.9702 42.8805C90.2702 35.6005 90.5802 28.3305 90.8802 21.0505C98.1502 21.2205 105.42 21.1805 112.69 20.9805C112.39 28.2705 112.08 35.5605 111.78 42.8505Z" fill="#EFEBE6"></path>
+							<path d="M132.68 63.7506C125.41 64.2106 118.14 64.5506 110.87 64.7306C111.17 57.4406 111.48 50.1506 111.78 42.8606C119.05 42.6706 126.32 42.3206 133.59 41.8506C133.29 49.1506 132.98 56.4606 132.68 63.7606V63.7506Z" fill="#EFEBE6"></path>
+							<path d="M109.96 86.5912C102.69 86.7512 95.4204 86.7412 88.1504 86.5212C88.4504 79.2512 88.7604 71.9712 89.0604 64.7012C96.3304 64.9012 103.6 64.8912 110.87 64.7212C110.57 72.0112 110.26 79.3012 109.96 86.5912Z" fill="#EFEBE6"></path>
+							<path d="M130.86 107.561C123.59 108.001 116.32 108.321 109.05 108.461C109.35 101.171 109.66 93.8814 109.96 86.5914C117.23 86.4314 124.5 86.1014 131.77 85.6514C131.47 92.9514 131.16 100.251 130.86 107.551V107.561Z" fill="#EFEBE6"></path>
+							<path d="M155.4 40.0914C148.13 40.7714 140.86 41.3714 133.59 41.8414C133.89 34.5414 134.2 27.2314 134.5 19.9314C141.77 19.4514 149.04 18.8414 156.31 18.1514C156.01 25.4614 155.7 32.7714 155.4 40.0814V40.0914Z" fill="#EFEBE6"></path>
+							<path d="M176.3 59.8006C169.03 60.6006 161.76 61.3506 154.49 62.0206C154.79 54.7106 155.1 47.4006 155.4 40.0906C162.67 39.4106 169.94 38.6506 177.21 37.8506C176.91 45.1706 176.6 52.4806 176.3 59.8006Z" fill="#EFEBE6"></path>
+							<path d="M153.58 83.9613C146.31 84.6213 139.04 85.2013 131.77 85.6613C132.07 78.3613 132.38 71.0613 132.68 63.7513C139.95 63.2913 147.22 62.7013 154.49 62.0312C154.19 69.3412 153.88 76.6513 153.58 83.9613Z" fill="#EFEBE6"></path>
+							<path d="M174.48 103.701C167.21 104.491 159.94 105.231 152.67 105.891C152.97 98.581 153.28 91.271 153.58 83.961C160.85 83.301 168.12 82.551 175.39 81.751C175.09 89.071 174.78 96.381 174.48 103.701Z" fill="#EFEBE6"></path>
+							<path d="M199.03 35.3807C191.76 36.2207 184.49 37.0607 177.22 37.8607C177.52 30.5407 177.83 23.2307 178.13 15.9107C185.4 15.1107 192.67 14.2707 199.94 13.4307C199.64 20.7507 199.33 28.0707 199.03 35.3807Z" fill="#EFEBE6"></path>
+							<path d="M219.93 54.8611C212.66 55.6611 205.39 56.4911 198.12 57.3311C198.42 50.0111 198.73 42.6911 199.03 35.3811C206.3 34.5411 213.57 33.7111 220.84 32.9111C220.54 40.2311 220.23 47.5411 219.93 54.8611Z" fill="#EFEBE6"></path>
+							<path d="M197.2 79.2811C189.93 80.1211 182.66 80.9511 175.39 81.7511C175.69 74.4311 176 67.1211 176.3 59.8011C183.57 59.0011 190.84 58.1711 198.11 57.3311C197.81 64.6511 197.5 71.9711 197.2 79.2811Z" fill="#EFEBE6"></path>
+							<path d="M218.1 98.7606C210.83 99.5606 203.56 100.401 196.29 101.241C196.59 93.9205 196.9 86.6005 197.2 79.2906C204.47 78.4506 211.74 77.6105 219.01 76.8105C218.71 84.1305 218.4 91.4406 218.1 98.7606Z" fill="#EFEBE6"></path>
+							<path d="M242.65 30.7112C235.38 31.3712 228.11 32.1213 220.84 32.9212C221.14 25.6012 221.45 18.2913 221.75 10.9713C229.02 10.1813 236.29 9.44125 243.56 8.78125C243.26 16.0912 242.95 23.4012 242.65 30.7112Z" fill="#EFEBE6"></path>
+							<path d="M263.55 50.911C256.28 51.371 249.01 51.961 241.74 52.631C242.04 45.321 242.35 38.011 242.65 30.701C249.92 30.041 257.19 29.461 264.46 29.001C264.16 36.301 263.85 43.601 263.55 50.911Z" fill="#EFEBE6"></path>
+							<path d="M240.83 74.5706C233.56 75.2506 226.29 76.0106 219.02 76.8106C219.32 69.4906 219.63 62.1806 219.93 54.8606C227.2 54.0606 234.47 53.3106 241.74 52.6406C241.44 59.9506 241.13 67.2606 240.83 74.5706Z" fill="#EFEBE6"></path>
+							<path d="M261.73 94.7311C254.46 95.2111 247.19 95.8211 239.92 96.5111C240.22 89.2011 240.53 81.8911 240.83 74.5811C248.1 73.9011 255.37 73.3011 262.64 72.8311C262.34 80.1311 262.03 87.4411 261.73 94.7411V94.7311Z" fill="#EFEBE6"></path>
+							<path d="M286.27 28.0709C279 28.2309 271.73 28.5609 264.46 29.0109C264.76 21.7109 265.07 14.4109 265.37 7.11094C272.64 6.67094 279.91 6.35094 287.18 6.21094C286.88 13.5009 286.57 20.7909 286.27 28.0809V28.0709Z" fill="#EFEBE6"></path>
+							<path d="M307.17 49.9512C299.9 49.7512 292.63 49.7612 285.36 49.9312C285.66 42.6412 285.97 35.3512 286.27 28.0612C293.54 27.9012 300.81 27.9112 308.08 28.1312C307.78 35.4012 307.47 42.6812 307.17 49.9512Z" fill="#EFEBE6"></path>
+							<path d="M284.45 71.8107C277.18 72.0007 269.91 72.3507 262.64 72.8207C262.94 65.5207 263.25 58.2207 263.55 50.9107C270.82 50.4507 278.09 50.1107 285.36 49.9307C285.06 57.2207 284.75 64.5107 284.45 71.8007V71.8107Z" fill="#EFEBE6"></path>
+							<path d="M305.35 93.6106C298.08 93.4406 290.81 93.4806 283.54 93.6806C283.84 86.3906 284.15 79.1006 284.45 71.8106C291.72 71.6206 298.99 71.6006 306.26 71.7806C305.96 79.0606 305.65 86.3306 305.35 93.6106Z" fill="#EFEBE6"></path>
+							<path d="M329.89 29.4505C322.62 28.7705 315.35 28.3505 308.08 28.1305C308.38 20.8605 308.69 13.5805 308.99 6.31055C316.26 6.54055 323.53 6.99055 330.8 7.69055C330.5 14.9405 330.19 22.2005 329.89 29.4505Z" fill="#EFEBE6"></path>
+							<path d="M350.79 53.9714C343.52 52.7714 336.25 51.8714 328.98 51.2114C329.28 43.9514 329.59 36.7014 329.89 29.4414C337.16 30.1214 344.43 31.0414 351.7 32.2614C351.4 39.4914 351.09 46.7214 350.79 53.9614V53.9714Z" fill="#EFEBE6"></path>
+							<path d="M328.07 72.9812C320.8 72.3412 313.53 71.9612 306.26 71.7712C306.56 64.4912 306.87 57.2212 307.17 49.9512C314.44 50.1512 321.71 50.5612 328.98 51.2112C328.68 58.4712 328.37 65.7212 328.07 72.9812Z" fill="#EFEBE6"></path>
+							<path d="M348.97 97.3812C341.7 96.2312 334.43 95.3712 327.16 94.7612C327.46 87.5012 327.77 80.2512 328.07 72.9912C335.34 73.6312 342.61 74.5112 349.88 75.6812C349.58 82.9112 349.27 90.1512 348.97 97.3812Z" fill="#EFEBE6"></path>
+							<path d="M373.51 36.8511C366.24 35.0011 358.97 33.4911 351.7 32.2711C352 25.0411 352.31 17.8111 352.61 10.5811C359.88 11.8211 367.15 13.3611 374.42 15.2311C374.12 22.4311 373.81 29.6411 373.51 36.8511Z" fill="#EFEBE6"></path>
+							<path d="M394.41 64.9606C387.14 62.4406 379.87 60.2906 372.6 58.4706C372.9 51.2606 373.21 44.0606 373.51 36.8506C380.78 38.7006 388.05 40.8706 395.32 43.4306C395.02 50.6106 394.71 57.7806 394.41 64.9606Z" fill="#EFEBE6"></path>
+							<path d="M371.69 80.0907C364.42 78.3007 357.15 76.8407 349.88 75.6707C350.18 68.4407 350.49 61.2007 350.79 53.9707C358.06 55.1707 365.33 56.6507 372.6 58.4707C372.3 65.6807 371.99 72.8807 371.69 80.0907Z" fill="#EFEBE6"></path>
+							<path d="M392.59 108.031C385.32 105.571 378.05 103.481 370.78 101.721C371.08 94.5108 371.39 87.3008 371.69 80.0908C378.96 81.8808 386.23 84.0008 393.5 86.4908C393.2 93.6708 392.89 100.851 392.59 108.031Z" fill="#EFEBE6"></path>
+							<path d="M276.48 83.71C192.64 103.8 130.3 105.67 106.31 106.7C103.73 106.81 101.24 106.19 98.8599 103.83L89.2999 93.03L83.4399 101.5C83.4399 101.5 90.0699 125.12 93.9099 134.25C94.9299 136.68 98.8499 140.6 111.44 141.19C152.24 143.09 276.49 137.81 286.83 135.94C292.9 134.84 298.77 130.63 297.77 124.45C296.55 116.94 291.94 94.59 291.94 94.59C290.68 87.6 283.14 82.1 276.49 83.69L276.48 83.71Z" fill="#7B7C6D"></path>
+							<g opacity="0.1">
+							<path d="M103.49 112.27C103.27 118.14 102.34 123.9 100.74 129.55C100.5 130.35 99.6502 130.8 98.8502 130.56C98.1802 130.36 97.7602 129.74 97.7702 129.08C97.8402 126.14 98.2002 123.24 98.6402 120.36C99.1102 117.48 99.6602 114.62 100.51 111.8C100.75 111 101.6 110.55 102.4 110.79C103.06 110.99 103.49 111.61 103.47 112.27H103.49Z" fill="#F2F2ED"></path>
+							</g>
+							<g opacity="0.1">
+							<path d="M172.82 100.1L167.25 140.89L172.03 140.73L175.33 99.6904L172.82 100.1Z" fill="#F2F2ED"></path>
+							</g>
+							<g opacity="0.1">
+							<path d="M146.24 103.62L131.94 141.56C140.51 141.52 148.95 141.39 157.25 141.18L161.78 101.67C155.97 102.46 151.02 103.08 146.24 103.63V103.62Z" fill="#F2F2ED"></path>
+							</g>
+							<g opacity="0.1">
+							<path d="M247.05 90.2303L242.88 138.71C251.44 138.38 262.82 137.75 271.1 137.25L265.25 86.3203C259.45 87.4403 251.77 89.3403 247.04 90.2303H247.05Z" fill="#F2F2ED"></path>
+							</g>
+							<path d="M86.8299 91.71L28.1399 87.7C25.6099 87.5 23.1699 90.17 22.9599 93.6C22.7799 96.52 22.7399 102.35 22.5599 105.27C22.3499 108.68 24.1099 111.49 26.6499 111.49L85.2899 108.93C87.7299 108.93 89.9099 106.31 90.1999 103.02L90.6499 97.91C90.9399 94.64 89.2499 91.9 86.8299 91.7V91.71Z" fill="#512F10"></path>
+							<path d="M70.1141 97.9161C70.6916 96.4816 70.0343 94.8656 68.6459 94.3066C67.2575 93.7476 65.6638 94.4574 65.0863 95.8919C64.5087 97.3264 65.166 98.9424 66.5544 99.5014C67.9428 100.06 69.5365 99.3506 70.1141 97.9161Z" fill="white"></path>
+							<path d="M46.3444 98.0868C46.9467 96.5908 46.2596 94.9049 44.8097 94.3211C43.3599 93.7374 41.6963 94.477 41.094 95.9729C40.4917 97.4689 41.1788 99.1548 42.6286 99.7386C44.0785 100.322 45.7421 99.5828 46.3444 98.0868Z" fill="white"></path>
+							<path d="M121.26 131.251L120.77 114.521L126.41 114.351L126.61 121.011L128.34 120.961L131.4 114.201L137.48 114.021L133.3 122.441L138.58 130.731L132.16 130.921L128.37 124.581L126.72 124.631L126.91 131.071L121.27 131.241L121.26 131.251Z" fill="white"></path>
+							<path d="M141.09 117.07C140.34 117.1 139.7 116.89 139.14 116.43C138.59 115.97 138.3 115.4 138.27 114.7C138.25 114.21 138.36 113.78 138.61 113.41C138.85 113.04 139.18 112.74 139.6 112.51C140.01 112.28 140.45 112.16 140.9 112.14C141.4 112.12 141.86 112.22 142.29 112.43C142.71 112.64 143.06 112.93 143.32 113.29C143.59 113.65 143.73 114.05 143.75 114.49C143.77 114.98 143.65 115.41 143.4 115.79C143.15 116.17 142.82 116.48 142.41 116.71C142.01 116.94 141.57 117.06 141.1 117.08L141.09 117.07ZM143.63 130.69C142.54 130.73 141.66 130.57 140.97 130.21C140.28 129.85 139.77 129.34 139.44 128.69C139.11 128.04 138.92 127.3 138.89 126.47L138.57 118.5L143.7 118.3L143.99 125.57C144 125.94 144.13 126.23 144.35 126.42C144.58 126.61 144.84 126.71 145.15 126.69C145.47 126.68 145.8 126.57 146.13 126.36L146.53 129.73C146.18 130.02 145.73 130.25 145.17 130.42C144.61 130.59 144.09 130.68 143.62 130.7L143.63 130.69Z" fill="white"></path>
+							<path d="M152.74 130.3C151.59 130.35 150.65 130.2 149.91 129.84C149.17 129.48 148.62 128.98 148.27 128.33C147.92 127.68 147.72 126.94 147.68 126.12L147.46 121.16L145.9 121.23L145.76 118.22L147.68 118.13L149.76 114.19L152.26 114.08L152.43 117.92L155.25 117.79L155.39 120.8L152.57 120.93L152.76 125.18C152.78 125.55 152.91 125.84 153.16 126.03C153.41 126.22 153.73 126.31 154.12 126.29C154.51 126.27 154.89 126.16 155.27 125.95L155.79 129.31C155.41 129.6 154.93 129.84 154.34 130.01C153.75 130.18 153.21 130.28 152.72 130.3H152.74Z" fill="white"></path>
+							<path d="M163.32 129.78C161.96 129.85 160.77 129.64 159.76 129.16C158.75 128.68 157.95 127.98 157.37 127.08C156.79 126.18 156.47 125.12 156.41 123.9C156.35 122.7 156.57 121.61 157.07 120.63C157.57 119.65 158.31 118.85 159.28 118.25C160.25 117.65 161.39 117.32 162.7 117.25C164.27 117.17 165.53 117.43 166.47 118.03L166.1 121.36C165.69 121.2 165.3 121.1 164.94 121.04C164.58 120.99 164.24 120.97 163.91 120.98C163.12 121.02 162.5 121.27 162.06 121.74C161.62 122.21 161.42 122.82 161.46 123.59C161.5 124.33 161.75 124.93 162.23 125.37C162.71 125.81 163.32 126.01 164.06 125.97C164.71 125.94 165.46 125.76 166.32 125.44L166.95 128.82C166.43 129.11 165.88 129.33 165.32 129.49C164.75 129.65 164.09 129.75 163.33 129.79L163.32 129.78Z" fill="white"></path>
+							<path d="M168.82 129.3L167.91 113.3L172.99 112.26L173.39 119.35C173.68 118.49 174.18 117.8 174.88 117.29C175.58 116.78 176.44 116.5 177.46 116.44C179.05 116.35 180.31 116.83 181.24 117.87C182.18 118.91 182.7 120.43 182.81 122.42L183.15 128.49L178.03 128.78L177.67 122.44C177.59 121 176.96 120.31 175.8 120.38C175.1 120.42 174.55 120.71 174.14 121.24C173.73 121.77 173.55 122.47 173.6 123.33L173.92 129.01L168.8 129.3H168.82Z" fill="white"></path>
+							<path d="M192.8 124.68C193.27 124.65 193.76 124.57 194.28 124.44C194.8 124.31 195.33 124.1 195.86 123.81L196.64 126.9C196.06 127.25 195.42 127.52 194.73 127.73C194.04 127.93 193.24 128.06 192.33 128.12C190.7 128.22 189.31 128.04 188.17 127.57C187.03 127.11 186.14 126.42 185.52 125.52C184.9 124.62 184.54 123.55 184.47 122.32C184.39 121.06 184.63 119.94 185.17 118.96C185.72 117.98 186.49 117.21 187.47 116.62C188.45 116.03 189.57 115.71 190.8 115.63C192.63 115.52 194.06 116 195.11 117.08C196.15 118.16 196.74 119.75 196.87 121.86L189.69 123.23C190.29 124.28 191.33 124.76 192.8 124.67V124.68ZM189.16 121.03L192.92 119.99C192.82 119.48 192.62 119.1 192.31 118.87C192 118.64 191.63 118.53 191.19 118.56C190.54 118.6 190.04 118.85 189.69 119.32C189.34 119.79 189.16 120.36 189.15 121.02L189.16 121.03Z" fill="white"></path>
+							<path d="M198.91 127.51L198.1 115.35L203.15 115.01L203.33 117.66C203.64 116.73 204.15 116 204.85 115.46C205.55 114.92 206.42 114.62 207.43 114.55C209.02 114.44 210.28 114.91 211.23 115.94C212.18 116.98 212.72 118.49 212.85 120.48L213.26 126.55L208.14 126.89L207.72 120.56C207.62 119.12 206.99 118.44 205.83 118.52C205.13 118.57 204.59 118.86 204.18 119.4C203.78 119.94 203.6 120.64 203.66 121.49L204.04 127.17L198.92 127.51H198.91Z" fill="white"></path>
+							<path d="M232.86 125.53C231.7 125.61 230.72 125.51 229.94 125.22C229.15 124.93 228.51 124.49 228.02 123.91C227.52 123.33 227.13 122.63 226.84 121.83C226.55 121.02 226.33 120.14 226.18 119.2L225.04 119.28L225.51 125.68L220.2 126.07L218.98 109.38L225.84 108.88C228.49 108.69 230.44 109.01 231.68 109.86C232.92 110.7 233.6 111.92 233.71 113.5C233.78 114.46 233.58 115.33 233.12 116.12C232.66 116.91 231.87 117.6 230.76 118.18C230.85 118.53 230.93 118.82 230.99 119.04C231.06 119.26 231.15 119.51 231.26 119.78C231.51 120.35 231.81 120.73 232.14 120.94C232.47 121.15 232.91 121.23 233.46 121.18C233.82 121.15 234.17 121.08 234.52 120.96L235.1 124.92C234.79 125.07 234.45 125.21 234.09 125.32C233.73 125.44 233.32 125.51 232.85 125.55L232.86 125.53ZM224.8 115.95L225.72 115.88C226.92 115.79 227.75 115.6 228.23 115.29C228.7 114.99 228.92 114.51 228.87 113.87C228.83 113.32 228.6 112.94 228.18 112.71C227.76 112.49 227.11 112.41 226.24 112.47L224.57 112.59L224.82 115.94L224.8 115.95Z" fill="white"></path>
+							<path d="M241.82 124.64C240.7 124.73 239.67 124.54 238.73 124.07C237.78 123.6 237.01 122.91 236.41 121.99C235.81 121.08 235.46 120.01 235.37 118.78C235.27 117.55 235.45 116.46 235.91 115.49C236.36 114.53 237.02 113.75 237.88 113.15C238.74 112.55 239.73 112.21 240.85 112.12C241.64 112.06 242.43 112.22 243.2 112.59C243.98 112.97 244.61 113.64 245.09 114.61L244.88 111.97L249.92 111.57L250.87 123.72L245.78 124.12L245.6 121.87C245.27 122.69 244.8 123.34 244.19 123.81C243.58 124.28 242.79 124.55 241.81 124.63L241.82 124.64ZM243.09 120.69C243.75 120.64 244.3 120.36 244.73 119.84C245.16 119.33 245.35 118.72 245.3 118.03C245.25 117.34 244.97 116.78 244.46 116.38C243.96 115.97 243.37 115.8 242.71 115.85C242.02 115.9 241.45 116.18 241.02 116.69C240.59 117.2 240.4 117.79 240.45 118.47C240.5 119.15 240.78 119.7 241.29 120.14C241.79 120.57 242.4 120.76 243.09 120.71V120.69Z" fill="white"></path>
+							<path d="M259.3 123.22C257.94 123.33 256.75 123.17 255.72 122.72C254.69 122.27 253.87 121.6 253.26 120.72C252.65 119.84 252.29 118.79 252.19 117.57C252.09 116.37 252.27 115.28 252.74 114.28C253.21 113.28 253.92 112.47 254.86 111.83C255.8 111.19 256.94 110.83 258.24 110.72C259.81 110.59 261.07 110.81 262.03 111.38L261.77 114.72C261.35 114.58 260.96 114.48 260.6 114.44C260.24 114.4 259.9 114.39 259.57 114.42C258.78 114.49 258.17 114.76 257.75 115.24C257.33 115.72 257.15 116.34 257.21 117.1C257.27 117.84 257.55 118.43 258.04 118.85C258.53 119.27 259.15 119.45 259.89 119.39C260.54 119.34 261.28 119.14 262.13 118.79L262.88 122.14C262.37 122.44 261.83 122.68 261.27 122.86C260.71 123.04 260.05 123.16 259.29 123.22H259.3Z" fill="white"></path>
+							<path d="M271.88 118.7C272.35 118.66 272.84 118.57 273.36 118.42C273.88 118.28 274.4 118.05 274.92 117.74L275.78 120.81C275.21 121.17 274.58 121.46 273.89 121.69C273.2 121.91 272.41 122.07 271.5 122.15C269.87 122.3 268.48 122.15 267.32 121.72C266.17 121.29 265.26 120.63 264.61 119.74C263.96 118.85 263.58 117.8 263.47 116.57C263.36 115.31 263.56 114.18 264.08 113.19C264.6 112.2 265.35 111.4 266.32 110.79C267.29 110.18 268.39 109.82 269.62 109.71C271.45 109.54 272.89 109.99 273.96 111.04C275.03 112.09 275.66 113.67 275.85 115.77L268.71 117.34C269.34 118.38 270.39 118.82 271.86 118.69L271.88 118.7ZM268.15 115.16L271.88 114.02C271.77 113.51 271.56 113.14 271.24 112.92C270.93 112.7 270.55 112.6 270.12 112.64C269.47 112.7 268.98 112.97 268.64 113.44C268.3 113.92 268.14 114.49 268.15 115.16Z" fill="white"></path>
+							<g opacity="0.14">
+							<path d="M194.4 18.2304C195.32 18.2304 196.31 18.3404 197.39 18.5704C212.22 21.6704 225.77 55.0604 216.01 79.9804C210.43 94.2204 197.88 102.58 183.98 102.45C152.5 100.09 144.72 67.3904 160.41 53.4904C181.03 35.8304 182.79 18.2304 194.4 18.2304ZM193.52 14.9004C184.87 14.9004 181.07 21.3504 176.67 28.8204C172.9 35.2204 168.2 43.1904 158.81 51.2404C149.51 59.2004 145.32 71.2204 147.59 83.3804C149.96 96.0704 158.63 106.21 170.79 110.49C174.78 111.9 178.91 112.61 183.08 112.61C191.79 112.61 200.5 109.43 207.6 103.65C214.65 97.9204 219.83 89.8504 222.19 80.9404C227.63 60.4304 222.16 41.1104 215.22 29.8604C210.29 21.8604 203.98 16.7104 197.46 15.3404C196.06 15.0504 194.77 14.9104 193.52 14.9104V14.9004Z" fill="#0A0A09"></path>
+							</g>
+							<path d="M197.37 5.76026C213.3 9.09026 227.23 42.1103 219.39 71.6503C213.63 93.3503 191.63 107.35 170.67 99.9603C147.21 91.6903 138.04 59.0603 157.05 43.0103C177.43 25.8103 181.44 2.43026 197.37 5.76026Z" fill="#B53030"></path>
+							<path d="M194.37 5.58023C195.35 5.58023 196.42 5.70023 197.58 5.94023C213.51 9.27023 228.07 45.1402 217.58 71.9102C211.59 87.2102 198.11 96.1902 183.17 96.0502C149.35 93.5202 141 58.3802 157.85 43.4602C180 24.4902 181.89 5.58023 194.36 5.58023M193.42 2.00023C184.12 2.00023 180.04 8.93023 175.32 16.9502C171.27 23.8302 166.23 32.3902 156.14 41.0302C146.16 49.5802 141.65 62.4902 144.09 75.5602C146.64 89.1902 155.95 100.08 169.01 104.68C173.3 106.19 177.74 106.96 182.21 106.96C191.56 106.96 200.92 103.54 208.55 97.3302C216.12 91.1702 221.68 82.5102 224.22 72.9302C230.06 50.9002 224.18 30.1402 216.73 18.0602C211.43 9.47023 204.66 3.93023 197.65 2.46023C196.15 2.15023 194.76 1.99023 193.41 1.99023L193.42 2.00023Z" fill="white"></path>
+							<path d="M173.952 79.0976L172.132 48.2476L181.102 47.7176L194.172 63.3676L193.202 47.0076L201.452 46.5176L203.272 77.3676L194.302 77.8976L181.272 62.9176L182.202 78.6076L173.952 79.0976Z" fill="white"></path>
+							<path d="M166.333 48.5174L168.133 52.3674C165.553 53.4174 164.303 54.6174 164.383 55.9674C165.583 55.8974 166.603 56.2674 167.443 57.0874C168.283 57.9074 168.743 58.9774 168.823 60.2874C168.903 61.5974 168.513 62.7074 167.643 63.6174C166.783 64.5274 165.623 65.0174 164.153 65.1074C162.543 65.2074 161.243 64.7174 160.263 63.6474C159.283 62.5774 158.743 61.0774 158.623 59.1374C158.473 56.5974 159.063 54.4074 160.393 52.5574C161.723 50.7074 163.703 49.3574 166.323 48.5174L166.333 48.5174Z" fill="white"></path>
+							<path d="M17.6899 75.9499C17.8199 61.0199 17.9399 46.0999 18.0699 31.1699C28.3699 32.6699 38.6599 33.8099 48.9599 34.6499C48.9299 37.9499 48.8999 41.2499 48.8799 44.5499C43.2499 44.0899 37.6299 43.5499 31.9999 42.8999C31.9699 45.9199 31.9499 48.9299 31.9199 51.9499C37.1299 52.5499 42.3499 53.0699 47.5599 53.4999C47.5399 56.4099 47.5099 59.3199 47.4899 62.2299C42.2799 61.7899 37.0599 61.2799 31.8499 60.6799C31.7999 66.3899 31.7499 72.0999 31.6999 77.7999C27.0299 77.2599 22.3599 76.6499 17.6899 75.9599V75.9499Z" fill="#3D7043"></path>
+							<path d="M65.1201 81.0796C62.0301 80.9196 59.5301 80.2396 57.6101 79.0796C55.6901 77.9096 54.3001 76.3996 53.4401 74.5596C52.5901 72.7196 52.1701 70.6896 52.1901 68.4696C52.2801 57.4896 52.3801 46.4996 52.4701 35.5196C57.0601 35.1896 61.6501 34.7996 66.2401 34.3496C66.1501 45.3796 66.0501 56.4096 65.9601 67.4396C65.9601 68.4396 66.2701 69.2296 66.9201 69.7996C67.5701 70.3696 68.4101 70.6896 69.4501 70.7296C70.4901 70.7796 71.5401 70.5596 72.5801 70.0796C72.8801 73.1096 73.1801 76.1396 73.4801 79.1696C72.4301 79.8696 71.1001 80.3796 69.4901 80.6996C67.8801 81.0196 66.4201 81.1396 65.1201 81.0796Z" fill="#3D7043"></path>
+							<path d="M83.7502 45.0097C81.7502 44.9597 80.0402 44.2797 78.6202 42.9497C77.2002 41.6297 76.4902 40.0297 76.5102 38.1597C76.5202 36.8597 76.8802 35.7297 77.5802 34.7697C78.2802 33.8097 79.2002 33.0697 80.3402 32.5397C81.4702 32.0097 82.6502 31.7497 83.8702 31.7797C85.2202 31.8097 86.4402 32.1397 87.5402 32.7597C88.6402 33.3897 89.5302 34.1997 90.1902 35.2097C90.8502 36.2197 91.1802 37.3097 91.1702 38.4797C91.1602 39.7797 90.7902 40.9297 90.0702 41.9197C89.3402 42.9097 88.4302 43.6797 87.3102 44.2197C86.2002 44.7697 85.0102 45.0297 83.7502 44.9997V45.0097ZM88.7802 81.8597C85.8702 81.8097 83.5202 81.2397 81.7202 80.1497C79.9202 79.0597 78.6202 77.6097 77.8102 75.7997C77.0002 73.9897 76.6002 71.9797 76.6202 69.7697C76.6802 62.6497 76.7402 55.5197 76.8002 48.3997C81.3802 48.5497 85.9702 48.6497 90.5502 48.7097C90.4902 55.1997 90.4402 61.6997 90.3802 68.1897C90.3802 69.1897 90.6602 69.9597 91.2402 70.5097C91.8202 71.0597 92.5302 71.3397 93.3502 71.3497C94.2202 71.3497 95.1102 71.0997 96.0302 70.5897C96.2402 73.6097 96.4602 76.6297 96.6702 79.6497C95.7102 80.3797 94.4602 80.9397 92.9402 81.3197C91.4102 81.6997 90.0202 81.8697 88.7602 81.8497L88.7802 81.8597Z" fill="#3D7043"></path>
+							<path d="M113.65 91.6195C109.06 92.3595 104.47 93.0695 99.8799 93.7395C100.01 78.7495 100.13 63.7595 100.26 48.7695C104.78 48.7695 109.3 48.7295 113.81 48.6595C113.79 51.0295 113.77 53.3995 113.75 55.7595C114.9 53.0495 116.47 51.0895 118.46 49.8795C120.45 48.6695 122.5 48.0295 124.63 47.9795C127.67 47.8995 130.39 48.5195 132.79 49.8495C135.19 51.1795 137.08 53.0595 138.47 55.4795C139.86 57.8995 140.54 60.7695 140.51 64.0695C140.48 67.3695 139.75 70.3395 138.32 72.9495C136.89 75.5695 134.96 77.6495 132.53 79.1895C130.11 80.7295 127.37 81.5395 124.33 81.6195C121.72 81.6895 119.55 81.1695 117.83 80.0695C116.1 78.9695 114.75 77.3695 113.77 75.2495C113.72 80.6995 113.68 86.1595 113.63 91.6095L113.65 91.6195ZM120.21 71.4195C122.08 71.3795 123.65 70.7095 124.92 69.4195C126.19 68.1295 126.83 66.5595 126.85 64.7395C126.87 62.9095 126.25 61.3895 125 60.1595C123.75 58.9295 122.19 58.3395 120.32 58.3795C118.54 58.4195 117.01 59.0495 115.74 60.2595C114.47 61.4795 113.83 63.0195 113.81 64.8895C113.79 66.7595 114.41 68.3195 115.66 69.5795C116.91 70.8395 118.42 71.4495 120.21 71.4095V71.4195Z" fill="#3D7043"></path>
+							<path d="M236.12 75.2796C236.25 60.3296 236.37 45.3797 236.5 30.4196C246.8 29.8896 257.09 29.4396 267.39 29.1396C267.36 32.4396 267.33 35.7496 267.31 39.0496C261.68 39.2196 256.06 39.4296 250.43 39.6696C250.4 42.6896 250.38 45.7096 250.35 48.7296C255.56 48.5096 260.78 48.3097 265.99 48.1497C265.97 51.0597 265.94 53.9697 265.92 56.8797C260.71 57.0396 255.49 57.2396 250.28 57.4596C250.23 63.1796 250.18 68.8896 250.13 74.6096C245.46 74.8097 240.79 75.0396 236.12 75.2796Z" fill="#3D7043"></path>
+							<path d="M283.55 74.1398C280.46 74.1798 277.96 73.7098 276.04 72.7098C274.12 71.7098 272.73 70.3298 271.87 68.5698C271.02 66.8098 270.6 64.8198 270.62 62.6098C270.71 51.6198 270.81 40.6198 270.9 29.6298C275.49 28.8298 280.08 28.0698 284.67 27.3398C284.58 38.3798 284.48 49.4098 284.39 60.4498C284.39 61.4498 284.7 62.2198 285.35 62.7498C286 63.2898 286.84 63.5498 287.89 63.5398C288.93 63.5398 289.98 63.2598 291.02 62.7398C291.32 65.7598 291.62 68.7798 291.92 71.7898C290.87 72.5298 289.54 73.1098 287.93 73.5098C286.32 73.9098 284.86 74.1298 283.56 74.1498L283.55 74.1398Z" fill="#3D7043"></path>
+							<path d="M309.23 74.1903C306.23 74.1303 303.52 73.3803 301.1 71.9003C298.68 70.4303 296.77 68.4103 295.38 65.8503C293.99 63.2903 293.31 60.3603 293.34 57.0503C293.37 53.7503 294.1 50.8603 295.53 48.3803C296.96 45.9003 298.9 43.9603 301.35 42.5703C303.79 41.1803 306.52 40.5003 309.51 40.5603C311.64 40.6003 313.7 41.2403 315.69 42.4603C317.68 43.6903 319.2 45.6703 320.27 48.4003C320.29 46.0303 320.31 43.6703 320.33 41.3003C324.85 41.4603 329.37 41.6703 333.88 41.9303C333.79 52.8103 333.7 63.6903 333.6 74.5603C329.04 74.3003 324.48 74.0903 319.92 73.9403C319.94 71.9203 319.95 69.9003 319.97 67.8803C318.91 69.9703 317.5 71.5603 315.76 72.6403C314.01 73.7203 311.84 74.2303 309.23 74.1803V74.1903ZM313.55 63.9803C315.33 64.0203 316.86 63.4303 318.13 62.1903C319.4 60.9503 320.04 59.4003 320.06 57.5303C320.08 55.6603 319.46 54.1103 318.21 52.8703C316.96 51.6403 315.44 50.9903 313.66 50.9503C311.79 50.9003 310.22 51.5003 308.95 52.7403C307.68 53.9803 307.04 55.5103 307.02 57.3303C307.01 59.1503 307.62 60.7103 308.87 61.9903C310.12 63.2703 311.68 63.9303 313.55 63.9803Z" fill="#3D7043"></path>
+							<path d="M351.18 86.1497C346.59 86.4097 342 86.7397 337.41 87.1197C337.54 72.1397 337.66 57.1597 337.79 42.1797C342.31 42.4697 346.83 42.8197 351.34 43.2197C351.32 45.5897 351.3 47.9497 351.28 50.3197C352.43 47.7297 354 45.9397 355.99 44.9597C357.98 43.9797 360.03 43.6097 362.16 43.8497C365.2 44.1897 367.92 45.2297 370.32 46.9497C372.72 48.6697 374.61 50.8797 376.01 53.5497C377.4 56.2197 378.08 59.2197 378.05 62.5097C378.02 65.8097 377.29 68.6297 375.86 70.9897C374.43 73.3497 372.5 75.0897 370.07 76.2397C367.65 77.3797 364.91 77.7797 361.87 77.4397C359.26 77.1497 357.1 76.3697 355.37 75.0697C353.64 73.7697 352.29 72.0197 351.31 69.7997C351.26 75.2497 351.22 80.6997 351.17 86.1497H351.18ZM357.73 66.7097C359.6 66.8997 361.17 66.4397 362.44 65.3297C363.71 64.2097 364.35 62.7497 364.37 60.9197C364.39 59.0997 363.77 57.4797 362.52 56.0797C361.27 54.6797 359.71 53.8797 357.84 53.6897C356.06 53.5097 354.53 53.9597 353.26 55.0297C351.99 56.1097 351.35 57.5797 351.33 59.4497C351.32 61.3197 351.93 62.9497 353.18 64.3397C354.43 65.7397 355.94 66.5197 357.73 66.7097Z" fill="#3D7043"></path>
+							</g>
+							<defs>
+							<clipPath id="clip0_1180_27492">
+							<rect width="396" height="145" fill="white"></rect>
+							</clipPath>
+							</defs>
+							</svg>
+				</div>
+
+				<div class="spacing"></div>
+
+				<div id="loader-parent">
+					<div>LOADING</div>
+					<span class="loading-screen-loader"></span>
+				</div>
+			</div>
+		</div>

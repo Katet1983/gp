@@ -1,0 +1,820 @@
+{
+  "id": "93aef14c-e9a9-49ab-ac2f-2cf09133ecf4",
+  "worldId": "c48dd018-83ab-4a8d-b42e-dc2c5cb34442",
+  "name": "Delivery",
+  "options": {
+    "isTutorial": false,
+    "speed": 1,
+    "difficulty": 0,
+    "seed": 8207193,
+    "wall": "default",
+    "floor": "default",
+    "levelAssetSet": "normal"
+  },
+  "segments": [
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "0ecd6bf5-4457-482e-9a83-afa13a1b06f2",
+      "decorations": [
+        {
+          "id": "knifeRackDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 1.0403464305479204,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "f8635b00-75d8-4283-9602-261506e96a10"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "6afbacce-9a25-4081-8945-932909915c74",
+      "decorations": [
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": -0.6668240616466719,
+              "y": 0.9700370282391986,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "30816dd3-7085-4b4b-94a2-8f441a764df2"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "07ce20e0-47ee-4d8c-880f-bbe16022ffb9",
+      "decorations": [
+        {
+          "id": "movingPlatformDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0.963810887913296,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 2.5
+            },
+            "speed": 1,
+            "duration": 0,
+            "pauseTime": 1,
+            "timeOffset": 0,
+            "width": 1
+          },
+          "uid": "4ca736b8-eafe-4d81-9191-abdb1fb57205"
+        }
+      ]
+    },
+    {
+      "id": "checkpointSegment",
+      "options": {
+        "yOffset": 4,
+        "xEndOverwrite": 0
+      },
+      "uid": "e3100461-3952-469b-961e-8726fa55a591",
+      "decorations": [
+        {
+          "id": "clockDecoration",
+          "options": {
+            "position": {
+              "x": 0.9579750169469392,
+              "y": 2.3621755954698145,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "fa029943-0e0e-4ce1-a528-29f5dae4a7be"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "1700a114-55b8-43a3-9efb-dd2bf46bd7dc"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "fd86a27f-2112-429b-8bca-cff1a2b9f483",
+      "decorations": [
+        {
+          "id": "spikeStripDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "columns": 5
+          },
+          "uid": "49adcfe2-8c4c-4d55-8d2a-3a50c0219b34"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "6a8d51fd-3088-43de-8ea9-ab09eb387fcf",
+      "decorations": [
+        {
+          "id": "movingPlatformDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": -2,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 2
+            },
+            "speed": 1,
+            "duration": 0,
+            "pauseTime": 1,
+            "timeOffset": 0,
+            "width": 1
+          },
+          "uid": "1ff5b7a2-7188-4105-bb31-f8e5dccbc495"
+        },
+        {
+          "id": "coinLineDecoration",
+          "options": {
+            "position": {
+              "x": 1,
+              "y": 1.273957705263538,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "coins": 3,
+            "start": [
+              0,
+              0
+            ],
+            "end": [
+              2,
+              null
+            ]
+          },
+          "uid": "602f769e-bf19-44c2-8286-f4a6621e8e76"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "8666fe35-010c-4118-8c0b-478e54773d7f",
+      "decorations": [
+        {
+          "id": "movingPlatformDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": -2,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 2
+            },
+            "speed": 1,
+            "duration": 0,
+            "pauseTime": 1,
+            "timeOffset": 0.3,
+            "width": 1
+          },
+          "uid": "68158443-4e60-4bd1-858d-c5f2eb38a298"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "05ad6ce4-c6fb-47d0-880d-732705caee8c",
+      "decorations": [
+        {
+          "id": "movingPlatformDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": -2,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 2
+            },
+            "speed": 1,
+            "duration": 0,
+            "pauseTime": 1,
+            "timeOffset": 0.6,
+            "width": 1
+          },
+          "uid": "70266e88-79f9-416b-ac18-ef2f40b437d0"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "fd4b3e95-2a56-4ee4-9fe7-fd4fa1f3e13d",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "b4694a0a-28ec-4690-b351-dfb503479e10"
+        }
+      ]
+    },
+    {
+      "id": "checkpointSegment",
+      "options": {
+        "yOffset": -1,
+        "xEndOverwrite": 0
+      },
+      "uid": "050a06af-be0b-4e2a-b16d-124fbba3d3c8",
+      "decorations": [
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 3.4637487203770507,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "e025cab5-926a-4832-972f-b75f55593898"
+        }
+      ]
+    },
+    {
+      "id": "fridgeSegment",
+      "options": {
+        "yOffset": -3,
+        "xEndOverwrite": 0
+      },
+      "uid": "4427f607-ad90-43bb-957c-9cb92be36c8c",
+      "decorations": []
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "e66cf95c-855f-4340-868c-d88d6006baef",
+      "decorations": [
+        {
+          "id": "singleCoinDecoration",
+          "options": {
+            "position": {
+              "x": 0.024741713781232022,
+              "y": 4.767299801316423,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "c8095340-2def-4d80-9248-b77101b9a153"
+        },
+        {
+          "id": "singleCoinDecoration",
+          "options": {
+            "position": {
+              "x": 1.114658777980214,
+              "y": 5.313626742367025,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "bad31048-d470-4214-923e-274933cb9281"
+        }
+      ]
+    },
+    {
+      "id": "checkpointSegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "7ecd502e-8559-461a-b729-4aceea05783f",
+      "decorations": [
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": -2.080974408811855,
+              "y": 0.9711095122019548,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "228e527c-5e39-4c75-af70-28043eade2a7"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": -2.080974408811855,
+              "y": 0.9711095122019548,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "e8bb022d-fc80-4f0b-8e5c-4f4fc67934ba"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "155d85e7-b065-4cbb-a90c-86c0af77a753",
+      "decorations": [
+        {
+          "id": "hangingCupboardDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 2,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "e28682e9-95fd-482c-8845-2a2782f8c7e7"
+        },
+        {
+          "id": "cookieJarDecoration",
+          "options": {
+            "position": {
+              "x": -0.6615397320989977,
+              "y": 3.9667595691901596,
+              "z": 0.6288178762416283
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.40837094801830687,
+              "z": 0
+            }
+          },
+          "uid": "13bcd2b8-018f-41fe-8dd8-3bd62b1ebdb1"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "89456f00-4026-4bbd-91a0-26f5729f98b9",
+      "decorations": []
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "e37b446a-c5dd-4035-88ca-439cb191c3ea",
+      "decorations": [
+        {
+          "id": "movingPlatformDecoration",
+          "options": {
+            "position": {
+              "x": -1.9,
+              "y": 3.8247055043165226,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 3.8,
+              "y": 0
+            },
+            "speed": 1,
+            "duration": 0,
+            "pauseTime": 1,
+            "timeOffset": 0,
+            "width": 1.2
+          },
+          "uid": "398a4ec4-3e79-4180-888a-7865a148b3c8"
+        },
+        {
+          "id": "coinArcDecoration",
+          "options": {
+            "position": {
+              "x": -1,
+              "y": 4.471312227484887,
+              "z": -0.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "coins": 3,
+            "minX": 0,
+            "maxX": 2,
+            "minY": 0,
+            "maxY": 0,
+            "template": "custom"
+          },
+          "uid": "be92e504-f05e-41f2-8476-fec53e486049"
+        },
+        {
+          "id": "spikeStripDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "columns": 5
+          },
+          "uid": "5ca1bc05-6f29-40a2-b548-ea658b346c72"
+        },
+        {
+          "id": "knifeRackDecoration",
+          "options": {
+            "position": {
+              "x": -0.1091197043803831,
+              "y": 1.2545032924878354,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "b0245f8f-273c-469e-b68d-3487d4c38b4a"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "ea25c666-69e7-496f-9468-3302875a3262",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "0b829a3c-0e3e-4c19-9fad-7243d503bf0f"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "6bef15c8-5dd8-47b7-b030-5d5a48326475",
+      "decorations": [
+        {
+          "id": "gameplayShelfDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 4,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "width": 2,
+            "depth": 1.7
+          },
+          "uid": "6fa2d906-d7a4-4a70-aa85-d692ddc44718"
+        },
+        {
+          "id": "tubesAndFlowerPlantDecoration",
+          "options": {
+            "position": {
+              "x": -0.9485207488185026,
+              "y": -0.026819761314230917,
+              "z": 0.49917236190712355
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "fa26472a-d5c0-48a4-b90c-d6547cbf89be"
+        },
+        {
+          "id": "bookStackDecoration",
+          "options": {
+            "position": {
+              "x": 0.18931806639379545,
+              "y": -0.023734659714370387,
+              "z": 0.49917236190712355
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "585ee64f-ff84-4b2c-8638-d5a1f1674ad3"
+        }
+      ]
+    },
+    {
+      "id": "hole1Segment",
+      "options": {
+        "yOffset": 0,
+        "xEndOverwrite": 0
+      },
+      "uid": "f0a4a11a-6ddd-4c82-9e5e-c7d19ab81a66",
+      "decorations": [
+        {
+          "id": "movingPlatformDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": -0.22214426493041728,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "start": {
+              "x": 0,
+              "y": 0
+            },
+            "end": {
+              "x": 0,
+              "y": 4
+            },
+            "speed": 1.5,
+            "duration": 0,
+            "pauseTime": 1,
+            "timeOffset": 0,
+            "width": 1
+          },
+          "uid": "beeb0561-61f0-4895-a92d-2ca0b2c486d6"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": 5,
+        "xEndOverwrite": 0
+      },
+      "uid": "d00ab9e1-a76a-4526-837a-9826f3096957",
+      "decorations": [
+        {
+          "id": "windowDecoration",
+          "options": {
+            "position": {
+              "x": 4.583614812021672,
+              "y": -2.9152072687668165,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "c1fde8a3-472d-4ef7-b106-3502ec3e4f41"
+        },
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "80e08c43-1ace-4324-9fd3-9e784282b1f8"
+        }
+      ]
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": -2,
+        "xEndOverwrite": 0
+      },
+      "uid": "2f87531f-32e6-426d-b0c6-542b50fc11b9",
+      "decorations": []
+    },
+    {
+      "id": "emptySegment",
+      "options": {
+        "yOffset": -2,
+        "xEndOverwrite": 0
+      },
+      "uid": "0e0ce61d-18b7-4dc8-a147-4af70d132372",
+      "decorations": [
+        {
+          "id": "mainMenuPanTargetDecoration",
+          "options": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "uid": "8c817166-07e8-4f6e-8210-6b3128259a9b"
+        }
+      ]
+    }
+  ],
+  "hashedId": 50005,
+  "meta": {
+    "generation": {
+      "options": {
+        "averageDifficulty": 1,
+        "segmentCount": 6
+      },
+      "enabledTags": []
+    }
+  }
+}

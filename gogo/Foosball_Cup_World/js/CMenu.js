@@ -1,0 +1,163 @@
+function CMenu(){
+    var _oBg;
+    var _oButPlay;
+    var _oFade;
+    var _oAudioToggle;
+    var _oButFullscreen;
+    var _fRequestFullScreen = null;
+    var _fCancelFullScreen = null;
+    var _pStartPosCredits;
+    var _pStartPosAudio;
+    var _pStartPosFullscreen;
+    var _oButTournament;
+    var _oLogoMenu;
+    var _pStartPosDeleteSave;
+    var _oDeleteSaveBut;
+    var _pStartPosFriendlyBut;
+    var _pStartPosTournamentBut;
+    
+    
+    this._init = function(){
+        
+        userState = 'menu';
+        
+       
+        s_b2Players = false;
+        setVolume("soundtrack", SOUNDTRACK_VOLUME_IN_GAME );
+    
+        _oBg = createBitmap(s_oSpriteLibrary.getSprite('bg_menu'), getSize("Width") , getSize("Height") );
+        s_oStage.addChild(_oBg);
+
+        var oSprite = s_oSpriteLibrary.getSprite('friendly_mode');
+        _pStartPosFriendlyBut = {x: CANVAS_WIDTH/2-225,y: CANVAS_HEIGHT -270};
+        _oButPlay = new CGfxButton(_pStartPosFriendlyBut.x,_pStartPosFriendlyBut.y,oSprite,s_oStage);
+        _oButPlay.addEventListener(ON_MOUSE_DOWN, this._onButFriendlyRelease, this);
+        
+        var oSprite = s_oSpriteLibrary.getSprite("tournament_mode");
+        _pStartPosTournamentBut = {x:(CANVAS_WIDTH/2+225),y:CANVAS_HEIGHT -270};
+        _oButTournament = new CGfxButton(_pStartPosTournamentBut.x,_pStartPosTournamentBut.y,oSprite,s_oStage);
+        _oButTournament.addEventListener(ON_MOUSE_DOWN, this._onButTournamentRelease, this);
+     
+
+
+        //languages
+
+        oSprite = s_oSpriteLibrary.getSprite("but_delete_save");
+        _pStartPosDeleteSave = {x: CANVAS_WIDTH - (oSprite.width/2)- 10 - 30, y: (oSprite.height/2) + 10 + 30};
+        _oDeleteSaveBut = new CGfxButton(_pStartPosDeleteSave.x,_pStartPosDeleteSave.y,oSprite,s_oStage);
+        _oDeleteSaveBut.addEventListener(ON_MOUSE_UP,s_oLevelSettings.deleteSaveData,this);
+        
+       oSprite = s_oSpriteLibrary.getSprite("logo_menu"); 
+       _oLogoMenu = new createBitmap(oSprite,oSprite.width,oSprite.height);
+       _oLogoMenu.regX = oSprite.width/2;
+       _oLogoMenu.regY = oSprite.height/2;
+       _oLogoMenu.y = CANVAS_HEIGHT/2-180;
+       _oLogoMenu.x = -700;
+       s_oStage.addChild(_oLogoMenu);
+     
+
+
+        var doc = window.document;
+        var docEl = doc.documentElement;
+        _fRequestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+        _fCancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+
+        _oFade = new createjs.Shape();
+        _oFade.graphics.beginFill("black").drawRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
+        
+        s_oStage.addChild(_oFade);
+        
+        var oParent = this;
+        createjs.Tween.get(_oFade).to({alpha:0}, 1000).call(function(){_oFade.visible = false;});  
+        new createjs.Tween.get(_oLogoMenu).wait(500).to({x: CANVAS_WIDTH/2},1000, createjs.Ease.bounceOut).call(function(){ oParent.pulseTitle();});
+
+        
+        this.refreshButtonPos(s_iOffsetX,s_iOffsetY);
+        
+    };
+    
+    this.pulseTitle = function(){
+        var oParent = this;
+        new createjs.Tween.get(_oLogoMenu).to({scaleX: 1*0.9, scaleY: 1*0.9}, 850, createjs.Ease.quadOut).to({scaleX: 1, scaleY: 1}, 650, createjs.Ease.quadIn).call(function () {
+            oParent.pulseTitle();
+        });
+    };
+    
+    this.unload = function(){
+        s_oStage.removeChild(_oLogoMenu);
+        _oButPlay.unload(); 
+        _oButTournament.unload();
+        _oDeleteSaveBut.unload();
+        
+        _oButPlay = null;
+        _oFade.visible = false;
+        
+    
+        
+        s_oStage.removeChild(_oBg);
+        _oBg = null;
+        s_oMenu = null;
+    };
+    
+    this.refreshButtonPos = function(iNewX,iNewY){
+        _oButPlay.setPosition(_pStartPosFriendlyBut.x,_pStartPosFriendlyBut.y-iNewY);
+        _oButTournament.setPosition(_pStartPosTournamentBut.x,_pStartPosTournamentBut.y-iNewY);
+        _oDeleteSaveBut.setPosition(_pStartPosDeleteSave.x-iNewX,_pStartPosDeleteSave.y+iNewY);
+
+
+    };
+   
+    
+    this._onAudioToggle = function(){
+
+    };
+
+    this._onMusicToggle = function(){
+        setVolume("soundtrack", SOUNDTRACK_VOLUME_IN_GAME);
+    };
+    
+    this._onCreditsBut = function(){
+        new CCreditsPanel();
+    };
+
+    this._onLangBut = function(){
+        new CLangPanel();
+    };
+    
+    this.resetFullscreenBut = function(){
+
+    };
+
+    this._onFullscreenRelease = function(){
+	if(s_bFullscreen) { 
+		_fCancelFullScreen.call(window.document);
+	}else{
+		_fRequestFullScreen.call(window.document.documentElement);
+	}
+	
+	sizeHandler();
+    };
+    
+    this._onButFriendlyRelease = function(){ 
+        this.unload();
+        s_bFriendly = true;
+        CPU_SPEED_STICKS = CPU_SPEED_STICK_FRIENDLY;
+        POINTS_TO_WIN = 5;
+        
+        s_oMain.gotoSelectPlayers();  
+    };
+    
+    this._onButTournamentRelease = function(){
+        this.unload();
+        s_bFriendly = false;
+        s_oMain.gotoLevelMenu();
+
+    };
+	
+    s_oMenu = this;
+    
+    this._init();
+}
+
+var s_oMenu = null;

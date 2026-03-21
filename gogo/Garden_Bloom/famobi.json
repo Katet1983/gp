@@ -1,0 +1,286 @@
+{
+  "features": {
+    "highscores": 1,
+    "rewarded": 1
+  },
+  "game_i18n" : {
+    "default": {
+    }
+  },
+  "game_analytics": {
+    "resource_currencies": [
+      "preboost",
+      "boost",
+      "continuity",
+      "prebooster",
+      "return",
+      "reward",
+      "purchase",
+      "revive"
+    ],
+    "resource_item_types": [
+      "life",
+      "coins",
+      "gloves",
+      "shovel",
+      "beehive",
+      "bees",
+      "ladybugs",
+      "butterfly",
+      "moves",
+      "boost",
+      "preboost"
+    ]
+  },
+  "game_info": {
+    "client_version": "11.2.0",
+    "api_version": "2.2",
+    "forced_mode": {
+      "state": {
+        "level": {
+          "description": "Level to start at.",
+          "type": "number",
+          "min": 1,
+          "max": 2000 
+        },
+        "booster_swap": {
+          "description": "Amount of swap boosters.",
+          "type": "number",
+          "min": 0
+        },
+        "booster_shovel": {
+          "description": "Amount of shovel boosters.",
+          "type": "number",
+          "min": 0
+        },
+        "booster_beehive": {
+          "description": "Amount of beehive boosters.",
+          "type": "number",
+          "min": 0
+        },
+        "has_prebooster_bees": {
+          "description": "Start with bees prebooster.",
+          "type": "boolean"
+        },
+        "has_prebooster_ladybugs": {
+          "description": "Start with ladybugs prebooster.",
+          "type": "boolean"
+        },
+        "has_prebooster_butterfly": {
+          "description": "Start with buttefly prebooster.",
+          "type": "boolean"
+        },
+        "has_booster_swap": {
+          "description": "Show the Swap booster.",
+          "type": "boolean"
+        },
+        "has_booster_shovel": {
+          "description": "Show the Shovel booster.",
+          "type": "boolean"
+        },
+        "has_booster_beehive": {
+          "description": "Show the Beehive booster.",
+          "type": "boolean"
+        },
+        "mode": {
+          "description": "The game mode to play in. In endless mode, the objectives are being ignored, so there is no win condition. If you set maximum_moves to zero, there will be no lose either, so it will be truly endless.",
+          "values": ["normal", "endless"]
+        }
+      },
+      "override": {
+        "maximum_moves": {
+          "description": "Ability to adjust the maximum amount of moves. If it's set to zero, it will be infinite moves.",
+          "type": "number",
+          "min": 0
+        },
+        "hide_ui": {
+          "description": "Hide UI.",
+          "type": "array",
+          "values": [ "level", "score", "moves", "star_bar", "settings_button", "booster", "objectives", "exit_button"]
+        }
+      }
+    },
+    "track_stats": {
+      "swaps_made": {
+        "description": "Swap made by the player."
+      },
+      "flower_destroyed": {
+        "description": "Flowers destroyed by any source",
+        "params": {
+          "color": {
+            "type": "string",
+            "values": [ "red", "blue", "yellow", "green", "purple", "orange"]
+          }
+        }
+      },
+      "combo_made": {
+        "description": "Combo based on how often cascade matches occurs before the player can act again.",
+        "params": {
+          "combo_amount": {
+            "type": "number",
+            "min": 1
+          }
+        }
+      },
+      "special_created": {
+        "description": "When a power tile is spawned.",
+        "params": {
+          "special": {
+            "type": "string",
+            "values": ["bee_horizontal", "bee_vertical", "ladybug", "butterfly"]
+          }, 
+          "color": {
+            "type": "string",
+            "values": [ "none", "red", "blue", "yellow", "green", "purple", "orange"]
+          }
+        }
+      },
+      "special_triggered": {
+        "description": "Happens when a power tile is exploded.",
+        "params": {
+          "special": {
+            "type": "string",
+            "values": ["bee_horizontal", "bee_vertical", "ladybug", "butterfly"]
+          },
+          "color": {
+            "type": "string",
+            "values": [ "none", "red", "blue", "yellow", "green", "purple", "orange"]
+          }
+        }
+      },
+      "matches_made": {
+        "description": "Triggers when a match occurs and tracks the length of the match.",
+        "params": {
+          "length": {
+            "type": "number"
+          }
+        }
+      },
+      "obstacle_destroyed": {
+        "description": "Triggers when an obstacle is destroyed.",
+        "params": {
+          "obstacle_type": {
+            "type": "string",
+            "values": ["bean", "flower_part", "exploder", "key", "anchor", "gem", "grass", "crate",  "ice", "virus", "chest", "vial", "lava"]
+          }
+        }
+      }, 
+      "special_combination": {
+        "description": "Happens when 2 power tiles are combined into 1.",
+        "params": {
+          "combination": {
+            "type": "string",
+            "values": [
+              "bee_horizontal_bee_horizontal", "bee_vertical_bee_vertical", "ladybug_ladybug", "butterfly_butterfly",
+              "bee_horizontal_bee_vertical", "bee_horizontal_ladybug", "bee_horizontal_butterfly",
+              "bee_vertical_bee_horizontal", "bee_vertical_ladybug", "bee_vertical_butterfly",
+              "ladybug_bee_horizontal", "ladybug_bee_vertical", "ladybug_butterfly",
+              "butterfly_bee_horizontal", "butterfly_bee_vertical", "butterfly_ladybug"
+             ]
+          }, 
+          "color_combination": {
+            "type": "string",
+            "values": [
+              "none_none", "red_red", "blue_blue", "yellow_yellow", "green_green", "purple_purple", "orange_orange",
+              "none_red", "none_blue", "none_yellow", "none_green", "none_purple", "none_orange",
+              "red_none", "red_blue", "red_yellow", "red_green", "red_purple", "red_orange",
+              "blue_none", "blue_red", "blue_yellow", "blue_green", "blue_purple", "blue_orange",
+              "yellow_none", "yellow_red", "yellow_blue", "yellow_green", "yellow_purple", "yellow_orange",
+              "green_none", "green_red", "green_blue", "yellow_green", "green_purple", "green_orange",
+              "purple_none", "purple_red", "purple_blue", "purple_green", "purple_green", "purple_orange",
+              "orange_none", "orange_red", "orange_blue", "orange_green", "orange_green", "orange_purple"
+            ]
+          }
+        }
+      },
+      "booster_used": {
+        "description": "Triggers when a booster is used in game.",
+        "params": {
+          "type": {
+            "type": "string",
+            "values": ["swap", "shovel", "beehive"]
+          }
+        }
+      }, 
+      "pre_booster_used": {
+        "description": "Triggers when a prebooster is used before a game.",
+        "params": {
+          "type": {
+            "type": "string",
+            "values": ["swap", "shovel", "beehive"]
+          }
+        }
+      },
+      "flowerparts_collected": {
+        "description": "Flower parts collected per page to form a complete flower.",
+        "params": {
+          "chapter": {
+            "type": "number",
+            "min": 1,
+            "max": 10
+          }
+        }
+      },
+      "flower_collected": {
+        "description": "Flower collected by completing the last level of each chapter.",
+        "params": {
+          "chapter": {
+            "type": "number",
+            "min": 1,
+            "max": 10
+          }
+        }
+      }, 
+      "coins_received": {
+        "description": "Triggers when you receive coins."
+      },
+      "coins_used ": {
+        "description": "Triggers when you receive coins."
+      },
+      "booster_bought": {
+        "description": "Trigger when a booster is bought.",
+        "params": {
+          "type": {
+            "type": "string",
+            "values": [ "bee", "ladybug", "butterfly"]
+          }
+        }
+      },
+      "pre_booster_bought": {
+        "description": "Trigger when a prebooster is bought.",
+        "params": {
+          "type": {
+            "type": "string",
+            "values": [ "glove", "shovel", "beehive"]
+          }
+        }
+      },
+      "level_completed": {
+        "description": "Triggers when a level is completed.",
+        "params": {
+          "level": {
+            "type": "number",
+            "min": 1,
+            "max": 2000
+          }
+        }
+      },
+      "level_failed": {
+        "description": "Triggers when a level is failed.",
+        "params": {
+          "level": {
+            "type": "number",
+            "min": 1,
+            "max": 2000
+          }
+        }
+      }, 
+      "revived": {
+        "description": "Triggers when the player revived by watching an ad or pays with coins."
+      },
+      "daily_reward_received": {
+        "description": "Triggers when the player received daily coins."
+      }
+    }
+  }
+}

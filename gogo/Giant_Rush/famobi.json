@@ -1,0 +1,64 @@
+{
+  "toolGameId": "i3UiZouquRYXPcf3Hho4",
+  "gameId": "giant-rush",
+  "name": "Giant Rush",
+  "version": "4.0.2",
+  "exportedAt": "2025-09-22T13:37:40.759Z",
+  "features": {
+    "audio": false,
+    "copyright": false,
+    "credits": false,
+    "pause": true,
+    "progress": true,
+    "score": true,
+    "tutorial": true,
+    "version": false,
+    "visibilitychange": false,
+    "iap": true,
+    "home": true,
+    "privacy": false
+  },
+  "ads": {
+    "initial": {
+      "timeout": 250,
+      "retry": 2000,
+      "preload": 250,
+      "enabled": false
+    },
+    "interstitial": {
+      "cooldown": 60,
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 250,
+      "eventIds": [
+        "button:mainmenu:start"
+      ]
+    },
+    "rewarded": {
+      "timeout": 250,
+      "enabled": true,
+      "retry": 2000,
+      "preload": 500,
+      "eventIds": [
+        "button:mainmenu:activateragemode",
+        "button:skin:get",
+        "button:shop:unlockitem",
+        "button:shop:getgems",
+        "button:defeat:revive",
+        "button:results:doublereward",
+        "button:mainmenu:upgrade"
+      ]
+    },
+    "banner": {
+      "preload": 250,
+      "retry": 2000,
+      "enabled": false,
+      "timeout": 250
+    }
+  },
+  "storage": {},
+  "gameSnacks": {
+    "shouldSendGameCompleteCount": true
+  }
+}
