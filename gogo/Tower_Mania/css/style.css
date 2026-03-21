@@ -1,0 +1,78 @@
+#game{
+    z-index: 10;
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+
+#adBanner {
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+
+#adFullScreen {
+    z-index: 18;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#adFullScreen img{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+}
+
+#wrongRotation {
+    display: none;
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+}
+#wrongRotationText{
+    position: relative;
+    float: top;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+    top: 10%;
+    font-family: "Squada One", Times, serif;
+}
+#wrongRotation img {
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@font-face {
+    font-family: 'Squada One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Squada One'), url('../assets/fnt/SquadaOne-Regular.ttf') format('truetype');
+}
+
+#menu {
+    position: fixed;
+    display: none;
+}
+
+#clayBannerAd {
+    display: none;
+}

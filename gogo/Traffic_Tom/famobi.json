@@ -1,0 +1,63 @@
+{
+    "features": {
+        "highscores": 1,
+        "rewarded": 1,
+        "leaderboard": 0,
+        "multiplayer": 0,
+        "standalone": 1,
+        "credits": 0,
+        "multiplayer_local": 1,
+        "audio": 1,
+        "external_mute": 1
+    },
+    "game_i18n": {},
+    "game_info": {
+        "client_version": "1.6.3",
+        "api_version": "2.0",
+        "forced_mode": {
+            "state": {
+                "level": {
+                    "description": "Sets the level the game starts in. If no motorcycle is set by the force mode, the game will pick a motorcycle automatically that fits the power level of the level.",
+                    "type": "number",
+                    "min": 1,
+                    "max": 36
+                }
+            },
+            "override": {
+                "hide_ui": {
+                    "description": "Used to hide parts of the ui. If the argument is left empty, no elements should be hidden.",
+                    "type": "array",
+                    "values": ["levelObjective", "progressBar", "speed", "timeRequired", "score"]
+                }
+            }
+        },
+        "track_stats": {},
+        "orientation": {
+            "phone": {
+                "portrait": "green",
+                "landscape": "green"
+            },
+            "tablet": {
+                "portrait": "green",
+                "landscape": "green"
+            }
+        }
+    },
+    "aid": "A1234-5",
+    "logging": false,
+    "api": "famobi",
+    "name": "Google GameSnacks",
+    "more_games_url": "",
+    "more_games_button_image": "logo",
+    "show_splash": "",
+    "splash_duration": 3000,
+    "branch": "master",
+    "gameParams": {
+        "ad_type": "off"
+    },
+    "menuless": true,
+    "disable_console": false,
+    "includeJS": [],
+    "version": "3e1773df",
+    "supportedLanguages": []
+}

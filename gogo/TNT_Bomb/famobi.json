@@ -1,0 +1,123 @@
+{
+    "features": {
+        "highscores": 1,
+        "rewarded": 1,
+        "leaderboard": 0,
+        "multiplayer": 0,
+        "standalone": 1,
+        "credits": 0,
+        "multiplayer_local": 1,
+        "audio": 1,
+        "external_mute": 1
+    },
+    "game_i18n": {},
+    "game_info": {
+        "client_version": "2.2.1",
+        "api_version": "2.0",
+        "power_ups": ["earthquake"],
+        "forced_mode": {
+            "state": {
+                "level": {
+                    "description": "The current level. Use with or without 'sublevel' state (see 'sublevel's description)",
+                    "type": "number",
+                    "min": 1,
+                    "max": 75
+                },
+                "endless_mode": {
+                    "description": "If set to true, the endless mode is activated. After completing the level, a next one will be started immediately. The player won't be able to win at all. Useful for 'time attack' missions (e.g. destroy X objects in Y seconds).",
+                    "type": "boolean"
+                },
+                "theme": {
+                    "description": "A background/theme used in the current level",
+                    "type": "string",
+                    "values": ["Field", "Volcano", "Sea"]
+                },
+                "powerup_earthquake": {
+                    "description": "Set to false to completely disable the earthquake powerup",
+                    "type": "boolean"
+                }
+            },
+            "override": {
+                "hide_ui": {
+                    "description": "What UI elements should be hidden?",
+                    "type": "array",
+                    "values": ["level_progress", "floating_score_points"]
+                },
+                "bomb_types": {
+                    "description": "Set which bombs are available: accepts a list of bomb types",
+                    "type": "array",
+                    "values": ["dynamite", "implosive", "horizontal", "punch", "molotov"]
+                },
+                "bomb_points": {
+                    "description": "Bomb points amount available to the player. Set to -1 for unlimited bomb points",
+                    "type": "number",
+                    "min": -1
+                },
+                "bomb_points_mode": {
+                    "description": "Sets the mode for the bomb points. 'increase' is how the game operates normally, 'permanent' results in bombs always having the same cost",
+                    "type": "string",
+                    "values": ["increase", "permanent"]
+                }
+            }
+        },
+        "track_stats": {
+            "level_completed": {
+                "description": "Player has completed a level. Useful for endless mode (e.g. missions like 'complete X levels in endless mode')",
+                "type": "number"
+            },
+            "bomb_detonated": {
+                "description": "A bomb detonated/exploded/triggered",
+                "params": {
+                    "bomb_type": {
+                        "type": "string",
+                        "values": ["dynamite", "implosive", "horizontal", "punch", "molotov"]
+                    }
+                }
+            },
+            "item_destroyed": {
+                "description": "Player destroyed a block of a certain type.",
+                "params": {
+                    "item_type": {
+                        "type": "string",
+                        "values": ["wood", "metal", "glass", "concrete"]
+                    },
+                    "destruction_type": {
+                        "type": "string",
+                        "values": ["explosion", "fire", "fall_down", "fly_away", "earthquake"]
+                    }
+                }
+            },
+            "earthquake": {
+                "description": "Earthquake activated",
+                "type": "number"
+            }
+        },
+        "orientation": {
+            "phone": {
+                "portrait": "green",
+                "landscape": "green"
+            },
+            "tablet": {
+                "portrait": "green",
+                "landscape": "green"
+            }
+        }
+    },
+    "aid": "A1234-5",
+    "logging": false,
+    "api": "famobi",
+    "name": "Google GameSnacks",
+    "more_games_url": "",
+    "more_games_button_image": "logo",
+    "show_splash": "",
+    "splash_duration": 3000,
+    "branch": "master",
+    "gameParams": {
+        "ad_type": "off"
+    },
+    "menuless": true,
+    "disable_console": false,
+    "includeJS": [],
+    "version": "604ccfa7",
+    "supportedLanguages": []
+}

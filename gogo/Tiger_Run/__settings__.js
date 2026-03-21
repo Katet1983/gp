@@ -1,0 +1,21 @@
+window.ASSET_PREFIX = "";
+window.SCRIPT_PREFIX = "";
+window.SCENE_PATH = "1961531.json";
+window.CONTEXT_OPTIONS = {
+    'antialias': true,
+    'alpha': false,
+    'preserveDrawingBuffer': false,
+    'deviceTypes': [`webgl2`, `webgl1`],
+    'powerPreference': "default"
+};
+window.SCRIPTS = [ 169870777, 169870778, 169870779, 169870780, 169870781, 169870786, 169870787, 169870791, 169870798, 169870805, 169870808, 169870810, 169870813, 169870814, 169870815, 169870816, 169870835, 169870841, 169870842, 169870849, 169870852, 169870853, 169870854, 169870855, 169870867, 169870869, 169870889, 169870902, 169870903, 169870904, 169870905, 169870907, 169870916, 169870917, 169870920, 169870940, 169870944, 169870943, 169870946, 169870957, 169870968, 169870975, 172945750 ];
+window.CONFIG_FILENAME = "config.json";
+window.INPUT_SETTINGS = {
+    useKeyboard: true,
+    useMouse: true,
+    useGamepads: false,
+    useTouch: true
+};
+pc.script.legacy = false;
+window.PRELOAD_MODULES = [
+];

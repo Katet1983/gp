@@ -1,0 +1,30 @@
+{
+	"features": {
+		"credits": false,
+		"copyright": false,
+		"audio": false
+	},
+    "game_i18n": {
+        "default": {
+            "filename.png": "fg_i18n/en/images/filename.png"
+        }
+    },
+    "interstitial": {
+		"eventIds": [
+			"break:game"
+		],
+		"cooldown": 100
+    },
+    "rewarded": {
+		"eventIds": [
+            "booster:click:MULTIPLY_DAMAGE",
+            "booster:click:MULTIPLY_COINS",
+            "booster:click:UNLIMITED_CAPACITY",
+            "booster:click:ADD_WAGONS",
+            "booster:click:TNT"
+		]
+	},
+	"gameId": "train-miner",
+	"cooldownInitial": 180e3,
+	"cooldownPassive": 10
+}
