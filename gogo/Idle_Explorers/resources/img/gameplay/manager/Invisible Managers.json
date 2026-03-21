@@ -1,0 +1,81 @@
+{
+"skeleton": {
+	"hash": "QtIjAQbh+SA",
+	"spine": "4.0.58",
+	"x": -95.7,
+	"y": 9.61,
+	"width": 200,
+	"height": 200,
+	"images": "./Images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": 4.86, "y": 163.59 }
+],
+"slots": [
+	{ "name": "Bg", "bone": "root", "color": "ffffff00", "attachment": "Bg" },
+	{ "name": "Shade", "bone": "root", "attachment": "Shade" },
+	{ "name": "Table", "bone": "root", "attachment": "Table" },
+	{ "name": "bone", "bone": "root", "attachment": "bone" },
+	{ "name": "Light", "bone": "bone", "attachment": "Light" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Bg": {
+				"Bg": { "x": 4.3, "y": 109.61, "width": 200, "height": 200 }
+			},
+			"bone": {
+				"bone": {
+					"type": "clipping",
+					"end": "bone",
+					"vertexCount": 29,
+					"vertices": [ 13.65, 83.05, 13.8, 88.94, 17.85, 85.83, 21.11, 85.05, 27.49, 86.76, 30.91, 89.09, 30.91, 92.67, 33.09, 95, 32, 99.05, 26.55, 98.58, 24.07, 97.34, 21.73, 95, 20.33, 97.34, 22.82, 100.6, 28.73, 110.4, 29.98, 120.04, 27.49, 130.62, 22.82, 137.93, 22.36, 141.04, 10.54, 145.23, -0.19, 146.01, -9.84, 144.15, -19.79, 132.64, -20.41, 117.24, -19.48, 108.22, -16.37, 102.62, -12.32, 99.2, -11.7, 92.67, -11.93, 82.99 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"Light": {
+				"Light": { "x": 4.82, "y": -4.25, "width": 153, "height": 160 }
+			},
+			"Shade": {
+				"Shade": { "x": 6.12, "y": 112.27, "width": 54, "height": 68 }
+			},
+			"Table": {
+				"Table": { "x": 1.6, "y": 66.53, "width": 74, "height": 33 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"Shade": {
+				"rgba": [
+					{ "color": "fffffffe" },
+					{ "time": 1, "color": "ffffff83" },
+					{ "time": 2, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"rotate": [
+					{}
+				],
+				"translate": [
+					{},
+					{ "time": 2, "x": 22.02, "y": -98.72 }
+				],
+				"scale": [
+					{}
+				],
+				"shear": [
+					{}
+				]
+			}
+		}
+	}
+}
+}
