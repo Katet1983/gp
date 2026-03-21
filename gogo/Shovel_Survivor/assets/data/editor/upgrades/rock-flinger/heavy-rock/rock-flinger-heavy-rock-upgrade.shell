@@ -1,0 +1,103 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "AddStatusModifiersUpgrade",
+    "uid": "9124ccc0-2c77-4dda-91c1-0b82216b9541",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "9124ccc0-2c77-4dda-91c1-0b82216b9541"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "rock-flinger-heavy-rock-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "weapon"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "common"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Heavy Rock"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "power"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": "You have a chance to throw a larger rock when digging, dealing more damage."
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "target": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade",
+          "uid": "6cb7e260-a046-4dc8-9c68-2a61319b1bc7"
+        }
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "a4c3e4ad-7cd7-4436-8a4d-22c9d25fba35"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

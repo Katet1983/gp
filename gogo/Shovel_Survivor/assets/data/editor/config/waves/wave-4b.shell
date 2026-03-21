@@ -1,0 +1,97 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "WaveConfigFile",
+    "uid": "735a1bc7-448a-4540-9266-45dda9eccfc2",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "735a1bc7-448a-4540-9266-45dda9eccfc2"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "wave-4b"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "points": {
+        "_serializerId": "number",
+        "value": 35
+      },
+      "timeBeforeEnemies": {
+        "_serializerId": "number",
+        "value": 0
+      },
+      "enemySpawnDuration": {
+        "_serializerId": "number",
+        "value": 30
+      },
+      "timeAfterEnemies": {
+        "_serializerId": "number",
+        "value": 0
+      },
+      "enemies": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "prefab": {
+                "_serializerId": "EntityReference",
+                "value": {
+                  "entityType": "PrefabFile",
+                  "uid": "7fe73e62-2a56-4905-9b11-1d54c5e768ae"
+                }
+              },
+              "weight": {
+                "_serializerId": "number",
+                "value": 10
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "prefab": {
+                "_serializerId": "EntityReference",
+                "value": {
+                  "entityType": "PrefabFile",
+                  "uid": "7bacf63a-6b96-4747-ae1a-a167b6d9f6d9"
+                }
+              },
+              "weight": {
+                "_serializerId": "number",
+                "value": 3
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "prefab": {
+                "_serializerId": "EntityReference",
+                "value": {
+                  "entityType": "PrefabFile",
+                  "uid": "75c8c009-8258-4731-8f7a-5c757220e0fb"
+                }
+              },
+              "weight": {
+                "_serializerId": "number",
+                "value": 1
+              }
+            }
+          }
+        ]
+      },
+      "staticEnemies": {
+        "_serializerId": "array",
+        "value": []
+      }
+    }
+  },
+  "children": []
+}

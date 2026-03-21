@@ -1,0 +1,131 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ModifyStatsUpgrade",
+    "uid": "d212e4e3-c328-4722-a589-ea33037a8b40",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "d212e4e3-c328-4722-a589-ea33037a8b40"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "old-magnet-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "stats"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "common"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Old Magnet"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "health"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "dffc07a3-4784-4286-abb2-b2e77dd052b2"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "391712b5-1e1b-4fc1-a54c-1a9382bee0df"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": ""
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "target": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade"
+        }
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "pickupRange"
+              },
+              "multipliers": {
+                "_serializerId": "object",
+                "value": {
+                  "upgrades": {
+                    "_serializerId": "number",
+                    "value": 0.5
+                  }
+                }
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 0
+              }
+            }
+          }
+        ]
+      },
+      "applyOnUse": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "requiredLabels": {
+        "_serializerId": "array",
+        "value": []
+      }
+    }
+  },
+  "children": []
+}

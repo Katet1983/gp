@@ -1,0 +1,84 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "AddModifiersOnConditionModifierFile",
+    "uid": "a4c3e4ad-7cd7-4436-8a4d-22c9d25fba35",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "a4c3e4ad-7cd7-4436-8a4d-22c9d25fba35"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "rock-flinger-large-projectile-modifier"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "b3e98cb2-693a-40c3-8e84-951d761d6b0c"
+            }
+          },
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "19013ebb-7829-455c-bf87-20e7d7e3fced"
+            }
+          }
+        ]
+      },
+      "condition": {
+        "_serializerId": "string",
+        "value": "dig"
+      },
+      "digsToTrigger": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "applyOnFinishedHole": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "useRandomness": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "randomness": {
+        "_serializerId": "object",
+        "value": {
+          "group": {
+            "_serializerId": "string",
+            "value": ""
+          },
+          "chance": {
+            "_serializerId": "number",
+            "value": 0.25
+          }
+        }
+      },
+      "removeAfterUse": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "removeAfterDig": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": -1
+      }
+    }
+  },
+  "children": []
+}

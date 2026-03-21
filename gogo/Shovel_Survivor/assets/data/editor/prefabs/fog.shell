@@ -1,0 +1,190 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "PrefabFile",
+    "uid": "0db1bd96-7bad-4298-af23-58e884ea0d1b",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "0db1bd96-7bad-4298-af23-58e884ea0d1b"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "fog"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "contents": {
+        "_serializerId": "raw",
+        "value": {
+          "rootUid": "907a593b-0d16-4c2e-b49b-2aebc2e49b78",
+          "hierarchy": {
+            "type": "base",
+            "entity": {
+              "type": "GameObject",
+              "uid": "907a593b-0d16-4c2e-b49b-2aebc2e49b78",
+              "data": {
+                "_prefabReference": {
+                  "_serializerId": "raw"
+                },
+                "uid": {
+                  "_serializerId": "string",
+                  "value": "907a593b-0d16-4c2e-b49b-2aebc2e49b78"
+                },
+                "name": {
+                  "_serializerId": "string",
+                  "value": "fog"
+                },
+                "components": {
+                  "_serializerId": "array",
+                  "value": [
+                    {
+                      "_serializerId": "Entity",
+                      "value": "ec0ce811-e01d-495f-b35e-dda97cc3eb78"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "c6889a53-0216-4267-9c8d-de092136a222"
+                    }
+                  ]
+                },
+                "visible": {
+                  "_serializerId": "boolean",
+                  "value": true
+                },
+                "children": {
+                  "_serializerId": "array",
+                  "value": []
+                }
+              }
+            },
+            "children": [
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiTransformComponent",
+                  "uid": "ec0ce811-e01d-495f-b35e-dda97cc3eb78",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "ec0ce811-e01d-495f-b35e-dda97cc3eb78"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New Entity"
+                    },
+                    "localPosition": {
+                      "_serializerId": "_ObservablePoint",
+                      "value": {
+                        "x": 10.56794175838695,
+                        "y": -8.198903505324154
+                      }
+                    },
+                    "_width": {
+                      "_serializerId": "number",
+                      "value": 0
+                    },
+                    "_height": {
+                      "_serializerId": "number",
+                      "value": 4000
+                    },
+                    "_backingPivot": {
+                      "_serializerId": "object",
+                      "value": {
+                        "x": {
+                          "_serializerId": "number",
+                          "value": 0
+                        },
+                        "y": {
+                          "_serializerId": "number",
+                          "value": 0
+                        }
+                      }
+                    },
+                    "scale": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    },
+                    "rotation": {
+                      "_serializerId": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "FogComponent",
+                  "uid": "c6889a53-0216-4267-9c8d-de092136a222",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "c6889a53-0216-4267-9c8d-de092136a222"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New FogComponent"
+                    },
+                    "size": {
+                      "_serializerId": "number",
+                      "value": 4000
+                    },
+                    "speed": {
+                      "_serializerId": "number",
+                      "value": 0.15
+                    },
+                    "color": {
+                      "_serializerId": "number",
+                      "value": 16777215
+                    },
+                    "density": {
+                      "_serializerId": "number",
+                      "value": 0.8
+                    },
+                    "textureZoom": {
+                      "_serializerId": "number",
+                      "value": 3.5
+                    },
+                    "texture": {
+                      "_serializerId": "Entity",
+                      "value": "a36bfcc3-95ea-4021-a95d-4f84b2c9a7e8"
+                    }
+                  }
+                },
+                "children": []
+              }
+            ]
+          }
+        }
+      },
+      "usePooling": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "maxPoolSize": {
+        "_serializerId": "number",
+        "value": 20
+      },
+      "prewarmCount": {
+        "_serializerId": "number",
+        "value": 0
+      }
+    }
+  },
+  "children": []
+}

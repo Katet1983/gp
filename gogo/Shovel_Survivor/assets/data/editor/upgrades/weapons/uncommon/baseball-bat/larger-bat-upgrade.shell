@@ -1,0 +1,174 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ModifyStatsUpgrade",
+    "uid": "a7c37840-97dd-4483-9023-3796959a2627",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "a7c37840-97dd-4483-9023-3796959a2627"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "larger-bat-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "stats"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "common"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Larger bat"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "power"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": ""
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "target": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade",
+          "uid": "de5f5cbd-93e1-4225-88dd-67f533cc23f1"
+        }
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "physicalDamage"
+              },
+              "multipliers": {
+                "_serializerId": "object",
+                "value": {
+                  "upgrades": {
+                    "_serializerId": "number",
+                    "value": 0.5
+                  }
+                }
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 0
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "size"
+              },
+              "multipliers": {
+                "_serializerId": "object",
+                "value": {
+                  "upgrades": {
+                    "_serializerId": "number",
+                    "value": 0.3
+                  }
+                }
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 0
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "range"
+              },
+              "multipliers": {
+                "_serializerId": "object",
+                "value": {
+                  "upgrades": {
+                    "_serializerId": "number",
+                    "value": 0.3
+                  }
+                }
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 0
+              }
+            }
+          }
+        ]
+      },
+      "applyOnUse": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "requiredLabels": {
+        "_serializerId": "array",
+        "value": []
+      }
+    }
+  },
+  "children": []
+}

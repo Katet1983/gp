@@ -1,0 +1,110 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "AddStatusModifiersUpgrade",
+    "uid": "eac4e5b7-babb-4492-8a05-89f441c0c79d",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "eac4e5b7-babb-4492-8a05-89f441c0c79d"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "wide-swing-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "stats"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "common"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Wide Swing"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "power"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": "You swing the baseball 20% faster and in a larger arc."
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "target": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade",
+          "uid": "de5f5cbd-93e1-4225-88dd-67f533cc23f1"
+        }
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "6b9ef4bd-3058-498f-851e-e48c7fe49fc1"
+            }
+          },
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "3856e97b-46c5-455a-8937-b9505875d1a7"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

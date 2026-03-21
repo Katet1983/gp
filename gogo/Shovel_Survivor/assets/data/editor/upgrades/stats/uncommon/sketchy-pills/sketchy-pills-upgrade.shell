@@ -1,0 +1,131 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ModifyStatsUpgrade",
+    "uid": "73459af3-8f09-4a71-bbba-5cd0753bd47d",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "73459af3-8f09-4a71-bbba-5cd0753bd47d"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "sketchy-pills-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "stats"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "common"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 2
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Sketchy Pills"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "health"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "22c29475-e729-4a33-919b-75da218f28f5"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "732d780d-3784-42a5-9506-21ed732e9b87"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": ""
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "target": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade"
+        }
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "lightningDamage"
+              },
+              "multipliers": {
+                "_serializerId": "object",
+                "value": {
+                  "upgrades": {
+                    "_serializerId": "number",
+                    "value": 0.5
+                  }
+                }
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 0
+              }
+            }
+          }
+        ]
+      },
+      "applyOnUse": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "requiredLabels": {
+        "_serializerId": "array",
+        "value": []
+      }
+    }
+  },
+  "children": []
+}

@@ -1,0 +1,111 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "AddStatusModifiersUpgrade",
+    "uid": "dbd6b31d-084a-426c-b351-cf590ed2fef2",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "dbd6b31d-084a-426c-b351-cf590ed2fef2"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "scatter-dynamite-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "stats"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "common"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 4
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Scatter"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "power"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": ""
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "UpgradeFile",
+              "uid": "654e498c-4bb7-4c8c-8a8d-4245209b6c48"
+            }
+          }
+        ]
+      },
+      "target": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade",
+          "uid": "654e498c-4bb7-4c8c-8a8d-4245209b6c48"
+        }
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "a582f85a-c85d-4174-9f17-e952d7fabb26"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

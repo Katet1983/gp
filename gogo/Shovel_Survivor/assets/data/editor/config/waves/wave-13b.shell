@@ -1,0 +1,113 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "WaveConfigFile",
+    "uid": "ad88b0ab-2a8b-4250-a90b-0bb5e9e8ee97",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "ad88b0ab-2a8b-4250-a90b-0bb5e9e8ee97"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "wave-13b"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "points": {
+        "_serializerId": "number",
+        "value": 60
+      },
+      "timeBeforeEnemies": {
+        "_serializerId": "number",
+        "value": 0
+      },
+      "enemySpawnDuration": {
+        "_serializerId": "number",
+        "value": 30
+      },
+      "timeAfterEnemies": {
+        "_serializerId": "number",
+        "value": 0
+      },
+      "enemies": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "prefab": {
+                "_serializerId": "EntityReference",
+                "value": {
+                  "entityType": "PrefabFile",
+                  "uid": "31fb8dab-bec0-4866-a29b-2ec02f352c86"
+                }
+              },
+              "weight": {
+                "_serializerId": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "prefab": {
+                "_serializerId": "EntityReference",
+                "value": {
+                  "entityType": "PrefabFile",
+                  "uid": "7fe73e62-2a56-4905-9b11-1d54c5e768ae"
+                }
+              },
+              "weight": {
+                "_serializerId": "number",
+                "value": 10
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "prefab": {
+                "_serializerId": "EntityReference",
+                "value": {
+                  "entityType": "PrefabFile",
+                  "uid": "abdbcf78-bc0e-4f71-b830-6ff2391285ad"
+                }
+              },
+              "weight": {
+                "_serializerId": "number",
+                "value": 5
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "prefab": {
+                "_serializerId": "EntityReference",
+                "value": {
+                  "entityType": "PrefabFile",
+                  "uid": "922a5f5e-f987-4748-b919-2b5e558988e8"
+                }
+              },
+              "weight": {
+                "_serializerId": "number",
+                "value": 1
+              }
+            }
+          }
+        ]
+      },
+      "staticEnemies": {
+        "_serializerId": "array",
+        "value": []
+      }
+    }
+  },
+  "children": []
+}

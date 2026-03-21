@@ -1,0 +1,131 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ModifyStatsUpgrade",
+    "uid": "d504b03b-f031-4e9d-bdcb-33ecd7373e12",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "d504b03b-f031-4e9d-bdcb-33ecd7373e12"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "heart-ring"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "stats"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "common"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Heart Ring"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "health"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "1a6ad49d-1a71-414a-80c2-6c66bd590ac7"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "2ecd21d5-c31d-49e5-a266-067e50f078cc"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": "You regenerate 2 health per second."
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "target": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade"
+        }
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "healthRegeneration"
+              },
+              "multipliers": {
+                "_serializerId": "object",
+                "value": {
+                  "upgrades": {
+                    "_serializerId": "number",
+                    "value": 0
+                  }
+                }
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 0.2
+              }
+            }
+          }
+        ]
+      },
+      "applyOnUse": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "requiredLabels": {
+        "_serializerId": "array",
+        "value": []
+      }
+    }
+  },
+  "children": []
+}

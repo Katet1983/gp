@@ -1,0 +1,99 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "SpawnPrefabUpgrade",
+    "uid": "33a61f01-94e0-4495-97fc-ed09afbc146c",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "33a61f01-94e0-4495-97fc-ed09afbc146c"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "booby-trap-mine-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "weapon"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "rare"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 3
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Booby Trap - Mine"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "digging"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "e83ce5f6-c3b5-4c84-9d4e-fa1235ba364c"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "21adce0f-3968-4e53-8bfe-8327868918fa"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": "Place a mine when you dig a hole. The mine explodes, dealing {fireDamage} damage to nearby enemies."
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "parentUpgrade": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade"
+        }
+      },
+      "prefab": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "PrefabFile",
+          "uid": "33ecdd25-9705-4466-a33c-126bb62333ca"
+        }
+      }
+    }
+  },
+  "children": []
+}

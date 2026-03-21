@@ -1,0 +1,148 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ModifyStatsUpgrade",
+    "uid": "b55470df-a8f8-433f-845d-0e812ae460ba",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "b55470df-a8f8-433f-845d-0e812ae460ba"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "taser-even-more-jumps"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "stats"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "common"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Maximum current"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "power"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "0c1edfd7-12fa-4212-ba81-42ea8fd2d709"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "cb44149c-5b0e-460a-94a5-5723356b79c7"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": "The taser jumps to even more targets and does more damage."
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "target": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade",
+          "uid": "9d8dccfc-8a4e-4d26-abe6-f6c019ea744c"
+        }
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "lightningJumps"
+              },
+              "multipliers": {
+                "_serializerId": "undefined"
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 3
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "globalDamage"
+              },
+              "multipliers": {
+                "_serializerId": "object",
+                "value": {
+                  "upgrades": {
+                    "_serializerId": "number",
+                    "value": 0.2
+                  }
+                }
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 0
+              }
+            }
+          }
+        ]
+      },
+      "applyOnUse": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "requiredLabels": {
+        "_serializerId": "array",
+        "value": []
+      }
+    }
+  },
+  "children": []
+}

@@ -1,0 +1,100 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ModifyStatsPersistentUpgrade",
+    "uid": "729e755c-0b61-4582-b9c8-a5422c38fbf7",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "729e755c-0b61-4582-b9c8-a5422c38fbf7"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "difficulty-3"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Difficulty"
+      },
+      "iconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "3fcdd513-4613-4a5a-9aa3-e69ca31df824"
+        }
+      },
+      "simplePrice": {
+        "_serializerId": "number",
+        "value": 100
+      },
+      "tiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "price": {
+                "_serializerId": "number",
+                "value": 10000
+              },
+              "stats": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "object",
+                    "value": {
+                      "stat": {
+                        "_serializerId": "string",
+                        "value": "difficultyScaling"
+                      },
+                      "multipliers": {
+                        "_serializerId": "object",
+                        "value": {
+                          "upgrades": {
+                            "_serializerId": "number",
+                            "value": 0.5
+                          }
+                        }
+                      },
+                      "addition": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  },
+                  {
+                    "_serializerId": "object",
+                    "value": {
+                      "stat": {
+                        "_serializerId": "string",
+                        "value": "softCurrencyMultiplier"
+                      },
+                      "multipliers": {
+                        "_serializerId": "object",
+                        "value": {
+                          "upgrades": {
+                            "_serializerId": "number",
+                            "value": 0.5
+                          }
+                        }
+                      },
+                      "addition": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

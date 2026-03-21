@@ -1,0 +1,243 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "PrefabFile",
+    "uid": "87be0754-6bf3-451a-abed-8ea78efe1664",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "87be0754-6bf3-451a-abed-8ea78efe1664"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "fire-pillar-projectile"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "contents": {
+        "_serializerId": "raw",
+        "value": {
+          "rootUid": "801d3f08-efb5-4ae0-a1c9-100c87ea7085",
+          "hierarchy": {
+            "type": "base",
+            "entity": {
+              "type": "GameObject",
+              "uid": "801d3f08-efb5-4ae0-a1c9-100c87ea7085",
+              "data": {
+                "_prefabReference": {
+                  "_serializerId": "raw"
+                },
+                "uid": {
+                  "_serializerId": "string",
+                  "value": "801d3f08-efb5-4ae0-a1c9-100c87ea7085"
+                },
+                "name": {
+                  "_serializerId": "string",
+                  "value": "fire-pillar-projectile"
+                },
+                "components": {
+                  "_serializerId": "array",
+                  "value": [
+                    {
+                      "_serializerId": "Entity",
+                      "value": "211f6602-15b2-45a3-abd9-6388624c0916"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "425aa61a-411d-4bd7-bf28-7a7a899fba12"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "17544106-75dd-45e1-bc35-aadeb00d1255"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "b5101779-fcc0-4c6e-a4c0-dac7713844b8"
+                    }
+                  ]
+                },
+                "children": {
+                  "_serializerId": "array",
+                  "value": []
+                },
+                "isEnabledLocally": {
+                  "_serializerId": "boolean",
+                  "value": true
+                }
+              }
+            },
+            "children": [
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiTransformComponent",
+                  "uid": "211f6602-15b2-45a3-abd9-6388624c0916",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "211f6602-15b2-45a3-abd9-6388624c0916"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New Entity"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "localPosition": {
+                      "_serializerId": "_ObservablePoint",
+                      "value": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    "alpha": {
+                      "_serializerId": "number",
+                      "value": 1
+                    },
+                    "_width": {
+                      "_serializerId": "undefined"
+                    },
+                    "_height": {
+                      "_serializerId": "undefined"
+                    },
+                    "_backingPivot": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    "scale": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    },
+                    "rotation": {
+                      "_serializerId": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "FirePillarProjectile",
+                  "uid": "425aa61a-411d-4bd7-bf28-7a7a899fba12",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "425aa61a-411d-4bd7-bf28-7a7a899fba12"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New FirePillarProjectile"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "indicatorTime": {
+                      "_serializerId": "number",
+                      "value": 2
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiRenderLayerComponent",
+                  "uid": "17544106-75dd-45e1-bc35-aadeb00d1255",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "17544106-75dd-45e1-bc35-aadeb00d1255"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New PixiRenderLayerComponent"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "layer": {
+                      "_serializerId": "string",
+                      "value": "shadow"
+                    },
+                    "sortByGlobalY": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "calculateYBasedOn": {
+                      "_serializerId": "undefined"
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "CircleIndicator",
+                  "uid": "b5101779-fcc0-4c6e-a4c0-dac7713844b8",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "b5101779-fcc0-4c6e-a4c0-dac7713844b8"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New CircleIndicator"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    }
+                  }
+                },
+                "children": []
+              }
+            ]
+          }
+        }
+      },
+      "usePooling": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "maxPoolSize": {
+        "_serializerId": "number",
+        "value": 20
+      },
+      "prewarmCount": {
+        "_serializerId": "number",
+        "value": 0
+      }
+    }
+  },
+  "children": []
+}

@@ -1,0 +1,81 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "WaveConfigFile",
+    "uid": "a60713ac-fc6a-4fb9-9340-3fbb53aa6bbb",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "a60713ac-fc6a-4fb9-9340-3fbb53aa6bbb"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "wave-4"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "points": {
+        "_serializerId": "number",
+        "value": 32
+      },
+      "timeBeforeEnemies": {
+        "_serializerId": "number",
+        "value": 0
+      },
+      "enemySpawnDuration": {
+        "_serializerId": "number",
+        "value": 30
+      },
+      "timeAfterEnemies": {
+        "_serializerId": "number",
+        "value": 0
+      },
+      "enemies": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "prefab": {
+                "_serializerId": "EntityReference",
+                "value": {
+                  "entityType": "PrefabFile",
+                  "uid": "7fe73e62-2a56-4905-9b11-1d54c5e768ae"
+                }
+              },
+              "weight": {
+                "_serializerId": "number",
+                "value": 10
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "prefab": {
+                "_serializerId": "EntityReference",
+                "value": {
+                  "entityType": "PrefabFile",
+                  "uid": "2e16449c-8d2c-4adc-81ac-026d8fae8dc9"
+                }
+              },
+              "weight": {
+                "_serializerId": "number",
+                "value": 1
+              }
+            }
+          }
+        ]
+      },
+      "staticEnemies": {
+        "_serializerId": "array",
+        "value": []
+      }
+    }
+  },
+  "children": []
+}

@@ -1,0 +1,50 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ItemUnlockConfig",
+    "uid": "b0a81aa1-acdb-4f02-85f1-1e54fc3e80ac",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "b0a81aa1-acdb-4f02-85f1-1e54fc3e80ac"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "item-unlocks"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "unlockOrder": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "UpgradeFile",
+              "uid": "30f2e401-af2a-496d-afc7-7fdb3e0dfcf3"
+            }
+          },
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "UpgradeFile",
+              "uid": "4244b608-cd8d-41d7-a3ee-2f294e14d2fd"
+            }
+          },
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "UpgradeFile",
+              "uid": "697c28ec-d27e-4a61-9644-9328a952815d"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

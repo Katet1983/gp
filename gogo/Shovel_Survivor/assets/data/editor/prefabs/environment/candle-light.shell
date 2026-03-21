@@ -1,0 +1,178 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "PrefabFile",
+    "uid": "3e80ee7e-9a5b-4e3b-b978-975d525c2f2c",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "3e80ee7e-9a5b-4e3b-b978-975d525c2f2c"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "candle-light"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "contents": {
+        "_serializerId": "raw",
+        "value": {
+          "rootUid": "01cadade-05ef-485a-86d8-f9b54672bc74",
+          "hierarchy": {
+            "type": "base",
+            "entity": {
+              "type": "GameObject",
+              "uid": "01cadade-05ef-485a-86d8-f9b54672bc74",
+              "data": {
+                "_prefabReference": {
+                  "_serializerId": "raw"
+                },
+                "uid": {
+                  "_serializerId": "string",
+                  "value": "01cadade-05ef-485a-86d8-f9b54672bc74"
+                },
+                "name": {
+                  "_serializerId": "string",
+                  "value": "candle-light"
+                },
+                "components": {
+                  "_serializerId": "array",
+                  "value": [
+                    {
+                      "_serializerId": "Entity",
+                      "value": "b2dc344d-534b-473f-89c8-c680eea9286c"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "01bed594-c2d9-40c2-8193-1e133b62620c"
+                    }
+                  ]
+                },
+                "visible": {
+                  "_serializerId": "boolean",
+                  "value": true
+                },
+                "children": {
+                  "_serializerId": "array",
+                  "value": []
+                }
+              }
+            },
+            "children": [
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiTransformComponent",
+                  "uid": "b2dc344d-534b-473f-89c8-c680eea9286c",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "b2dc344d-534b-473f-89c8-c680eea9286c"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New Entity"
+                    },
+                    "localPosition": {
+                      "_serializerId": "_ObservablePoint",
+                      "value": {
+                        "x": 1356,
+                        "y": 89
+                      }
+                    },
+                    "_width": {
+                      "_serializerId": "undefined"
+                    },
+                    "_height": {
+                      "_serializerId": "undefined"
+                    },
+                    "_backingPivot": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    "scale": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    },
+                    "rotation": {
+                      "_serializerId": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiPointLightComponnt",
+                  "uid": "01bed594-c2d9-40c2-8193-1e133b62620c",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "01bed594-c2d9-40c2-8193-1e133b62620c"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New PixiPointLightComponnt"
+                    },
+                    "radius": {
+                      "_serializerId": "number",
+                      "value": 15
+                    },
+                    "color": {
+                      "_serializerId": "string",
+                      "value": "#ff9a01"
+                    },
+                    "intensity": {
+                      "_serializerId": "number",
+                      "value": 0.8
+                    },
+                    "flickerVariance": {
+                      "_serializerId": "number",
+                      "value": 0.5
+                    },
+                    "flickerSmoothness": {
+                      "_serializerId": "number",
+                      "value": 15
+                    }
+                  }
+                },
+                "children": []
+              }
+            ]
+          }
+        }
+      },
+      "usePooling": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "maxPoolSize": {
+        "_serializerId": "number",
+        "value": 20
+      },
+      "prewarmCount": {
+        "_serializerId": "number",
+        "value": 0
+      }
+    }
+  },
+  "children": []
+}

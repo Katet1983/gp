@@ -1,0 +1,91 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "AddModifiersOnConditionModifierFile",
+    "uid": "24878993-3db9-4fe4-8c03-a3c890c5916b",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "24878993-3db9-4fe4-8c03-a3c890c5916b"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "the-magician-conditional-projectile"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "e349e738-02a3-48bb-80bf-f016978cf8ae"
+            }
+          },
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "faed4252-0fad-483b-8fc2-fff3d9ab7615"
+            }
+          },
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "0e81c9f9-3670-4dfa-917d-380ff32f54f2"
+            }
+          }
+        ]
+      },
+      "condition": {
+        "_serializerId": "string",
+        "value": "use"
+      },
+      "digsToTrigger": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "applyOnFinishedHole": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "useRandomness": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "randomness": {
+        "_serializerId": "object",
+        "value": {
+          "group": {
+            "_serializerId": "string",
+            "value": "card"
+          },
+          "chance": {
+            "_serializerId": "number",
+            "value": 0.1
+          }
+        }
+      },
+      "removeAfterUse": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "removeAfterDig": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": -1
+      }
+    }
+  },
+  "children": []
+}

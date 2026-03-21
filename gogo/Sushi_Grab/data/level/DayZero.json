@@ -1,0 +1,62 @@
+{
+	"type": "map",
+	"height": 1,
+	"width": 1,
+	"tilewidth": 1080,
+	"tileheight": 2340,
+	"infinite": false,
+	"nextobjectid": 1,
+	"orientation": "orthogonal",
+	"renderorder": "right-down",
+	"editor": "melon-editor",
+	"tilesets": [],
+	"layers": [
+		{
+			"name": "level0_tutorbackground",
+			"type": "objectgroup",
+			"x": 0,
+			"y": 0,
+			"opacity": 1,
+			"visible": true,
+			"objects": [
+				{
+					"name": "spriteTP",
+					"x": -337,
+					"y": 0,
+					"rotation": 0,
+					"visible": true,
+					"properties": {
+						"anchorPoint": "json:{\"x\":0,\"y\":0}",
+						"region": "level0_tutorbackground",
+						"texture": "dayZero"
+					},
+					"propertytypes": {
+						"anchorPoint": "string",
+						"region": "string",
+						"texture": "string"
+					}
+				}
+			]
+		},
+		{
+			"name": "angryEffect3",
+			"type": "objectgroup",
+			"x": 0,
+			"y": 0,
+			"opacity": 1,
+			"visible": true,
+			"draworder": "topdown",
+			"objects": [
+				{
+					"name": "angryEffect3",
+					"x": 374,
+					"y": 597,
+					"rotation": 0,
+					"visible": true,
+					"properties": {},
+					"propertytypes": {}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,168 @@
+{
+	"features": {
+		"highscore": 1,
+		"leaderboard": 0,
+		"multiplayer": 0,
+		"rewarded": 0,
+		"standalone": 1,
+		"credits": 0,
+		"multiplayer_local": 1,
+		"audio": 1,
+		"external_mute": 1
+	},
+	"game_i18n": {
+		"default": {
+			"jewelish-blitz": "jewelish-blitz"
+		},
+		"de": {
+			"jewelish-blitz": "jewelish-blitz"
+		},
+		"tr": {
+			"jewelish-blitz": "jewelish-blitz"
+		}
+	},
+	"game_info": {
+		"client_version": "1.2.6",
+		"api_version": "2.1",
+		"orientation": {
+			"phone": {
+				"portrait": "green",
+				"landscape": "green"
+			},
+			"tablet": {
+				"portrait": "green",
+				"landscape": "green"
+			}
+		},
+		"forced_mode": {
+			"state": {
+				"level": {
+					"description": "enabled to start the game on a more difficult level",
+					"type": "number",
+					"min": 1,
+					"max": 15
+				}
+			},
+			"override": {
+				"hide_ui": {
+					"description": "hide parts of the ui",
+					"type": "array",
+					"values": ["score", "floating_points", "aiming_aid"]
+				},
+				"shots": {
+					"description": "the number of available shots (0=unlimited)",
+					"type": "number"
+				},
+				"prioritize_color": {
+					"description": "guarantees that the given color will be present",
+					"type": "string",
+					"values": ["blue", "green", "yellow", "aqua", "purple", "red", "white"]
+				},
+				"bubble_color_number": {
+					"description": "total number of gem colors on the playing field",
+					"type": "number",
+					"min": 3,
+					"max": 6
+				},
+				"bubble_approach_speed": {
+					"description": "the speed of which the bubbles come down from above",
+					"type": "number",
+					"min": 1,
+					"max": 10
+				},
+				"push_back": {
+					"description": "how far the bubbles are pushed back when they are hit by a bubble with wrong color (0= no push back, 1=regular",
+					"type": "number",
+					"min": 0,
+					"max": 10
+				}
+			}
+		},
+		"track_stats": {
+			"projectile_shot": {
+				"description": "player fired a bubble",
+				"type": "number",
+				"params": {
+					"bubble_color": {
+						"type": "string",
+						"values": ["blue", "green", "yellow", "aqua", "purple", "red", "white"]
+					}
+				}
+			},
+			"bubbles_destroyed": {
+				"description": "fired when any kind of bubble is destroyed",
+				"type": "number",
+				"params": {
+					"bubble_color": {
+						"type": "string",
+						"values": ["blue", "green", "yellow", "aqua", "purple", "red", "white"]
+					},
+					"destruction_type": {
+						"type": "string",
+						"values": ["popped", "detached"]
+					},
+					"shot_type": {
+						"type": "string",
+						"values": ["bouncing_shot", "straight_shot"]
+					}
+				}
+			},
+			"level_complete": {
+				"description": "sent when the level is completed (star bubble shot)",
+				"params": {
+					"completion_percentage": {
+						"type": "number",
+						"min": 1,
+						"max": 100
+					},
+					"bonus_points": {
+						"type": "number"
+					},
+					"remaining_seconds": {
+						"type": "number"
+					}
+				}
+			},
+			"proximity_warning": {
+				"description": "sent when the bubbles get too close to the end",
+				"type": "number"
+			},
+			"combo_achieved": {
+				"description": "tracks the number of successful shots in a row",
+				"type": "number",
+				"params": {
+					"combo_value": {
+						"type": "number",
+						"min": 1
+					}
+				}
+			},
+			"new_highscore": {
+				"description": "event is sent when the user achieves a new highscore",
+				"type": "number",
+				"params": {
+					"new_highscore": {
+						"type": "number"
+					}
+				}
+			}
+		}
+	},
+	"aid": "A1234-5",
+	"logging": false,
+	"api": "famobi",
+	"name": "Google GameSnacks",
+	"more_games_url": "",
+	"more_games_button_image": "logo",
+	"show_splash": "",
+	"splash_duration": 3000,
+	"branch": "master",
+	"gameParams": {
+		"ad_type": "off"
+	},
+	"menuless": true,
+	"disable_console": false,
+	"includeJS": [],
+	"version": "61d9ef5a",
+	"supportedLanguages": ["en", "de", "tr"]
+}

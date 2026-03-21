@@ -1,0 +1,99 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "SpawnPrefabUpgrade",
+    "uid": "9d8dccfc-8a4e-4d26-abe6-f6c019ea744c",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "9d8dccfc-8a4e-4d26-abe6-f6c019ea744c"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "taser-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "weapon"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "rare"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 5
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Taser"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "digging"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "0c1edfd7-12fa-4212-ba81-42ea8fd2d709"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "cb44149c-5b0e-460a-94a5-5723356b79c7"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": "Shoots a projectile that causes lighting to bounce between nearby enemies, dealing {lightningDamage}. Each jump reduces the damage deal."
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "parentUpgrade": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade"
+        }
+      },
+      "prefab": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "PrefabFile",
+          "uid": "0c879ecc-a5d7-48c6-a43d-602b1b941968"
+        }
+      }
+    }
+  },
+  "children": []
+}

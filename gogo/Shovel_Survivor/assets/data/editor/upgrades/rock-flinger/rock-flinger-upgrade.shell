@@ -1,0 +1,99 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "SpawnPrefabUpgrade",
+    "uid": "6cb7e260-a046-4dc8-9c68-2a61319b1bc7",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "6cb7e260-a046-4dc8-9c68-2a61319b1bc7"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "rock-flinger-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "weapon"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "legendary"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 2
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Rock Flinger"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "digging"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "8cbd3c1c-dc72-4eba-b929-e945bc46cb9d"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "66f6a235-59ab-4de3-be2b-050f737197a1"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": "Throw a large rock at a nearby enemy when you finish digging a hole dealing {physicalDamage} damage."
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "parentUpgrade": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade"
+        }
+      },
+      "prefab": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "PrefabFile",
+          "uid": "31f2cbe1-b2a2-4ad9-87e5-710715b98c97"
+        }
+      }
+    }
+  },
+  "children": []
+}

@@ -1,0 +1,79 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "WeightedDiggingDrops",
+    "uid": "1b0812d6-c2db-42b5-bd47-bf0e370489b5",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "1b0812d6-c2db-42b5-bd47-bf0e370489b5"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "stage-8"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "drops": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "weight": {
+                "_serializerId": "number",
+                "value": 2
+              },
+              "drops": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "EntityReference",
+                    "value": {
+                      "entityType": "DiggingDropConfigFile",
+                      "uid": "da75464d-cfaa-41cd-85be-5a92bf873553"
+                    }
+                  }
+                ]
+              },
+              "weighting": {
+                "_serializerId": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "weight": {
+                "_serializerId": "number",
+                "value": 1
+              },
+              "drops": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "EntityReference",
+                    "value": {
+                      "entityType": "DiggingDropConfigFile",
+                      "uid": "367b8c7d-2fff-4334-be6e-ae25fe12fbc9"
+                    }
+                  }
+                ]
+              },
+              "weighting": {
+                "_serializerId": "number",
+                "value": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

@@ -1,0 +1,75 @@
+(function(){
+// Put user code here //
+ 
+//  End of user code  //
+
+game.object.sushibenar = me.Sprite.extend({
+	init: function(x, y, settings = {}){
+		settings.texture = "hook";
+		settings.image = game.textureMap.get(settings.texture);
+		game.util.__populateAtlasIndices([
+			"correct"
+		], settings);
+		settings.framewidth = settings.framewidth || 74;
+		settings.frameheight = settings.frameheight || 76;
+		settings.anchorPoint = {
+			x: 0,
+			y: 0
+		};
+
+        // Put user code here //
+        
+        //  End of user code  //
+
+		this._super(me.Sprite, 'init', [x, y, settings]);
+		delete settings.image;
+		this.alpha = 1;
+		this.floating = false;
+		this.alwaysUpdate = false;
+		this.updateWhenPaused = false;
+		this.isPersistent = false;
+		this.var = {};
+
+        // Put user code here //
+        this.alpha = 0;
+        game.util.scale(this, 0.7);
+        //  End of user code  //
+	},
+
+	update: function(dt){
+		var drawNextFrame = this._super(me.Sprite, 'update', [dt]);
+        // Put user code here //
+        
+        //  End of user code  //
+		return drawNextFrame;
+	},
+
+	draw : function(renderer, rect) {
+		this._super(me.Sprite, 'draw', [renderer, rect]);
+        // Put user code here //
+        
+        //  End of user code  //
+	},
+
+	onActivateEvent : function() {
+        // Put user code here //
+        
+        //  End of user code  //
+	},
+
+	onDeactivateEvent : function() {
+
+        // Put user code here //
+        
+        //  End of user code  //
+	},
+
+    // Put user code here //
+    
+    //  End of user code  //
+});
+
+// Put user code here //
+ 
+//  End of user code  //
+})();

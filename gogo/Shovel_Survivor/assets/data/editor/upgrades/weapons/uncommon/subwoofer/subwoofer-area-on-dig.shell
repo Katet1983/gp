@@ -1,0 +1,77 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "AddModifiersOnConditionModifierFile",
+    "uid": "9d5d0471-d78b-44bf-bed8-e59bf99a9a13",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "9d5d0471-d78b-44bf-bed8-e59bf99a9a13"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "subwoofer-area-on-dig"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "6f3b1851-6c15-403c-82f8-10a44db7851b"
+            }
+          }
+        ]
+      },
+      "condition": {
+        "_serializerId": "string",
+        "value": "dig"
+      },
+      "digsToTrigger": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "applyOnFinishedHole": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "useRandomness": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "randomness": {
+        "_serializerId": "object",
+        "value": {
+          "group": {
+            "_serializerId": "string",
+            "value": ""
+          },
+          "chance": {
+            "_serializerId": "number",
+            "value": 0.1
+          }
+        }
+      },
+      "removeAfterUse": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "removeAfterDig": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": -1
+      }
+    }
+  },
+  "children": []
+}

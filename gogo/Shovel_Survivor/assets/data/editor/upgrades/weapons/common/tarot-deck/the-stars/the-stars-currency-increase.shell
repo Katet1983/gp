@@ -1,0 +1,49 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ApplyStatModifierOnHitModifierFile",
+    "uid": "3565e712-15f6-4241-9371-6852728790b7",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "3565e712-15f6-4241-9371-6852728790b7"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "the-stars-currency-increase"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "softCurrencyMultiplier"
+              },
+              "multipliers": {
+                "_serializerId": "undefined"
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 3
+              }
+            }
+          }
+        ]
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": 2
+      }
+    }
+  },
+  "children": []
+}

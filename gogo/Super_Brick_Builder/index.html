@@ -1,0 +1,194 @@
+<!DOCTYPE html><script nonce="sd8qR9mQ8FYsyI1TmVeqhA">(function(){'use strict';function f(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function q(a){var b=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(b)return b.call(a);if(typeof a.length=="number")return{next:f(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}var t=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,e){if(a==Array.prototype||a==Object.prototype)return a;a[b]=e.value;return a};
+function u(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var e=a[b];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var v=u(this);function w(a,b){if(b)a:{var e=v;a=a.split(".");for(var g=0;g<a.length-1;g++){var l=a[g];if(!(l in e))break a;e=e[l]}a=a[a.length-1];g=e[a];b=b(g);b!=g&&b!=null&&t(e,a,{configurable:!0,writable:!0,value:b})}}
+function x(a){if(!(a instanceof Object))throw new TypeError("Iterator result "+a+" is not an object");}function y(){this.v=!1;this.j=null;this.o=void 0;this.g=1;this.i=this.l=0;this.A=this.h=null}function z(a){if(a.v)throw new TypeError("Generator is already running");a.v=!0}y.prototype.B=function(a){this.o=a};function A(a,b){a.h={J:b,K:!0};a.g=a.l||a.i}y.prototype.getNextAddressJsc=function(){return this.g};y.prototype.getYieldResultJsc=function(){return this.o};
+y.prototype.return=function(a){this.h={return:a};this.g=this.i};y.prototype["return"]=y.prototype.return;y.prototype.H=function(a){this.h={u:a};this.g=this.i};y.prototype.jumpThroughFinallyBlocks=y.prototype.H;y.prototype.m=function(a,b){this.g=b;return{value:a}};y.prototype.yield=y.prototype.m;y.prototype.P=function(a,b){a=q(a);var e=a.next();x(e);if(e.done)this.o=e.value,this.g=b;else return this.j=a,this.m(e.value,b)};y.prototype.yieldAll=y.prototype.P;y.prototype.u=function(a){this.g=a};
+y.prototype.jumpTo=y.prototype.u;y.prototype.I=function(){this.g=0};y.prototype.jumpToEnd=y.prototype.I;y.prototype.N=function(a,b){this.l=a;b!=void 0&&(this.i=b)};y.prototype.setCatchFinallyBlocks=y.prototype.N;y.prototype.O=function(a){this.l=0;this.i=a||0};y.prototype.setFinallyBlock=y.prototype.O;y.prototype.M=function(a,b){this.g=a;this.l=b||0};y.prototype.leaveTryBlock=y.prototype.M;y.prototype.D=function(a){this.l=a||0;a=this.h.J;this.h=null;return a};y.prototype.enterCatchBlock=y.prototype.D;
+y.prototype.F=function(a,b,e){e?this.A[e]=this.h:this.A=[this.h];this.l=a||0;this.i=b||0};y.prototype.enterFinallyBlock=y.prototype.F;y.prototype.L=function(a,b){b=this.A.splice(b||0)[0];(b=this.h=this.h||b)?b.K?this.g=this.l||this.i:b.u!=void 0&&this.i<b.u?(this.g=b.u,this.h=null):this.g=this.i:this.g=a};y.prototype.leaveFinallyBlock=y.prototype.L;y.prototype.G=function(a){return new E(a)};y.prototype.forIn=y.prototype.G;
+function E(a){this.i=a;this.g=[];for(var b in a)this.g.push(b);this.g.reverse()}E.prototype.h=function(){for(;this.g.length>0;){var a=this.g.pop();if(a in this.i)return a}return null};E.prototype.getNext=E.prototype.h;function F(a){this.g=new y;this.h=a}function G(a,b){z(a.g);var e=a.g.j;if(e)return H(a,"return"in e?e["return"]:function(g){return{value:g,done:!0}},b,a.g.return);a.g.return(b);return I(a)}
+function H(a,b,e,g){try{var l=b.call(a.g.j,e);x(l);if(!l.done)return a.g.v=!1,l;var k=l.value}catch(c){return a.g.j=null,A(a.g,c),I(a)}a.g.j=null;g.call(a.g,k);return I(a)}function I(a){for(;a.g.g;)try{var b=a.h(a.g);if(b)return a.g.v=!1,{value:b.value,done:!1}}catch(e){a.g.o=void 0,A(a.g,e)}a.g.v=!1;if(a.g.h){b=a.g.h;a.g.h=null;if(b.K)throw b.J;return{value:b.return,done:!0}}return{value:void 0,done:!0}}
+function J(a){this.next=function(b){z(a.g);a.g.j?b=H(a,a.g.j.next,b,a.g.B):(a.g.B(b),b=I(a));return b};this.throw=function(b){z(a.g);a.g.j?b=H(a,a.g.j["throw"],b,a.g.B):(A(a.g,b),b=I(a));return b};this.return=function(b){return G(a,b)};this[Symbol.iterator]=function(){return this}}function K(a){function b(g){return a.next(g)}function e(g){return a.throw(g)}return new Promise(function(g,l){function k(c){c.done?g(c.value):Promise.resolve(c.value).then(b,e).then(k,l)}k(a.next())})}
+w("Symbol",function(a){function b(k){if(this instanceof b)throw new TypeError("Symbol is not a constructor");return new e(g+(k||"")+"_"+l++,k)}function e(k,c){this.g=k;t(this,"description",{configurable:!0,writable:!0,value:c})}if(a)return a;e.prototype.toString=function(){return this.g};var g="jscomp_symbol_"+(Math.random()*1E9>>>0)+"_",l=0;return b});
+w("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");t(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return L(f(this))}});return a});function L(a){a={next:a};a[Symbol.iterator]=function(){return this};return a}
+w("Promise",function(a){function b(c){this.h=0;this.i=void 0;this.g=[];this.o=!1;var d=this.j();try{c(d.resolve,d.reject)}catch(h){d.reject(h)}}function e(){this.g=null}function g(c){return c instanceof b?c:new b(function(d){d(c)})}if(a)return a;e.prototype.h=function(c){if(this.g==null){this.g=[];var d=this;this.i(function(){d.l()})}this.g.push(c)};var l=v.setTimeout;e.prototype.i=function(c){l(c,0)};e.prototype.l=function(){for(;this.g&&this.g.length;){var c=this.g;this.g=[];for(var d=0;d<c.length;++d){var h=
+c[d];c[d]=null;try{h()}catch(m){this.j(m)}}}this.g=null};e.prototype.j=function(c){this.i(function(){throw c;})};b.prototype.j=function(){function c(m){return function(n){h||(h=!0,m.call(d,n))}}var d=this,h=!1;return{resolve:c(this.F),reject:c(this.l)}};b.prototype.F=function(c){if(c===this)this.l(new TypeError("A Promise cannot resolve to itself"));else if(c instanceof b)this.H(c);else{a:switch(typeof c){case "object":var d=c!=null;break a;case "function":d=!0;break a;default:d=!1}d?this.D(c):this.m(c)}};
+b.prototype.D=function(c){var d=void 0;try{d=c.then}catch(h){this.l(h);return}typeof d=="function"?this.I(d,c):this.m(c)};b.prototype.l=function(c){this.v(2,c)};b.prototype.m=function(c){this.v(1,c)};b.prototype.v=function(c,d){if(this.h!=0)throw Error("Cannot settle("+c+", "+d+"): Promise already settled in state"+this.h);this.h=c;this.i=d;this.h===2&&this.G();this.B()};b.prototype.G=function(){var c=this;l(function(){if(c.A()){var d=v.console;typeof d!=="undefined"&&d.error(c.i)}},1)};b.prototype.A=
+function(){if(this.o)return!1;var c=v.CustomEvent,d=v.Event,h=v.dispatchEvent;if(typeof h==="undefined")return!0;typeof c==="function"?c=new c("unhandledrejection",{cancelable:!0}):typeof d==="function"?c=new d("unhandledrejection",{cancelable:!0}):(c=v.document.createEvent("CustomEvent"),c.initCustomEvent("unhandledrejection",!1,!0,c));c.promise=this;c.reason=this.i;return h(c)};b.prototype.B=function(){if(this.g!=null){for(var c=0;c<this.g.length;++c)k.h(this.g[c]);this.g=null}};var k=new e;b.prototype.H=
+function(c){var d=this.j();c.C(d.resolve,d.reject)};b.prototype.I=function(c,d){var h=this.j();try{c.call(d,h.resolve,h.reject)}catch(m){h.reject(m)}};b.prototype.then=function(c,d){function h(p,r){return typeof p=="function"?function(B){try{m(p(B))}catch(C){n(C)}}:r}var m,n,D=new b(function(p,r){m=p;n=r});this.C(h(c,m),h(d,n));return D};b.prototype.catch=function(c){return this.then(void 0,c)};b.prototype.C=function(c,d){function h(){switch(m.h){case 1:c(m.i);break;case 2:d(m.i);break;default:throw Error("Unexpected state: "+
+m.h);}}var m=this;this.g==null?k.h(h):this.g.push(h);this.o=!0};b.resolve=g;b.reject=function(c){return new b(function(d,h){h(c)})};b.race=function(c){return new b(function(d,h){for(var m=q(c),n=m.next();!n.done;n=m.next())g(n.value).C(d,h)})};b.all=function(c){var d=q(c),h=d.next();return h.done?g([]):new b(function(m,n){function D(B){return function(C){p[B]=C;r--;r==0&&m(p)}}var p=[],r=0;do p.push(void 0),r++,g(h.value).C(D(p.length-1),n),h=d.next();while(!h.done)})};return b});
+function M(a,b){a instanceof String&&(a+="");var e=0,g=!1,l={next:function(){if(!g&&e<a.length){var k=e++;return{value:b(k,a[k]),done:!1}}g=!0;return{done:!0,value:void 0}}};l[Symbol.iterator]=function(){return l};return l}w("Array.prototype.keys",function(a){return a?a:function(){return M(this,function(b){return b})}});(function(){var a,b,e,g,l;return K(new J(new F(function(k){switch(k.g){case 1:if(!("serviceWorker"in navigator)){k.u(0);break}return k.m(navigator.serviceWorker.getRegistration("../.."),3);case 3:return(a=k.o)?k.m(a.unregister(),4):k.return();case 4:return window.caches==null?k.return():k.m(window.caches.keys(),5);case 5:b=k.o,e=q(b),g=e.next();case 6:if(g.done){k.u(0);break}l=g.value;return k.m(window.caches.delete(l),7);case 7:g=e.next(),k.u(6)}})))})();}).call(this);
+</script><script src="https://sdks.gamesnacks.com/developer/v2/index.js" data-target-origin="https://gamesnacks.com" data-user-activity-metrics data-run-slotcar-ads-in-game-center data-game-center-monetized data-rewarded-monetizable data-interstitial-monetizable data-level-complete-monetizable data-game-over-monetizable nonce="sd8qR9mQ8FYsyI1TmVeqhA"></script><meta name="robots" content="noindex, nofollow"><meta charset="UTF-8">
+		<link rel="icon" type="image/svg+xml" href="/vite.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+		<title>Super Brick Builder</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			#loading-screen {
+				line-height: 1;
+				box-sizing: border-box;
+				position: absolute;
+				font-family: 'Barlow Semi Condensed', sans-serif;
+				font-weight: 700;
+				inset: 0;
+				background-color: #2c52e5;
+				background-image: url('assets/background-grid-texture.png');
+				background-repeat: round;
+
+				pointer-events: all;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 20px;
+
+				color: #f8f6e9;
+				font-size: 28px;
+				overflow: hidden;
+
+				@media (min-width: 768px) {
+					font-size: 36px;
+				}
+
+				z-index: 1000000;
+			}
+
+			.splash-container-outer {
+				height: 60vh;
+				width: 500px;
+			}
+
+			#loader-parent {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: 120px;
+
+				gap: 8px;
+			}
+
+			.loading-screen-loader,
+			.loading-screen-loader:before,
+			.loading-screen-loader:after {
+				border-radius: 50%;
+				width: 2.5em;
+				height: 2.5em;
+				animation-fill-mode: both;
+				animation: bblFadInOut 1.8s infinite ease-in-out;
+			}
+
+			.loading-screen-loader {
+				color: #f8f6e9;
+				font-size: 7px;
+				position: relative;
+				text-indent: -9999em;
+				transform: translateZ(0);
+				animation-delay: -0.16s;
+			}
+
+			.loading-screen-loader:before,
+			.loading-screen-loader:after {
+				content: '';
+				position: absolute;
+				top: 0;
+			}
+
+			.loading-screen-loader:before {
+				left: -3.5em;
+				animation-delay: -0.32s;
+			}
+
+			.loading-screen-loader:after {
+				left: 3.5em;
+			}
+
+			@keyframes bblFadInOut {
+				0%,
+				80%,
+				100% {
+					box-shadow: 0 2.5em 0 -1.3em;
+				}
+
+				40% {
+					box-shadow: 0 2.5em 0 0;
+				}
+			}
+
+			.splash-img {
+				width: 150vw;
+			}
+
+			@media (min-width: 768px) {
+				.splash-img {
+					width: 100vw;
+					max-width: 1200px;
+				}
+			}
+		</style>
+
+		<script type="module" crossorigin="" src="./assets/index-BaRnwdwx.js"></script>
+		<link rel="stylesheet" crossorigin="" href="./assets/index-BOCvL8fG.css"><body><div id="app"></div>
+
+		<div id="loading-screen">
+			<div class="splash-container-outer">
+				<div class="splash-container">
+					<!-- Game Title -->
+					<div class="title-container">
+						<div class="title-container-inner">
+							<div class="title super">
+								<div class="gfx">
+									<svg width="267.75" height="96.05" viewBox="0 0 315 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M40.0707 100.876C34.6677 100.876 29.9217 99.927 25.833 98.0286C21.8172 96.1303 18.6776 93.5017 16.4141 90.1431C14.2237 86.7114 13.1285 82.7687 13.1285 78.3148V75.7958C13.1285 75.2847 13.2745 74.8832 13.5666 74.5911C13.8586 74.299 14.2602 74.153 14.7713 74.153H31.7471C32.2582 74.153 32.6598 74.299 32.9518 74.5911C33.2439 74.8832 33.3899 75.2847 33.3899 75.7958V77.3291C33.3899 78.9354 34.047 80.3227 35.3613 81.4909C36.7486 82.6592 38.5739 83.2433 40.8374 83.2433C42.6627 83.2433 44.0135 82.8052 44.8896 81.929C45.7658 80.9798 46.2039 79.9211 46.2039 78.7529C46.2039 77.3656 45.5833 76.2339 44.342 75.3577C43.1738 74.4086 40.9104 73.1673 37.5517 71.634L34.9232 70.3198C30.8344 68.3484 27.2932 66.377 24.2997 64.4056C21.3061 62.4343 18.7141 59.8423 16.5237 56.6296C14.3332 53.344 13.238 49.4377 13.238 44.9109C13.238 40.457 14.3332 36.5508 16.5237 33.1921C18.7871 29.7605 21.8537 27.1319 25.7234 25.3066C29.6662 23.4082 34.1566 22.459 39.1945 22.459C44.3785 22.459 49.0149 23.4447 53.1037 25.4161C57.1925 27.3875 60.3686 30.162 62.6321 33.7397C64.9685 37.3174 66.1367 41.4062 66.1367 46.0061V47.7584C66.1367 48.2695 65.9907 48.6711 65.6986 48.9632C65.4066 49.2552 65.005 49.4012 64.4939 49.4012H47.5181C47.007 49.4012 46.6055 49.2552 46.3134 48.9632C46.0214 48.6711 45.8753 48.2695 45.8753 47.7584V46.2251C45.8753 44.6188 45.2182 43.195 43.9039 41.9538C42.6627 40.7126 40.9834 40.0919 38.866 40.0919C37.2597 40.0919 35.9454 40.53 34.9232 41.4062C33.974 42.2093 33.4994 43.3411 33.4994 44.8014C33.4994 46.4077 34.3026 47.8679 35.9089 49.1822C37.5882 50.4234 40.8374 52.1758 45.6563 54.4392C46.3864 54.8773 47.4816 55.4614 48.9419 56.1915C52.8117 58.309 55.9148 60.2073 58.2512 61.8866C60.5877 63.493 62.559 65.6469 64.1654 68.3484C65.7717 70.9769 66.5748 74.226 66.5748 78.0958C66.5748 85.1051 64.1288 90.6542 59.2369 94.743C54.418 98.8318 48.0292 100.876 40.0707 100.876ZM99.0153 100.876C93.6853 100.876 88.9759 99.8175 84.8871 97.7001C80.8713 95.5826 77.7317 92.5891 75.4683 88.7193C73.2779 84.8496 72.1826 80.3592 72.1826 75.2482V24.978C72.1826 24.4669 72.3287 24.0653 72.6207 23.7733C72.9128 23.4812 73.3144 23.3352 73.8255 23.3352H91.1298C91.6409 23.3352 92.0425 23.4812 92.3345 23.7733C92.6266 24.0653 92.7726 24.4669 92.7726 24.978V76.2339C92.7726 78.3513 93.3202 80.0672 94.4154 81.3814C95.5837 82.6226 97.117 83.2433 99.0153 83.2433C100.841 83.2433 102.337 82.6226 103.506 81.3814C104.674 80.0672 105.258 78.3513 105.258 76.2339V24.978C105.258 24.4669 105.404 24.0653 105.696 23.7733C105.988 23.4812 106.39 23.3352 106.901 23.3352H124.205C124.716 23.3352 125.118 23.4812 125.41 23.7733C125.702 24.0653 125.848 24.4669 125.848 24.978V75.2482C125.848 80.3592 124.716 84.8496 122.453 88.7193C120.262 92.5891 117.123 95.5826 113.034 97.7001C109.018 99.8175 104.345 100.876 99.0153 100.876ZM162.3 23.3352C167.119 23.3352 171.353 24.3939 175.004 26.5113C178.655 28.5557 181.502 31.4763 183.547 35.273C185.591 38.9967 186.613 43.3046 186.613 48.1965C186.613 53.0154 185.591 57.2503 183.547 60.901C181.575 64.4786 178.728 67.2897 175.004 69.3341C171.353 71.3055 167.155 72.2912 162.409 72.2912H153.538C153.1 72.2912 152.881 72.5102 152.881 72.9483V98.3572C152.881 98.8683 152.735 99.2699 152.443 99.5619C152.151 99.854 151.749 100 151.238 100H133.934C133.423 100 133.021 99.854 132.729 99.5619C132.437 99.2699 132.291 98.8683 132.291 98.3572V24.978C132.291 24.4669 132.437 24.0653 132.729 23.7733C133.021 23.4812 133.423 23.3352 133.934 23.3352H162.3ZM158.795 56.1915C160.985 56.1915 162.738 55.5344 164.052 54.2202C165.366 52.8329 166.023 50.971 166.023 48.6346C166.023 46.2251 165.366 44.3633 164.052 43.049C162.738 41.6617 160.985 40.9681 158.795 40.9681H153.538C153.1 40.9681 152.881 41.1872 152.881 41.6252V55.5344C152.881 55.9725 153.1 56.1915 153.538 56.1915H158.795ZM241.485 39.3253C241.485 39.8364 241.339 40.238 241.047 40.53C240.755 40.8221 240.353 40.9681 239.842 40.9681H213.119C212.681 40.9681 212.462 41.1872 212.462 41.6252V51.9202C212.462 52.3583 212.681 52.5773 213.119 52.5773H228.562C229.073 52.5773 229.474 52.7234 229.766 53.0154C230.058 53.3075 230.205 53.7091 230.205 54.2202V68.4579C230.205 68.969 230.058 69.3706 229.766 69.6626C229.474 69.9547 229.073 70.1007 228.562 70.1007H213.119C212.681 70.1007 212.462 70.3198 212.462 70.7579V81.71C212.462 82.1481 212.681 82.3671 213.119 82.3671H239.842C240.353 82.3671 240.755 82.5131 241.047 82.8052C241.339 83.0972 241.485 83.4988 241.485 84.0099V98.3572C241.485 98.8683 241.339 99.2699 241.047 99.5619C240.755 99.854 240.353 100 239.842 100H193.515C193.004 100 192.602 99.854 192.31 99.5619C192.018 99.2699 191.872 98.8683 191.872 98.3572V24.978C191.872 24.4669 192.018 24.0653 192.31 23.7733C192.602 23.4812 193.004 23.3352 193.515 23.3352H239.842C240.353 23.3352 240.755 23.4812 241.047 23.7733C241.339 24.0653 241.485 24.4669 241.485 24.978V39.3253ZM282.538 100C281.588 100 280.968 99.5619 280.676 98.6857L271.366 71.0864C271.293 70.7214 271.038 70.5388 270.6 70.5388H268.628C268.19 70.5388 267.971 70.7579 267.971 71.1959V98.3572C267.971 98.8683 267.825 99.2699 267.533 99.5619C267.241 99.854 266.84 100 266.329 100H249.024C248.513 100 248.112 99.854 247.819 99.5619C247.527 99.2699 247.381 98.8683 247.381 98.3572V24.978C247.381 24.4669 247.527 24.0653 247.819 23.7733C248.112 23.4812 248.513 23.3352 249.024 23.3352H277.938C282.611 23.3352 286.736 24.3574 290.314 26.4018C293.891 28.4462 296.666 31.3302 298.637 35.054C300.609 38.7047 301.594 42.9395 301.594 47.7584C301.594 52.2123 300.645 56.155 298.747 59.5867C296.921 62.9454 294.329 65.5739 290.971 67.4722C290.679 67.6913 290.569 67.9833 290.642 68.3484L301.923 98.1381C301.996 98.3572 302.032 98.6127 302.032 98.9048C302.032 99.6349 301.558 100 300.609 100H282.538ZM268.628 40.9681C268.19 40.9681 267.971 41.1872 267.971 41.6252V54.2202C267.971 54.6583 268.19 54.8773 268.628 54.8773H274.433C276.404 54.8773 278.011 54.2567 279.252 53.0154C280.493 51.7742 281.114 50.0949 281.114 47.9775C281.114 45.787 280.493 44.0712 279.252 42.83C278.084 41.5887 276.477 40.9681 274.433 40.9681H268.628Z" fill="#F8F6E9"></path>
+									</svg>
+								</div>
+							</div>
+							<div class="title brick">
+								<div class="gfx">
+									<svg width="249.05" height="96.05" viewBox="0 0 293 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M67.9986 77.9863C68.0716 85.2877 65.6621 90.8002 60.7702 94.5239C55.9513 98.1746 49.7086 100 42.0421 100H15.757C15.2459 100 14.8443 99.854 14.5523 99.5619C14.2602 99.2699 14.1142 98.8683 14.1142 98.3572V24.978C14.1142 24.4669 14.2602 24.0653 14.5523 23.7733C14.8443 23.4812 15.2459 23.3352 15.757 23.3352H39.8517C57.7401 23.3352 66.6843 30.5271 66.6843 44.9109C66.6843 51.7012 64.2749 56.7026 59.4559 59.9153C59.0179 60.2073 58.9814 60.4629 59.3464 60.6819C65.1145 64.6247 67.9986 70.3928 67.9986 77.9863ZM35.3613 40.9681C34.9232 40.9681 34.7042 41.1872 34.7042 41.6252V52.4678C34.7042 52.9059 34.9232 53.125 35.3613 53.125H40.0707C42.1881 53.125 43.7944 52.6139 44.8896 51.5917C45.9848 50.4964 46.5325 48.9632 46.5325 46.9918C46.5325 42.976 44.3785 40.9681 40.0707 40.9681H35.3613ZM41.1659 82.3671C43.1373 82.3671 44.6706 81.783 45.7658 80.6148C46.861 79.4465 47.4086 77.7672 47.4086 75.5768C47.4086 73.4594 46.861 71.8166 45.7658 70.6483C44.7436 69.4071 43.2468 68.7865 41.2754 68.7865H35.3613C34.9232 68.7865 34.7042 69.0055 34.7042 69.4436V81.71C34.7042 82.1481 34.9232 82.3671 35.3613 82.3671H41.1659ZM109.486 100C108.537 100 107.916 99.5619 107.624 98.6857L98.3146 71.0864C98.2415 70.7214 97.986 70.5388 97.5479 70.5388H95.5765C95.1384 70.5388 94.9194 70.7579 94.9194 71.1959V98.3572C94.9194 98.8683 94.7734 99.2699 94.4813 99.5619C94.1893 99.854 93.7877 100 93.2766 100H75.9722C75.4611 100 75.0596 99.854 74.7675 99.5619C74.4755 99.2699 74.3294 98.8683 74.3294 98.3572V24.978C74.3294 24.4669 74.4755 24.0653 74.7675 23.7733C75.0596 23.4812 75.4611 23.3352 75.9722 23.3352H104.886C109.559 23.3352 113.684 24.3574 117.262 26.4018C120.839 28.4462 123.614 31.3302 125.585 35.054C127.557 38.7047 128.542 42.9395 128.542 47.7584C128.542 52.2123 127.593 56.155 125.695 59.5867C123.869 62.9454 121.277 65.5739 117.919 67.4722C117.627 67.6913 117.517 67.9833 117.59 68.3484L128.871 98.1381C128.944 98.3572 128.98 98.6127 128.98 98.9048C128.98 99.6349 128.506 100 127.557 100H109.486ZM95.5765 40.9681C95.1384 40.9681 94.9194 41.1872 94.9194 41.6252V54.2202C94.9194 54.6583 95.1384 54.8773 95.5765 54.8773H101.381C103.353 54.8773 104.959 54.2567 106.2 53.0154C107.441 51.7742 108.062 50.0949 108.062 47.9775C108.062 45.787 107.441 44.0712 106.2 42.83C105.032 41.5887 103.426 40.9681 101.381 40.9681H95.5765ZM136.508 100C135.997 100 135.596 99.854 135.304 99.5619C135.012 99.2699 134.866 98.8683 134.866 98.3572V24.978C134.866 24.4669 135.012 24.0653 135.304 23.7733C135.596 23.4812 135.997 23.3352 136.508 23.3352H153.813C154.324 23.3352 154.725 23.4812 155.017 23.7733C155.309 24.0653 155.455 24.4669 155.455 24.978V98.3572C155.455 98.8683 155.309 99.2699 155.017 99.5619C154.725 99.854 154.324 100 153.813 100H136.508ZM188.852 100.876C183.449 100.876 178.703 99.8175 174.614 97.7001C170.525 95.5826 167.349 92.5891 165.086 88.7193C162.822 84.7766 161.69 80.2132 161.69 75.0292V47.9775C161.69 42.8665 162.822 38.3761 165.086 34.5064C167.349 30.6366 170.525 27.6795 174.614 25.6352C178.703 23.5177 183.449 22.459 188.852 22.459C194.255 22.459 198.964 23.4812 202.98 25.5256C207.069 27.57 210.245 30.4541 212.508 34.1778C214.772 37.9015 215.903 42.2459 215.903 47.2108C215.903 47.7219 215.757 48.16 215.465 48.5251C215.173 48.8171 214.772 48.9632 214.261 48.9632L196.956 49.7298C195.861 49.7298 195.313 49.2187 195.313 48.1965V46.9918C195.313 44.8744 194.729 43.195 193.561 41.9538C192.393 40.7126 190.823 40.0919 188.852 40.0919C186.88 40.0919 185.274 40.7491 184.033 42.0633C182.865 43.3046 182.28 44.9474 182.28 46.9918V76.3434C182.28 78.3878 182.865 80.0672 184.033 81.3814C185.274 82.6226 186.88 83.2433 188.852 83.2433C190.823 83.2433 192.393 82.6226 193.561 81.3814C194.729 80.1402 195.313 78.4608 195.313 76.3434V75.0292C195.313 74.007 195.861 73.4959 196.956 73.4959L214.261 74.2625C214.772 74.2625 215.173 74.4086 215.465 74.7006C215.757 74.9927 215.903 75.3943 215.903 75.9054C215.903 80.8703 214.772 85.2512 212.508 89.0479C210.245 92.8446 207.069 95.7652 202.98 97.8096C198.891 99.854 194.182 100.876 188.852 100.876ZM223.676 100C223.165 100 222.763 99.854 222.471 99.5619C222.179 99.2699 222.033 98.8683 222.033 98.3572V24.978C222.033 24.4669 222.179 24.0653 222.471 23.7733C222.763 23.4812 223.165 23.3352 223.676 23.3352H240.98C241.491 23.3352 241.893 23.4812 242.185 23.7733C242.477 24.0653 242.623 24.4669 242.623 24.978V48.8536C242.623 49.2187 242.696 49.4377 242.842 49.5108C243.061 49.5108 243.244 49.3647 243.39 49.0727L257.409 24.4304C257.774 23.7003 258.431 23.3352 259.38 23.3352H278.327C279.276 23.3352 279.751 23.6638 279.751 24.3209C279.751 24.613 279.641 24.9415 279.422 25.3066L260.366 57.1772C260.22 57.3963 260.22 57.6883 260.366 58.0534L280.079 98.0286L280.298 98.9048C280.298 99.6349 279.824 100 278.875 100H260.037C259.161 100 258.54 99.5984 258.175 98.7953L246.347 74.0435C246.274 73.7514 246.128 73.6419 245.909 73.7149C245.763 73.7149 245.617 73.8244 245.471 74.0435L242.842 78.7529C242.696 79.191 242.623 79.4465 242.623 79.5195V98.3572C242.623 98.8683 242.477 99.2699 242.185 99.5619C241.893 99.854 241.491 100 240.98 100H223.676Z" fill="#F8F6E9"></path>
+									</svg>
+								</div>
+							</div>
+							<div class="title builder">
+								<div class="gfx">
+									<svg width="340.85" height="96.05" viewBox="0 0 401 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M67.4986 77.9863C67.5716 85.2877 65.1621 90.8002 60.2702 94.5239C55.4513 98.1746 49.2086 100 41.5421 100H15.257C14.7459 100 14.3443 99.854 14.0523 99.5619C13.7602 99.2699 13.6142 98.8683 13.6142 98.3572V24.978C13.6142 24.4669 13.7602 24.0653 14.0523 23.7733C14.3443 23.4812 14.7459 23.3352 15.257 23.3352H39.3517C57.2401 23.3352 66.1843 30.5271 66.1843 44.9109C66.1843 51.7012 63.7749 56.7026 58.9559 59.9153C58.5179 60.2073 58.4814 60.4629 58.8464 60.6819C64.6145 64.6247 67.4986 70.3928 67.4986 77.9863ZM34.8613 40.9681C34.4232 40.9681 34.2042 41.1872 34.2042 41.6252V52.4678C34.2042 52.9059 34.4232 53.125 34.8613 53.125H39.5707C41.6881 53.125 43.2944 52.6139 44.3896 51.5917C45.4848 50.4964 46.0325 48.9632 46.0325 46.9918C46.0325 42.976 43.8785 40.9681 39.5707 40.9681H34.8613ZM40.6659 82.3671C42.6373 82.3671 44.1706 81.783 45.2658 80.6148C46.361 79.4465 46.9086 77.7672 46.9086 75.5768C46.9086 73.4594 46.361 71.8166 45.2658 70.6483C44.2436 69.4071 42.7468 68.7865 40.7754 68.7865H34.8613C34.4232 68.7865 34.2042 69.0055 34.2042 69.4436V81.71C34.2042 82.1481 34.4232 82.3671 34.8613 82.3671H40.6659ZM100.334 100.876C95.0035 100.876 90.2941 99.8175 86.2053 97.7001C82.1895 95.5826 79.0499 92.5891 76.7865 88.7193C74.5961 84.8496 73.5009 80.3592 73.5009 75.2482V24.978C73.5009 24.4669 73.6469 24.0653 73.9389 23.7733C74.231 23.4812 74.6326 23.3352 75.1437 23.3352H92.448C92.9591 23.3352 93.3607 23.4812 93.6528 23.7733C93.9448 24.0653 94.0908 24.4669 94.0908 24.978V76.2339C94.0908 78.3513 94.6384 80.0672 95.7337 81.3814C96.9019 82.6226 98.4352 83.2433 100.334 83.2433C102.159 83.2433 103.656 82.6226 104.824 81.3814C105.992 80.0672 106.576 78.3513 106.576 76.2339V24.978C106.576 24.4669 106.722 24.0653 107.014 23.7733C107.306 23.4812 107.708 23.3352 108.219 23.3352H125.523C126.034 23.3352 126.436 23.4812 126.728 23.7733C127.02 24.0653 127.166 24.4669 127.166 24.978V75.2482C127.166 80.3592 126.034 84.8496 123.771 88.7193C121.581 92.5891 118.441 95.5826 114.352 97.7001C110.336 99.8175 105.664 100.876 100.334 100.876ZM135.581 100C135.069 100 134.668 99.854 134.376 99.5619C134.084 99.2699 133.938 98.8683 133.938 98.3572V24.978C133.938 24.4669 134.084 24.0653 134.376 23.7733C134.668 23.4812 135.069 23.3352 135.581 23.3352H152.885C153.396 23.3352 153.798 23.4812 154.09 23.7733C154.382 24.0653 154.528 24.4669 154.528 24.978V98.3572C154.528 98.8683 154.382 99.2699 154.09 99.5619C153.798 99.854 153.396 100 152.885 100H135.581ZM163.282 100C162.771 100 162.369 99.854 162.077 99.5619C161.785 99.2699 161.639 98.8683 161.639 98.3572V24.978C161.639 24.4669 161.785 24.0653 162.077 23.7733C162.369 23.4812 162.771 23.3352 163.282 23.3352H180.586C181.097 23.3352 181.499 23.4812 181.791 23.7733C182.083 24.0653 182.229 24.4669 182.229 24.978V81.71C182.229 82.1481 182.448 82.3671 182.886 82.3671H210.376C210.887 82.3671 211.288 82.5131 211.58 82.8052C211.873 83.0972 212.019 83.4988 212.019 84.0099V98.3572C212.019 98.8683 211.873 99.2699 211.58 99.5619C211.288 99.854 210.887 100 210.376 100H163.282ZM219.112 100C218.601 100 218.199 99.854 217.907 99.5619C217.615 99.2699 217.469 98.8683 217.469 98.3572V24.978C217.469 24.4669 217.615 24.0653 217.907 23.7733C218.199 23.4812 218.601 23.3352 219.112 23.3352H243.973C249.376 23.3352 254.122 24.3209 258.211 26.2923C262.3 28.1906 265.476 30.8922 267.739 34.3968C270.003 37.9015 271.134 41.9538 271.134 46.5537V76.672C271.134 81.2719 270.003 85.3607 267.739 88.9384C265.476 92.443 262.3 95.1811 258.211 97.1525C254.122 99.0508 249.376 100 243.973 100H219.112ZM238.059 81.71C238.059 82.1481 238.278 82.3671 238.716 82.3671L244.083 82.2576C245.908 82.2576 247.405 81.5274 248.573 80.0672C249.814 78.6069 250.471 76.672 250.544 74.2625V48.9632C250.544 46.5537 249.924 44.6188 248.682 43.1585C247.514 41.6982 245.944 40.9681 243.973 40.9681H238.716C238.278 40.9681 238.059 41.1872 238.059 41.6252V81.71ZM327.404 39.3253C327.404 39.8364 327.258 40.238 326.966 40.53C326.674 40.8221 326.272 40.9681 325.761 40.9681H299.038C298.6 40.9681 298.381 41.1872 298.381 41.6252V51.9202C298.381 52.3583 298.6 52.5773 299.038 52.5773H314.481C314.992 52.5773 315.393 52.7234 315.685 53.0154C315.978 53.3075 316.124 53.7091 316.124 54.2202V68.4579C316.124 68.969 315.978 69.3706 315.685 69.6626C315.393 69.9547 314.992 70.1007 314.481 70.1007H299.038C298.6 70.1007 298.381 70.3198 298.381 70.7579V81.71C298.381 82.1481 298.6 82.3671 299.038 82.3671H325.761C326.272 82.3671 326.674 82.5131 326.966 82.8052C327.258 83.0972 327.404 83.4988 327.404 84.0099V98.3572C327.404 98.8683 327.258 99.2699 326.966 99.5619C326.674 99.854 326.272 100 325.761 100H279.434C278.923 100 278.521 99.854 278.229 99.5619C277.937 99.2699 277.791 98.8683 277.791 98.3572V24.978C277.791 24.4669 277.937 24.0653 278.229 23.7733C278.521 23.4812 278.923 23.3352 279.434 23.3352H325.761C326.272 23.3352 326.674 23.4812 326.966 23.7733C327.258 24.0653 327.404 24.4669 327.404 24.978V39.3253ZM368.457 100C367.507 100 366.887 99.5619 366.595 98.6857L357.286 71.0864C357.212 70.7214 356.957 70.5388 356.519 70.5388H354.547C354.109 70.5388 353.89 70.7579 353.89 71.1959V98.3572C353.89 98.8683 353.744 99.2699 353.452 99.5619C353.16 99.854 352.759 100 352.248 100H334.943C334.432 100 334.031 99.854 333.738 99.5619C333.446 99.2699 333.3 98.8683 333.3 98.3572V24.978C333.3 24.4669 333.446 24.0653 333.738 23.7733C334.031 23.4812 334.432 23.3352 334.943 23.3352H363.857C368.53 23.3352 372.655 24.3574 376.233 26.4018C379.81 28.4462 382.585 31.3302 384.556 35.054C386.528 38.7047 387.513 42.9395 387.513 47.7584C387.513 52.2123 386.564 56.155 384.666 59.5867C382.84 62.9454 380.248 65.5739 376.89 67.4722C376.598 67.6913 376.488 67.9833 376.561 68.3484L387.842 98.1381C387.915 98.3572 387.951 98.6127 387.951 98.9048C387.951 99.6349 387.477 100 386.528 100H368.457ZM354.547 40.9681C354.109 40.9681 353.89 41.1872 353.89 41.6252V54.2202C353.89 54.6583 354.109 54.8773 354.547 54.8773H360.352C362.323 54.8773 363.93 54.2567 365.171 53.0154C366.412 51.7742 367.033 50.0949 367.033 47.9775C367.033 45.787 366.412 44.0712 365.171 42.83C364.003 41.5887 362.396 40.9681 360.352 40.9681H354.547Z" fill="#F8F6E9"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Game Assets -->
+					<div class="stack-container">
+						<div class="stack-container-inner">
+							<div class="bricks-container">
+								<img src="assets/intro/bricks.svg" alt="Bricks" class="bricks">
+							</div>
+							<div class="character-container">
+								<img src="assets/intro/character.svg" alt="Character" class="character">
+							</div>
+						</div>
+					</div>
+
+					<div class="avatars-container">
+						<img class="elf" src="assets/intro/elf.svg" alt="elf">
+						<img class="pig" src="assets/intro/pig.svg" alt="pig">
+						<img class="marshmellow" src="assets/intro/marshmellow.svg" alt="marshmellow">
+						<img class="skeleton" src="assets/intro/skeleton.svg" alt="skeleton">
+					</div>
+				</div>
+			</div>
+			<div id="loader-parent">
+				<div>LOADING</div>
+				<span class="loading-screen-loader"></span>
+			</div>
+		</div>

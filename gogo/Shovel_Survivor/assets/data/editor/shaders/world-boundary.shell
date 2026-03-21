@@ -1,0 +1,52 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ShaderFile",
+    "uid": "546ab09b-9c77-435e-b08e-43ebaf881059",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "546ab09b-9c77-435e-b08e-43ebaf881059"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "world-boundary"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "wgslVertex": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "WgslFile",
+          "uid": "f485b7a1-caef-47ff-82c7-898a24d79bbc"
+        }
+      },
+      "wgslFragment": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "WgslFile",
+          "uid": "cdd2079d-213b-4ae5-8ba4-bd184a6f7f20"
+        }
+      },
+      "glslVertex": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "GlslFile",
+          "uid": "f2902da1-2722-4ca0-b730-5c2b7fd25e7b"
+        }
+      },
+      "glslFragment": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "GlslFile",
+          "uid": "af454fb1-bd20-4721-a9cd-fbb448a0a08a"
+        }
+      }
+    }
+  },
+  "children": []
+}

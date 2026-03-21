@@ -1,0 +1,278 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "PrefabFile",
+    "uid": "8e482a7f-d4d5-4d98-9522-83f98f5f1efb",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "8e482a7f-d4d5-4d98-9522-83f98f5f1efb"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "reward-spawner"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "contents": {
+        "_serializerId": "raw",
+        "value": {
+          "rootUid": "c2a3d90a-9aba-4161-b690-47c1fb8bc356",
+          "hierarchy": {
+            "type": "base",
+            "entity": {
+              "type": "GameObject",
+              "uid": "c2a3d90a-9aba-4161-b690-47c1fb8bc356",
+              "data": {
+                "_prefabReference": {
+                  "_serializerId": "raw"
+                },
+                "uid": {
+                  "_serializerId": "string",
+                  "value": "c2a3d90a-9aba-4161-b690-47c1fb8bc356"
+                },
+                "name": {
+                  "_serializerId": "string",
+                  "value": "reward-spawner"
+                },
+                "components": {
+                  "_serializerId": "array",
+                  "value": [
+                    {
+                      "_serializerId": "Entity",
+                      "value": "abec21f1-43ae-4956-b16a-81f161a38b66"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "58ce7d12-3dad-4da4-bdd0-352801c1c247"
+                    }
+                  ]
+                },
+                "children": {
+                  "_serializerId": "array",
+                  "value": []
+                },
+                "isEnabledLocally": {
+                  "_serializerId": "boolean",
+                  "value": true
+                }
+              }
+            },
+            "children": [
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiTransformComponent",
+                  "uid": "abec21f1-43ae-4956-b16a-81f161a38b66",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "abec21f1-43ae-4956-b16a-81f161a38b66"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New Entity"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "localPosition": {
+                      "_serializerId": "_ObservablePoint",
+                      "value": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    "alpha": {
+                      "_serializerId": "number",
+                      "value": 1
+                    },
+                    "_width": {
+                      "_serializerId": "undefined"
+                    },
+                    "_height": {
+                      "_serializerId": "undefined"
+                    },
+                    "_backingPivot": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    "scale": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    },
+                    "rotation": {
+                      "_serializerId": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "RewardSpawner",
+                  "uid": "58ce7d12-3dad-4da4-bdd0-352801c1c247",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "58ce7d12-3dad-4da4-bdd0-352801c1c247"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New RewardSpawner"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "coinPrefabs": {
+                      "_serializerId": "array",
+                      "value": [
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile",
+                            "uid": "bc2a2887-3dba-4044-ab3e-bc072323003e"
+                          }
+                        },
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile",
+                            "uid": "a5b6c7e3-89ef-4d95-a00e-c5bb9f54afe3"
+                          }
+                        },
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile"
+                          }
+                        },
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile"
+                          }
+                        },
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile",
+                            "uid": "b4f251c6-5f0e-4815-adce-a299cf05fdcf"
+                          }
+                        }
+                      ]
+                    },
+                    "healthPotionPrefab": {
+                      "_serializerId": "EntityReference",
+                      "value": {
+                        "entityType": "PrefabFile",
+                        "uid": "959f4e33-99f2-4c8d-9779-76ea38dfb983"
+                      }
+                    },
+                    "magnetPrefab": {
+                      "_serializerId": "EntityReference",
+                      "value": {
+                        "entityType": "PrefabFile",
+                        "uid": "f0a1e159-a59d-4a34-b535-06fc1c2fd36d"
+                      }
+                    },
+                    "upgradePrefab": {
+                      "_serializerId": "EntityReference",
+                      "value": {
+                        "entityType": "PrefabFile",
+                        "uid": "d09b6ad1-4727-4b6e-b3dd-5bd5f5f3da9a"
+                      }
+                    },
+                    "persistentUpgradePrefabs": {
+                      "_serializerId": "array",
+                      "value": [
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile",
+                            "uid": "9499418f-73fa-46dc-9649-c38b4a435a7e"
+                          }
+                        },
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile",
+                            "uid": "1c358166-8d6c-4edf-8de3-3de9141512b9"
+                          }
+                        },
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile"
+                          }
+                        },
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile"
+                          }
+                        },
+                        {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "PrefabFile",
+                            "uid": "120cdacd-cd75-4747-aa80-6e38cfc273f8"
+                          }
+                        }
+                      ]
+                    },
+                    "itemUnlockCurrencyPrefab": {
+                      "_serializerId": "EntityReference",
+                      "value": {
+                        "entityType": "PrefabFile",
+                        "uid": "969db226-28ae-49cb-8c1d-7b4716233055"
+                      }
+                    },
+                    "rewardMultiplierPerMinute": {
+                      "_serializerId": "number",
+                      "value": 0.5
+                    }
+                  }
+                },
+                "children": []
+              }
+            ]
+          }
+        }
+      },
+      "usePooling": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "maxPoolSize": {
+        "_serializerId": "number",
+        "value": 20
+      },
+      "prewarmCount": {
+        "_serializerId": "number",
+        "value": 0
+      }
+    }
+  },
+  "children": []
+}

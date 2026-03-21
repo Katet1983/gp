@@ -1,0 +1,54 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "WeightedDiggingDrops",
+    "uid": "a3113861-4d1b-4fb2-bb22-0d64af842079",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "a3113861-4d1b-4fb2-bb22-0d64af842079"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "stage-1"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "drops": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "weight": {
+                "_serializerId": "number",
+                "value": 1
+              },
+              "drops": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "EntityReference",
+                    "value": {
+                      "entityType": "DiggingDropConfigFile",
+                      "uid": "12a4f749-07e1-4109-8114-bef608596efc"
+                    }
+                  }
+                ]
+              },
+              "weighting": {
+                "_serializerId": "number",
+                "value": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

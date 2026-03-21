@@ -1,0 +1,184 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ModifyStatsPersistentUpgrade",
+    "uid": "12b14094-e296-49cd-9f98-bce66430de2a",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "12b14094-e296-49cd-9f98-bce66430de2a"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "movement-speed"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Move Speed"
+      },
+      "iconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "409847b7-599c-4488-890a-9e54c04526d4"
+        }
+      },
+      "simplePrice": {
+        "_serializerId": "number",
+        "value": 100
+      },
+      "tiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "price": {
+                "_serializerId": "number",
+                "value": 100
+              },
+              "stats": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "object",
+                    "value": {
+                      "stat": {
+                        "_serializerId": "string",
+                        "value": "runSpeed"
+                      },
+                      "multipliers": {
+                        "_serializerId": "object",
+                        "value": {
+                          "upgrades": {
+                            "_serializerId": "number",
+                            "value": 0.05
+                          }
+                        }
+                      },
+                      "addition": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "price": {
+                "_serializerId": "number",
+                "value": 200
+              },
+              "stats": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "object",
+                    "value": {
+                      "stat": {
+                        "_serializerId": "string",
+                        "value": "runSpeed"
+                      },
+                      "multipliers": {
+                        "_serializerId": "object",
+                        "value": {
+                          "upgrades": {
+                            "_serializerId": "number",
+                            "value": 0.1
+                          }
+                        }
+                      },
+                      "addition": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "price": {
+                "_serializerId": "number",
+                "value": 400
+              },
+              "stats": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "object",
+                    "value": {
+                      "stat": {
+                        "_serializerId": "string",
+                        "value": "runSpeed"
+                      },
+                      "multipliers": {
+                        "_serializerId": "object",
+                        "value": {
+                          "upgrades": {
+                            "_serializerId": "number",
+                            "value": 0.2
+                          }
+                        }
+                      },
+                      "addition": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "price": {
+                "_serializerId": "number",
+                "value": 1000
+              },
+              "stats": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "object",
+                    "value": {
+                      "stat": {
+                        "_serializerId": "string",
+                        "value": "runSpeed"
+                      },
+                      "multipliers": {
+                        "_serializerId": "object",
+                        "value": {
+                          "upgrades": {
+                            "_serializerId": "number",
+                            "value": 0.4
+                          }
+                        }
+                      },
+                      "addition": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

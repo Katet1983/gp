@@ -1,0 +1,51 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ModifyStatsStatusModifierFile",
+    "uid": "19013ebb-7829-455c-bf87-20e7d7e3fced",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "19013ebb-7829-455c-bf87-20e7d7e3fced"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "large-projectile-stats-modifier"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "globalDamage"
+              },
+              "multipliers": {
+                "_serializerId": "object",
+                "value": {
+                  "upgrades": {
+                    "_serializerId": "number",
+                    "value": 1
+                  }
+                }
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 0
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

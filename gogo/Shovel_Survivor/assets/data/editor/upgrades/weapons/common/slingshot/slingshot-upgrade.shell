@@ -1,0 +1,99 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "SpawnPrefabUpgrade",
+    "uid": "d48b14a5-613b-49c2-8b9b-d197925f4011",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "d48b14a5-613b-49c2-8b9b-d197925f4011"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "slingshot-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "weapon"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "common"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 3
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Slingshot"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "digging"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "5ac6001c-db10-4f06-a69c-80663d9aaead"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "ea47208b-27ed-4c1f-8c44-0a411e1a2286"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": "Shoot a scattering of {projectiles} rocks at nearby enemies, each dealing {physicalDamage} damage."
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "parentUpgrade": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade"
+        }
+      },
+      "prefab": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "PrefabFile",
+          "uid": "9586a79d-d96d-43c6-8904-65c319b76073"
+        }
+      }
+    }
+  },
+  "children": []
+}

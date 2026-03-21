@@ -1,0 +1,51 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "ModifyStatsStatusModifierFile",
+    "uid": "4c72e33c-1c06-4a0e-baca-b96b7a7872d2",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "4c72e33c-1c06-4a0e-baca-b96b7a7872d2"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "death-stats"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "stat": {
+                "_serializerId": "string",
+                "value": "globalDamage"
+              },
+              "multipliers": {
+                "_serializerId": "object",
+                "value": {
+                  "upgrades": {
+                    "_serializerId": "number",
+                    "value": 10
+                  }
+                }
+              },
+              "addition": {
+                "_serializerId": "number",
+                "value": 0
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

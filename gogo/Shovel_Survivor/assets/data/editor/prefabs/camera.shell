@@ -1,0 +1,253 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "PrefabFile",
+    "uid": "866fa1a6-0b65-4b73-839d-b9a88b317bf7",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "866fa1a6-0b65-4b73-839d-b9a88b317bf7"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "camera"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "contents": {
+        "_serializerId": "raw",
+        "value": {
+          "rootUid": "d7659438-f8d8-4be1-9e04-4acb1134f58e",
+          "hierarchy": {
+            "type": "base",
+            "entity": {
+              "type": "GameObject",
+              "uid": "d7659438-f8d8-4be1-9e04-4acb1134f58e",
+              "data": {
+                "_prefabReference": {
+                  "_serializerId": "raw"
+                },
+                "uid": {
+                  "_serializerId": "string",
+                  "value": "d7659438-f8d8-4be1-9e04-4acb1134f58e"
+                },
+                "name": {
+                  "_serializerId": "string",
+                  "value": "camera"
+                },
+                "components": {
+                  "_serializerId": "array",
+                  "value": [
+                    {
+                      "_serializerId": "Entity",
+                      "value": "e8b3835c-72b8-4002-a96b-860a5fdbc1d4"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "769e5474-cd72-4e45-8e64-3cf946d22128"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "f756f569-4154-45ab-a2af-82e1f9f8dadc"
+                    }
+                  ]
+                },
+                "children": {
+                  "_serializerId": "array",
+                  "value": []
+                },
+                "isEnabledLocally": {
+                  "_serializerId": "boolean",
+                  "value": true
+                }
+              }
+            },
+            "children": [
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiTransformComponent",
+                  "uid": "e8b3835c-72b8-4002-a96b-860a5fdbc1d4",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "e8b3835c-72b8-4002-a96b-860a5fdbc1d4"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New Entity"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "localPosition": {
+                      "_serializerId": "_ObservablePoint",
+                      "value": {
+                        "x": -202.34818450541394,
+                        "y": 69
+                      }
+                    },
+                    "alpha": {
+                      "_serializerId": "number",
+                      "value": 1
+                    },
+                    "_backingPivot": {
+                      "_serializerId": "object",
+                      "value": {
+                        "x": {
+                          "_serializerId": "number",
+                          "value": 0
+                        },
+                        "y": {
+                          "_serializerId": "number",
+                          "value": 0
+                        }
+                      }
+                    },
+                    "scale": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    },
+                    "rotation": {
+                      "_serializerId": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiCameraComponent",
+                  "uid": "769e5474-cd72-4e45-8e64-3cf946d22128",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "769e5474-cd72-4e45-8e64-3cf946d22128"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New PixiCameraComponent"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "zoom": {
+                      "_serializerId": "number",
+                      "value": 3
+                    },
+                    "scaleMode": {
+                      "_serializerId": "string",
+                      "value": "inside"
+                    },
+                    "referenceWidth": {
+                      "_serializerId": "number",
+                      "value": 600
+                    },
+                    "referenceHeight": {
+                      "_serializerId": "number",
+                      "value": 800
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "CameraMovementComponent",
+                  "uid": "f756f569-4154-45ab-a2af-82e1f9f8dadc",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "f756f569-4154-45ab-a2af-82e1f9f8dadc"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New CameraMovementComponent"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "_followedEntity": {
+                      "_serializerId": "undefined"
+                    },
+                    "speed": {
+                      "_serializerId": "number",
+                      "value": 70
+                    },
+                    "dampening": {
+                      "_serializerId": "number",
+                      "value": 12
+                    },
+                    "zoom": {
+                      "_serializerId": "number",
+                      "value": 3
+                    },
+                    "zoomSpeed": {
+                      "_serializerId": "number",
+                      "value": 0.04
+                    },
+                    "bottomLeftBounds": {
+                      "_serializerId": "EntityReference",
+                      "value": {
+                        "entityType": "GameObject"
+                      }
+                    },
+                    "topRightBounds": {
+                      "_serializerId": "EntityReference",
+                      "value": {
+                        "entityType": "GameObject"
+                      }
+                    },
+                    "followOffset": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 0,
+                        "y": -10
+                      }
+                    }
+                  }
+                },
+                "children": []
+              }
+            ]
+          }
+        }
+      },
+      "usePooling": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "maxPoolSize": {
+        "_serializerId": "number",
+        "value": 20
+      },
+      "prewarmCount": {
+        "_serializerId": "number",
+        "value": 0
+      }
+    }
+  },
+  "children": []
+}

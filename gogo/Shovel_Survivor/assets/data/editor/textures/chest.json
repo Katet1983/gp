@@ -1,0 +1,50 @@
+{
+	"frames": {
+		"chest 0.png": {
+			"frame": { "x": 0, "y": 0, "w": 32, "h": 32 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+			"sourceSize": { "w": 32, "h": 32 },
+			"duration": 100
+		},
+		"chest 1.png": {
+			"frame": { "x": 32, "y": 0, "w": 32, "h": 32 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+			"sourceSize": { "w": 32, "h": 32 },
+			"duration": 200
+		},
+		"chest 2.png": {
+			"frame": { "x": 64, "y": 0, "w": 32, "h": 32 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+			"sourceSize": { "w": 32, "h": 32 },
+			"duration": 100
+		},
+		"chest 3.png": {
+			"frame": { "x": 96, "y": 0, "w": 32, "h": 32 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+			"sourceSize": { "w": 32, "h": 32 },
+			"duration": 100
+		}
+	},
+	"meta": {
+		"app": "https://www.aseprite.org/",
+		"version": "1.x-dev",
+		"image": "chest-sheet.png",
+		"format": "RGBA8888",
+		"size": { "w": 128, "h": 32 },
+		"scale": "1",
+		"frameTags": [
+			{ "name": "open", "from": 0, "to": 3, "direction": "forward", "color": "#000000ff" },
+			{ "name": "closed", "from": 0, "to": 0, "direction": "forward", "color": "#000000ff" }
+		],
+		"layers": [{ "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }],
+		"slices": []
+	}
+}

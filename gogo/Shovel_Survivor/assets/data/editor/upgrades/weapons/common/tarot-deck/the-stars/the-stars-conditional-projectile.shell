@@ -1,0 +1,84 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "AddModifiersOnConditionModifierFile",
+    "uid": "df6c5bab-266b-4031-8a00-53de2edd0303",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "df6c5bab-266b-4031-8a00-53de2edd0303"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "the-stars-conditional-projectile"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "8089c8e1-8500-4b41-9b85-df8057edfa49"
+            }
+          },
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "3565e712-15f6-4241-9371-6852728790b7"
+            }
+          }
+        ]
+      },
+      "condition": {
+        "_serializerId": "string",
+        "value": "use"
+      },
+      "digsToTrigger": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "applyOnFinishedHole": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "useRandomness": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "randomness": {
+        "_serializerId": "object",
+        "value": {
+          "group": {
+            "_serializerId": "string",
+            "value": "card"
+          },
+          "chance": {
+            "_serializerId": "number",
+            "value": 0.2
+          }
+        }
+      },
+      "removeAfterUse": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "removeAfterDig": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": -1
+      }
+    }
+  },
+  "children": []
+}

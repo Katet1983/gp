@@ -1,0 +1,86 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "WeightedDiggingDrops",
+    "uid": "01075983-5f50-4790-b254-162d027df822",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "01075983-5f50-4790-b254-162d027df822"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "stage-3"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "drops": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "object",
+            "value": {
+              "weight": {
+                "_serializerId": "number",
+                "value": 1
+              },
+              "drops": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "EntityReference",
+                    "value": {
+                      "entityType": "DiggingDropConfigFile",
+                      "uid": "867b1e53-b870-4c90-83d8-a0ba962b0632"
+                    }
+                  }
+                ]
+              },
+              "weighting": {
+                "_serializerId": "number",
+                "value": 5
+              }
+            }
+          },
+          {
+            "_serializerId": "object",
+            "value": {
+              "weight": {
+                "_serializerId": "number",
+                "value": 0.2
+              },
+              "drops": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "EntityReference",
+                    "value": {
+                      "entityType": "DiggingDropConfigFile",
+                      "uid": "15bb25d0-7449-467d-b863-f24f84ee604b"
+                    }
+                  },
+                  {
+                    "_serializerId": "EntityReference",
+                    "value": {
+                      "entityType": "DiggingDropConfigFile",
+                      "uid": "867b1e53-b870-4c90-83d8-a0ba962b0632"
+                    }
+                  }
+                ]
+              },
+              "weighting": {
+                "_serializerId": "number",
+                "value": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "children": []
+}

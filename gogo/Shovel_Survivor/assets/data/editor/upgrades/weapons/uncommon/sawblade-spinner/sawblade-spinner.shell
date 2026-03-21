@@ -1,0 +1,550 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "PrefabFile",
+    "uid": "e62f0d96-204c-4f7a-9c75-e9400502ef7d",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "e62f0d96-204c-4f7a-9c75-e9400502ef7d"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "sawblade-spinner"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "contents": {
+        "_serializerId": "raw",
+        "value": {
+          "rootUid": "9ba24096-e5b1-4051-9110-7d2796cfd6b3",
+          "hierarchy": {
+            "type": "base",
+            "entity": {
+              "type": "GameObject",
+              "uid": "9ba24096-e5b1-4051-9110-7d2796cfd6b3",
+              "data": {
+                "_prefabReference": {
+                  "_serializerId": "raw"
+                },
+                "uid": {
+                  "_serializerId": "string",
+                  "value": "9ba24096-e5b1-4051-9110-7d2796cfd6b3"
+                },
+                "name": {
+                  "_serializerId": "string",
+                  "value": "sawblade-spinner"
+                },
+                "components": {
+                  "_serializerId": "array",
+                  "value": [
+                    {
+                      "_serializerId": "Entity",
+                      "value": "820d497c-394f-491e-a572-fda71ae37ba4"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "fac09a1b-965b-4e1d-9952-be74687ec1ad"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "b13f539d-a36c-435d-98e6-2c50cd6ab0ea"
+                    }
+                  ]
+                },
+                "visible": {
+                  "_serializerId": "boolean",
+                  "value": true
+                },
+                "children": {
+                  "_serializerId": "array",
+                  "value": [
+                    {
+                      "_serializerId": "Entity",
+                      "value": "4e0581fd-f395-487d-9634-0b3e77c8e7dc"
+                    }
+                  ]
+                }
+              }
+            },
+            "children": [
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiTransformComponent",
+                  "uid": "820d497c-394f-491e-a572-fda71ae37ba4",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "820d497c-394f-491e-a572-fda71ae37ba4"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New Entity"
+                    },
+                    "localPosition": {
+                      "_serializerId": "_ObservablePoint",
+                      "value": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    "_width": {
+                      "_serializerId": "undefined"
+                    },
+                    "_height": {
+                      "_serializerId": "undefined"
+                    },
+                    "_backingPivot": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    "scale": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    },
+                    "rotation": {
+                      "_serializerId": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "UnitStatus",
+                  "uid": "fac09a1b-965b-4e1d-9952-be74687ec1ad",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "fac09a1b-965b-4e1d-9952-be74687ec1ad"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New UnitStatus"
+                    },
+                    "target": {
+                      "_serializerId": "string",
+                      "value": "enemy"
+                    },
+                    "stats": {
+                      "_serializerId": "object",
+                      "value": {
+                        "physicalDamage": {
+                          "_serializerId": "object",
+                          "value": {
+                            "base": {
+                              "_serializerId": "number",
+                              "value": 16
+                            },
+                            "multipliers": {
+                              "_serializerId": "object",
+                              "value": {
+                                "upgrades": {
+                                  "_serializerId": "number",
+                                  "value": 0
+                                }
+                              }
+                            },
+                            "addition": {
+                              "_serializerId": "number",
+                              "value": 0
+                            },
+                            "scaling": {
+                              "_serializerId": "number",
+                              "value": 1
+                            }
+                          }
+                        },
+                        "orbitSpeed": {
+                          "_serializerId": "object",
+                          "value": {
+                            "base": {
+                              "_serializerId": "number",
+                              "value": 3
+                            },
+                            "multipliers": {
+                              "_serializerId": "object",
+                              "value": {
+                                "upgrades": {
+                                  "_serializerId": "number",
+                                  "value": 0
+                                }
+                              }
+                            },
+                            "addition": {
+                              "_serializerId": "number",
+                              "value": 0
+                            },
+                            "scaling": {
+                              "_serializerId": "number",
+                              "value": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "OrbitParent",
+                  "uid": "b13f539d-a36c-435d-98e6-2c50cd6ab0ea",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "b13f539d-a36c-435d-98e6-2c50cd6ab0ea"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New OrbitParent"
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "prefab",
+                "prefabUid": "72d25375-a767-4963-847f-f8da31967457",
+                "rootEntity": {
+                  "type": "GameObject",
+                  "uid": "4e0581fd-f395-487d-9634-0b3e77c8e7dc",
+                  "name": "sawblade (Instance)"
+                },
+                "overrides": {
+                  "44a644de-bb4b-4df5-b212-7a88b7829d99": {
+                    "uid": "4e0581fd-f395-487d-9634-0b3e77c8e7dc",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "4e0581fd-f395-487d-9634-0b3e77c8e7dc"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "4e0581fd-f395-487d-9634-0b3e77c8e7dc"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "sawblade (Instance)"
+                      }
+                    }
+                  },
+                  "df152891-3c1c-40c9-8ae5-b1f0806a4108": {
+                    "uid": "c37b8871-0a5a-42d4-99d0-9a9f7fa54ba2",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "c37b8871-0a5a-42d4-99d0-9a9f7fa54ba2"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "c37b8871-0a5a-42d4-99d0-9a9f7fa54ba2"
+                      },
+                      "_width": {
+                        "_serializerId": "undefined"
+                      },
+                      "_height": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  },
+                  "16805383-2ebe-4383-a0da-76c4be61f973": {
+                    "uid": "8b7e0a14-f0cf-44d0-b8ef-4b8e2ad2297c",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "8b7e0a14-f0cf-44d0-b8ef-4b8e2ad2297c"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "8b7e0a14-f0cf-44d0-b8ef-4b8e2ad2297c"
+                      }
+                    }
+                  },
+                  "5792fd8f-563e-429d-b373-452aa15c5537": {
+                    "uid": "9c0f0720-97ce-4c87-85fc-9d8703d2a8c8",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "9c0f0720-97ce-4c87-85fc-9d8703d2a8c8"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "9c0f0720-97ce-4c87-85fc-9d8703d2a8c8"
+                      }
+                    }
+                  },
+                  "18378ce2-4112-4a51-b2df-15fd619656df": {
+                    "uid": "2c9fe5d4-0c35-4269-9f65-8bffeb00928d",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "2c9fe5d4-0c35-4269-9f65-8bffeb00928d"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "2c9fe5d4-0c35-4269-9f65-8bffeb00928d"
+                      }
+                    }
+                  },
+                  "5e66d4f9-5863-444e-8c31-5d4f4b1edf95": {
+                    "uid": "91f19fc3-f37c-4313-bff9-b2c30efaeb3c",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "91f19fc3-f37c-4313-bff9-b2c30efaeb3c"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "91f19fc3-f37c-4313-bff9-b2c30efaeb3c"
+                      }
+                    }
+                  },
+                  "f797e19b-69b0-4aaa-80c0-a50c79e4b015": {
+                    "uid": "fcb8434b-f1d0-44a5-b012-af0a20c6d5af",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "fcb8434b-f1d0-44a5-b012-af0a20c6d5af"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "fcb8434b-f1d0-44a5-b012-af0a20c6d5af"
+                      },
+                      "_width": {
+                        "_serializerId": "undefined"
+                      },
+                      "_height": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  },
+                  "24071613-3a08-4fcb-9421-5db52f734a48": {
+                    "uid": "dece2cd3-1267-4c9c-86be-0254ebd3c22e",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "dece2cd3-1267-4c9c-86be-0254ebd3c22e"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "dece2cd3-1267-4c9c-86be-0254ebd3c22e"
+                      }
+                    }
+                  },
+                  "3f11fee5-2c5e-4303-b6a0-d197b2651ece": {
+                    "uid": "4d6b56c2-59ba-4881-ba6a-b6133df4e116",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "4d6b56c2-59ba-4881-ba6a-b6133df4e116"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "4d6b56c2-59ba-4881-ba6a-b6133df4e116"
+                      }
+                    }
+                  },
+                  "5f459f64-c647-4c89-b52e-a2434a6ed86c": {
+                    "uid": "df0b4fd6-4daa-4f01-9b0f-5000590f779b",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "df0b4fd6-4daa-4f01-9b0f-5000590f779b"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "df0b4fd6-4daa-4f01-9b0f-5000590f779b"
+                      },
+                      "_width": {
+                        "_serializerId": "undefined"
+                      },
+                      "_height": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  },
+                  "7de5eb2d-978e-48ef-bad7-e6dda0d8ad9a": {
+                    "uid": "bfa5b42e-ca54-4834-b894-99b646ab5e2b",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "bfa5b42e-ca54-4834-b894-99b646ab5e2b"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "bfa5b42e-ca54-4834-b894-99b646ab5e2b"
+                      },
+                      "spritesheet": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  },
+                  "8046a75c-0eae-41db-bff2-e704575ac1e6": {
+                    "uid": "6bb4939c-3c6e-4d18-aba8-b31e564e4b2b",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "6bb4939c-3c6e-4d18-aba8-b31e564e4b2b"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "6bb4939c-3c6e-4d18-aba8-b31e564e4b2b"
+                      }
+                    }
+                  },
+                  "1a8d6ec9-a7ce-4b40-867b-3160ac21e7eb": {
+                    "uid": "bb4f1172-875f-4f9f-8c1a-86953442e299",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "bb4f1172-875f-4f9f-8c1a-86953442e299"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "bb4f1172-875f-4f9f-8c1a-86953442e299"
+                      }
+                    }
+                  },
+                  "25f1d36c-2de5-4f7f-9ce9-487f26c65451": {
+                    "uid": "77201b50-b883-4843-a4a5-cfefcef2d621",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "77201b50-b883-4843-a4a5-cfefcef2d621"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "77201b50-b883-4843-a4a5-cfefcef2d621"
+                      },
+                      "_width": {
+                        "_serializerId": "undefined"
+                      },
+                      "_height": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  },
+                  "247b6692-6acc-4d8f-b2ea-160e7deb5b30": {
+                    "uid": "a6d6b235-7ba7-47b8-b141-d94a55b89a2d",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "a6d6b235-7ba7-47b8-b141-d94a55b89a2d"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "a6d6b235-7ba7-47b8-b141-d94a55b89a2d"
+                      }
+                    }
+                  },
+                  "1cfc06d0-0331-4bba-b35d-6dae026197fe": {
+                    "uid": "48d1fdc6-206c-4f42-bd4e-3f82d35bbb74",
+                    "overrides": {
+                      "_prefabReference": {
+                        "_serializerId": "raw",
+                        "value": {
+                          "fileUid": "72d25375-a767-4963-847f-f8da31967457",
+                          "entityUid": "48d1fdc6-206c-4f42-bd4e-3f82d35bbb74"
+                        }
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "48d1fdc6-206c-4f42-bd4e-3f82d35bbb74"
+                      },
+                      "spritesheet": {
+                        "_serializerId": "undefined"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "usePooling": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "maxPoolSize": {
+        "_serializerId": "number",
+        "value": 20
+      },
+      "prewarmCount": {
+        "_serializerId": "number",
+        "value": 0
+      }
+    }
+  },
+  "children": []
+}

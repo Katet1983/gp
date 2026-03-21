@@ -1,0 +1,91 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "AddModifiersOnConditionModifierFile",
+    "uid": "af5fa2f5-a87b-4107-bd61-63cc9fbbc4e1",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "af5fa2f5-a87b-4107-bd61-63cc9fbbc4e1"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "the-devil-conditional-projectile"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "modifiers": {
+        "_serializerId": "array",
+        "value": [
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "c9bfc33b-b3f3-46db-8613-e3bfa6d7fc34"
+            }
+          },
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "01f17de1-7deb-47b2-bf96-9d24b03d637f"
+            }
+          },
+          {
+            "_serializerId": "EntityReference",
+            "value": {
+              "entityType": "StatusModifierFile",
+              "uid": "283abd3a-2b2d-42db-ba75-d602cbe11c6e"
+            }
+          }
+        ]
+      },
+      "condition": {
+        "_serializerId": "string",
+        "value": "use"
+      },
+      "digsToTrigger": {
+        "_serializerId": "number",
+        "value": 1
+      },
+      "applyOnFinishedHole": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "useRandomness": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "randomness": {
+        "_serializerId": "object",
+        "value": {
+          "group": {
+            "_serializerId": "string",
+            "value": "card"
+          },
+          "chance": {
+            "_serializerId": "number",
+            "value": 0.1
+          }
+        }
+      },
+      "removeAfterUse": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "removeAfterDig": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "duration": {
+        "_serializerId": "number",
+        "value": -1
+      }
+    }
+  },
+  "children": []
+}

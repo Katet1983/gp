@@ -1,0 +1,576 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "PrefabFile",
+    "uid": "52672c5a-495a-4aca-86a4-b2b02f0ecde7",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "52672c5a-495a-4aca-86a4-b2b02f0ecde7"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "gargoyle-land-animation"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "contents": {
+        "_serializerId": "raw",
+        "value": {
+          "rootUid": "7e52c8fe-6eab-4a7f-8e1d-f1fb1fd7d244",
+          "hierarchy": {
+            "type": "base",
+            "entity": {
+              "type": "GameObject",
+              "uid": "7e52c8fe-6eab-4a7f-8e1d-f1fb1fd7d244",
+              "data": {
+                "_prefabReference": {
+                  "_serializerId": "raw"
+                },
+                "uid": {
+                  "_serializerId": "string",
+                  "value": "7e52c8fe-6eab-4a7f-8e1d-f1fb1fd7d244"
+                },
+                "name": {
+                  "_serializerId": "string",
+                  "value": "gargoyle-land-animation"
+                },
+                "components": {
+                  "_serializerId": "array",
+                  "value": [
+                    {
+                      "_serializerId": "Entity",
+                      "value": "0eb830a2-11b7-4f01-8d76-6899de1e7b84"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "a799fcbd-4af0-4e68-ace5-10bbc5e5c198"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "6deefa87-e77b-4357-8ecd-c8e43ed403d5"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "a4471b46-2567-4955-835f-0ca57752f94d"
+                    },
+                    {
+                      "_serializerId": "Entity",
+                      "value": "cb77e304-4e30-41f5-8b67-4a7ca5bf7f2c"
+                    }
+                  ]
+                },
+                "children": {
+                  "_serializerId": "array",
+                  "value": [
+                    {
+                      "_serializerId": "Entity",
+                      "value": "33a8249a-3775-47f6-8a50-ef266debe899"
+                    }
+                  ]
+                },
+                "isEnabledLocally": {
+                  "_serializerId": "boolean",
+                  "value": true
+                }
+              }
+            },
+            "children": [
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiTransformComponent",
+                  "uid": "0eb830a2-11b7-4f01-8d76-6899de1e7b84",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "0eb830a2-11b7-4f01-8d76-6899de1e7b84"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New Entity"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "localPosition": {
+                      "_serializerId": "_ObservablePoint",
+                      "value": {
+                        "x": -134.7907059593237,
+                        "y": 47.53334198843542
+                      }
+                    },
+                    "alpha": {
+                      "_serializerId": "number",
+                      "value": 1
+                    },
+                    "_width": {
+                      "_serializerId": "undefined"
+                    },
+                    "_height": {
+                      "_serializerId": "undefined"
+                    },
+                    "_backingPivot": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    "scale": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 1,
+                        "y": 1
+                      }
+                    },
+                    "rotation": {
+                      "_serializerId": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiAnimatedSpriteComponent",
+                  "uid": "a799fcbd-4af0-4e68-ace5-10bbc5e5c198",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "a799fcbd-4af0-4e68-ace5-10bbc5e5c198"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New PixiAnimatedSpriteComponent"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "spritesheet": {
+                      "_serializerId": "Entity",
+                      "value": "7c551cc4-dc54-4dfc-820d-5b1847e2527a"
+                    },
+                    "_animation": {
+                      "_serializerId": "string",
+                      "value": "appear"
+                    },
+                    "sliceKey": {
+                      "_serializerId": "string",
+                      "value": ""
+                    },
+                    "anchor": {
+                      "_serializerId": "_Point",
+                      "value": {
+                        "x": 0.5,
+                        "y": 0.5
+                      }
+                    },
+                    "color": {
+                      "_serializerId": "_Color",
+                      "value": {
+                        "hex": "#2a2424ff"
+                      }
+                    },
+                    "_loop": {
+                      "_serializerId": "boolean",
+                      "value": false
+                    },
+                    "animationSpeed": {
+                      "_serializerId": "number",
+                      "value": 1
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PixiRenderLayerComponent",
+                  "uid": "6deefa87-e77b-4357-8ecd-c8e43ed403d5",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "6deefa87-e77b-4357-8ecd-c8e43ed403d5"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New PixiRenderLayerComponent"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    },
+                    "layer": {
+                      "_serializerId": "string",
+                      "value": "shadow"
+                    },
+                    "sortByGlobalY": {
+                      "_serializerId": "boolean",
+                      "value": false
+                    },
+                    "calculateYBasedOn": {
+                      "_serializerId": "undefined"
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "GargoyleLandEffect",
+                  "uid": "a4471b46-2567-4955-835f-0ca57752f94d",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "a4471b46-2567-4955-835f-0ca57752f94d"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New GargoyleLandEffect"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "PoolableObject",
+                  "uid": "cb77e304-4e30-41f5-8b67-4a7ca5bf7f2c",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "cb77e304-4e30-41f5-8b67-4a7ca5bf7f2c"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "New PoolableObject"
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    }
+                  }
+                },
+                "children": []
+              },
+              {
+                "type": "base",
+                "entity": {
+                  "type": "GameObject",
+                  "uid": "33a8249a-3775-47f6-8a50-ef266debe899",
+                  "data": {
+                    "_prefabReference": {
+                      "_serializerId": "raw"
+                    },
+                    "uid": {
+                      "_serializerId": "string",
+                      "value": "33a8249a-3775-47f6-8a50-ef266debe899"
+                    },
+                    "name": {
+                      "_serializerId": "string",
+                      "value": "explosion-effect-instance"
+                    },
+                    "components": {
+                      "_serializerId": "array",
+                      "value": [
+                        {
+                          "_serializerId": "Entity",
+                          "value": "797b2625-0812-49e4-a464-bd9119d14ad7"
+                        },
+                        {
+                          "_serializerId": "Entity",
+                          "value": "88de1e0d-f3df-4c96-92e7-68c87d0185be"
+                        },
+                        {
+                          "_serializerId": "Entity",
+                          "value": "371ea4de-2b08-4004-accb-cb89241256da"
+                        },
+                        {
+                          "_serializerId": "Entity",
+                          "value": "31837146-a4dd-4e57-8fe0-b948e3f58f46"
+                        }
+                      ]
+                    },
+                    "children": {
+                      "_serializerId": "array",
+                      "value": []
+                    },
+                    "isEnabledLocally": {
+                      "_serializerId": "boolean",
+                      "value": true
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "base",
+                    "entity": {
+                      "type": "PixiTransformComponent",
+                      "uid": "797b2625-0812-49e4-a464-bd9119d14ad7",
+                      "data": {
+                        "_prefabReference": {
+                          "_serializerId": "raw"
+                        },
+                        "uid": {
+                          "_serializerId": "string",
+                          "value": "797b2625-0812-49e4-a464-bd9119d14ad7"
+                        },
+                        "name": {
+                          "_serializerId": "string",
+                          "value": "New Entity"
+                        },
+                        "isEnabledLocally": {
+                          "_serializerId": "boolean",
+                          "value": true
+                        },
+                        "localPosition": {
+                          "_serializerId": "_ObservablePoint",
+                          "value": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "alpha": {
+                          "_serializerId": "number",
+                          "value": 1
+                        },
+                        "_width": {
+                          "_serializerId": "undefined"
+                        },
+                        "_height": {
+                          "_serializerId": "undefined"
+                        },
+                        "_backingPivot": {
+                          "_serializerId": "_Point",
+                          "value": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "scale": {
+                          "_serializerId": "_Point",
+                          "value": {
+                            "x": 1,
+                            "y": 0.7
+                          }
+                        },
+                        "rotation": {
+                          "_serializerId": "number",
+                          "value": 0
+                        }
+                      }
+                    },
+                    "children": []
+                  },
+                  {
+                    "type": "base",
+                    "entity": {
+                      "type": "ExplosionEffect",
+                      "uid": "88de1e0d-f3df-4c96-92e7-68c87d0185be",
+                      "data": {
+                        "_prefabReference": {
+                          "_serializerId": "raw"
+                        },
+                        "uid": {
+                          "_serializerId": "string",
+                          "value": "88de1e0d-f3df-4c96-92e7-68c87d0185be"
+                        },
+                        "name": {
+                          "_serializerId": "string",
+                          "value": "New ExplosionEffect"
+                        },
+                        "isEnabledLocally": {
+                          "_serializerId": "boolean",
+                          "value": true
+                        },
+                        "duration": {
+                          "_serializerId": "number",
+                          "value": 0.3
+                        },
+                        "startScale": {
+                          "_serializerId": "number",
+                          "value": 1
+                        },
+                        "endScale": {
+                          "_serializerId": "number",
+                          "value": 1.2
+                        },
+                        "startAlpha": {
+                          "_serializerId": "number",
+                          "value": 0.5
+                        },
+                        "endAlpha": {
+                          "_serializerId": "number",
+                          "value": 0
+                        }
+                      }
+                    },
+                    "children": []
+                  },
+                  {
+                    "type": "base",
+                    "entity": {
+                      "type": "PixiSpriteComponent",
+                      "uid": "371ea4de-2b08-4004-accb-cb89241256da",
+                      "data": {
+                        "_prefabReference": {
+                          "_serializerId": "raw"
+                        },
+                        "uid": {
+                          "_serializerId": "string",
+                          "value": "371ea4de-2b08-4004-accb-cb89241256da"
+                        },
+                        "name": {
+                          "_serializerId": "string",
+                          "value": "New PixiSpriteComponent"
+                        },
+                        "isEnabledLocally": {
+                          "_serializerId": "boolean",
+                          "value": true
+                        },
+                        "useSpritesheet": {
+                          "_serializerId": "boolean",
+                          "value": false
+                        },
+                        "useSpritesheetSlice": {
+                          "_serializerId": "boolean",
+                          "value": false
+                        },
+                        "spritesheetSliceFile": {
+                          "_serializerId": "EntityReference",
+                          "value": {
+                            "entityType": "SpritesheetSliceFile"
+                          }
+                        },
+                        "texture": {
+                          "_serializerId": "Entity",
+                          "value": "c3281fae-6d61-4e75-98cc-44db2a87ad8a"
+                        },
+                        "spritesheet": {
+                          "_serializerId": "undefined"
+                        },
+                        "spritesheetTextureIndex": {
+                          "_serializerId": "number",
+                          "value": 0
+                        },
+                        "color": {
+                          "_serializerId": "string",
+                          "value": "#ff8e8e"
+                        },
+                        "alpha": {
+                          "_serializerId": "number",
+                          "value": 0.5
+                        },
+                        "anchor": {
+                          "_serializerId": "_Point",
+                          "value": {
+                            "x": 0.5,
+                            "y": 0.5
+                          }
+                        }
+                      }
+                    },
+                    "children": []
+                  },
+                  {
+                    "type": "base",
+                    "entity": {
+                      "type": "PixiPointLightComponnt",
+                      "uid": "31837146-a4dd-4e57-8fe0-b948e3f58f46",
+                      "data": {
+                        "_prefabReference": {
+                          "_serializerId": "raw"
+                        },
+                        "uid": {
+                          "_serializerId": "string",
+                          "value": "31837146-a4dd-4e57-8fe0-b948e3f58f46"
+                        },
+                        "name": {
+                          "_serializerId": "string",
+                          "value": "New PixiPointLightComponnt"
+                        },
+                        "isEnabledLocally": {
+                          "_serializerId": "boolean",
+                          "value": true
+                        },
+                        "radius": {
+                          "_serializerId": "number",
+                          "value": 200
+                        },
+                        "color": {
+                          "_serializerId": "string",
+                          "value": "#ff9494"
+                        },
+                        "debug": {
+                          "_serializerId": "boolean",
+                          "value": false
+                        },
+                        "intensity": {
+                          "_serializerId": "number",
+                          "value": 2
+                        },
+                        "flickerVariance": {
+                          "_serializerId": "number",
+                          "value": 0
+                        },
+                        "flickerSmoothness": {
+                          "_serializerId": "number",
+                          "value": 15
+                        }
+                      }
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "usePooling": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "maxPoolSize": {
+        "_serializerId": "number",
+        "value": 20
+      },
+      "prewarmCount": {
+        "_serializerId": "number",
+        "value": 0
+      }
+    }
+  },
+  "children": []
+}

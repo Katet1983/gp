@@ -1,0 +1,99 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "SpawnPrefabUpgrade",
+    "uid": "be46d5c2-6933-4c08-83bb-6853cc74ec3e",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "be46d5c2-6933-4c08-83bb-6853cc74ec3e"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "headlamp-upgrade"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "upgradeType": {
+        "_serializerId": "string",
+        "value": "weapon"
+      },
+      "tier": {
+        "_serializerId": "string",
+        "value": "uncommon"
+      },
+      "price": {
+        "_serializerId": "number",
+        "value": 3
+      },
+      "enabled": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "unlockedInitially": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "ownedInitially": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "isSinglePurchase": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "title": {
+        "_serializerId": "string",
+        "value": "Headlamp"
+      },
+      "stickerType": {
+        "_serializerId": "string",
+        "value": "digging"
+      },
+      "usePrerequisiteIcon": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "largeIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "9a39fe28-1bc5-4a6a-ac3d-cb2cd3f4a33d"
+        }
+      },
+      "smallIconTexture": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "TextureFile",
+          "uid": "a2c7034c-2f3c-49a4-a3c8-5a00e1b8e9ed"
+        }
+      },
+      "baseDescription": {
+        "_serializerId": "string",
+        "value": "Shines a light that deals {physicalDamage} damage to anything it touches every 0.5 seconds."
+      },
+      "_prerequisites": {
+        "_serializerId": "array",
+        "value": []
+      },
+      "parentUpgrade": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "SpawnPrefabUpgrade"
+        }
+      },
+      "prefab": {
+        "_serializerId": "EntityReference",
+        "value": {
+          "entityType": "PrefabFile",
+          "uid": "08e09a84-923e-42bd-802e-820580c73711"
+        }
+      }
+    }
+  },
+  "children": []
+}

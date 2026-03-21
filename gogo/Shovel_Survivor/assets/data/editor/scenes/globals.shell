@@ -1,0 +1,1919 @@
+{
+  "type": "base",
+  "entity": {
+    "type": "SceneFile",
+    "uid": "ec246067-14cb-4e5b-b8e0-06bb34b66542",
+    "data": {
+      "_prefabReference": {
+        "_serializerId": "raw"
+      },
+      "uid": {
+        "_serializerId": "string",
+        "value": "ec246067-14cb-4e5b-b8e0-06bb34b66542"
+      },
+      "name": {
+        "_serializerId": "string",
+        "value": "globals"
+      },
+      "linkedFileExtension": {
+        "_serializerId": "undefined"
+      },
+      "contents": {
+        "_serializerId": "raw",
+        "value": {
+          "type": "base",
+          "entity": {
+            "type": "Scene",
+            "uid": "9de225b1-ed3d-4bf7-b18b-419cbefc34b0",
+            "data": {
+              "_prefabReference": {
+                "_serializerId": "raw"
+              },
+              "uid": {
+                "_serializerId": "string",
+                "value": "9de225b1-ed3d-4bf7-b18b-419cbefc34b0"
+              },
+              "name": {
+                "_serializerId": "string",
+                "value": "globals"
+              },
+              "components": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "Entity",
+                    "value": "73040048-f4d2-483f-ac04-f65fcc8b3ada"
+                  }
+                ]
+              },
+              "children": {
+                "_serializerId": "array",
+                "value": [
+                  {
+                    "_serializerId": "Entity",
+                    "value": "597bb90c-5cf6-4456-bba1-16debcd77485"
+                  },
+                  {
+                    "_serializerId": "Entity",
+                    "value": "7c31998b-bfb2-4898-baae-b426a6578544"
+                  },
+                  {
+                    "_serializerId": "Entity",
+                    "value": "d13d4859-1997-4204-a420-21fb0bfd79eb"
+                  }
+                ]
+              },
+              "isEnabledLocally": {
+                "_serializerId": "boolean",
+                "value": true
+              }
+            }
+          },
+          "children": [
+            {
+              "type": "base",
+              "entity": {
+                "type": "PixiTransformComponent",
+                "uid": "73040048-f4d2-483f-ac04-f65fcc8b3ada",
+                "data": {
+                  "_prefabReference": {
+                    "_serializerId": "raw"
+                  },
+                  "uid": {
+                    "_serializerId": "string",
+                    "value": "73040048-f4d2-483f-ac04-f65fcc8b3ada"
+                  },
+                  "name": {
+                    "_serializerId": "string",
+                    "value": "New Entity"
+                  },
+                  "isEnabledLocally": {
+                    "_serializerId": "boolean",
+                    "value": true
+                  },
+                  "localPosition": {
+                    "_serializerId": "_ObservablePoint",
+                    "value": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "alpha": {
+                    "_serializerId": "number",
+                    "value": 1
+                  },
+                  "_backingPivot": {
+                    "_serializerId": "_Point",
+                    "value": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "scale": {
+                    "_serializerId": "_Point",
+                    "value": {
+                      "x": 1,
+                      "y": 1
+                    }
+                  },
+                  "rotation": {
+                    "_serializerId": "number",
+                    "value": 0
+                  }
+                }
+              },
+              "children": []
+            },
+            {
+              "type": "base",
+              "entity": {
+                "type": "GameObject",
+                "uid": "597bb90c-5cf6-4456-bba1-16debcd77485",
+                "data": {
+                  "_prefabReference": {
+                    "_serializerId": "raw"
+                  },
+                  "uid": {
+                    "_serializerId": "string",
+                    "value": "597bb90c-5cf6-4456-bba1-16debcd77485"
+                  },
+                  "name": {
+                    "_serializerId": "string",
+                    "value": "sounds"
+                  },
+                  "components": {
+                    "_serializerId": "array",
+                    "value": [
+                      {
+                        "_serializerId": "Entity",
+                        "value": "919aa291-acc4-48ea-ad03-ff67f26bcd87"
+                      },
+                      {
+                        "_serializerId": "Entity",
+                        "value": "aa678ed3-cf96-4859-b26e-cfd1ae2de3f6"
+                      }
+                    ]
+                  },
+                  "children": {
+                    "_serializerId": "array",
+                    "value": [
+                      {
+                        "_serializerId": "Entity",
+                        "value": "fc46e232-1c2e-4a04-8622-7c03f7ce472a"
+                      },
+                      {
+                        "_serializerId": "Entity",
+                        "value": "9f108667-cded-4504-a361-dab6cf7ef5dc"
+                      },
+                      {
+                        "_serializerId": "Entity",
+                        "value": "6d28caaa-2de6-4cb2-9e62-198562d6ba7b"
+                      },
+                      {
+                        "_serializerId": "Entity",
+                        "value": "9921a5e3-74a2-4d12-b676-ad9398080f6f"
+                      },
+                      {
+                        "_serializerId": "Entity",
+                        "value": "0bace0ed-ee23-44e9-80db-a25d3e6306ec"
+                      },
+                      {
+                        "_serializerId": "Entity",
+                        "value": "2a8df399-20f5-49d2-b0d9-e2e0d959d3c5"
+                      }
+                    ]
+                  },
+                  "isEnabledLocally": {
+                    "_serializerId": "boolean",
+                    "value": true
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "PixiTransformComponent",
+                    "uid": "919aa291-acc4-48ea-ad03-ff67f26bcd87",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "919aa291-acc4-48ea-ad03-ff67f26bcd87"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "New Entity"
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      },
+                      "localPosition": {
+                        "_serializerId": "_ObservablePoint",
+                        "value": {
+                          "x": 0,
+                          "y": 0
+                        }
+                      },
+                      "alpha": {
+                        "_serializerId": "number",
+                        "value": 1
+                      },
+                      "_backingPivot": {
+                        "_serializerId": "_Point",
+                        "value": {
+                          "x": 0,
+                          "y": 0
+                        }
+                      },
+                      "scale": {
+                        "_serializerId": "_Point",
+                        "value": {
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      "rotation": {
+                        "_serializerId": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "SoundPlayer",
+                    "uid": "aa678ed3-cf96-4859-b26e-cfd1ae2de3f6",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "aa678ed3-cf96-4859-b26e-cfd1ae2de3f6"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "New SoundPlayer"
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      },
+                      "_enemyHit": {
+                        "_serializerId": "EntityReference",
+                        "value": {
+                          "entityType": "AudioGroup",
+                          "uid": "9d710913-9810-4194-b003-6e96d598e4eb"
+                        }
+                      },
+                      "_pickup": {
+                        "_serializerId": "EntityReference",
+                        "value": {
+                          "entityType": "AudioGroup",
+                          "uid": "aaa0ef4e-646b-438c-8ce4-db2f206d7056"
+                        }
+                      },
+                      "_ui": {
+                        "_serializerId": "EntityReference",
+                        "value": {
+                          "entityType": "AudioGroup",
+                          "uid": "1f5d8177-9bb8-4c5a-8e23-201d0757644a"
+                        }
+                      },
+                      "_weapon": {
+                        "_serializerId": "EntityReference",
+                        "value": {
+                          "entityType": "AudioGroup",
+                          "uid": "fe564f41-e345-4c80-b634-8dc54eebc343"
+                        }
+                      },
+                      "_player": {
+                        "_serializerId": "EntityReference",
+                        "value": {
+                          "entityType": "AudioGroup",
+                          "uid": "269a3f2c-cc12-498d-9050-c2bdfbc5c2ca"
+                        }
+                      }
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "GameObject",
+                    "uid": "fc46e232-1c2e-4a04-8622-7c03f7ce472a",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "fc46e232-1c2e-4a04-8622-7c03f7ce472a"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "enemy-hit-audio"
+                      },
+                      "components": {
+                        "_serializerId": "array",
+                        "value": [
+                          {
+                            "_serializerId": "Entity",
+                            "value": "fa155f19-f587-44ee-bd17-3ea6187df74c"
+                          },
+                          {
+                            "_serializerId": "Entity",
+                            "value": "9d710913-9810-4194-b003-6e96d598e4eb"
+                          }
+                        ]
+                      },
+                      "children": {
+                        "_serializerId": "array",
+                        "value": []
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "PixiTransformComponent",
+                        "uid": "fa155f19-f587-44ee-bd17-3ea6187df74c",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "fa155f19-f587-44ee-bd17-3ea6187df74c"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New Entity"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "localPosition": {
+                            "_serializerId": "_ObservablePoint",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "alpha": {
+                            "_serializerId": "number",
+                            "value": 1
+                          },
+                          "_backingPivot": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "scale": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 1,
+                              "y": 1
+                            }
+                          },
+                          "rotation": {
+                            "_serializerId": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "AudioGroup",
+                        "uid": "9d710913-9810-4194-b003-6e96d598e4eb",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "9d710913-9810-4194-b003-6e96d598e4eb"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New AudioGroup"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "type": {
+                            "_serializerId": "string",
+                            "value": "sfx"
+                          },
+                          "sounds": {
+                            "_serializerId": "array",
+                            "value": [
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "enemy-hit"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "98be850d-072a-4be6-a46b-869c4e93d787"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "player-hit"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "9b59e6f3-eb3e-4564-9314-b5484ab677e0"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "enemy-death"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "ac32d85a-952a-44b8-bb1d-32480211dff2"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "GameObject",
+                    "uid": "9f108667-cded-4504-a361-dab6cf7ef5dc",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "9f108667-cded-4504-a361-dab6cf7ef5dc"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "pickup-audio"
+                      },
+                      "components": {
+                        "_serializerId": "array",
+                        "value": [
+                          {
+                            "_serializerId": "Entity",
+                            "value": "12a028fb-1050-44e3-a125-18cdc79f518f"
+                          },
+                          {
+                            "_serializerId": "Entity",
+                            "value": "aaa0ef4e-646b-438c-8ce4-db2f206d7056"
+                          }
+                        ]
+                      },
+                      "children": {
+                        "_serializerId": "array",
+                        "value": []
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "PixiTransformComponent",
+                        "uid": "12a028fb-1050-44e3-a125-18cdc79f518f",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "12a028fb-1050-44e3-a125-18cdc79f518f"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New Entity"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "localPosition": {
+                            "_serializerId": "_ObservablePoint",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "alpha": {
+                            "_serializerId": "number",
+                            "value": 1
+                          },
+                          "_backingPivot": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "scale": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 1,
+                              "y": 1
+                            }
+                          },
+                          "rotation": {
+                            "_serializerId": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "AudioGroup",
+                        "uid": "aaa0ef4e-646b-438c-8ce4-db2f206d7056",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "aaa0ef4e-646b-438c-8ce4-db2f206d7056"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New AudioGroup"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "type": {
+                            "_serializerId": "string",
+                            "value": "sfx"
+                          },
+                          "sounds": {
+                            "_serializerId": "array",
+                            "value": [
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "xp-small"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "d1e07856-90c3-4078-a4c8-2c8c49f48033"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "xp-medium"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "d1e07856-90c3-4078-a4c8-2c8c49f48033"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "xp-large"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "511c9ccf-1cfc-41b1-8524-9920fe12086f"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "health-potion"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "a978a817-aa1a-4722-a1f1-67cf666888d6"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "coin"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "b9ce0fa4-1c4d-41d9-871e-73004a6d8a54"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "meta"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "chest-open"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile",
+                                      "uid": "737c90fc-1a4d-4517-953b-a4837242b65f"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "GameObject",
+                    "uid": "6d28caaa-2de6-4cb2-9e62-198562d6ba7b",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "6d28caaa-2de6-4cb2-9e62-198562d6ba7b"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "ui-audio"
+                      },
+                      "components": {
+                        "_serializerId": "array",
+                        "value": [
+                          {
+                            "_serializerId": "Entity",
+                            "value": "af21bcd6-0222-4664-a1ae-59fec0a30010"
+                          },
+                          {
+                            "_serializerId": "Entity",
+                            "value": "1f5d8177-9bb8-4c5a-8e23-201d0757644a"
+                          }
+                        ]
+                      },
+                      "children": {
+                        "_serializerId": "array",
+                        "value": []
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "PixiTransformComponent",
+                        "uid": "af21bcd6-0222-4664-a1ae-59fec0a30010",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "af21bcd6-0222-4664-a1ae-59fec0a30010"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New Entity"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "localPosition": {
+                            "_serializerId": "_ObservablePoint",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "alpha": {
+                            "_serializerId": "number",
+                            "value": 1
+                          },
+                          "_backingPivot": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "scale": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 1,
+                              "y": 1
+                            }
+                          },
+                          "rotation": {
+                            "_serializerId": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "AudioGroup",
+                        "uid": "1f5d8177-9bb8-4c5a-8e23-201d0757644a",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "1f5d8177-9bb8-4c5a-8e23-201d0757644a"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New AudioGroup"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "type": {
+                            "_serializerId": "string",
+                            "value": "sfx"
+                          },
+                          "sounds": {
+                            "_serializerId": "array",
+                            "value": [
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "level-up"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile",
+                                      "uid": "aa679696-98b2-4847-8062-7742a2b5307a"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "pick-upgrade"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile",
+                                      "uid": "869cd3a3-ddda-4613-976f-86f3c9dc71ab"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "buy-persistent-upgrade"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "d2dd5cd1-dffb-49b8-83c5-0993ee56ac9e"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "persistent-upgrade-open"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile",
+                                      "uid": "be94c546-b0a5-44fa-89df-cc0c80c6910b"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "respawn-ui"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile",
+                                      "uid": "b22d3a73-28e1-42cb-9fe3-44f313079725"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "tombstone-fall"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile",
+                                      "uid": "d42c8615-ad02-4a58-9be4-7383274e51a1"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "GameObject",
+                    "uid": "9921a5e3-74a2-4d12-b676-ad9398080f6f",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "9921a5e3-74a2-4d12-b676-ad9398080f6f"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "weapon-audio"
+                      },
+                      "components": {
+                        "_serializerId": "array",
+                        "value": [
+                          {
+                            "_serializerId": "Entity",
+                            "value": "78c3bc06-e2ac-462a-87b1-8b3e2e9f07aa"
+                          },
+                          {
+                            "_serializerId": "Entity",
+                            "value": "fe564f41-e345-4c80-b634-8dc54eebc343"
+                          }
+                        ]
+                      },
+                      "children": {
+                        "_serializerId": "array",
+                        "value": []
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "PixiTransformComponent",
+                        "uid": "78c3bc06-e2ac-462a-87b1-8b3e2e9f07aa",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "78c3bc06-e2ac-462a-87b1-8b3e2e9f07aa"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New Entity"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "localPosition": {
+                            "_serializerId": "_ObservablePoint",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "alpha": {
+                            "_serializerId": "number",
+                            "value": 1
+                          },
+                          "_backingPivot": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "scale": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 1,
+                              "y": 1
+                            }
+                          },
+                          "rotation": {
+                            "_serializerId": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "AudioGroup",
+                        "uid": "fe564f41-e345-4c80-b634-8dc54eebc343",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "fe564f41-e345-4c80-b634-8dc54eebc343"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New AudioGroup"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "type": {
+                            "_serializerId": "string",
+                            "value": "sfx"
+                          },
+                          "sounds": {
+                            "_serializerId": "array",
+                            "value": [
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "taser-hit"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "782478d3-11ea-4554-b803-1fe11a600e8a"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "lightning-jump"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "df4b55d7-5dc0-4e7d-8dee-58cdfdfb5918"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "GameObject",
+                    "uid": "0bace0ed-ee23-44e9-80db-a25d3e6306ec",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "0bace0ed-ee23-44e9-80db-a25d3e6306ec"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "ambience"
+                      },
+                      "components": {
+                        "_serializerId": "array",
+                        "value": [
+                          {
+                            "_serializerId": "Entity",
+                            "value": "7a86d7d1-255a-4b07-8854-94f372556d27"
+                          },
+                          {
+                            "_serializerId": "Entity",
+                            "value": "15382858-8155-471f-8506-f42ddc97f353"
+                          }
+                        ]
+                      },
+                      "children": {
+                        "_serializerId": "array",
+                        "value": []
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "PixiTransformComponent",
+                        "uid": "7a86d7d1-255a-4b07-8854-94f372556d27",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "7a86d7d1-255a-4b07-8854-94f372556d27"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New Entity"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "localPosition": {
+                            "_serializerId": "_ObservablePoint",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "alpha": {
+                            "_serializerId": "number",
+                            "value": 1
+                          },
+                          "_backingPivot": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "scale": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 1,
+                              "y": 1
+                            }
+                          },
+                          "rotation": {
+                            "_serializerId": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "AudioSource",
+                        "uid": "15382858-8155-471f-8506-f42ddc97f353",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "15382858-8155-471f-8506-f42ddc97f353"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New AudioSource"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "type": {
+                            "_serializerId": "string",
+                            "value": "music"
+                          },
+                          "useCollection": {
+                            "_serializerId": "boolean",
+                            "value": false
+                          },
+                          "clip": {
+                            "_serializerId": "EntityReference",
+                            "value": {
+                              "entityType": "AudioClipFile",
+                              "uid": "83023166-7c0e-4c87-909c-9601aa96bab8"
+                            }
+                          },
+                          "collection": {
+                            "_serializerId": "EntityReference",
+                            "value": {
+                              "entityType": "AudioClipColletion"
+                            }
+                          },
+                          "autoPlay": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "destroyOnEnd": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "clearParentOnStart": {
+                            "_serializerId": "boolean",
+                            "value": false
+                          },
+                          "loop": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "volume": {
+                            "_serializerId": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "GameObject",
+                    "uid": "2a8df399-20f5-49d2-b0d9-e2e0d959d3c5",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "2a8df399-20f5-49d2-b0d9-e2e0d959d3c5"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "player"
+                      },
+                      "components": {
+                        "_serializerId": "array",
+                        "value": [
+                          {
+                            "_serializerId": "Entity",
+                            "value": "cc9115d4-3dbf-40ab-b454-6b6b1031405c"
+                          },
+                          {
+                            "_serializerId": "Entity",
+                            "value": "269a3f2c-cc12-498d-9050-c2bdfbc5c2ca"
+                          }
+                        ]
+                      },
+                      "children": {
+                        "_serializerId": "array",
+                        "value": []
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "PixiTransformComponent",
+                        "uid": "cc9115d4-3dbf-40ab-b454-6b6b1031405c",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "cc9115d4-3dbf-40ab-b454-6b6b1031405c"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New Entity"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "localPosition": {
+                            "_serializerId": "_ObservablePoint",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "alpha": {
+                            "_serializerId": "number",
+                            "value": 1
+                          },
+                          "_backingPivot": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 0,
+                              "y": 0
+                            }
+                          },
+                          "scale": {
+                            "_serializerId": "_Point",
+                            "value": {
+                              "x": 1,
+                              "y": 1
+                            }
+                          },
+                          "rotation": {
+                            "_serializerId": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "base",
+                      "entity": {
+                        "type": "AudioGroup",
+                        "uid": "269a3f2c-cc12-498d-9050-c2bdfbc5c2ca",
+                        "data": {
+                          "_prefabReference": {
+                            "_serializerId": "raw"
+                          },
+                          "uid": {
+                            "_serializerId": "string",
+                            "value": "269a3f2c-cc12-498d-9050-c2bdfbc5c2ca"
+                          },
+                          "name": {
+                            "_serializerId": "string",
+                            "value": "New AudioGroup"
+                          },
+                          "isEnabledLocally": {
+                            "_serializerId": "boolean",
+                            "value": true
+                          },
+                          "type": {
+                            "_serializerId": "string",
+                            "value": "sfx"
+                          },
+                          "sounds": {
+                            "_serializerId": "array",
+                            "value": [
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "footstep"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "7c5c1fe9-6d8d-46c9-ae75-7b1f04cc619c"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "no-dig"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "67be3d5e-e1b5-4810-99ca-352495d2b6cb"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "player-death"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion",
+                                      "uid": "8ab8a873-4c98-42ce-b3b4-504b031da8b9"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "_serializerId": "object",
+                                "value": {
+                                  "key": {
+                                    "_serializerId": "string",
+                                    "value": "revive"
+                                  },
+                                  "clip": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipFile",
+                                      "uid": "ae394ddc-88f9-4e09-a6b5-9e261e7ae9cb"
+                                    }
+                                  },
+                                  "collection": {
+                                    "_serializerId": "EntityReference",
+                                    "value": {
+                                      "entityType": "AudioClipColletion"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "base",
+              "entity": {
+                "type": "GameObject",
+                "uid": "7c31998b-bfb2-4898-baae-b426a6578544",
+                "data": {
+                  "_prefabReference": {
+                    "_serializerId": "raw"
+                  },
+                  "uid": {
+                    "_serializerId": "string",
+                    "value": "7c31998b-bfb2-4898-baae-b426a6578544"
+                  },
+                  "name": {
+                    "_serializerId": "string",
+                    "value": "music-player"
+                  },
+                  "components": {
+                    "_serializerId": "array",
+                    "value": [
+                      {
+                        "_serializerId": "Entity",
+                        "value": "772de66f-adb6-4f91-9cfd-c3b50e80d7cf"
+                      },
+                      {
+                        "_serializerId": "Entity",
+                        "value": "6b4a506a-9aec-4faa-bd09-800d22ad82e6"
+                      },
+                      {
+                        "_serializerId": "Entity",
+                        "value": "40e21cfc-fca3-4dfa-b87b-6189fb7effc6"
+                      }
+                    ]
+                  },
+                  "children": {
+                    "_serializerId": "array",
+                    "value": []
+                  },
+                  "isEnabledLocally": {
+                    "_serializerId": "boolean",
+                    "value": true
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "PixiTransformComponent",
+                    "uid": "772de66f-adb6-4f91-9cfd-c3b50e80d7cf",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "772de66f-adb6-4f91-9cfd-c3b50e80d7cf"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "New Entity"
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      },
+                      "localPosition": {
+                        "_serializerId": "_ObservablePoint",
+                        "value": {
+                          "x": 0,
+                          "y": 0
+                        }
+                      },
+                      "alpha": {
+                        "_serializerId": "number",
+                        "value": 1
+                      },
+                      "_backingPivot": {
+                        "_serializerId": "_Point",
+                        "value": {
+                          "x": 0,
+                          "y": 0
+                        }
+                      },
+                      "scale": {
+                        "_serializerId": "_Point",
+                        "value": {
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      "rotation": {
+                        "_serializerId": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "MusicPlayer",
+                    "uid": "6b4a506a-9aec-4faa-bd09-800d22ad82e6",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "6b4a506a-9aec-4faa-bd09-800d22ad82e6"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "New MusicPlayer"
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      },
+                      "musicConfigs": {
+                        "_serializerId": "array",
+                        "value": [
+                          {
+                            "_serializerId": "EntityReference",
+                            "value": {
+                              "entityType": "MusicConfig",
+                              "uid": "2dac9694-af7d-4049-a84e-615a7257cebc"
+                            }
+                          },
+                          {
+                            "_serializerId": "EntityReference",
+                            "value": {
+                              "entityType": "MusicConfig",
+                              "uid": "03ad115e-3f0c-43d0-a883-0aeaf5e0e153"
+                            }
+                          },
+                          {
+                            "_serializerId": "EntityReference",
+                            "value": {
+                              "entityType": "MusicConfig",
+                              "uid": "cdd08b38-ebde-475a-b70e-687f7e4af03c"
+                            }
+                          },
+                          {
+                            "_serializerId": "EntityReference",
+                            "value": {
+                              "entityType": "MusicConfig",
+                              "uid": "f1a6affb-3cad-4274-bc7f-b4d84e41401a"
+                            }
+                          }
+                        ]
+                      },
+                      "startupConfig": {
+                        "_serializerId": "EntityReference",
+                        "value": {
+                          "entityType": "MusicConfig"
+                        }
+                      }
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "AudioGroup",
+                    "uid": "40e21cfc-fca3-4dfa-b87b-6189fb7effc6",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "40e21cfc-fca3-4dfa-b87b-6189fb7effc6"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "New AudioGroup"
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      },
+                      "type": {
+                        "_serializerId": "string",
+                        "value": "sfx"
+                      },
+                      "sounds": {
+                        "_serializerId": "array",
+                        "value": []
+                      }
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "base",
+              "entity": {
+                "type": "GameObject",
+                "uid": "d13d4859-1997-4204-a420-21fb0bfd79eb",
+                "data": {
+                  "_prefabReference": {
+                    "_serializerId": "raw"
+                  },
+                  "uid": {
+                    "_serializerId": "string",
+                    "value": "d13d4859-1997-4204-a420-21fb0bfd79eb"
+                  },
+                  "name": {
+                    "_serializerId": "string",
+                    "value": "prefab-pool-parent"
+                  },
+                  "components": {
+                    "_serializerId": "array",
+                    "value": [
+                      {
+                        "_serializerId": "Entity",
+                        "value": "0ff1452f-670d-490c-8138-a29a6b51b331"
+                      }
+                    ]
+                  },
+                  "children": {
+                    "_serializerId": "array",
+                    "value": []
+                  },
+                  "isEnabledLocally": {
+                    "_serializerId": "boolean",
+                    "value": true
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "base",
+                  "entity": {
+                    "type": "PixiTransformComponent",
+                    "uid": "0ff1452f-670d-490c-8138-a29a6b51b331",
+                    "data": {
+                      "_prefabReference": {
+                        "_serializerId": "raw"
+                      },
+                      "uid": {
+                        "_serializerId": "string",
+                        "value": "0ff1452f-670d-490c-8138-a29a6b51b331"
+                      },
+                      "name": {
+                        "_serializerId": "string",
+                        "value": "New Entity"
+                      },
+                      "isEnabledLocally": {
+                        "_serializerId": "boolean",
+                        "value": true
+                      },
+                      "localPosition": {
+                        "_serializerId": "_ObservablePoint",
+                        "value": {
+                          "x": 0,
+                          "y": 0
+                        }
+                      },
+                      "alpha": {
+                        "_serializerId": "number",
+                        "value": 1
+                      },
+                      "_backingPivot": {
+                        "_serializerId": "_Point",
+                        "value": {
+                          "x": 0,
+                          "y": 0
+                        }
+                      },
+                      "scale": {
+                        "_serializerId": "_Point",
+                        "value": {
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      "rotation": {
+                        "_serializerId": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "loadOnStartup": {
+        "_serializerId": "boolean",
+        "value": true
+      },
+      "mainScene": {
+        "_serializerId": "boolean",
+        "value": false
+      },
+      "startupLoadPriority": {
+        "_serializerId": "number",
+        "value": 0
+      }
+    }
+  },
+  "children": []
+}
