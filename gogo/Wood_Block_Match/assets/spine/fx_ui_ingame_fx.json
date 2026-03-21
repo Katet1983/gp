@@ -1,0 +1,125 @@
+{
+"skeleton": { "hash": "5CAhR+4syi+iUikM/gI9z0dxE7k", "spine": "3.7.94", "width": 720, "height": 1280, "images": "../../2. 인게임/images/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "explosion", "parent": "root" },
+	{ "name": "boom", "parent": "explosion" },
+	{ "name": "boom2", "parent": "explosion" }
+],
+"slots": [
+	{ "name": "1_ingame_2", "bone": "root" },
+	{ "name": "explosion_01", "bone": "boom", "attachment": "explosion_01" },
+	{ "name": "explosion_1", "bone": "boom", "color": "ffffff78", "attachment": "explosion_01", "blend": "additive" },
+	{ "name": "explosion_fx_01", "bone": "boom2", "attachment": "explosion_fx_10", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"explosion_01": {
+			"explosion_01": { "width": 94, "height": 94 },
+			"explosion_02": { "width": 94, "height": 94 },
+			"explosion_03": { "width": 94, "height": 94 },
+			"explosion_04": { "width": 94, "height": 94 },
+			"explosion_05": { "width": 94, "height": 94 },
+			"explosion_06": { "width": 94, "height": 94 },
+			"explosion_07": { "width": 94, "height": 94 },
+			"explosion_08": { "width": 94, "height": 94 },
+			"explosion_09": { "width": 94, "height": 94 },
+			"explosion_10": { "x": 141.95, "y": -433.94, "width": 94, "height": 94 }
+		},
+		"explosion_1": {
+			"explosion_01": { "width": 94, "height": 94 },
+			"explosion_02": { "width": 94, "height": 94 },
+			"explosion_03": { "width": 94, "height": 94 },
+			"explosion_04": { "width": 94, "height": 94 },
+			"explosion_05": { "width": 94, "height": 94 },
+			"explosion_06": { "width": 94, "height": 94 },
+			"explosion_07": { "width": 94, "height": 94 },
+			"explosion_08": { "width": 94, "height": 94 },
+			"explosion_09": { "width": 94, "height": 94 },
+			"explosion_10": { "x": 141.95, "y": -433.94, "width": 94, "height": 94 }
+		},
+		"explosion_fx_01": {
+			"explosion_fx_01": { "color": "ffffff4f", "width": 89, "height": 89 },
+			"explosion_fx_02": { "color": "ffffff4f", "width": 89, "height": 89 },
+			"explosion_fx_03": { "color": "ffffff4f", "width": 89, "height": 89 },
+			"explosion_fx_04": { "color": "ffffff4f", "width": 89, "height": 89 },
+			"explosion_fx_05": { "color": "ffffff4f", "width": 89, "height": 89 },
+			"explosion_fx_06": { "color": "ffffff4f", "width": 89, "height": 89 },
+			"explosion_fx_07": { "color": "ffffff4f", "width": 89, "height": 89 },
+			"explosion_fx_08": { "color": "ffffff4f", "width": 89, "height": 89 },
+			"explosion_fx_09": { "color": "ffffff4f", "width": 89, "height": 89 },
+			"explosion_fx_10": { "color": "ffffff4f", "width": 89, "height": 89 }
+		}
+	}
+},
+"animations": {
+	"boom": {
+		"slots": {
+			"explosion_01": {
+				"attachment": [
+					{ "time": 0.0333, "name": "explosion_02" },
+					{ "time": 0.0667, "name": "explosion_03" },
+					{ "time": 0.1, "name": "explosion_04" },
+					{ "time": 0.1333, "name": "explosion_05" },
+					{ "time": 0.1667, "name": "explosion_06" },
+					{ "time": 0.2, "name": "explosion_07" },
+					{ "time": 0.2333, "name": "explosion_08" },
+					{ "time": 0.2667, "name": "explosion_09" },
+					{ "time": 0.3, "name": "explosion_10" },
+					{ "time": 0.3333, "name": null }
+				]
+			},
+			"explosion_1": {
+				"attachment": [
+					{ "time": 0.0333, "name": "explosion_02" },
+					{ "time": 0.0667, "name": "explosion_03" },
+					{ "time": 0.1, "name": "explosion_04" },
+					{ "time": 0.1333, "name": "explosion_05" },
+					{ "time": 0.1667, "name": "explosion_06" },
+					{ "time": 0.2, "name": "explosion_07" },
+					{ "time": 0.2333, "name": "explosion_08" },
+					{ "time": 0.2667, "name": "explosion_09" },
+					{ "time": 0.3, "name": "explosion_10" },
+					{ "time": 0.3333, "name": null }
+				]
+			},
+			"explosion_fx_01": {
+				"attachment": [
+					{ "time": 0, "name": "explosion_fx_01" },
+					{ "time": 0.0333, "name": "explosion_fx_02" },
+					{ "time": 0.0667, "name": "explosion_fx_03" },
+					{ "time": 0.1, "name": "explosion_fx_04" },
+					{ "time": 0.1333, "name": "explosion_fx_05" },
+					{ "time": 0.1667, "name": "explosion_fx_06" },
+					{ "time": 0.2, "name": "explosion_fx_07" },
+					{ "time": 0.2333, "name": "explosion_fx_08" },
+					{ "time": 0.2667, "name": "explosion_fx_09" },
+					{ "time": 0.3, "name": "explosion_fx_10" },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"boom": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.1, "x": 1.14, "y": 1.14 },
+					{ "time": 0.1333, "x": 0.9, "y": 0.9 },
+					{ "time": 0.1667, "x": 1, "y": 1 }
+				]
+			},
+			"boom2": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0, 0, 0.347, 1 ]
+					},
+					{ "time": 0.3333, "x": 1.2, "y": 1.2 }
+				]
+			}
+		}
+	}
+}
+}

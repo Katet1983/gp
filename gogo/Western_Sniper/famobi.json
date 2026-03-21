@@ -1,0 +1,28 @@
+{
+	"features": {
+	    "audio": false,
+	    "copyright": false,
+	    "credits": false
+	},
+	    "interstitial": {
+			"eventIds": [
+				"button:game:restart",
+				"button:result:restart",
+				"button:startscreen:shop",
+				"button:upgradeswindow:quit"
+			],
+			"cooldown": 100
+	    },
+	    "rewarded": {
+			"eventIds": [
+	            "button:result:claimx3",
+	            "button:upgradeswindow:morebullets",
+	            "button:upgradeswindow:upgrade",
+	            "button:freebundle:claim",
+	            "button:result:revive",
+	            "button:resultescape:revive",
+	            "button:upgradeswindow:nomoneyupgrade"
+			]
+		},
+		"gameId": "western-sniper"
+}

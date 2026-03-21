@@ -1,0 +1,252 @@
+{
+"skeleton": { "hash": "i6iBl4nI7vMerqgfzYmvMJuIC14", "spine": "3.7.94", "width": 722, "height": 1282, "images": "../../6. 아이템상점 구매연출/images/", "audio": "C:/Users/Admin/Desktop/작업파일/우드블록_삼성/스파인/6. 아이템상점 구매연출" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "btn_main", "parent": "root" },
+	{ "name": "coin_btn", "parent": "btn_main", "scaleY": -1 },
+	{ "name": "size", "parent": "coin_btn" },
+	{ "name": "coin_box", "parent": "size", "x": -0.18, "y": 2.83 },
+	{ "name": "coin_gauge", "parent": "coin_box", "x": -58.12, "y": -2.83 }
+],
+"slots": [
+	{ "name": "bg", "bone": "root" },
+	{ "name": "btn_coin", "bone": "btn_main", "attachment": "btn_coin_150" },
+	{ "name": "btn_coin2", "bone": "btn_main", "attachment": "btn_coin" },
+	{ "name": "coin_box", "bone": "coin_btn" },
+	{ "name": "coin_frame", "bone": "coin_box" },
+	{ "name": "coin_gauge", "bone": "coin_gauge" },
+	{ "name": "coin_icon", "bone": "size" },
+	{ "name": "purchase", "bone": "size", "attachment": "purchase" }
+],
+"skins": {
+	"default": {
+		"btn_coin": {
+			"btn_coin_150": { "width": 219, "height": 73 }
+		},
+		"btn_coin2": {
+			"btn_coin": { "width": 221, "height": 75 }
+		},
+		"coin_box": {
+			"coin_box": { "width": 219, "height": 73 }
+		},
+		"coin_frame": {
+			"coin_frame": { "x": 14.15, "y": -0.51, "width": 156, "height": 36 }
+		},
+		"coin_gauge": {
+			"coin_gauge": { "x": 69.3, "y": 3.5, "width": 151, "height": 26 }
+		},
+		"coin_icon": {
+			"coin_icon": { "x": -69.5, "y": 2, "width": 40, "height": 47 }
+		},
+		"purchase": {
+			"purchase": { "y": 2.39, "width": 150, "height": 25 }
+		}
+	}
+},
+"animations": {
+	"100": {
+		"slots": {
+			"btn_coin": {
+				"attachment": [
+					{ "time": 0.2333, "name": null },
+					{ "time": 3.4333, "name": "btn_coin_150" }
+				]
+			},
+			"btn_coin2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"coin_box": {
+				"attachment": [
+					{ "time": 0.2333, "name": "coin_box" },
+					{ "time": 3.4333, "name": null }
+				]
+			},
+			"coin_frame": {
+				"attachment": [
+					{ "time": 0.2333, "name": "coin_frame" },
+					{ "time": 2.6667, "name": null }
+				]
+			},
+			"coin_gauge": {
+				"attachment": [
+					{ "time": 0.2333, "name": "coin_gauge" },
+					{ "time": 2.6667, "name": null }
+				]
+			},
+			"coin_icon": {
+				"attachment": [
+					{ "time": 0.2333, "name": "coin_icon" },
+					{ "time": 2.6667, "name": null }
+				]
+			},
+			"purchase": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 2.6667, "name": "purchase" },
+					{ "time": 3.4333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"btn_main": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.923, -0.01, 0.077, 1 ]
+					},
+					{ "time": 0.5, "x": 1, "y": -1, "curve": "stepped" },
+					{
+						"time": 3.1667,
+						"x": 1,
+						"y": -1,
+						"curve": [ 0.957, 0.1, 0.035, 0.91 ]
+					},
+					{ "time": 3.6667, "x": 1, "y": 1 }
+				]
+			},
+			"coin_box": {
+				"scale": [
+					{ "time": 2, "x": 1, "y": 1 },
+					{ "time": 2.0667, "x": 1.034, "y": 1.034 },
+					{ "time": 2.1667, "x": 1, "y": 1 }
+				]
+			},
+			"coin_gauge": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 1, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 0,
+						"y": 1,
+						"curve": [ 0.159, 0.69, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"size": {
+				"scale": [
+					{
+						"time": 2.5,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.721, -0.37, 0.894, 0.19 ]
+					},
+					{
+						"time": 2.6667,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.204, 1.72, 0.921, 0.96 ]
+					},
+					{ "time": 2.8333, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"200": {
+		"slots": {
+			"btn_coin": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"btn_coin2": {
+				"attachment": [
+					{ "time": 0.2333, "name": null },
+					{ "time": 3.4333, "name": "btn_coin" }
+				]
+			},
+			"coin_box": {
+				"attachment": [
+					{ "time": 0.2333, "name": "coin_box" },
+					{ "time": 3.4333, "name": null }
+				]
+			},
+			"coin_frame": {
+				"attachment": [
+					{ "time": 0.2333, "name": "coin_frame" },
+					{ "time": 2.6667, "name": null }
+				]
+			},
+			"coin_gauge": {
+				"attachment": [
+					{ "time": 0.2333, "name": "coin_gauge" },
+					{ "time": 2.6667, "name": null }
+				]
+			},
+			"coin_icon": {
+				"attachment": [
+					{ "time": 0.2333, "name": "coin_icon" },
+					{ "time": 2.6667, "name": null }
+				]
+			},
+			"purchase": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 2.6667, "name": "purchase" },
+					{ "time": 3.4333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"btn_main": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.923, -0.01, 0.077, 1 ]
+					},
+					{ "time": 0.5, "x": 1, "y": -1, "curve": "stepped" },
+					{
+						"time": 3.1667,
+						"x": 1,
+						"y": -1,
+						"curve": [ 0.957, 0.1, 0.035, 0.91 ]
+					},
+					{ "time": 3.6667, "x": 1, "y": 1 }
+				]
+			},
+			"coin_box": {
+				"scale": [
+					{ "time": 2, "x": 1, "y": 1 },
+					{ "time": 2.0667, "x": 1.034, "y": 1.034 },
+					{ "time": 2.1667, "x": 1, "y": 1 }
+				]
+			},
+			"coin_gauge": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 1, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 0,
+						"y": 1,
+						"curve": [ 0.159, 0.69, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"size": {
+				"scale": [
+					{
+						"time": 2.5,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.721, -0.37, 0.894, 0.19 ]
+					},
+					{
+						"time": 2.6667,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.204, 1.72, 0.921, 0.96 ]
+					},
+					{ "time": 2.8333, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,55 @@
+{
+"skeleton": { "hash": "t3hzLJtCzj8VkAghmPQWLriOubk", "spine": "3.7.94", "width": 456.95, "height": 456.95, "images": "../../4. 데일리팝업/images/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" },
+	{ "name": "bone2", "parent": "bone" },
+	{ "name": "bone3", "parent": "bone" }
+],
+"slots": [
+	{ "name": "daily_box", "bone": "root" },
+	{ "name": "light_A", "bone": "bone2", "attachment": "light_A", "blend": "additive" },
+	{ "name": "light_B", "bone": "bone3", "attachment": "light_B", "blend": "additive" },
+	{ "name": "gold_pack", "bone": "root" }
+],
+"skins": {
+	"default": {
+		"light_A": {
+			"light_A": { "scaleX": 0.95, "scaleY": 0.95, "width": 330, "height": 330 }
+		},
+		"light_B": {
+			"light_B": { "color": "ffffff57", "scaleX": 0.95, "scaleY": 0.95, "width": 481, "height": 481 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"bone3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 2, "angle": 180 },
+					{ "time": 4, "angle": 0 },
+					{ "time": 6, "angle": 180 },
+					{ "time": 8, "angle": 0 },
+					{ "time": 10, "angle": 180 },
+					{ "time": 12, "angle": 0 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 0 },
+					{ "time": 4.5, "angle": 180 },
+					{ "time": 6, "angle": 0 },
+					{ "time": 7.5, "angle": 180 },
+					{ "time": 9, "angle": 0 },
+					{ "time": 10.5, "angle": 180 },
+					{ "time": 12, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}
