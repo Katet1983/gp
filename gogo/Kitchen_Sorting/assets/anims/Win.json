@@ -1,0 +1,234 @@
+{
+    "entity": "Win",
+    "sprites": {
+        "Win_Hat": { "frame": "Win_Hat", "pivot": { "x": 0.5, "y": 0.5} },
+        "Win_Spoon": { "frame": "Win_Spoon", "pivot": { "x": 0.5, "y": 0.5} },
+        "Win_Ribbon": { "frame": "Win_Ribbon", "pivot": { "x": 0.5, "y": 0} }
+    },
+    "tree": {
+        "root": 0,
+        "nodes": {
+            "0": {
+                "name": "Win_Short",
+                "transform": { "x": 0, "y": 0, "angle": 0, "sx": 1, "sy": 1, "alpha": 1 },
+                "sprite": null,
+                "nodes": [1, 2, 3, 4, 5]
+            },
+            "1": {
+                "name": "Win_Star",
+                "transform": { "x": 0, "y": 0, "angle": 0, "sx": 1, "sy": 1, "alpha": 1 },
+                "sprite": null,
+                "nodes": null
+            },
+            "2": {
+                "name": "Win_Hat",
+                "transform": { "x": 0, "y": -8, "angle": 0, "sx": 1, "sy": 1, "alpha": 1 },
+                "sprite": { "frame": "Win_Hat", "z": 3, "visible": true },
+                "nodes": null
+            },
+            "3": {
+                "name": "Win_Spoon",
+                "transform": { "x": 0, "y": -35.5, "angle": 0, "sx": 1, "sy": 1, "alpha": 1 },
+                "sprite": { "frame": "Win_Spoon", "z": 1, "visible": true },
+                "nodes": null
+            },
+            "4": {
+                "name": "Win_Spoon (1)",
+                "transform": { "x": 0, "y": -35.5, "angle": 0, "sx": -1, "sy": 1, "alpha": 1 },
+                "sprite": { "frame": "Win_Spoon", "z": 2, "visible": true },
+                "nodes": null
+            },
+            "5": {
+                "name": "Win_Ribbon",
+                "transform": { "x": 0, "y": 65, "angle": 0, "sx": 1, "sy": 1, "alpha": 1 },
+                "sprite": { "frame": "Win_Ribbon", "z": 1, "visible": true },
+                "nodes": null
+            }
+        }
+    },
+    "anims": {
+        "Win": {
+            "name": "Win",
+            "length": 1.5,
+            "loop": false,
+            "events": { "keys": [
+                    { "t": 1.233333, "v": 0}
+                    ]
+                }
+            ,
+            "timelines": {
+                "1": [
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 0.945, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.1, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.433333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "visible", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 1.1, "v": 1, "lm": 3, "rm": 3 },
+                        { "t": 1.433333, "v": 1, "lm": 3, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 1, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.1, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.433333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 1, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.1, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.433333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    }
+                ],
+                "2": [
+                    { "property": "x", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.75, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.8, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.85, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.9666666, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.083333, "v": 0, "lm": 0, "lt": 0, "rm": 0, "rt": 0 },
+                        { "t": 1.25, "v": 0, "lm": 0, "lt": 0, "rm": 0, "rt": 0 },
+                        { "t": 1.333333, "v": 0, "lm": 0, "lt": 0, "rm": 0, "rt": 0 },
+                        { "t": 1.416667, "v": 0, "lm": 0, "lt": 0, "rm": 0, "rt": 0 },
+                        { "t": 1.5, "v": 0, "lm": 0, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "y", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.75, "v": -8, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.8, "v": -8, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.85, "v": -8, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.9666666, "v": -8, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.083333, "v": -8, "lm": 0, "lt": 0, "rm": 0, "rt": 0 },
+                        { "t": 1.25, "v": -15, "lm": 0, "lt": 0, "rm": 0, "rt": 0 },
+                        { "t": 1.333333, "v": -7, "lm": 0, "lt": 127.2218, "rm": 0, "rt": 0 },
+                        { "t": 1.416667, "v": -9, "lm": 0, "lt": 0, "rm": 0, "rt": 0 },
+                        { "t": 1.5, "v": -8, "lm": 0, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 2.22, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": 2.22, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.75, "v": 0.9, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.8, "v": 1.1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.85, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 2.22, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": 2.22, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.75, "v": 0.9, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.8, "v": 1.1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.85, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.75, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "angle", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.5, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.75, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.8, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.85, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.9666666, "v": 0, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    }
+                ],
+                "3": [
+                    { "property": "x", "ref": false, "keys": [
+                        { "t": 0, "v": -100, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 0, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "y", "ref": false, "keys": [
+                        { "t": 0, "v": -35.5, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": -35.5, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.233333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    }
+                ],
+                "4": [
+                    { "property": "x", "ref": false, "keys": [
+                        { "t": 0, "v": 100, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 0, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "y", "ref": false, "keys": [
+                        { "t": 0, "v": -35.5, "lm": 3, "rm": 3 }
+                        ]
+                    },
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": -1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "angle", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 0, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    }
+                ],
+                "5": [
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 0.9166667, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.083333, "v": 1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.1, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 0.9166667, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.083333, "v": 1.1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.133333, "v": 0.9, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.183333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 1, "lm": 3, "rm": 3 },
+                        { "t": 0.9166667, "v": 1, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.083333, "v": 1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.133333, "v": 1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.183333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

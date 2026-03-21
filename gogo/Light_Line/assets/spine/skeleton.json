@@ -1,0 +1,96 @@
+{
+"skeleton": { "hash": "HerZBbc48eo/JCu5/dfM/NripiU", "spine": "3.6.53", "width": 354, "height": 231, "images": "./스테이지결과/images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "finger", "parent": "root", "color": "9b9b9b00" },
+	{ "name": "goani", "parent": "root" }
+],
+"slots": [
+	{ "name": "finger", "bone": "finger", "attachment": "finger" },
+	{ "name": "go", "bone": "goani", "color": "ffffff00", "attachment": "go" }
+],
+"skins": {
+	"default": {
+		"finger": {
+			"finger": { "width": 123, "height": 165 }
+		},
+		"go": {
+			"go": { "width": 354, "height": 231 }
+		}
+	}
+},
+"animations": {
+	"finger": {
+		"slots": {
+			"finger": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffffff" },
+					{ "time": 0.6667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.6667, "color": "ffffff00" }
+				]
+			},
+			"go": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.6667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"finger": {
+				"translate": [
+					{ "time": 0, "x": -94.75, "y": 0 },
+					{ "time": 0.3333, "x": 78.8, "y": 0, "curve": "stepped" },
+					{ "time": 1.6667, "x": 78.8, "y": 0 }
+				]
+			},
+			"goani": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.6667, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"go": {
+		"slots": {
+			"finger": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"go": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.4667, "color": "ffffffff" },
+					{ "time": 0.5333, "color": "ffffff00" },
+					{ "time": 0.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffffff" },
+					{ "time": 0.7333, "color": "ffffff00" },
+					{ "time": 0.8, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"finger": {
+				"translate": [
+					{ "time": 0, "x": -94.75, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": -94.75, "y": 0 }
+				]
+			},
+			"goani": {
+				"scale": [
+					{ "time": 0, "x": 3, "y": 3 },
+					{ "time": 0.1667, "x": 0.8, "y": 0.8 },
+					{ "time": 0.2333, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

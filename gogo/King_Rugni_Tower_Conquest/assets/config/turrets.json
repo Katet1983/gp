@@ -1,0 +1,260 @@
+
+{
+    "turrets": {
+        "pea" : {
+            "name": "Ballista",
+            "price": 50,
+            "buy": [0, 430, 1755],
+            "stars": 0,
+            "attributes": {
+                "damage": {
+                    "first": 45,
+                    "second": 50,
+                    "func": "prev + 5"
+                },
+                "reload": {
+                    "first": 1.1,
+                    "second": 0.8,
+                    "func": "prev - .3"
+                },
+                "range": {
+                    "first": 2.5,
+                    "second": 2.75,
+                    "func": "prev + .25"
+                },
+                "priceUpgrade": {
+                    "first": 100,
+                    "second": 200,
+                    "func": "prev * 2"
+                }
+            }
+        },
+        "mortar" : {
+            "name": "Bombard",
+            "price": 75,
+            "buy": [150, 880, 2320],
+            "stars": 2,
+            "attributes": {
+                "damage": {
+                    "first": 55,
+                    "second": 70,
+                    "func": "prev + 20"
+                },
+                "reload": {
+                    "first": 1.5,
+                    "second": 1.40,
+                    "func": "prev - .05"
+                },
+                "range": {
+                    "first": 2.75,
+                    "second": 3.05,
+                    "func": "prev + .3"
+                },
+                "explosionRange": {
+                    "first": 1.6,
+                    "second": 2.2,
+                    "func": "prev + .8"
+                },
+                "priceUpgrade": {
+                    "first": 160,
+                    "second": 350,
+                    "func": "prev * 2"
+                }
+            }
+        },
+        "splat" : {
+            "name": "Tar Pump",
+            "price": 60,
+            "buy": [360, 1225, 2498],
+            "stars": 4,
+            "attributes": {
+                "intensity": {
+                    "first": 2.5,
+                    "second": 3,
+                    "func": "prev + 1"
+                },
+                "duration": {
+                    "first": 2,
+                    "second": 2.5,
+                    "func": "prev + .5"
+                },
+                "reload": {
+                    "first": 2.15,
+                    "second": 2.65,
+                    "func": "prev + .5"
+                },
+                "range": {
+                    "first": 1.6,
+                    "second": 1.8,
+                    "func": "prev + .1"
+                },
+                "priceUpgrade": {
+                    "first": 130,
+                    "second": 280,
+                    "func": "prev * 2"
+                }
+            }
+        },
+        "bzzt" : {
+            "name": "Storm Caller",
+            "price": 140,
+            "buy": [550, 1560, 3300],
+            "stars": 11,
+            "intensity": [5, 10, 15],
+            "duration": [5, 6, 7],
+            "attributes": {
+                "damage": {
+                    "first": 110,
+                    "second": 220,
+                    "func": "prev + 110"
+                },
+                "reload": {
+                    "first": 1.75,
+                    "second": 1.7,
+                    "func": "prev - .05"
+                },
+                "range": {
+                    "first": 2.5,
+                    "second": 3,
+                    "func": "prev + .3"
+                },
+                "priceUpgrade": {
+                    "first": 240,
+                    "second": 400,
+                    "func": "prev * 2"
+                }
+            }
+        },
+        "rockets" : {
+            "name": "Rocket Launcher",
+            "price": 120,
+            "buy": [740, 1895, 3450],
+            "stars": 15,
+            "attributes": {
+                "damage": {
+                    "first": 90,
+                    "second": 105,
+                    "func": "prev + 20"
+                },
+                "reload": {
+                    "first": 1.7,
+                    "second": 1.65,
+                    "func": "prev - .05"
+                },
+                "range": {
+                    "first": 4,
+                    "second": 5,
+                    "func": "prev + 1"
+                },
+                "explosionRange": {
+                    "first": 1.5,
+                    "second": 2,
+                    "func": "prev + .8"
+                },
+                "priceUpgrade": {
+                    "first": 240,
+                    "second": 480,
+                    "func": "prev * 2"
+                }
+            }
+        }, 
+        "fire" : {
+            "name": "Flamer",
+            "price": 160,
+            "buy": [935, 2230, 4025],
+            "stars": 18,
+            "attributes": {
+                "damage": {
+                    "first": 35,
+                    "second": 70,
+                    "func": "prev + 40"
+                },
+                "reload": {
+                    "first": 0,
+                    "second": 0,
+                    "func": "prev"
+                },
+                "range": {
+                    "first": 1.5,
+                    "second": 1.75,
+                    "func": "prev + .25"
+                },
+                "priceUpgrade": {
+                    "first": 300,
+                    "second": 700,
+                    "func": "prev * 2"
+                }
+            }
+        },
+        "mines" : {
+            "name": "Mine Dropper",
+            "price": 70,
+            "buy": [1135, 2575, 4250],
+            "stars": 21,
+            "attributes": {
+                "damage": {
+                    "first": 300,
+                    "second": 500,
+                    "func": "prev + 300"
+                },
+                "reload": {
+                    "first": 2.5,
+                    "second": 2,
+                    "func": "prev - .5"
+                },
+                "range": {
+                    "first": 2.5,
+                    "second": 3,
+                    "func": "prev + .3"
+                },
+                "explosionRange": {
+                    "first": 1.7,
+                    "second": 2.2,
+                    "func": "prev + .8"
+                },
+                "maxNumMines": {
+                    "first": 3,
+                    "second": 4,
+                    "func": "prev + 2"
+                },
+                "priceUpgrade": {
+                    "first": 130,
+                    "second": 350,
+                    "func": "prev * 2"
+                }
+            }
+        },
+        "teleport" : {
+            "name": "Teleporter",
+            "price": 90,
+            "buy": [1336, 2920, 4695],
+            "stars": 24,
+            "attributes": {
+                "teleportDistance": {
+                    "first": 5,
+                    "second": 10,
+                    "func": "prev + 8"
+                },
+                "reload": {
+                    "first": 3.5,
+                    "second": 3,
+                    "func": "prev - .5"
+                },
+                "range": {
+                    "first": 3.5,
+                    "second": 4,
+                    "func": "prev + .5"
+                },
+                "priceUpgrade": {
+                    "first": 360,
+                    "second": 650,
+                    "func": "prev * 2"
+                }
+            }
+        }
+    },
+    "modifiers": {
+        "weak": 1.5,
+        "strong": 0.33
+    }
+}

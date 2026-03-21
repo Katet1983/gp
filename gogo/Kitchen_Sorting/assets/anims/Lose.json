@@ -1,0 +1,268 @@
+{
+    "entity": "Lose",
+    "sprites": {
+        "Lose_Ribbon3": { "frame": "Lose_Ribbon3", "pivot": { "x": 0.5, "y": 0.5} },
+        "Lose_Hat": { "frame": "Lose_Hat", "pivot": { "x": 0.5, "y": 0.5} },
+        "Lose_Spoon": { "frame": "Lose_Spoon", "pivot": { "x": 0.5, "y": 0.5} },
+        "Lose_Ribbon1": { "frame": "Lose_Ribbon1", "pivot": { "x": 0.5, "y": 0.25} },
+        "Lose_Ribbon2": { "frame": "Lose_Ribbon2", "pivot": { "x": 0.5, "y": 0.5} },
+        "Win_Ribbon": { "frame": "Win_Ribbon", "pivot": { "x": 0.5, "y": 0} },
+        "Plate_small": { "frame": "Plate_small", "pivot": { "x": 0.5, "y": 0.5} }
+    },
+    "tree": {
+        "root": 0,
+        "nodes": {
+            "0": {
+                "name": "Lose",
+                "transform": { "x": 0, "y": 0, "angle": 0, "sx": 1, "sy": 1, "alpha": 1 },
+                "sprite": null,
+                "nodes": [1, 2, 3, 4, 5, 6]
+            },
+            "1": {
+                "name": "Win_Thumb_Up",
+                "transform": { "x": 2.5, "y": 81.2, "angle": 0, "sx": 0.9, "sy": 0.9, "alpha": 1 },
+                "sprite": { "frame": "Lose_Ribbon3", "z": 3, "visible": true },
+                "nodes": null
+            },
+            "2": {
+                "name": "Win_Hat",
+                "transform": { "x": 0, "y": -8, "angle": -6.999997, "sx": 1, "sy": 1, "alpha": 1 },
+                "sprite": { "frame": "Lose_Hat", "z": 3, "visible": true },
+                "nodes": null
+            },
+            "3": {
+                "name": "Win_Spoon",
+                "transform": { "x": 0, "y": -35.5, "angle": 0, "sx": 1, "sy": 1, "alpha": 1 },
+                "sprite": { "frame": "Lose_Spoon", "z": 1, "visible": true },
+                "nodes": null
+            },
+            "4": {
+                "name": "Win_Spoon (1)",
+                "transform": { "x": 0.4, "y": -10, "angle": -6.005004, "sx": -1, "sy": 1, "alpha": 1 },
+                "sprite": { "frame": "Lose_Spoon", "z": 2, "visible": true },
+                "nodes": null
+            },
+            "5": {
+                "name": "Win_Ribbon",
+                "transform": { "x": 0, "y": 65, "angle": 0, "sx": 1, "sy": 1, "alpha": 1 },
+                "sprite": { "frame": "Lose_Ribbon1", "z": 1, "visible": true },
+                "nodes": null
+            },
+            "6": {
+                "name": "Lose_Ribbon2",
+                "transform": { "x": -0.2999999, "y": 81.7, "angle": 0, "sx": 0.8588044, "sy": 0.8577461, "alpha": 1 },
+                "sprite": { "frame": "Lose_Ribbon2", "z": 2, "visible": true },
+                "nodes": null
+            }
+        }
+    },
+    "anims": {
+        "Lose": {
+            "name": "Lose",
+            "length": 1.916667,
+            "loop": false,
+            "events": { "keys": [
+                    { "t": 1.75, "v": 0}
+                    ]
+                }
+            ,
+            "timelines": {
+                "2": [
+                    { "property": "x", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.9666666, "v": 0, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "y", "ref": false, "keys": [
+                        { "t": 0, "v": -8, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": -8, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.9666666, "v": -8, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 2.22, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": 2.22, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.75, "v": 0.9, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.8, "v": 1.1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.85, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 2.22, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": 2.22, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.75, "v": 0.9, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.8, "v": 1.1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.85, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 0.5, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.75, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "angle", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.9666666, "v": -7, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    }
+                ],
+                "3": [
+                    { "property": "x", "ref": false, "keys": [
+                        { "t": 0, "v": -100, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 0, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "y", "ref": false, "keys": [
+                        { "t": 0, "v": -35.5, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": -35.5, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.233333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    }
+                ],
+                "4": [
+                    { "property": "x", "ref": false, "keys": [
+                        { "t": 0, "v": 100, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.85, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.9666666, "v": 0.4, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.033333, "v": 0.4, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.1, "v": 0.4, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "y", "ref": false, "keys": [
+                        { "t": 0, "v": -35.5, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": -35.5, "lm": 0, "lt": 0, "rm": 0, "rt": 0 },
+                        { "t": 0.85, "v": -35.5, "lm": 0, "lt": 0.2514267, "rm": 0, "rt": 0.2514267 },
+                        { "t": 0.9666666, "v": -12, "lm": 0, "lt": 38.41544, "rm": 0, "rt": 122.293 },
+                        { "t": 1.033333, "v": -14, "lm": 0, "lt": 0, "rm": 0, "rt": 0 },
+                        { "t": 1.1, "v": -10, "lm": 0, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": -1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "angle", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 0.3333333, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.85, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 0.9666666, "v": -6.005, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    }
+                ],
+                "5": [
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 0.9166667, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.083333, "v": 1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.1, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 0.9166667, "v": 0, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.083333, "v": 1.1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.133333, "v": 0.9, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.183333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 1, "lm": 3, "rm": 3 },
+                        { "t": 0.9166667, "v": 1, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.083333, "v": 1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.133333, "v": 1, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.183333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sprite", "ref": true, "keys": [
+                        { "t": 0, "r": "Win_Ribbon" },
+                        { "t": 1.65, "r": "Win_Ribbon" },
+                        { "t": 1.666667, "r": "Lose_Ribbon1" }
+                        ]
+                    }
+                ],
+                "1": [
+                    { "property": "visible", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 1.433333, "v": 1, "lm": 3, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 3, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.433333, "v": 3, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.666667, "v": 1.1, "lm": 4, "lt": -2.526314, "rm": 4, "rt": -2.526314 },
+                        { "t": 1.75, "v": 0.9, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.833333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 3, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.433333, "v": 3, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.666667, "v": 1.1, "lm": 4, "lt": -2.526314, "rm": 4, "rt": -2.526314 },
+                        { "t": 1.75, "v": 0.9, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.833333, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "alpha", "ref": false, "keys": [
+                        { "t": 0, "v": 1, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.433333, "v": 0, "lm": 4, "lt": 0, "rm": 4, "rt": 0 },
+                        { "t": 1.666667, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sprite", "ref": true, "keys": [
+                        { "t": 0, "r": "Plate_small" },
+                        { "t": 1.75, "r": "Lose_Ribbon3" }
+                        ]
+                    }
+                ],
+                "6": [
+                    { "property": "visible", "ref": false, "keys": [
+                        { "t": 0, "v": 0, "lm": 3, "rm": 3 },
+                        { "t": 1.666667, "v": 1, "lm": 3, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sx", "ref": false, "keys": [
+                        { "t": 0, "v": 0.4999999, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.666667, "v": 0.5, "lm": 0, "lt": 1.192093E-07, "rm": 0, "rt": 6.187716 },
+                        { "t": 1.916667, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    },
+                    { "property": "sy", "ref": false, "keys": [
+                        { "t": 0, "v": 0.4999999, "lm": 3, "rm": 4, "rt": 0 },
+                        { "t": 1.666667, "v": 0.5, "lm": 0, "lt": 1.192093E-07, "rm": 0, "rt": 6.159142 },
+                        { "t": 1.916667, "v": 1, "lm": 4, "lt": 0, "rm": 3 }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

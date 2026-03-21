@@ -1,0 +1,41 @@
+{
+"skeleton": { "hash": "5bvxFH9WZA/e5BKzLAMmQJrQLqI", "spine": "3.6.53", "width": 244, "height": 79, "images": "./스테이지결과/images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "newrecord", "parent": "root", "y": 121.36 }
+],
+"slots": [
+	{ "name": "newrecord", "bone": "newrecord", "color": "ffffff00", "attachment": "newrecord" }
+],
+"skins": {
+	"default": {
+		"newrecord": {
+			"newrecord": { "y": 1.04, "width": 244, "height": 79 }
+		}
+	}
+},
+"animations": {
+	"newrecord": {
+		"slots": {
+			"newrecord": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"newrecord": {
+				"scale": [
+					{ "time": 0, "x": 3, "y": 3, "curve": "stepped" },
+					{ "time": 0.1667, "x": 3, "y": 3 },
+					{ "time": 0.3333, "x": 0.8, "y": 0.8 },
+					{ "time": 0.4, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html><script nonce="6zA_rQqw86UnJmc-FMXrRQ">(function(){'use strict';function f(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function q(a){var b=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(b)return b.call(a);if(typeof a.length=="number")return{next:f(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}var t=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,e){if(a==Array.prototype||a==Object.prototype)return a;a[b]=e.value;return a};
+function u(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var e=a[b];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var v=u(this);function w(a,b){if(b)a:{var e=v;a=a.split(".");for(var g=0;g<a.length-1;g++){var l=a[g];if(!(l in e))break a;e=e[l]}a=a[a.length-1];g=e[a];b=b(g);b!=g&&b!=null&&t(e,a,{configurable:!0,writable:!0,value:b})}}
+function x(a){if(!(a instanceof Object))throw new TypeError("Iterator result "+a+" is not an object");}function y(){this.v=!1;this.j=null;this.o=void 0;this.g=1;this.i=this.l=0;this.A=this.h=null}function z(a){if(a.v)throw new TypeError("Generator is already running");a.v=!0}y.prototype.B=function(a){this.o=a};function A(a,b){a.h={J:b,K:!0};a.g=a.l||a.i}y.prototype.getNextAddressJsc=function(){return this.g};y.prototype.getYieldResultJsc=function(){return this.o};
+y.prototype.return=function(a){this.h={return:a};this.g=this.i};y.prototype["return"]=y.prototype.return;y.prototype.H=function(a){this.h={u:a};this.g=this.i};y.prototype.jumpThroughFinallyBlocks=y.prototype.H;y.prototype.m=function(a,b){this.g=b;return{value:a}};y.prototype.yield=y.prototype.m;y.prototype.P=function(a,b){a=q(a);var e=a.next();x(e);if(e.done)this.o=e.value,this.g=b;else return this.j=a,this.m(e.value,b)};y.prototype.yieldAll=y.prototype.P;y.prototype.u=function(a){this.g=a};
+y.prototype.jumpTo=y.prototype.u;y.prototype.I=function(){this.g=0};y.prototype.jumpToEnd=y.prototype.I;y.prototype.N=function(a,b){this.l=a;b!=void 0&&(this.i=b)};y.prototype.setCatchFinallyBlocks=y.prototype.N;y.prototype.O=function(a){this.l=0;this.i=a||0};y.prototype.setFinallyBlock=y.prototype.O;y.prototype.M=function(a,b){this.g=a;this.l=b||0};y.prototype.leaveTryBlock=y.prototype.M;y.prototype.D=function(a){this.l=a||0;a=this.h.J;this.h=null;return a};y.prototype.enterCatchBlock=y.prototype.D;
+y.prototype.F=function(a,b,e){e?this.A[e]=this.h:this.A=[this.h];this.l=a||0;this.i=b||0};y.prototype.enterFinallyBlock=y.prototype.F;y.prototype.L=function(a,b){b=this.A.splice(b||0)[0];(b=this.h=this.h||b)?b.K?this.g=this.l||this.i:b.u!=void 0&&this.i<b.u?(this.g=b.u,this.h=null):this.g=this.i:this.g=a};y.prototype.leaveFinallyBlock=y.prototype.L;y.prototype.G=function(a){return new E(a)};y.prototype.forIn=y.prototype.G;
+function E(a){this.i=a;this.g=[];for(var b in a)this.g.push(b);this.g.reverse()}E.prototype.h=function(){for(;this.g.length>0;){var a=this.g.pop();if(a in this.i)return a}return null};E.prototype.getNext=E.prototype.h;function F(a){this.g=new y;this.h=a}function G(a,b){z(a.g);var e=a.g.j;if(e)return H(a,"return"in e?e["return"]:function(g){return{value:g,done:!0}},b,a.g.return);a.g.return(b);return I(a)}
+function H(a,b,e,g){try{var l=b.call(a.g.j,e);x(l);if(!l.done)return a.g.v=!1,l;var k=l.value}catch(c){return a.g.j=null,A(a.g,c),I(a)}a.g.j=null;g.call(a.g,k);return I(a)}function I(a){for(;a.g.g;)try{var b=a.h(a.g);if(b)return a.g.v=!1,{value:b.value,done:!1}}catch(e){a.g.o=void 0,A(a.g,e)}a.g.v=!1;if(a.g.h){b=a.g.h;a.g.h=null;if(b.K)throw b.J;return{value:b.return,done:!0}}return{value:void 0,done:!0}}
+function J(a){this.next=function(b){z(a.g);a.g.j?b=H(a,a.g.j.next,b,a.g.B):(a.g.B(b),b=I(a));return b};this.throw=function(b){z(a.g);a.g.j?b=H(a,a.g.j["throw"],b,a.g.B):(A(a.g,b),b=I(a));return b};this.return=function(b){return G(a,b)};this[Symbol.iterator]=function(){return this}}function K(a){function b(g){return a.next(g)}function e(g){return a.throw(g)}return new Promise(function(g,l){function k(c){c.done?g(c.value):Promise.resolve(c.value).then(b,e).then(k,l)}k(a.next())})}
+w("Symbol",function(a){function b(k){if(this instanceof b)throw new TypeError("Symbol is not a constructor");return new e(g+(k||"")+"_"+l++,k)}function e(k,c){this.g=k;t(this,"description",{configurable:!0,writable:!0,value:c})}if(a)return a;e.prototype.toString=function(){return this.g};var g="jscomp_symbol_"+(Math.random()*1E9>>>0)+"_",l=0;return b});
+w("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");t(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return L(f(this))}});return a});function L(a){a={next:a};a[Symbol.iterator]=function(){return this};return a}
+w("Promise",function(a){function b(c){this.h=0;this.i=void 0;this.g=[];this.o=!1;var d=this.j();try{c(d.resolve,d.reject)}catch(h){d.reject(h)}}function e(){this.g=null}function g(c){return c instanceof b?c:new b(function(d){d(c)})}if(a)return a;e.prototype.h=function(c){if(this.g==null){this.g=[];var d=this;this.i(function(){d.l()})}this.g.push(c)};var l=v.setTimeout;e.prototype.i=function(c){l(c,0)};e.prototype.l=function(){for(;this.g&&this.g.length;){var c=this.g;this.g=[];for(var d=0;d<c.length;++d){var h=
+c[d];c[d]=null;try{h()}catch(m){this.j(m)}}}this.g=null};e.prototype.j=function(c){this.i(function(){throw c;})};b.prototype.j=function(){function c(m){return function(n){h||(h=!0,m.call(d,n))}}var d=this,h=!1;return{resolve:c(this.F),reject:c(this.l)}};b.prototype.F=function(c){if(c===this)this.l(new TypeError("A Promise cannot resolve to itself"));else if(c instanceof b)this.H(c);else{a:switch(typeof c){case "object":var d=c!=null;break a;case "function":d=!0;break a;default:d=!1}d?this.D(c):this.m(c)}};
+b.prototype.D=function(c){var d=void 0;try{d=c.then}catch(h){this.l(h);return}typeof d=="function"?this.I(d,c):this.m(c)};b.prototype.l=function(c){this.v(2,c)};b.prototype.m=function(c){this.v(1,c)};b.prototype.v=function(c,d){if(this.h!=0)throw Error("Cannot settle("+c+", "+d+"): Promise already settled in state"+this.h);this.h=c;this.i=d;this.h===2&&this.G();this.B()};b.prototype.G=function(){var c=this;l(function(){if(c.A()){var d=v.console;typeof d!=="undefined"&&d.error(c.i)}},1)};b.prototype.A=
+function(){if(this.o)return!1;var c=v.CustomEvent,d=v.Event,h=v.dispatchEvent;if(typeof h==="undefined")return!0;typeof c==="function"?c=new c("unhandledrejection",{cancelable:!0}):typeof d==="function"?c=new d("unhandledrejection",{cancelable:!0}):(c=v.document.createEvent("CustomEvent"),c.initCustomEvent("unhandledrejection",!1,!0,c));c.promise=this;c.reason=this.i;return h(c)};b.prototype.B=function(){if(this.g!=null){for(var c=0;c<this.g.length;++c)k.h(this.g[c]);this.g=null}};var k=new e;b.prototype.H=
+function(c){var d=this.j();c.C(d.resolve,d.reject)};b.prototype.I=function(c,d){var h=this.j();try{c.call(d,h.resolve,h.reject)}catch(m){h.reject(m)}};b.prototype.then=function(c,d){function h(p,r){return typeof p=="function"?function(B){try{m(p(B))}catch(C){n(C)}}:r}var m,n,D=new b(function(p,r){m=p;n=r});this.C(h(c,m),h(d,n));return D};b.prototype.catch=function(c){return this.then(void 0,c)};b.prototype.C=function(c,d){function h(){switch(m.h){case 1:c(m.i);break;case 2:d(m.i);break;default:throw Error("Unexpected state: "+
+m.h);}}var m=this;this.g==null?k.h(h):this.g.push(h);this.o=!0};b.resolve=g;b.reject=function(c){return new b(function(d,h){h(c)})};b.race=function(c){return new b(function(d,h){for(var m=q(c),n=m.next();!n.done;n=m.next())g(n.value).C(d,h)})};b.all=function(c){var d=q(c),h=d.next();return h.done?g([]):new b(function(m,n){function D(B){return function(C){p[B]=C;r--;r==0&&m(p)}}var p=[],r=0;do p.push(void 0),r++,g(h.value).C(D(p.length-1),n),h=d.next();while(!h.done)})};return b});
+function M(a,b){a instanceof String&&(a+="");var e=0,g=!1,l={next:function(){if(!g&&e<a.length){var k=e++;return{value:b(k,a[k]),done:!1}}g=!0;return{done:!0,value:void 0}}};l[Symbol.iterator]=function(){return l};return l}w("Array.prototype.keys",function(a){return a?a:function(){return M(this,function(b){return b})}});(function(){var a,b,e,g,l;return K(new J(new F(function(k){switch(k.g){case 1:if(!("serviceWorker"in navigator)){k.u(0);break}return k.m(navigator.serviceWorker.getRegistration("../.."),3);case 3:return(a=k.o)?k.m(a.unregister(),4):k.return();case 4:return window.caches==null?k.return():k.m(window.caches.keys(),5);case 5:b=k.o,e=q(b),g=e.next();case 6:if(g.done){k.u(0);break}l=g.value;return k.m(window.caches.delete(l),7);case 7:g=e.next(),k.u(6)}})))})();}).call(this);
+</script><script src="https://sdks.gamesnacks.com/developer/v2/index.js" data-target-origin="https://gamesnacks.com" data-user-activity-metrics data-run-slotcar-ads-in-game-center data-game-center-monetized data-rewarded-monetizable data-interstitial-monetizable data-level-complete-monetizable data-game-over-monetizable nonce="6zA_rQqw86UnJmc-FMXrRQ"></script><meta name="robots" content="noindex, nofollow"><meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>liquidPuzzleSTC</title>
+	
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="appmanifest.json">
+	
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png">
+	<meta name="HandheldFriendly" content="true">
+	
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png">
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			-webkit-touch-callout:none;
+			-webkit-user-select:none;
+		}
+		html, body {
+			background: #000;
+			background-color: #000;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+
+	<script>
+		
+		if (!Date.now){ Date.now = function now() { return (new Date()).getTime(); }; }
+		var  _debug = false			,currentGame = "liquidPuzzleSTC"
+			,currentGameName = "..."
+			,currentGameId = "..."
+			,currentVersion = "./"
+			,currentCatalog = "PZOOL"
+			,hostCommon = "./"
+			,hostCDN = "./"
+			,hostCDNCommon = hostCDN
+			,hostCDNDir = hostCDN
+			,gameURL = hostCDNDir
+			,gameFilesURL = hostCDNDir
+			,hostCDNImg = hostCDNDir + "images/"
+			,hostCDNMedia = hostCDNDir + "media/"
+			,loadingImg = hostCDNDir + "loading-logo.png"
+			,statisticPool = "GoogleCache"
+			,currentLayout = null
+			,startsLoadingGameAt = 0, endsLoadingGameAt = 0, loadingTimeCap = 300000, trackUnfocused = false, shouldLoadTimeBeTracked = true;
+		function inIframe(){
+			try {
+				return window.self !== window.top;
+			} catch (e) {
+				return true;
+			}
+		}
+
+		var EVENT_TO_FIRE_VERSION = 4;
+		if(typeof window.eventToFire === "undefined" || typeof window.eventToFire.version === "undefined" || window.eventToFire.version < EVENT_TO_FIRE_VERSION){
+			var eventToFire = window.eventToFire || {};
+			eventToFire.events = ((window.eventToFire && window.eventToFire.events)?window.eventToFire.events:{});
+			eventToFire.version = EVENT_TO_FIRE_VERSION;
+			eventToFire.registerEvent = function(eventName, callback, staticArgs){
+				if(typeof eventName !== 'string') return false;
+				if(typeof callback !== 'function' && typeof callback !== 'string') return false;
+				if(typeof this.events[eventName] === 'undefined')	this.events[eventName] = [];
+				this.events[eventName].push({"func":callback, "staticArgs":staticArgs});
+				return true;
+			};
+			if(typeof ce7 !== "function"){
+				var ce7_lut = [],ce7 = function(){
+					if(typeof window.crypto==="object" && typeof window.crypto.getRandomValues==="function"){var rnd=window.crypto.getRandomValues(new Uint32Array(4)),d0=rnd[0],d1=rnd[1],d2=rnd[2],d3=rnd[3] }else{var d0 = Math.random()*0x100000000>>>0,d1 = Math.random()*0x100000000>>>0,d2 = Math.random()*0x100000000>>>0,d3 = Math.random()*0x100000000>>>0;}
+					return ce7_lut[d0&0xff]+ce7_lut[d0>>8&0xff]+ce7_lut[d0>>16&0xff]+ce7_lut[d0>>24&0xff]+'-'+
+					ce7_lut[d1&0xff]+ce7_lut[d1>>8&0xff]+'-'+ce7_lut[d1>>16&0x0f|0x40]+ce7_lut[d1>>24&0xff]+'-'+
+					ce7_lut[d2&0x3f|0x80]+ce7_lut[d2>>8&0xff]+'-'+ce7_lut[d2>>16&0xff]+ce7_lut[d2>>24&0xff]+
+					ce7_lut[d3&0xff]+ce7_lut[d3>>8&0xff]+ce7_lut[d3>>16&0xff]+ce7_lut[d3>>24&0xff];
+				};for(var i=0; i<256; i++){ce7_lut[i] = (i<16?'0':'')+(i).toString(16);}
+			}
+			eventToFire.fireEvent = function(eventName){
+				if(typeof eventName !== 'string') return false;
+				var eventHandlersToCall = Object.keys(this.events).filter(function(v){var f=v.replace(/\./g, '\\\.'); if(f.indexOf('*')!==-1) f = f.split('*')[0]+".*"; return (new RegExp('^'+f+"$").test(eventName))}).sort(function(a,b){return (b===eventName)?1:(a===eventName)?-1:b.replace('*','').length-a.replace('*','').length;}),eventUID=ce7();
+				if(eventHandlersToCall.length === 0) return false;
+				for(var i=0; i<eventHandlersToCall.length;i++){
+					for(var f=0; f<this.events[eventHandlersToCall[i]].length;f++){
+						var func = this.events[eventHandlersToCall[i]][f]["func"];
+						if(typeof func === "string") if(typeof window[func] === "function") func = window[func]; else continue;
+						var args = [].slice.call(arguments, 1);
+						args.push(this.events[eventHandlersToCall[i]][f]["staticArgs"]);
+						func.apply({eventName:eventName,eventUID:eventUID,eventHandler:eventHandlersToCall[i],eventToFire:this},args);
+					}
+				}
+				return true;
+			};
+			eventToFire.getAllEvent = function(){
+				return this.events;
+			};
+
+			window.eventToFire = eventToFire;
+
+			//compatibility playzool/shell
+			window.registerEvent = function(eventName, callback, args){
+				window.eventToFire.registerEvent(eventName, callback, args);
+			}
+			window.fireEvent = function(eventName,args){
+				window.eventToFire.fireEvent(eventName,args);
+			}
+		}
+
+		function c2LayoutChange (){
+			if(arguments[0] === "in") currentLayout = arguments[1];
+			eventToFire.fireEvent.apply(eventToFire, ["c2LayoutChange"].concat([].slice.call(arguments)));
+		}
+		function gameOver(){
+			eventToFire.fireEvent.apply(eventToFire, ["gameOver"].concat([].slice.call(arguments)));
+		}
+
+		if(typeof loadGameInfo !== "function"){
+			window.loadGameInfo = function(force){
+				if(typeof force !== "boolean") force = false;
+				if(!force && typeof lastGameInfoReq !== "undefined" && lastGameInfoReq > Date.now() - 1000) return true; //prevent multiple calls at once
+				try{
+					window.gameInfo = JSON.parse(c2_callFunction("getGameInfo", [], true));
+				}catch(e){
+					window.gameInfo = {};
+					return false;
+				}
+				window.lastGameInfoReq = Date.now();
+				return true;
+			};
+		}
+		
+	</script><body><div id="fb-root"></div>	
+	<div id="c2canvasdiv">
+		<canvas id="c2canvas"></canvas>
+	</div>
+	
+	<script src="./jquery-3.4.1.min.js"></script>
+	
+	<script>
+		var tabScriptToLoad = [];
+			tabScriptToLoad.push(gameFilesURL+"c2common-1.0.0.min.js");
+			tabScriptToLoad.push(gameFilesURL+"c2runtime.js");
+	</script>
+	<script>
+		var AFG_isReady = false, userAlreadyInteracted = false, firstGM = true,
+			previousLayout = currentLayout = null,
+			activePreroll = false,
+			prerollAt = "firstUserInteractionDelayed",
+			activeMidroll = true,
+			activeRewarded = true, reward_isPreparing = false, reward_isReady = false, reward_eventName="",reward_C2cbOnFail="", reward_C2cbOnVideoDidAppear="", reward_C2cbOnVideoDidDisappear="",reward_recheckEvery=10000;
+		
+		// localStorage delegation
+		window.proxyStorageEngines={localStorage:GameSnacks.storage,sessionStorage:GameSnacks.storage};
+
+
+		function logMe(){
+			if(_debug) console.log.apply(console, arguments);
+		}
+	
+		function hideGameForAd(){
+			if(typeof cr_setSuspended === "function") cr_setSuspended(true);
+			document.getElementById("c2canvasdiv").style.display = "none";
+			// $("body").css("background-color","white");
+		}
+	
+		function showGame(message){ // not used anymore
+			message = message || "default";
+			logMe("ShowGame Message : " + message);
+			document.getElementById("c2canvasdiv").style.display = "block";
+			document.getElementById("c2canvas").focus();
+			loadGame();
+		}
+	
+		function loadGame(){
+			logMe("LoadGame");
+			for (var i = 0; i < tabScriptToLoad.length; i++) {
+				$.getScript({
+					url: tabScriptToLoad[i]
+					,cache: true
+				});
+			}
+			startsLoadingGameAt = Date.now();
+			window.timerC2MA = setInterval(function(){
+				if(typeof window.cr_createRuntime !== "undefined" && typeof jQuery  !== "undefined" ){
+					clearInterval(window.timerC2MA);
+					logMe('launch' + ((activePreroll) ? " with preroll "+prerollAt: ""));
+					if(activePreroll){
+						switch(prerollAt){
+							case "pageload":
+								requestPreroll();
+								break;
+							case "firstUserInteraction":
+							case "firstUserInteractionDelayed":
+								if(userAlreadyInteracted){
+									logMe('userAlreadyInteracted so request Preroll');
+									requestPreroll();
+									
+								}else{
+									logMe('register evetn for a '+prerollAt);
+									if(prerollAt === "firstUserInteraction") eventToFire.registerEvent("firstUserInteraction", requestPreroll);
+									else if(prerollAt === "firstUserInteractionDelayed") eventToFire.registerEvent("firstUserInteraction", function(){setTimeout(requestPreroll, 60);});
+									launchOrResumeGame();
+								}
+								break;
+							case"firstGameMain":
+							default:
+								launchOrResumeGame();
+								break;
+						}
+					}else{
+						launchOrResumeGame();
+					}
+				}
+			},100);	
+		}
+	
+		function onUserInteraction(event){	if(!userAlreadyInteracted) userAlreadyInteracted = (!fireEvent('firstUserInteraction') || true); }
+		document.addEventListener("mouseup", onUserInteraction, false);
+		document.addEventListener("touchend", onUserInteraction, false);
+		document.addEventListener("pointerup", onUserInteraction, false);
+	
+		function launchOrResumeGame(){
+			if(typeof cr_createRuntime === "undefined") return setTimeout(launchOrResumeGame, 100);
+			if(typeof cr_getC2Runtime() === "undefined") launchGame();
+			else if(typeof cr_setSuspended === "function") setTimeout(cr_setSuspended, 1, false);
+		}
+		
+		function launchGame(){
+			fireEvent('onGameStart');
+			logMe('launchGame');
+			jQuery(window).resize(function() {
+				if(typeof cr_sizeCanvas === "function") cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+				// if(checkOrientation())	hideRotator();
+			});
+			
+			cr_createRuntime('c2canvas');
+			if(typeof eventToFire !== "undefined") eventToFire.fireEvent("runtimeCreated");
+			document.getElementById("c2canvas").focus();
+			GameSnacks.game.firstFrameReady();
+			// setTimeout(function(){ checkOrientation(); }, 500);
+			
+			// Pause and resume on page becoming visible/invisible
+			function onVisibilityChanged() {
+				if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden){
+					if(typeof cr_setSuspended === "function") cr_setSuspended(true);
+					window.shouldLoadTimeBeTracked = (typeof trackUnfocused !== "undefined" && trackUnfocused === true);
+				}else{
+					if(typeof cr_setSuspended === "function") cr_setSuspended(false);
+				}
+			};
+			document.body.style.backgroundColor="black";
+			document.addEventListener('visibilitychange', onVisibilityChanged, false);
+			document.addEventListener('mozvisibilitychange', onVisibilityChanged, false);
+			document.addEventListener('webkitvisibilitychange', onVisibilityChanged, false);
+			document.addEventListener('msvisibilitychange', onVisibilityChanged, false);
+		}
+	
+		function onC2LayoutChange(direction,name,force){
+			if(direction === "out") previousLayout = name;
+			else if(direction === "in") currentLayout = name;
+			if(firstGM){
+				if(GameSnacks.audio.isEnabled()) c2_callFunction("sound_unMute", ["1"]); else c2_callFunction("sound_mute", ["1"]);
+				GameSnacks.audio.subscribe((isEnabled) => c2_callFunction(((isEnabled) ? "sound_unMute" : "sound_mute"), ["1"]) );
+				GameSnacks.game.ready();
+				firstGM = false;
+			}
+			if(name.toLowerCase() === "gameover" && direction === "in") requestMidroll();
+			if(direction === "in" && previousLayout.toLowerCase() === "gamemain" && name.toLowerCase() !== "gameover") GameSnacks.game.gameOver();
+			// if(firstGM	&& activePreroll	&&	prerollAt === "firstGameMain" && name.toLowerCase() === "gamemain" && direction === "in") requestPreroll();
+			// firstGM = false;
+		}
+	
+		function requestPreroll(){
+			fireEvent('requestingPreroll');
+			logMe('requestingPreroll');
+			GameSnacks.ad.break({
+				type: 'start',
+				name: 'Pre-roll', //if(typeof cr_createRuntime === "undefined")
+				beforeAd: function(){fireEvent('AFG_start_beforeAd'); logMe("beforeAd", arguments); if(typeof cr_getC2Runtime === "function" && typeof cr_getC2Runtime() !== "undefined") cr_setSuspended(true);},
+				afterAd: function(){fireEvent('AFG_start_afterAd'); logMe("afterAd", arguments);},
+				adBreakDone: function(){fireEvent('AFG_start_adBreakDone'); logMe("adBreakDone", arguments); launchOrResumeGame();}
+			});
+			return true;
+		}
+	
+		function requestMidroll(){
+			fireEvent('requestMidroll');
+			logMe('requestMidroll');
+			if(activeMidroll){
+				GameSnacks.ad.break({
+					type: 'next',
+					name: 'Mid-roll',
+					beforeAd: function(){fireEvent('AFG_next_beforeAd'); logMe("beforeAd", arguments); cr_setSuspended(true);},
+					afterAd: function(){fireEvent('AFG_next_afterAd'); logMe("afterAd", arguments);},
+					adBreakDone: function(){fireEvent('AFG_next_adBreakDone'); logMe("adBreakDone", arguments); setTimeout(cr_setSuspended, 1, false);}
+				});
+			}else{
+				// 
+			}
+		}
+	
+		$(()=>logMe('page ready'));
+		if(activePreroll || activeMidroll || activeRewarded){
+			// $(()=>{	logMe('adConfig'); adConfig({preloadAdBreaks: "on", sound: "on"});	loadGame();}); // , onReady: () => {logMe('AFG onReady'); if(activePreroll) loadGame();}
+			$(loadGame);
+		}else $(loadGame);
+	
+		function isIVAvailable(C2Callback){
+			if(typeof C2Callback === "string" && C2Callback !== "" && typeof c2_callFunction !== 'undefined') c2_callFunction(C2Callback, [((activeRewarded) ? "1":"0")], true);
+			return activeRewarded;
+		};
+	
+		function isTJEventReady(eventName, cbC2Yes, cbC2No){
+			eventName = eventName || "";
+			cbC2Yes = cbC2Yes || "";
+			cbC2No = cbC2No || "";
+			var _ret = (isIVAvailable() && typeof reward_isReady === "function");
+			if(typeof c2_callFunction !== 'undefined'){
+				if(_ret && cbC2Yes !== "") c2_callFunction(cbC2Yes, [eventName, "1"], true);
+				else if(cbC2No !== "") c2_callFunction(cbC2No, [eventName, "0"], true);
+			}
+			return ((_ret === true) ? "1": "0");
+		}
+	
+		function prepareTJEvent(eventName, forceParam, C2cbOnReadyStateTrue, C2cbOnReadyStateFalse, repeat, retry){
+			if(!activeRewarded || reward_isPreparing || reward_isReady) return;
+			logMe("requesting rewarded ad");
+			reward_isPreparing = true;
+			GameSnacks.ad.break({
+				type: "reward",
+				name: currentGame+"_reward",
+				beforeAd: function(){fireEvent('AFG_reward_beforeAd'); logMe("beforeAd", arguments); cr_setSuspended(true); reward_isReady = false;},
+				afterAd: function(){fireEvent('AFG_reward_afterAd'); logMe("afterAd", arguments); c2_callFunction(reward_C2cbOnVideoDidDisappear, ["1"], true); setTimeout(cr_setSuspended, 10, false);},
+				beforeReward: (theAd) => {
+					fireEvent('AFG_reward_beforeReward', theAd);
+					logMe("beforeReward", theAd);
+					if(typeof theAd === "function"){
+						reward_isReady = theAd;
+						logMe("got rewarded ad");
+					}else{
+						logMe("rewarded unavailable" + ((reward_recheckEvery) ? " retry in " + reward_recheckEvery/1000 + "s" : ""));
+						if(reward_recheckEvery) setTimeout(prepareTJEvent, reward_recheckEvery, eventName, false, C2cbOnReadyStateTrue, C2cbOnReadyStateFalse);
+					}
+					reward_isPreparing = false;
+					isTJEventReady(eventName, C2cbOnReadyStateTrue, C2cbOnReadyStateFalse);
+				},
+				adDismissed: function(){fireEvent('AFG_reward_adDismissed');logMe("adDismissed", arguments); c2_callFunction(reward_C2cbOnFail, ["1"], true);},
+				adViewed: function(){fireEvent('AFG_reward_adViewed');logMe("adViewed", arguments); c2_callFunction(reward_C2cbOnVideoDidAppear, ["1"], true);},
+				adBreakDone: (adObj) => {fireEvent('AFG_reward_adBreakDone', adObj);logMe("adBreakDone", adObj); reward_isPreparing = false; logMe("will request an another ad in " + reward_recheckEvery/1000 + "s"); setTimeout(prepareTJEvent, reward_recheckEvery, eventName, false, "", "");}
+			});
+		}
+	
+		function launchTJEvent(eventName, C2cbOnFail, C2cbOnVideoDidAppear, C2cbOnVideoDidDisappear, forceReload, fallBackOnOfferWall){	//ignore eventName, fallBackOnOfferWall not handled yet
+			reward_eventName = eventName || "";
+			reward_C2cbOnFail = C2cbOnFail || "";
+			reward_C2cbOnVideoDidAppear = C2cbOnVideoDidAppear || "";
+			reward_C2cbOnVideoDidDisappear = C2cbOnVideoDidDisappear || "";
+			if(isTJEventReady(reward_eventName) === "1"){
+				reward_isReady();
+			}else{
+				setTimeout(function(){
+					c2_callFunction(reward_C2cbOnFail, ["1"], true);
+				}, 200);
+			}
+		}
+
+		function gameOver(globalScore, isWin, gameplayObject){
+			if(gameplayObject.win) GameSnacks.game.levelComplete(gameplayObject.level);
+			else GameSnacks.game.gameOver();
+			GameSnacks.score.update(gameplayObject.score);
+		}
+	
+		eventToFire.registerEvent("c2LayoutChange", function(direction,name,force){setTimeout(onC2LayoutChange, 1,direction,name,force)});
+		// eventToFire.registerEvent("c2:butt:soundState", function(status){	adConfig({sound:((status)?"on":"off")})	});
+		GameSnacks.game.onPause(()=>cr_setSuspended(true));
+		GameSnacks.game.onResume(launchOrResumeGame);
+
+    </script>

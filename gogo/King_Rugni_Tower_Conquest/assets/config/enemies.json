@@ -1,0 +1,176 @@
+{
+    "enemies": {
+        "electric": {
+            "normal" : {
+                "id": 2,
+                "editorId": "E",
+                "life" : 400,
+                "speed": 12,
+                "value": 20
+            },
+            "fast" : {
+                "id": 1,
+                "editorId": "e",
+                "life": 150,
+                "speed": 14,
+                "value": 15
+            }
+        },
+        "rock": {
+            "normal" : {
+                "id": 3,
+                "editorId": "r",
+                "life" : 350,
+                "speed": 7.5,
+                "value": 12
+            },
+            "split_1" : {
+                "id": 4,
+                "editorId": "R",
+                "life": 2000,
+                "speed": 5,
+                "value": 15,
+                "split": "normal"
+            },
+            "split_2" : {
+                "id": 5,
+                "editorId": "K",
+                "life": 3500,
+                "speed": 4,
+                "value": 25,
+                "split": "split_1"
+            },
+            "boss_1" : {
+                "id": 19,
+                "editorId": "2",
+                "life": 35000,
+                "speed": 2.25,
+                "value": 150,
+                "split": "split_1"
+            },
+            "boss_2" : {
+                "id": 20,
+                "editorId": "4",
+                "life": 80000,
+                "speed": 2,
+                "value": 300,
+                "split": "split_2"
+            }
+        },
+        "water": {
+            "normal" : {
+                "id": 6,
+                "editorId": "a",
+                "life" : 250,
+                "speed": 10,
+                "value": 20,
+                "healRadius": 2,
+                "healPercent": 0.05,
+                "healTicks": 10
+            },
+            "tank" : {
+                "id": 7,
+                "editorId": "A",
+                "life": 850,
+                "speed": 9,
+                "value": 35,
+                "healRadius": 2,
+                "healPercent": 0.1,
+                "healTicks": 10
+            }
+        },
+        "wood": {
+            "normal" : {
+                "id": 8,
+                "editorId": "m",
+                "life" : 200,
+                "speed": 9,
+                "value": 10
+            },
+            "tank" : {
+                "id": 9,
+                "editorId": "M",
+                "life": 1500,
+                "speed": 7,
+                "value": 15
+            },
+            "boss" : {
+                "id": 10,
+                "editorId": "1",
+                "life": 12000,
+                "speed": 2.25,
+                "value": 401
+            }
+        },
+        "wind": {
+            "normal" : {
+                "id": 11,
+                "editorId": "v",
+                "life" : 250,
+                "speed": 10,
+                "value": 15,
+                "speedBoostRadius": 3,
+                "speedBoostMult": 2,
+                "speedBoostTicks": 10
+            },
+            "tank" : {
+                "id": 12,
+                "editorId": "V",
+                "life": 700,
+                "speed": 7,
+                "value": 35,
+                "speedBoostRadius": 4,
+                "speedBoostMult": 2,
+                "speedBoostTicks": 10
+            }
+        },
+        "fire": {
+            "normal" : {
+                "id": 13,
+                "editorId": "f",
+                "life" : 400,
+                "speed": 10,
+                "value": 15
+            },
+            "split_1" : {
+                "id": 14,
+                "editorId": "F",
+                "life": 3000,
+                "speed": 5,
+                "value": 30,
+                "split": "normal"
+            },
+            "split_2" : {
+                "id": 15,
+                "editorId": "X",
+                "life": 5000,
+                "speed": 4,
+                "value": 45,
+                "split": "split_1"
+            },
+            "boss" : {
+                "id": 16,
+                "editorId": "5",
+                "life": 1000000,
+                "speed": 2.25,
+                "value": 350
+            }
+        },
+        "ice": {
+            "tank" : {
+                "id": 17,
+                "editorId": "H",
+                "life" : 2700,
+                "speed": 7,
+                "value": 30
+            },
+            "boss" : {
+                "id": 18,
+                "editorId": "3",
+                "life": 54321,
+                "speed": 2.25,
+                "value": 55555
+            }
+        }
+    }
+}

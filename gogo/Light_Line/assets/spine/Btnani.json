@@ -1,0 +1,38 @@
+{
+"skeleton": { "hash": "B0tPtEE5tUHYS/BxOlgXLF8UI3Y", "spine": "3.6.53", "width": 164, "height": 164, "images": "./스테이지결과/images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Btn", "parent": "root" }
+],
+"slots": [
+	{ "name": "btnStage", "bone": "Btn", "attachment": "btnStage" }
+],
+"skins": {
+	"default": {
+		"btnStage": {
+			"btnStage": { "x": -1.71, "y": 3.7, "width": 4, "height": 4 }
+		}
+	}
+},
+"animations": {
+	"Btnani": {
+		"slots": {
+			"btnStage": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.1667, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"Btn": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -90.28 },
+					{ "time": 0.1, "x": 0, "y": 17.26 },
+					{ "time": 0.1667, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
