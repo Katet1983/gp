@@ -1,0 +1,57 @@
+#game {
+	z-index: 10;
+	position: relative;
+}
+
+#wrongRotation {
+	display: none;
+	z-index: 20;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 1);
+}
+#wrongRotation img {
+	  display: block;
+	  width: 30%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  position: relative;
+	  top: 40%;
+	  -webkit-transform: translateY(-50%);
+	  -ms-transform: translateY(-50%);
+	  transform: translateY(-50%);
+}
+
+#menu {
+	position: fixed;
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+#wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh; /* Full height */
+	width: 100vw;
+}
+
+#game canvas {
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+    font-family: 'gameFont';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fnt/gamefont.otf') format('opentype');
+}
